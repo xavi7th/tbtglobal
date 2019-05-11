@@ -1,0 +1,90 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+// @import 'variables';
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@for $i from 1 through 5 {
+    $enter-delay: 400ms;
+
+    .page-enter-active {
+        overflow: hidden;
+        transition: transform $enter-delay cubic-bezier(0.4, 0.1, 0.7, 0.95);
+
+        .enter-#{$i} {
+            transition: 300ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+            transition-property: opacity, transform;
+            transition-delay: #{120ms * $i + $enter-delay};
+        }
+    }
+
+    .page-enter {
+        transform: translateX(100%);
+
+        .enter-#{$i} {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+    }
+}
+
+
+.wrapper {
+    .view {
+        background-image: url("../images/home-bkg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+    }
+
+    .gradient {
+        background: -webkit-linear-gradient(45deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(72, 15, 144, 0.4) 100%);
+        background: linear-gradient(45deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(72, 15, 144, 0.4) 100%);
+    }
+
+    .card {
+        background-color: rgba(126, 123, 215, 0.2);
+    }
+
+    h6 {
+        line-height: 1.7;
+    }
+
+    .navbar {
+        transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+
+        .md-form {
+            margin: 0;
+        }
+
+        .top-nav-collapse {
+            background: #424f95 !important;
+        }
+
+        &:not(.top-nav-collapse) {
+            @media (max-width: 768px) {
+                background: #424f95 !important;
+            }
+        }
+    }
+
+    label {
+        color: #fff !important;
+    }
+
+}
