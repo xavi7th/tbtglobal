@@ -1,4 +1,4 @@
-window._ = require('lodash');
+window._ = require( 'lodash' );
 // window.Popper = require('popper.js').default;
 
 /**
@@ -11,7 +11,7 @@ try {
     // window.$ = window.jQuery = require('jquery');
 
     // require('bootstrap');
-} catch (e) {}
+} catch ( e ) {}
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -19,9 +19,9 @@ try {
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = require('axios');
+window.axios = require( 'axios' );
 
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.headers.common[ 'X-Requested-With' ] = 'XMLHttpRequest';
 
 /**
  * Next we will register the CSRF Token as a common header with Axios so that
@@ -29,13 +29,97 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  * a simple convenience so we don't have to attach every token manually.
  */
 
-let token = document.head.querySelector('meta[name="csrf-token"]');
+let token = document.head.querySelector( 'meta[name="csrf-token"]' );
 
-if (token) {
-    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+if ( token ) {
+    window.axios.defaults.headers.common[ 'X-CSRF-TOKEN' ] = token.content;
 } else {
-    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+    console.error( 'CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token' );
 }
+
+window.axios.interceptors.response.use(
+    res => {
+        // console.log(res)
+
+        return res
+    },
+    err => {
+        if ( err.response ) {
+            console.log( err.response )
+            if ( err.response.status == 422 ) {
+                swal( {
+                    html: true,
+                    title: err.response.data.error,
+                    text: err.response.data.message,
+                    type: 'warning',
+                } )
+                return
+            } else if ( err.response.status == 500 && err.response.data.message == 'Expired token' ) {
+                swal( {
+                        // html: true,
+                        title: 'Session timed out',
+                        text: 'You have been logged out automatically to protect your account',
+                        type: 'info',
+                    },
+                    () => {
+                        location.reload()
+                    }
+                )
+            } else if ( err.response.status == 404 ) {
+                swal( {
+                    // html: true,
+                    title: '404',
+                    text: 'Resource Not Found',
+                    type: 'info',
+                } )
+            } else if ( err.response.status == 403 ) {
+                swal( {
+                    // html: true,
+                    title: 'Forbidden',
+                    text: 'Action is forbidden to user',
+                    type: 'error',
+                } )
+            } else if ( err.response.status == 401 ) {
+                swal( {
+                        // html: true,
+                        title: 'Access Denied',
+                        text: 'Access to requested resource is denied',
+                        type: 'error',
+                    },
+                    () => {
+                        location.reload()
+                    }
+                )
+            } else if ( err.response.status == 429 ) {
+                swal( {
+                    // html: true,
+                    title: 'Too many attempts',
+                    text: 'You have made too many attempts. Try again later.',
+                    type: 'error',
+                } )
+            } else {
+                return Promise.reject( err )
+            }
+        } else if ( err.request ) {
+            console.log( err.request )
+
+            if ( err.request.status == 422 ) {
+                swal( {
+                    html: true,
+                    title: err.request.data.error,
+                    text: err.request.data.message,
+                    type: 'warning',
+                } )
+            } else {
+                return Promise.reject( err )
+            }
+        } else {
+            console.log( err )
+            swal( 'Request Error', `${err.message}`, 'error' )
+        }
+    }
+)
+
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

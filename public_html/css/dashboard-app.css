@@ -1,0 +1,222 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.page-enter-active {
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95), -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+}
+
+.page-enter-active .enter-1 {
+  -webkit-transition: 300ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  transition: 300ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transition-delay: 520ms;
+  transition-delay: 520ms;
+}
+
+.page-enter {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.page-enter .enter-1 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+}
+
+.page-enter-active {
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95), -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+}
+
+.page-enter-active .enter-2 {
+  -webkit-transition: 300ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  transition: 300ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transition-delay: 640ms;
+  transition-delay: 640ms;
+}
+
+.page-enter {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.page-enter .enter-2 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+}
+
+.page-enter-active {
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95), -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+}
+
+.page-enter-active .enter-3 {
+  -webkit-transition: 300ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  transition: 300ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transition-delay: 760ms;
+  transition-delay: 760ms;
+}
+
+.page-enter {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.page-enter .enter-3 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+}
+
+.page-enter-active {
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95), -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+}
+
+.page-enter-active .enter-4 {
+  -webkit-transition: 300ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  transition: 300ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transition-delay: 880ms;
+  transition-delay: 880ms;
+}
+
+.page-enter {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.page-enter .enter-4 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+}
+
+.page-enter-active {
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+  transition: transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95), -webkit-transform 400ms cubic-bezier(0.4, 0.1, 0.7, 0.95);
+}
+
+.page-enter-active .enter-5 {
+  -webkit-transition: 300ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  transition: 300ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transition-delay: 1000ms;
+  transition-delay: 1000ms;
+}
+
+.page-enter {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.page-enter .enter-5 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+}
+
+.slide-left-enter-active,.slide-left-leave-active,.slide-right-enter-active,.slide-right-leave-active {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: height, opacity, -webkit-transform;
+  transition-property: height, opacity, -webkit-transform;
+  transition-property: height, opacity, transform;
+  transition-property: height, opacity, transform, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  overflow: hidden;
+}
+
+.slide-left-enter,.slide-right-leave-active {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  -webkit-transform: translate(2em, 0);
+  transform: translate(2em, 0);
+}
+
+.slide-left-leave-active,.slide-right-enter {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  -webkit-transform: translate(-2em, 0);
+  transform: translate(-2em, 0);
+}
+
+.slide-out-in-enter-active {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.slide-out-in-leave-active {
+  -webkit-transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-out-in-enter,.slide-out-in-leave-to {
+  -webkit-transform: translateX(80%);
+  transform: translateX(80%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+}
+/*# sourceMappingURL=dashboard-app.css.map*/

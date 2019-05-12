@@ -65,6 +65,7 @@ class Handler extends ExceptionHandler
 					'type' => 'danger',
 				]);
 		} else if ($exception instanceof QueryException) {
+			Alert::toast('Database error in handler.php', 'error', 'top');
 			// _dd(str_before(str_after($exception->getMessage(), 1062), 'for key'));
 			Log::channel('database')->error('Query Exception Occurred', ['$e_obj' => $exception]);
 

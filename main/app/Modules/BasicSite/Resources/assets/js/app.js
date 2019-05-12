@@ -6,12 +6,13 @@
 
 require( './bootstrap' );
 
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbvue/build/css/mdb.css';
+
 import Vue from 'vue'
 import Vue2Filters from 'vue2-filters'
 import VeeValidate from 'vee-validate';
-
-import 'bootstrap-css-only/css/bootstrap.min.css';
-import 'mdbvue/build/css/mdb.css';
+import swal from 'sweetalert';
 
 import App from '@components/AppComponent.vue';
 
@@ -19,7 +20,6 @@ import App from '@components/AppComponent.vue';
 import {
     createRouter
 } from './router';
-import swal from 'sweetalert';
 
 
 Vue.use( Vue2Filters )
@@ -58,11 +58,6 @@ const app = new Vue( {
     template: '<App/>',
     data: {
         transitionName: 'page'
-    },
-    methods: {
-        changeTransition( e ) {
-            console.log( e );
-        }
     },
     router
 } );

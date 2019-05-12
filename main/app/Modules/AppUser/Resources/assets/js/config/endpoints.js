@@ -8,7 +8,7 @@
 //   const domain = 'https://playground.fastplay24.com/admin/api/';
 // }
 
-export const apiDomain = 'http://localhost:8000/user-dashboard/api';
+export const apiDomain = 'http://localhost:8000/dashboard/api';
 
 // End Points
 
@@ -16,23 +16,24 @@ export const apiDomain = 'http://localhost:8000/user-dashboard/api';
  *
  * @param {string} url
  */
-export const rootUrl = (url) => '/' + (url || '');
-export const apiRootUrl = (url) => (apiDomain + (url || ''));
-export const httpUserApiRootUrl = (url) => (apiDomain + 'dashboard/api/' + (url || ''));
-export const httpAdminApiRootUrl = (url) => (apiDomain + 'admin/api/' + (url || ''));
+export const rootUrl = ( url ) => '/dashboard/' + ( url || '' );
+export const apiRootUrl = ( url ) => ( apiDomain + ( url || '' ) );
+export const httpUserApiRootUrl = ( url ) => ( apiDomain + 'dashboard/api/' + ( url || '' ) );
+export const httpAdminApiRootUrl = ( url ) => ( apiDomain + 'admin/api/' + ( url || '' ) );
 
-export const siteRootUrl = rootUrl();
-export const siteWelcome = rootUrl('welcome');
+export const dashboardRootUrl = rootUrl();
+export const userProfile = rootUrl( 'profile' );
+export const pageNotFound = rootUrl( 'page-not-found' );
 
 
-export const logout = (msg = null) => {
-    if (!msg) {
+export const logout = ( msg = null ) => {
+    if ( !msg ) {
         msg = "Logging you out....";
     }
-    swal(msg, {
+    swal( msg, {
         buttons: false,
-    });
-    axios.post(rootUrl('logout')).then(rsp => {
+    } );
+    axios.post( rootUrl( 'logout' ) ).then( rsp => {
         location.reload();
-    });
+    } );
 };

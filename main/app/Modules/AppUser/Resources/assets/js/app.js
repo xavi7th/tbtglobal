@@ -4,7 +4,10 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require( './bootstrap' );
+
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbvue/build/css/mdb.css';
 
 import Vue from 'vue'
 import Vue2Filters from 'vue2-filters'
@@ -14,9 +17,11 @@ import {
 } from './router';
 import swal from 'sweetalert';
 
+import App from '@dashboardComponents/AppComponent.vue';
 
-Vue.use(Vue2Filters)
-Vue.use(VeeValidate);
+
+Vue.use( Vue2Filters )
+Vue.use( VeeValidate );
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -25,12 +30,19 @@ Vue.use(VeeValidate);
  */
 
 const router = createRouter();
-router.beforeEach((to, from, next) => {
-    document.title = to.meta.title;
-    next();
-});
+// router.beforeEach( ( to, from, next ) => {
+//     console.log( to );
+//     console.log( from );
 
-const app = new Vue({
+//     document.title = to.meta.title;
+//     next();
+// } );
+
+const app = new Vue( {
     el: '#app',
+    components: {
+        App
+    },
+    template: '<App/>',
     router
-});
+} );

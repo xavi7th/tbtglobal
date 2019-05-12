@@ -56,7 +56,7 @@ mix.autoload( {
     jquery: [ '$', 'window.jQuery', 'jQuery' ], // more than one
 } );
 mix
-    // .sourceMaps()
+    .sourceMaps()
     .options( {
         // processCssUrls: false,
         purifyCss: {
@@ -64,8 +64,8 @@ mix
             purifyOptions: {
                 whitelist: [ '*datepicker*', '*owl*', '*sweetalert*' ],
                 // extensions: ['html', 'php', 'js', 'php'],
-                info: false,
-                rejected: false,
+                info: true,
+                rejected: true,
             }
         },
         fileLoaderDirs: {
@@ -81,9 +81,9 @@ mix
     } )
     .version();
 
-// mix.webpackConfig( {
-//     devtool: 'source-map'
-// } );
+mix.webpackConfig( {
+    devtool: 'source-map'
+} );
 
 // mix.browserSync({
 // 	//  proxy: "localhost:8000",

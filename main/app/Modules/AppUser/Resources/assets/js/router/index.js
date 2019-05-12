@@ -1,31 +1,33 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import {
-    siteRootUrl,
-    siteWelcome
+    dashboardRootUrl,
+    userProfile,
+    pageNotFound
 } from '../config/endpoints';
 
-import App from '../components/AppComponent';
+import Dashboard from '@dashboardComponents/pages/UserDashboard';
+import Profile from '@dashboardComponents/pages/UserProfile';
 
-Vue.use(VueRouter);
+Vue.use( VueRouter );
 
 /**
  * Asynchronously load view (Webpack Lazy loading compatible)
  * @param  {string}   name     the filename (basename) of the view to load.
  */
-function view(name) {
-    return function(resolve) {
-        require(['../components/' + name], resolve);
+function view( name ) {
+    return function ( resolve ) {
+        require( [ '@dashboardComponents/pages/' + name ], resolve );
     };
 }
 
 
 
 export function createRouter() {
-    return new VueRouter({
+    return new VueRouter( {
         mode: 'history',
-        scrollBehavior(to, from, savedPosition) {
-            if (savedPosition) {
+        scrollBehavior( to, from, savedPosition ) {
+            if ( savedPosition ) {
                 return savedPosition;
             } else {
                 return {
@@ -34,44 +36,50 @@ export function createRouter() {
                 };
             }
         },
-        routes: [{
-                path: siteRootUrl,
-                // redirect: {
-                //     name: 'site.root'
-                // },
-                component: App,
-                name: 'root',
+        routes: [ {
+                path: dashboardRootUrl,
+                component: Dashboard,
+                name: 'user.dashboard',
+                props: {
+                    page: 1
+                },
                 meta: {
                     title: 'Welcome | Home'
+                }
+            },
+            {
+                path: userProfile,
+                component: view( 'UserProfile' ),
+                name: 'user.profile',
+                props: {
+                    page: 2
                 },
-                children: [{
-                        // ViewAgents will be rendered inside App's <router-view>
-                        // when /tcom01/agents is matched
-                        path: siteWelcome,
-                        component: view('ExampleComponent'),
-                        name: 'site.root',
-                        meta: {
-                            title: 'Home'
-                        }
-                    },
-                    {
-                        path: 'login',
-                        // component: view('AdminEditAgentsComponent'),
-                        name: 'user.login',
-                        meta: {
-                            title: 'Login | Fastplay24 Admin'
-                        }
-                    },
-                ],
+                meta: {
+                    title: 'Home'
+                }
+            },
+            {
+                path: pageNotFound,
+                component: view( '404' ),
+                name: 'user.404',
+                props: {
+                    page: 5
+                },
+                meta: {
+                    title: 'Page Not Found'
+                }
 
             },
             {
                 path: '*',
+                props: {
+                    page: 5
+                },
                 redirect: {
-                    name: 'root'
+                    name: 'user.404'
                 }
             }
         ],
 
-    });
+    } );
 }

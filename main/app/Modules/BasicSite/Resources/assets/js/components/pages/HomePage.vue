@@ -70,7 +70,7 @@
   } from "mdbvue";
 
   export default {
-    name: "App",
+    name: "HopePage",
     components: {
       mdbContainer,
       mdbRow,

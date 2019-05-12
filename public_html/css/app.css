@@ -206,16 +206,7 @@
   margin: 0;
 }
 
-.wrapper .navbar .top-nav-collapse {
-  background: #424f95 !important;
-}
-
-@media (max-width: 768px) {
-  .wrapper .navbar:not(.top-nav-collapse) {
-    background: #424f95 !important;
-  }
-}
-
 .wrapper label {
   color: #fff !important;
 }
+/*# sourceMappingURL=app.css.map*/
