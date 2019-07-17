@@ -19,8 +19,7 @@ class BasicSiteController extends Controller
 		Route::group(['middleware' => 'web', 'namespace' => 'App\\Modules\BasicSite\Http\Controllers'], function () {
 			Route::get('/{subcat?}', function () {
 				return view('basicsite::index');
-			})->where('subcat', '(welcome)'); //Handle only routes that match the list provided.
-			// })->where('subcat', '^((?!(admin|user-dashboard|user)).)*'); //Matches all routes except routes that start with the list provided.
+			})->where('subcat', '^((?!(admin|api|_debugbar)).)*'); //Matches all routes except routes that start with the list provided.
 		});
 	}
 }

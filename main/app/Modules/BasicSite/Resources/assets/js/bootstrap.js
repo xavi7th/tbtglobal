@@ -1,99 +1,87 @@
-window._ = require( 'lodash' );
-// window.Popper = require('popper.js').default;
+window._ = require( 'lodash' )
+window.axios = require( 'axios' )
+window.swal = require( 'sweetalert2' )
 
-/**
- * We'll load jQuery and the Bootstrap jQuery plugin which provides support
- * for JavaScript based Bootstrap features such as modals and tabs. This
- * code may be modified to fit the specific needs of your application.
- */
+window.Toast = swal.mixin( {
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000000,
+    type: "success"
+} );
 
-try {
-    // window.$ = window.jQuery = require('jquery');
+window.BlockToast = swal.mixin( {
+    showConfirmButton: false,
+    showCloseButton: false
+} );
 
-    // require('bootstrap');
-} catch ( e ) {}
+window.swalWithBootstrapButtons = swal.mixin( {
+    customClass: {
+        confirmButton: "btn btn-success",
+        cancelButton: "btn btn-danger"
+    },
+    buttonsStyling: false
+} );
 
-/**
- * We'll load the axios HTTP library which allows us to easily issue requests
- * to our Laravel back-end. This library automatically handles sending the
- * CSRF token as a header based on the value of the "XSRF" token cookie.
- */
-
-window.axios = require( 'axios' );
-
-window.axios.defaults.headers.common[ 'X-Requested-With' ] = 'XMLHttpRequest';
-
-/**
- * Next we will register the CSRF Token as a common header with Axios so that
- * all outgoing HTTP requests automatically have it attached. This is just
- * a simple convenience so we don't have to attach every token manually.
- */
-
-let token = document.head.querySelector( 'meta[name="csrf-token"]' );
-
-if ( token ) {
-    window.axios.defaults.headers.common[ 'X-CSRF-TOKEN' ] = token.content;
-} else {
-    console.error( 'CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token' );
-}
-
+window.axios.defaults.headers.common[ 'X-Requested-With' ] = 'XMLHttpRequest'
 
 window.axios.interceptors.response.use(
     res => {
-        // console.log(res)
-
         return res
     },
     err => {
         if ( err.response ) {
-            console.log( err.response )
+            // console.log( err.response )
             if ( err.response.status == 422 ) {
-                swal( {
-                    html: true,
-                    title: err.response.data.error,
-                    text: err.response.data.message,
+                var rawErrors = err.response.data.errors || err.response.data.message;
+
+                if ( _.isString( rawErrors ) ) {
+                    var errs = rawErrors
+                } else if ( _.size( rawErrors ) == 1 ) {
+                    var errs = _.reduce( rawErrors, function ( val, n ) {
+                        return val.join( '<br>' ) + '<br>' + n
+                    } )[ 0 ];
+                } else {
+                    var errs = _.reduce( rawErrors, function ( val, n ) {
+                        return val.join( '<br>' ) + '<br>' + n
+                    } );
+                }
+
+                swal.fire( {
+                    html: errs,
                     type: 'warning',
                 } )
                 return
-            } else if ( err.response.status == 500 && err.response.data.message == 'Expired token' ) {
-                swal( {
-                        // html: true,
-                        title: 'Session timed out',
-                        text: 'You have been logged out automatically to protect your account',
-                        type: 'info',
-                    },
-                    () => {
-                        location.reload()
-                    }
-                )
+            } else if ( err.response.status == 500 && err.response.data == 'Expired token' ) {
+                swal.fire( {
+                    title: 'Session timed out',
+                    text: 'You have been logged out automatically to protect your account',
+                    type: 'info',
+                } ).then( () => {
+                    location.reload()
+                } )
             } else if ( err.response.status == 404 ) {
-                swal( {
-                    // html: true,
+                swal.fire( {
                     title: '404',
                     text: 'Resource Not Found',
                     type: 'info',
                 } )
             } else if ( err.response.status == 403 ) {
-                swal( {
-                    // html: true,
+                swal.fire( {
                     title: 'Forbidden',
                     text: 'Action is forbidden to user',
                     type: 'error',
                 } )
             } else if ( err.response.status == 401 ) {
-                swal( {
-                        // html: true,
-                        title: 'Access Denied',
-                        text: 'Access to requested resource is denied',
-                        type: 'error',
-                    },
-                    () => {
-                        location.reload()
-                    }
-                )
+                swal.fire( {
+                    title: 'Access Denied',
+                    text: 'Access to requested resource is denied',
+                    type: 'error',
+                } ).then( () => {
+                    location.reload()
+                } )
             } else if ( err.response.status == 429 ) {
-                swal( {
-                    // html: true,
+                swal.fire( {
                     title: 'Too many attempts',
                     text: 'You have made too many attempts. Try again later.',
                     type: 'error',
@@ -105,10 +93,9 @@ window.axios.interceptors.response.use(
             console.log( err.request )
 
             if ( err.request.status == 422 ) {
-                swal( {
-                    html: true,
+                swal.fire( {
                     title: err.request.data.error,
-                    text: err.request.data.message,
+                    html: err.request.data.message,
                     type: 'warning',
                 } )
             } else {
@@ -116,25 +103,14 @@ window.axios.interceptors.response.use(
             }
         } else {
             console.log( err )
-            swal( 'Request Error', `${err.message}`, 'error' )
+            swal.fire( 'Request Error', `${err.message}`, 'error' )
         }
     }
 )
 
-
-/**
- * Echo exposes an expressive API for subscribing to channels and listening
- * for events that are broadcast by Laravel. Echo and event broadcasting
- * allows your team to easily build robust real-time web applications.
- */
-
-// import Echo from 'laravel-echo'
-
-// window.Pusher = require('pusher-js');
-
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: process.env.MIX_PUSHER_APP_KEY,
-//     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
-//     encrypted: true
-// });
+let token = document.head.querySelector( 'meta[name="csrf-token"]' )
+if ( token ) {
+    window.axios.defaults.headers.common[ 'X-CSRF-TOKEN' ] = token.content
+} else {
+    console.error( 'CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token' )
+}

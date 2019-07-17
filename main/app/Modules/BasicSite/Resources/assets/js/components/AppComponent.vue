@@ -1,9 +1,9 @@
 <template>
-  <div class="wrapper">
-    <site-nav v-on:logout-user="logoutUser()"></site-nav>
+  <div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+    <site-header v-on:logout-user="logoutUser()"></site-header>
 
     <transition name="slide-out-in" mode="out-in" :duration="{ enter: 1300, leave: 200 }">
-      <router-view></router-view>
+      <router-view @page-loaded="pageLoaded"></router-view>
     </transition>
 
     <site-footer></site-footer>
@@ -12,7 +12,7 @@
 
 <script>
   import Loader from "@components/misc/LoaderComponent";
-  import SiteNav from "@components/partials/NavComponent";
+  import SiteHeader from "@components/partials/HeaderComponent";
   import SiteFooter from "@components/partials/FooterComponent";
   import { logout } from "@assets/js/config/endpoints.js";
 
@@ -20,18 +20,18 @@
     name: "App",
     components: {
       SiteFooter,
-      SiteNav
+      SiteHeader
     },
     created() {},
     data() {
       return {};
     },
-    mounted() {
-      console.log("Main App Component mounted.");
-    },
     methods: {
       logoutUser() {
         logout("Could not retrieve user details. Logging you out.");
+      },
+      pageLoaded() {
+        this.$loadScript("/js/main.js");
       }
     }
   };

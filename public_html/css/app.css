@@ -1,24 +1,24 @@
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -38,19 +38,19 @@
   transition-property: opacity, transform;
   transition-property: opacity, transform, -webkit-transform;
   -webkit-transition-delay: 520ms;
-  transition-delay: 520ms;
+          transition-delay: 520ms;
 }
 
 .page-enter {
   -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .page-enter .enter-1 {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
   -webkit-transform: translateX(50px);
-  transform: translateX(50px);
+          transform: translateX(50px);
 }
 
 .page-enter-active {
@@ -69,19 +69,19 @@
   transition-property: opacity, transform;
   transition-property: opacity, transform, -webkit-transform;
   -webkit-transition-delay: 640ms;
-  transition-delay: 640ms;
+          transition-delay: 640ms;
 }
 
 .page-enter {
   -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .page-enter .enter-2 {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
   -webkit-transform: translateX(50px);
-  transform: translateX(50px);
+          transform: translateX(50px);
 }
 
 .page-enter-active {
@@ -100,19 +100,19 @@
   transition-property: opacity, transform;
   transition-property: opacity, transform, -webkit-transform;
   -webkit-transition-delay: 760ms;
-  transition-delay: 760ms;
+          transition-delay: 760ms;
 }
 
 .page-enter {
   -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .page-enter .enter-3 {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
   -webkit-transform: translateX(50px);
-  transform: translateX(50px);
+          transform: translateX(50px);
 }
 
 .page-enter-active {
@@ -131,19 +131,19 @@
   transition-property: opacity, transform;
   transition-property: opacity, transform, -webkit-transform;
   -webkit-transition-delay: 880ms;
-  transition-delay: 880ms;
+          transition-delay: 880ms;
 }
 
 .page-enter {
   -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .page-enter .enter-4 {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
   -webkit-transform: translateX(50px);
-  transform: translateX(50px);
+          transform: translateX(50px);
 }
 
 .page-enter-active {
@@ -162,51 +162,20 @@
   transition-property: opacity, transform;
   transition-property: opacity, transform, -webkit-transform;
   -webkit-transition-delay: 1000ms;
-  transition-delay: 1000ms;
+          transition-delay: 1000ms;
 }
 
 .page-enter {
   -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .page-enter .enter-5 {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
   -webkit-transform: translateX(50px);
-  transform: translateX(50px);
+          transform: translateX(50px);
 }
 
-.wrapper .view {
-  background-image: url(/img/home-bkg.jpg?c8beded77fa5183cb7a4d22baf3b16e2);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-}
 
-.wrapper .gradient {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
-}
-
-.wrapper .card {
-  background-color: rgba(126, 123, 215, 0.2);
-}
-
-.wrapper h6 {
-  line-height: 1.7;
-}
-
-.wrapper .navbar {
-  -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-}
-
-.wrapper .navbar .md-form {
-  margin: 0;
-}
-
-.wrapper label {
-  color: #fff !important;
-}
 /*# sourceMappingURL=app.css.map*/

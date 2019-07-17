@@ -6,13 +6,10 @@
 
 require( './bootstrap' );
 
-import 'bootstrap-css-only/css/bootstrap.min.css';
-import 'mdbvue/build/css/mdb.css';
-
 import Vue from 'vue'
-import Vue2Filters from 'vue2-filters'
-import VeeValidate from 'vee-validate';
-import swal from 'sweetalert';
+import LoadScript from 'vue-plugin-load-script'
+// import Vue2Filters from 'vue2-filters'
+// import VeeValidate from 'vee-validate';
 
 import App from '@components/AppComponent.vue';
 
@@ -21,28 +18,9 @@ import {
     createRouter
 } from './router';
 
-
-Vue.use( Vue2Filters )
-Vue.use( VeeValidate );
-
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
-
-// const files = require.context('./', true, /\.vue$/i);
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
-
-// Vue.component( 'example-component', require( './components/ExampleComponent.vue' ).default );
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+Vue.use( LoadScript )
+// Vue.use( Vue2Filters )
+// Vue.use( VeeValidate );
 
 const router = createRouter();
 router.beforeEach( ( to, from, next ) => {
