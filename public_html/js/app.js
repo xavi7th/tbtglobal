@@ -578,6 +578,58 @@ module.exports = Component.exports
 
 /***/ }),
 
+/***/ "./main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-53d3ef6c\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue")
+}
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-53d3ef6c\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-53d3ef6c"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-53d3ef6c", Component.options)
+  } else {
+    hotAPI.reload("data-v-53d3ef6c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
 /***/ "./main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/AdsBar.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1105,24 +1157,10 @@ module.exports = Component.exports
 /* unused harmony export apiDomain */
 /* unused harmony export rootUrl */
 /* unused harmony export apiRootUrl */
-/* unused harmony export httpUserApiRootUrl */
-/* unused harmony export httpAdminApiRootUrl */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return siteRootUrl; });
+/* unused harmony export siteRootUrl */
 /* unused harmony export siteWelcome */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return logout; });
-// import { mix } from 'laravel-mix';
-//
-// if (mix.inProduction()) {
-//     const domain = 'https://playground.fastplay24.com/admin/api/';
-// }
-// else{
-//   // const domain = 'http://localhost:3000/tcom01/agents/api/';
-//   const domain = 'https://playground.fastplay24.com/admin/api/';
-// }
-
-var apiDomain = 'http://localhost:8000/api';
-
-// End Points
+var apiDomain = '/api/';
 
 /**
  *
@@ -1133,12 +1171,6 @@ var rootUrl = function rootUrl(url) {
 };
 var apiRootUrl = function apiRootUrl(url) {
     return apiDomain + (url || '');
-};
-var httpUserApiRootUrl = function httpUserApiRootUrl(url) {
-    return apiDomain + 'dashboard/api/' + (url || '');
-};
-var httpAdminApiRootUrl = function httpAdminApiRootUrl(url) {
-    return apiDomain + 'admin/api/' + (url || '');
 };
 
 var siteRootUrl = rootUrl();
@@ -1201,13 +1233,18 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
  */
 function view(name) {
     return function (resolve) {
-        __webpack_require__.e/* require */(0).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/components recursive ^\\.\\/.*$")("./" + name)]; ((resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
+        __webpack_require__.e/* require */(0).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/components/pages recursive ^\\.\\/.*Page$")("./" + name + 'Page')]; ((resolve).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
     };
 }
+
+var title = function title(_title) {
+    return _title + ' | TFT Global';
+};
 
 function createRouter() {
     return new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
         mode: 'history',
+        linkActiveClass: 'tg-active',
         scrollBehavior: function scrollBehavior(to, from, savedPosition) {
             if (savedPosition) {
                 return savedPosition;
@@ -1220,35 +1257,111 @@ function createRouter() {
         },
 
         routes: [{
-            path: __WEBPACK_IMPORTED_MODULE_2__config_endpoints__["b" /* siteRootUrl */],
-            // redirect: {
-            //     name: 'site.root'
-            // },
+            path: '/',
             component: __WEBPACK_IMPORTED_MODULE_3__components_pages_HomePage___default.a,
+            name: 'site.root',
             meta: {
-                title: 'Welcome | Home'
+                title: title('Home')
+            }
+        }, {
+            path: '/about-us',
+            component: view('About'),
+            name: 'site.about',
+            meta: {
+                title: title('About Us')
+            }
+        }, {
+            path: '/projects',
+            component: view('Projects'),
+            name: 'site.projects',
+            meta: {
+                title: title('Projects')
+            }
+        }, {
+            path: '/careers',
+            component: view('Careers'),
+            name: 'site.careers',
+            meta: {
+                title: title('Work With Us')
+            }
+        }, {
+            path: '/contact',
+            component: view('Contact'),
+            name: 'site.contact',
+            meta: {
+                title: title('Contact Us')
+            }
+        }, {
+            path: '/services',
+            component: view('Services'),
+            name: 'site.services',
+            meta: {
+                title: title('Our Service')
             },
-            children: [
-                // {
-                //       // ViewAgents will be rendered inside App's <router-view>
-                //       // when /tcom01/agents is matched
-                //       path: siteWelcome,
-                //       component: view('ExampleComponent'),
-                //       name: 'site.root',
-                //       meta: {
-                //           title: 'Home'
-                //       }
-                //   },
-                // {
-                //     path: 'agent/:id/edit',
-                //     component: view('AdminEditAgentsComponent'),
-                //     name: 'admin.edit-agent',
-                //     meta: {
-                //         title: 'Edit Agent Details | Fastplay24 Admin'
-                //     }
-                // },
-            ]
-
+            children: [{
+                path: 'valve-maintenance',
+                component: view('services/Valve'),
+                name: 'site.services.valve',
+                meta: {
+                    title: title('Valve Maintenance Service')
+                }
+            }, {
+                path: 'i-&-e-services',
+                component: view('services/IE'),
+                name: 'site.services.ie',
+                meta: {
+                    title: title('I&amp;E Services')
+                }
+            }, {
+                path: 'insulation-of-hot-surfaces',
+                component: view('services/Insulation'),
+                name: 'site.services.insulation',
+                meta: {
+                    title: title('Insulation Services')
+                }
+            }, {
+                path: 'installation-and-repairs-of-pumps',
+                component: view('services/Pumps'),
+                name: 'site.services.pumps',
+                meta: {
+                    title: title('Pumps Installation')
+                }
+            }, {
+                path: 'sand-blasting-and-painting.',
+                component: view('services/SandBlasting'),
+                name: 'site.services.sand',
+                meta: {
+                    title: title('Sand Blasting Services')
+                }
+            }, {
+                path: 'vessel-cleaning',
+                component: view('services/VesselCleaning'),
+                name: 'site.services.vessel',
+                meta: {
+                    title: title('Vessel Cleaning Services')
+                }
+            }, {
+                path: 'procurement-and-supplies',
+                component: view('services/Procurement'),
+                name: 'site.services.supplies',
+                meta: {
+                    title: title('Procurement Services')
+                }
+            }, {
+                path: 'mhe-services',
+                component: view('services/MHE'),
+                name: 'site.services.mhe',
+                meta: {
+                    title: title('MHE Services')
+                }
+            }, {
+                path: 'manpower-supply',
+                component: view('services/ManpowerSupply'),
+                name: 'site.services.manpower',
+                meta: {
+                    title: title('Manpower Supply Services')
+                }
+            }]
         }, {
             path: '*',
             redirect: {
@@ -3222,6 +3335,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_partials_NavComponent__ = __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_partials_NavComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_partials_NavComponent__);
 //
 //
 //
@@ -3278,156 +3393,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Header",
+  components: { SiteNav: __WEBPACK_IMPORTED_MODULE_0__components_partials_NavComponent___default.a }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
@@ -3555,11 +3534,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Header",
-  props: ["total_earnings"],
+  name: "Nav",
+  components: {},
   data: function data() {
     return {};
-  }
+  },
+
+  methods: {}
 });
 
 /***/ }),
@@ -5544,6 +5525,21 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-53d3ef6c\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "\niframe[data-v-53d3ef6c] {\n  width: 100%;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;CAAE","file":"NavComponent.vue","sourcesContent":["iframe {\n  width: 100%; }\n"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-57448884\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/misc/LoaderComponent.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5612,7 +5608,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\nheader {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AAsVA;EACA,iBAAA;CACA","file":"HeaderComponent.vue","sourcesContent":["<template>\n  <header id=\"tg-header\" class=\"tg-header tg-haslayout\">\n    <div class=\"tg-topbar tg-bglight tg-haslayout\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <ul class=\"tg-topcontactinfo\">\n              <li>\n                <i class=\"fa fa-phone\"></i>\n                <span>+1 2535 56854</span>\n              </li>\n              <li>\n                <i class=\"fa fa-envelope-o\"></i>\n                <span>\n                  <a href=\"mailto:hello@domain.com \">hello@domain.com</a>\n                </span>\n              </li>\n              <li>\n                <i class=\"fa fa-map-marker\"></i>\n                <address>Birmingham, England, B3 2EW</address>\n              </li>\n            </ul>\n            <nav class=\"tg-addnav tg-themecolor\">\n              <ul>\n                <li>\n                  <a href=\"#\">careers</a>\n                </li>\n                <li>\n                  <a href=\"#\">Contact</a>\n                </li>\n                <li>\n                  <a href=\"#\">terms &amp; contions</a>\n                </li>\n              </ul>\n            </nav>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-navigationarea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <strong class=\"tg-logo\">\n              <a href=\"index.html\">\n                <img src=\"img/logo.png\" alt=\"image description\" />\n              </a>\n            </strong>\n            <nav id=\"tg-nav\" class=\"tg-nav\">\n              <div class=\"navbar-header\">\n                <button\n                  type=\"button\"\n                  class=\"tg-btnnav navbar-toggle collapsed\"\n                  data-toggle=\"collapse\"\n                  data-target=\"#tg-navigation\"\n                  aria-expanded=\"false\"\n                >\n                  <span class=\"sr-only\">Toggle navigation</span>\n                  <span class=\"icon-bar\"></span>\n                  <span class=\"icon-bar\"></span>\n                  <span class=\"icon-bar\"></span>\n                </button>\n              </div>\n              <div id=\"tg-navigation\" class=\"collapse navbar-collapse tg-navigation\">\n                <ul>\n                  <li class=\"tg-active tg-hasdropdown\">\n                    <a href=\"index.html\">Main</a>\n                    <ul>\n                      <li class=\"tg-active\">\n                        <a href=\"index.html\">Home v1</a>\n                      </li>\n                      <li>\n                        <a href=\"index-v2.html\">Home v2</a>\n                      </li>\n                      <li>\n                        <a href=\"index-v3.html\">Home v3</a>\n                      </li>\n                    </ul>\n                  </li>\n                  <li class=\"menu-item-has-mega-menu\">\n                    <a href=\"aboutus.html\">About</a>\n                    <div class=\"mega-menu\">\n                      <ul class=\"mega-menu-row\">\n                        <li class=\"mega-menu-col\">\n                          <a href=\"#\">Nav Style 01</a>\n                          <ul>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                Lorem\n                                ipsum\n                              </a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">consectetur</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">adipisicing</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                sed\n                                eiusmod\n                              </a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">incididunt</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">labore et</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                dolore\n                                magna\n                              </a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                aliqua\n                                enim\n                              </a>\n                            </li>\n                            <li>\n                              <a href=\"#\">View all</a>\n                            </li>\n                          </ul>\n                        </li>\n                        <li class=\"mega-menu-col\">\n                          <a href=\"#\">Nav Style 02</a>\n                          <ul>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                Lorem\n                                ipsum\n                              </a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">consectetur</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">adipisicing</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                sed\n                                eiusmod\n                              </a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">incididunt</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">labore et</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                dolore\n                                magna\n                              </a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                aliqua\n                                enim\n                              </a>\n                            </li>\n                            <li>\n                              <a href=\"#\">View all</a>\n                            </li>\n                          </ul>\n                        </li>\n                        <li class=\"mega-menu-col\">\n                          <a href=\"#\">Nav Style 03</a>\n                          <ul>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                Lorem\n                                ipsum\n                              </a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">consectetur</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">adipisicing</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                sed\n                                eiusmod\n                              </a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">incididunt</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">labore et</a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                dolore\n                                magna\n                              </a>\n                            </li>\n                            <li>\n                              <a class=\"fa fa-angle-right\" href=\"#\">\n                                aliqua\n                                enim\n                              </a>\n                            </li>\n                            <li>\n                              <a href=\"#\">View all</a>\n                            </li>\n                          </ul>\n                        </li>\n                        <li class=\"mega-menu-col\">\n                          <a href=\"#\">Head office</a>\n                          <ul>\n                            <li>\n                              <div id=\"tg-location-map\" class=\"tg-location-map\"></div>\n                            </li>\n                            <li>\n                              <i class=\"fa fa-home\"></i>\n                              <address>\n                                123 Eccles Old Road, Salford Road, East\n                                London, Uk, M6 7AF\n                              </address>\n                            </li>\n                            <li>\n                              <i class=\"fa fa-envelope-o\"></i>\n                              <span>\n                                <a\n                                  href=\"mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#121;&#111;&#117;&#114;&#100;&#111;&#109;&#097;&#105;&#110;&#046;&#099;&#111;&#109;\"\n                                >&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#121;&#111;&#117;&#114;&#100;&#111;&#109;&#097;&#105;&#110;&#046;&#099;&#111;&#109;</a>\n                              </span>\n                            </li>\n                            <li>\n                              <i class=\"fa fa-phone\"></i>\n                              <span>+44 123 456 788 - 9</span>\n                            </li>\n                          </ul>\n                        </li>\n                      </ul>\n                    </div>\n                  </li>\n                  <li class=\"tg-hasdropdown\">\n                    <a href=\"services.html\">Services</a>\n                    <ul>\n                      <li>\n                        <a href=\"services.html\">services</a>\n                      </li>\n                      <li>\n                        <a href=\"services-v2.html\">services v2</a>\n                      </li>\n                    </ul>\n                  </li>\n                  <li class=\"tg-hasdropdown\">\n                    <a href=\"projects.html\">Projects</a>\n                    <ul>\n                      <li>\n                        <a href=\"projects.html\">pojects</a>\n                      </li>\n                      <li>\n                        <a href=\"project-detail.html\">project detail</a>\n                      </li>\n                    </ul>\n                  </li>\n                  <li class=\"tg-hasdropdown\">\n                    <a href=\"team.html\">team</a>\n                    <ul>\n                      <li>\n                        <a href=\"team.html\">team</a>\n                      </li>\n                      <li>\n                        <a href=\"team-detail.html\">team detail</a>\n                      </li>\n                    </ul>\n                  </li>\n                  <li>\n                    <a href=\"gallery.html\">gallery</a>\n                  </li>\n                  <li class=\"tg-hasdropdown\">\n                    <a href=\"news-list.html\">news</a>\n                    <ul>\n                      <li>\n                        <a href=\"news-list.html\">news list</a>\n                      </li>\n                      <li>\n                        <a href=\"news-grid.html\">news grid</a>\n                      </li>\n                      <li>\n                        <a href=\"news-detail.html\">news detail</a>\n                      </li>\n                    </ul>\n                  </li>\n                  <li class=\"tg-hasdropdown\">\n                    <a href=\"#\">\n                      <i class=\"fa fa-navicon\"></i>\n                      <i>pages</i>\n                    </a>\n                    <ul>\n                      <li>\n                        <a href=\"event-grid.html\">event grid</a>\n                      </li>\n                      <li>\n                        <a href=\"event-detail.html\">event detail</a>\n                      </li>\n                      <li>\n                        <a href=\"contactus.html\">contact us</a>\n                      </li>\n                      <li>\n                        <a href=\"carrers.html\">careers</a>\n                      </li>\n                      <li>\n                        <a href=\"404.html\">404 error</a>\n                      </li>\n                      <li>\n                        <a href=\"commingsoon.html\">comming soon</a>\n                      </li>\n                    </ul>\n                  </li>\n                </ul>\n              </div>\n            </nav>\n          </div>\n        </div>\n      </div>\n    </div>\n  </header>\n</template>\n\n<script>\n  export default {\n    name: \"Header\",\n    props: [\"total_earnings\"],\n    data() {\n      return {};\n    }\n  };\n</script>\n\n<style lang=\"css\">\n  header {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\nheader {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AAiEA;EACA,iBAAA;CACA","file":"HeaderComponent.vue","sourcesContent":["<template>\n  <header id=\"tg-header\" class=\"tg-header tg-haslayout\">\n    <div class=\"tg-topbar tg-bglight tg-haslayout\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <ul class=\"tg-topcontactinfo\">\n              <li>\n                <i class=\"fa fa-phone\"></i>\n                <span>+1 2535 56854</span>\n              </li>\n              <li>\n                <i class=\"fa fa-envelope-o\"></i>\n                <span>\n                  <a href=\"mailto:hello@domain.com \">hello@domain.com</a>\n                </span>\n              </li>\n              <li>\n                <i class=\"fa fa-map-marker\"></i>\n                <address>Birmingham, England, B3 2EW</address>\n              </li>\n            </ul>\n            <nav class=\"tg-addnav tg-themecolor\">\n              <ul>\n                <li>\n                  <a href=\"#\">careers</a>\n                </li>\n                <li>\n                  <a href=\"#\">Contact</a>\n                </li>\n                <li>\n                  <a href=\"#\">terms &amp; contions</a>\n                </li>\n              </ul>\n            </nav>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-navigationarea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <strong class=\"tg-logo\">\n              <a href=\"index.html\">\n                <img src=\"img/logo.png\" alt=\"image description\" />\n              </a>\n            </strong>\n            <site-nav></site-nav>\n          </div>\n        </div>\n      </div>\n    </div>\n  </header>\n</template>\n\n<script>\n  import SiteNav from \"@components/partials/NavComponent\";\n  export default {\n    name: \"Header\",\n    components: { SiteNav }\n  };\n</script>\n\n<style lang=\"css\">\n  header {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -28388,6 +28384,359 @@ if (false) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-53d3ef6c\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("nav", { staticClass: "tg-nav", attrs: { id: "tg-nav" } }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "collapse navbar-collapse tg-navigation",
+        attrs: { id: "tg-navigation" }
+      },
+      [
+        _c(
+          "ul",
+          [
+            _c(
+              "router-link",
+              { attrs: { to: { name: "site.root" }, tag: "li", exact: "" } },
+              [_c("a", [_vm._v("home")])]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { attrs: { to: { name: "site.about" }, tag: "li" } },
+              [_c("a", [_vm._v("about us")])]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              {
+                staticClass: "menu-item-has-mega-menu",
+                attrs: { to: { name: "site.services" }, tag: "li" }
+              },
+              [
+                _c("a", [_vm._v("services")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "mega-menu" }, [
+                  _c(
+                    "ul",
+                    { staticClass: "mega-menu-row" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "mega-menu-col",
+                          attrs: { to: { name: "site.about" }, tag: "li" }
+                        },
+                        [
+                          _c("a", [_vm._v("Our Services")]),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  attrs: {
+                                    to: { name: "site.services.valve" },
+                                    tag: "li"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    { staticClass: "fa fa-angle-right" },
+                                    [_vm._v("valve maintenance")]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "router-link",
+                                {
+                                  attrs: {
+                                    to: { name: "site.services.ie" },
+                                    tag: "li"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    { staticClass: "fa fa-angle-right" },
+                                    [_vm._v("i & e services")]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "router-link",
+                                {
+                                  attrs: {
+                                    to: { name: "site.services.insulation" },
+                                    tag: "li"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    { staticClass: "fa fa-angle-right" },
+                                    [_vm._v("insulation of hot surfaces")]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "router-link",
+                                {
+                                  attrs: {
+                                    to: { name: "site.services.pumps" },
+                                    tag: "li"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    { staticClass: "fa fa-angle-right" },
+                                    [_vm._v("repair and installation of pumps")]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "router-link",
+                                {
+                                  attrs: {
+                                    to: { name: "site.services.sand" },
+                                    tag: "li"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    { staticClass: "fa fa-angle-right" },
+                                    [_vm._v("sand blasting and painting")]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "router-link",
+                                {
+                                  attrs: {
+                                    to: { name: "site.services.vessel" },
+                                    tag: "li"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    { staticClass: "fa fa-angle-right" },
+                                    [_vm._v("sand vessel cleaning")]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "router-link",
+                                {
+                                  attrs: {
+                                    to: { name: "site.services.supplies" },
+                                    tag: "li"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    { staticClass: "fa fa-angle-right" },
+                                    [_vm._v("procurement and supplies")]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "router-link",
+                                {
+                                  attrs: {
+                                    to: { name: "site.services.mhe" },
+                                    tag: "li"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    { staticClass: "fa fa-angle-right" },
+                                    [_vm._v("mhe services")]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "router-link",
+                                {
+                                  attrs: {
+                                    to: { name: "site.services.manpower" },
+                                    tag: "li"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    { staticClass: "fa fa-angle-right" },
+                                    [_vm._v("manpower supply services")]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "router-link",
+                                {
+                                  attrs: {
+                                    to: { name: "site.services" },
+                                    tag: "li"
+                                  }
+                                },
+                                [_c("a", [_vm._v("View all")])]
+                              )
+                            ],
+                            1
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("li", { staticClass: "mega-menu-col" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Head office")
+                        ]),
+                        _vm._v(" "),
+                        _c("ul", [
+                          _c("li", [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "tg-location-map",
+                                attrs: { id: "tg-location-map" }
+                              },
+                              [
+                                _c("iframe", {
+                                  staticStyle: { border: "0" },
+                                  attrs: {
+                                    src:
+                                      "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31768.111194440487!2d5.765151139550782!3d5.564956500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfr!4v1563331258312!5m2!1sen!2sfr",
+                                    frameborder: "0",
+                                    allowfullscreen: ""
+                                  }
+                                })
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c("i", { staticClass: "fa fa-home" }),
+                            _vm._v(" "),
+                            _c("address", [
+                              _vm._v(
+                                "\n                    123 Eccles Old Road, Salford Road, East\n                    London, Uk, M6 7AF\n                  "
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c("i", { staticClass: "fa fa-envelope-o" }),
+                            _vm._v(" "),
+                            _c("span", [
+                              _c("a", { attrs: { href: "mailto:" } }, [
+                                _vm._v("demo@ex.com")
+                              ])
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c("i", { staticClass: "fa fa-phone" }),
+                            _vm._v(" "),
+                            _c("span", [_vm._v("+44 123 456 788 - 9")])
+                          ])
+                        ])
+                      ])
+                    ],
+                    1
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { attrs: { to: { name: "site.projects" }, tag: "li" } },
+              [_c("a", [_vm._v("projects")])]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { attrs: { to: { name: "site.careers" }, tag: "li" } },
+              [_c("a", [_vm._v("careers")])]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { attrs: { to: { name: "site.contact" }, tag: "li" } },
+              [_c("a", [_vm._v("contact us")])]
+            )
+          ],
+          1
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "navbar-header" }, [
+      _c(
+        "button",
+        {
+          staticClass: "tg-btnnav navbar-toggle collapsed",
+          attrs: {
+            type: "button",
+            "data-toggle": "collapse",
+            "data-target": "#tg-navigation",
+            "aria-expanded": "false"
+          }
+        },
+        [
+          _c("span", { staticClass: "sr-only" }, [_vm._v("Toggle navigation")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" })
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-53d3ef6c", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-57448884\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/misc/LoaderComponent.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29850,705 +30199,91 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "header",
+    { staticClass: "tg-header tg-haslayout", attrs: { id: "tg-header" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "tg-navigationarea" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              { staticClass: "col-xs-12" },
+              [_vm._m(1), _vm._v(" "), _c("site-nav")],
+              1
+            )
+          ])
+        ])
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "header",
-      { staticClass: "tg-header tg-haslayout", attrs: { id: "tg-header" } },
-      [
-        _c("div", { staticClass: "tg-topbar tg-bglight tg-haslayout" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
-                _c("ul", { staticClass: "tg-topcontactinfo" }, [
-                  _c("li", [
-                    _c("i", { staticClass: "fa fa-phone" }),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("+1 2535 56854")])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c("i", { staticClass: "fa fa-envelope-o" }),
-                    _vm._v(" "),
-                    _c("span", [
-                      _c("a", { attrs: { href: "mailto:hello@domain.com " } }, [
-                        _vm._v("hello@domain.com")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c("i", { staticClass: "fa fa-map-marker" }),
-                    _vm._v(" "),
-                    _c("address", [_vm._v("Birmingham, England, B3 2EW")])
-                  ])
-                ]),
+    return _c("div", { staticClass: "tg-topbar tg-bglight tg-haslayout" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
+            _c("ul", { staticClass: "tg-topcontactinfo" }, [
+              _c("li", [
+                _c("i", { staticClass: "fa fa-phone" }),
                 _vm._v(" "),
-                _c("nav", { staticClass: "tg-addnav tg-themecolor" }, [
-                  _c("ul", [
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("careers")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("Contact")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("terms & contions")
-                      ])
-                    ])
+                _c("span", [_vm._v("+1 2535 56854")])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("i", { staticClass: "fa fa-envelope-o" }),
+                _vm._v(" "),
+                _c("span", [
+                  _c("a", { attrs: { href: "mailto:hello@domain.com " } }, [
+                    _vm._v("hello@domain.com")
                   ])
                 ])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("i", { staticClass: "fa fa-map-marker" }),
+                _vm._v(" "),
+                _c("address", [_vm._v("Birmingham, England, B3 2EW")])
               ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "tg-navigationarea" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-xs-12" }, [
-                _c("strong", { staticClass: "tg-logo" }, [
-                  _c("a", { attrs: { href: "index.html" } }, [
-                    _c("img", {
-                      attrs: { src: "img/logo.png", alt: "image description" }
-                    })
-                  ])
+            ]),
+            _vm._v(" "),
+            _c("nav", { staticClass: "tg-addnav tg-themecolor" }, [
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("careers")])
                 ]),
                 _vm._v(" "),
-                _c("nav", { staticClass: "tg-nav", attrs: { id: "tg-nav" } }, [
-                  _c("div", { staticClass: "navbar-header" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "tg-btnnav navbar-toggle collapsed",
-                        attrs: {
-                          type: "button",
-                          "data-toggle": "collapse",
-                          "data-target": "#tg-navigation",
-                          "aria-expanded": "false"
-                        }
-                      },
-                      [
-                        _c("span", { staticClass: "sr-only" }, [
-                          _vm._v("Toggle navigation")
-                        ]),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "icon-bar" }),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "icon-bar" }),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "icon-bar" })
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "collapse navbar-collapse tg-navigation",
-                      attrs: { id: "tg-navigation" }
-                    },
-                    [
-                      _c("ul", [
-                        _c("li", { staticClass: "tg-active tg-hasdropdown" }, [
-                          _c("a", { attrs: { href: "index.html" } }, [
-                            _vm._v("Main")
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", [
-                            _c("li", { staticClass: "tg-active" }, [
-                              _c("a", { attrs: { href: "index.html" } }, [
-                                _vm._v("Home v1")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "index-v2.html" } }, [
-                                _vm._v("Home v2")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "index-v3.html" } }, [
-                                _vm._v("Home v3")
-                              ])
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", { staticClass: "menu-item-has-mega-menu" }, [
-                          _c("a", { attrs: { href: "aboutus.html" } }, [
-                            _vm._v("About")
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "mega-menu" }, [
-                            _c("ul", { staticClass: "mega-menu-row" }, [
-                              _c("li", { staticClass: "mega-menu-col" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Nav Style 01")
-                                ]),
-                                _vm._v(" "),
-                                _c("ul", [
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              Lorem\n                              ipsum\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("consectetur")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("adipisicing")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              sed\n                              eiusmod\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("incididunt")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("labore et")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              dolore\n                              magna\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              aliqua\n                              enim\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("View all")
-                                    ])
-                                  ])
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("li", { staticClass: "mega-menu-col" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Nav Style 02")
-                                ]),
-                                _vm._v(" "),
-                                _c("ul", [
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              Lorem\n                              ipsum\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("consectetur")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("adipisicing")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              sed\n                              eiusmod\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("incididunt")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("labore et")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              dolore\n                              magna\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              aliqua\n                              enim\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("View all")
-                                    ])
-                                  ])
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("li", { staticClass: "mega-menu-col" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Nav Style 03")
-                                ]),
-                                _vm._v(" "),
-                                _c("ul", [
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              Lorem\n                              ipsum\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("consectetur")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("adipisicing")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              sed\n                              eiusmod\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("incididunt")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("labore et")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              dolore\n                              magna\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "fa fa-angle-right",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                              aliqua\n                              enim\n                            "
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("View all")
-                                    ])
-                                  ])
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("li", { staticClass: "mega-menu-col" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("Head office")
-                                ]),
-                                _vm._v(" "),
-                                _c("ul", [
-                                  _c("li", [
-                                    _c("div", {
-                                      staticClass: "tg-location-map",
-                                      attrs: { id: "tg-location-map" }
-                                    })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c("i", { staticClass: "fa fa-home" }),
-                                    _vm._v(" "),
-                                    _c("address", [
-                                      _vm._v(
-                                        "\n                              123 Eccles Old Road, Salford Road, East\n                              London, Uk, M6 7AF\n                            "
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c("i", {
-                                      staticClass: "fa fa-envelope-o"
-                                    }),
-                                    _vm._v(" "),
-                                    _c("span", [
-                                      _c(
-                                        "a",
-                                        {
-                                          attrs: {
-                                            href:
-                                              "mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#121;&#111;&#117;&#114;&#100;&#111;&#109;&#097;&#105;&#110;&#046;&#099;&#111;&#109;"
-                                          }
-                                        },
-                                        [_vm._v("support@yourdomain.com")]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c("i", { staticClass: "fa fa-phone" }),
-                                    _vm._v(" "),
-                                    _c("span", [_vm._v("+44 123 456 788 - 9")])
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", { staticClass: "tg-hasdropdown" }, [
-                          _c("a", { attrs: { href: "services.html" } }, [
-                            _vm._v("Services")
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", [
-                            _c("li", [
-                              _c("a", { attrs: { href: "services.html" } }, [
-                                _vm._v("services")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "services-v2.html" } }, [
-                                _vm._v("services v2")
-                              ])
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", { staticClass: "tg-hasdropdown" }, [
-                          _c("a", { attrs: { href: "projects.html" } }, [
-                            _vm._v("Projects")
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", [
-                            _c("li", [
-                              _c("a", { attrs: { href: "projects.html" } }, [
-                                _vm._v("pojects")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c(
-                                "a",
-                                { attrs: { href: "project-detail.html" } },
-                                [_vm._v("project detail")]
-                              )
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", { staticClass: "tg-hasdropdown" }, [
-                          _c("a", { attrs: { href: "team.html" } }, [
-                            _vm._v("team")
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", [
-                            _c("li", [
-                              _c("a", { attrs: { href: "team.html" } }, [
-                                _vm._v("team")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "team-detail.html" } }, [
-                                _vm._v("team detail")
-                              ])
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c("a", { attrs: { href: "gallery.html" } }, [
-                            _vm._v("gallery")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", { staticClass: "tg-hasdropdown" }, [
-                          _c("a", { attrs: { href: "news-list.html" } }, [
-                            _vm._v("news")
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", [
-                            _c("li", [
-                              _c("a", { attrs: { href: "news-list.html" } }, [
-                                _vm._v("news list")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "news-grid.html" } }, [
-                                _vm._v("news grid")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "news-detail.html" } }, [
-                                _vm._v("news detail")
-                              ])
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", { staticClass: "tg-hasdropdown" }, [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _c("i", { staticClass: "fa fa-navicon" }),
-                            _vm._v(" "),
-                            _c("i", [_vm._v("pages")])
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", [
-                            _c("li", [
-                              _c("a", { attrs: { href: "event-grid.html" } }, [
-                                _vm._v("event grid")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c(
-                                "a",
-                                { attrs: { href: "event-detail.html" } },
-                                [_vm._v("event detail")]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "contactus.html" } }, [
-                                _vm._v("contact us")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "carrers.html" } }, [
-                                _vm._v("careers")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "404.html" } }, [
-                                _vm._v("404 error")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "commingsoon.html" } }, [
-                                _vm._v("comming soon")
-                              ])
-                            ])
-                          ])
-                        ])
-                      ])
-                    ]
-                  )
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Contact")])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v("terms & contions")
+                  ])
                 ])
               ])
             ])
           ])
         ])
-      ]
-    )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("strong", { staticClass: "tg-logo" }, [
+      _c("a", { attrs: { href: "index.html" } }, [
+        _c("img", { attrs: { src: "img/logo.png", alt: "image description" } })
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -33574,6 +33309,33 @@ if(false) {
  if(!content.locals) {
    module.hot.accept("!!../../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-460b1840\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./CompanyStatistics.vue", function() {
      var newContent = require("!!../../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-460b1840\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./CompanyStatistics.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-53d3ef6c\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-53d3ef6c\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("39971cf7", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-53d3ef6c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NavComponent.vue", function() {
+     var newContent = require("!!../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-53d3ef6c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NavComponent.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });

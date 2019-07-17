@@ -40,8 +40,11 @@
                 var nav = a.closest( '.tg-navigation' );
                 var mega = a.find( '.mega-menu' );
                 var offset = rightSide( nav ) - leftSide( a );
+                var wid = mega.width();
+
                 mega.width( Math.min( rightSide( nav ), columns( mega ) * 292 ) );
-                mega.css( 'left', Math.min( 0, offset - mega.width() ) );
+
+                mega.css( 'left', Math.min( 0, -140 ) );
             }
 
             function hoverOut() {}

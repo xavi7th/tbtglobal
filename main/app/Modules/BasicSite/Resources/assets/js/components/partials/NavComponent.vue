@@ -1,53 +1,132 @@
 <template>
-  <mdb-navbar :color="'primary'" position="top" dark href="#" transparent scrolling>
-    <mdb-container>
-      <mdbNavbarBrand href="#">
-        <strong>MDB</strong>
-      </mdbNavbarBrand>
-      <mdb-navbar-toggler style="max-width: 1140px">
-        <mdb-navbar-nav left>
-          <mdb-nav-item href="#" waves-fixed active>Home</mdb-nav-item>
-          <mdb-nav-item href="#" waves-fixed>Features</mdb-nav-item>
-          <mdb-nav-item href="#" waves-fixed>Pricing</mdb-nav-item>
-        </mdb-navbar-nav>
-        <form>
-          <mdb-input
-            type="text"
-            class="text-white"
-            placeholder="Search"
-            aria-label="Search"
-            label
-            navInput
-            waves
-            waves-fixed
-          />
-        </form>
-      </mdb-navbar-toggler>
-    </mdb-container>
-  </mdb-navbar>
+  <nav id="tg-nav" class="tg-nav">
+    <div class="navbar-header">
+      <button
+        type="button"
+        class="tg-btnnav navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#tg-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
+      <ul>
+        <router-link :to="{name: 'site.root'}" tag="li" exact>
+          <a>home</a>
+        </router-link>
+        <router-link :to="{name: 'site.about'}" tag="li">
+          <a>about us</a>
+        </router-link>
+        <router-link :to="{name: 'site.services'}" tag="li" class="menu-item-has-mega-menu">
+          <a>services</a>
+          <div class="mega-menu">
+            <ul class="mega-menu-row">
+              <router-link :to="{name: 'site.about'}" tag="li" class="mega-menu-col">
+                <a>Our Services</a>
+                <ul>
+                  <router-link :to="{name: 'site.services.valve'}" tag="li">
+                    <a class="fa fa-angle-right">valve maintenance</a>
+                  </router-link>
+
+                  <router-link :to="{name: 'site.services.ie'}" tag="li">
+                    <a class="fa fa-angle-right">i &amp; e services</a>
+                  </router-link>
+
+                  <router-link :to="{name: 'site.services.insulation'}" tag="li">
+                    <a class="fa fa-angle-right">insulation of hot surfaces</a>
+                  </router-link>
+
+                  <router-link :to="{name: 'site.services.pumps'}" tag="li">
+                    <a class="fa fa-angle-right">repair and installation of pumps</a>
+                  </router-link>
+
+                  <router-link :to="{name: 'site.services.sand'}" tag="li">
+                    <a class="fa fa-angle-right">sand blasting and painting</a>
+                  </router-link>
+
+                  <router-link :to="{name: 'site.services.vessel'}" tag="li">
+                    <a class="fa fa-angle-right">sand vessel cleaning</a>
+                  </router-link>
+
+                  <router-link :to="{name: 'site.services.supplies'}" tag="li">
+                    <a class="fa fa-angle-right">procurement and supplies</a>
+                  </router-link>
+
+                  <router-link :to="{name: 'site.services.mhe'}" tag="li">
+                    <a class="fa fa-angle-right">mhe services</a>
+                  </router-link>
+
+                  <router-link :to="{name: 'site.services.manpower'}" tag="li">
+                    <a class="fa fa-angle-right">manpower supply services</a>
+                  </router-link>
+
+                  <router-link :to="{name: 'site.services'}" tag="li">
+                    <a>View all</a>
+                  </router-link>
+                </ul>
+              </router-link>
+
+              <li class="mega-menu-col">
+                <a href="#">Head office</a>
+                <ul>
+                  <li>
+                    <div id="tg-location-map" class="tg-location-map">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31768.111194440487!2d5.765151139550782!3d5.564956500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfr!4v1563331258312!5m2!1sen!2sfr"
+                        frameborder="0"
+                        style="border:0"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa fa-home"></i>
+                    <address>
+                      123 Eccles Old Road, Salford Road, East
+                      London, Uk, M6 7AF
+                    </address>
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                      <a href="mailto:">demo@ex.com</a>
+                    </span>
+                  </li>
+                  <li>
+                    <i class="fa fa-phone"></i>
+                    <span>+44 123 456 788 - 9</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </router-link>
+
+        <router-link :to="{name: 'site.projects'}" tag="li">
+          <a>projects</a>
+        </router-link>
+
+        <router-link :to="{name: 'site.careers'}" tag="li">
+          <a>careers</a>
+        </router-link>
+
+        <router-link :to="{name: 'site.contact'}" tag="li">
+          <a>contact us</a>
+        </router-link>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
-  import {
-    Container as mdbContainer,
-    Navbar as mdbNavbar,
-    NavbarItem as mdbNavItem,
-    NavbarNav as mdbNavbarNav,
-    NavbarCollapse as mdbNavbarToggler,
-    Input as mdbInput,
-    NavbarBrand as mdbNavbarBrand
-  } from "mdbvue";
   export default {
     name: "Nav",
-    components: {
-      mdbContainer,
-      mdbNavbar,
-      mdbNavItem,
-      mdbNavbarNav,
-      mdbNavbarToggler,
-      mdbInput,
-      mdbNavbarBrand
-    },
+    components: {},
     data() {
       return {};
     },
@@ -56,4 +135,7 @@
 </script>
 
 <style lang="scss" scoped>
+  iframe {
+    width: 100%;
+  }
 </style>

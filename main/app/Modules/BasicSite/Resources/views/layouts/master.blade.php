@@ -14,18 +14,18 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/icomoon.css">
-        <link rel="stylesheet" href="css/transitions.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/prettyPhoto.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/color.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/icomoon.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/transitions.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/prettyPhoto.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/owl.theme.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/color.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+        <script src="{{ asset('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         @yield('customCSS')
     </head>
@@ -37,16 +37,16 @@
 
         @yield('contents')
 
-        <script src="js/vendor/jquery-library.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.svgInject.js"></script>
-        <script src="js/isotope.pkgd.js"></script>
-        <script src="js/chartsloader.js"></script>
-        <script src="js/prettyPhoto.js"></script>
-        <script src="js/parallax.js"></script>
-        <script src="js/countTo.js"></script>
-        <script src="js/appear.js"></script>
+        <script src="{{ asset('js/vendor/jquery-library.js') }}"></script>
+        <script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.svgInject.js') }}"></script>
+        <script src="{{ asset('js/isotope.pkgd.js') }}"></script>
+        <script src="{{ asset('js/chartsloader.js') }}"></script>
+        <script src="{{ asset('js/prettyPhoto.js') }}"></script>
+        <script src="{{ asset('js/parallax.js') }}"></script>
+        <script src="{{ asset('js/countTo.js') }}"></script>
+        <script src="{{ asset('js/appear.js') }}"></script>
         {{-- <script src="js/main.js"></script> --}}
 
         <script src="{{ mix('js/app.js') }}"></script>

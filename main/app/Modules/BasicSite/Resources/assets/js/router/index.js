@@ -16,15 +16,18 @@ Vue.use( VueRouter );
  */
 function view( name ) {
     return function ( resolve ) {
-        require( [ '../components/' + name ], resolve );
+        require( [ '@components/pages/' + name + 'Page' ], resolve );
     };
 }
+
+const title = title => title + ' | TFT Global'
 
 
 
 export function createRouter() {
     return new VueRouter( {
         mode: 'history',
+        linkActiveClass: 'tg-active',
         scrollBehavior( to, from, savedPosition ) {
             if ( savedPosition ) {
                 return savedPosition;
@@ -36,35 +39,126 @@ export function createRouter() {
             }
         },
         routes: [ {
-                path: siteRootUrl,
-                // redirect: {
-                //     name: 'site.root'
-                // },
+                path: '/',
                 component: Home,
+                name: 'site.root',
                 meta: {
-                    title: 'Welcome | Home'
+                    title: title( 'Home' )
                 },
-                children: [
-                    // {
-                    //       // ViewAgents will be rendered inside App's <router-view>
-                    //       // when /tcom01/agents is matched
-                    //       path: siteWelcome,
-                    //       component: view('ExampleComponent'),
-                    //       name: 'site.root',
-                    //       meta: {
-                    //           title: 'Home'
-                    //       }
-                    //   },
-                    // {
-                    //     path: 'agent/:id/edit',
-                    //     component: view('AdminEditAgentsComponent'),
-                    //     name: 'admin.edit-agent',
-                    //     meta: {
-                    //         title: 'Edit Agent Details | Fastplay24 Admin'
-                    //     }
-                    // },
-                ],
+            },
+            {
+                path: '/about-us',
+                component: view( 'About' ),
+                name: 'site.about',
+                meta: {
+                    title: title( 'About Us' )
+                },
+            },
+            {
+                path: '/projects',
+                component: view( 'Projects' ),
+                name: 'site.projects',
+                meta: {
+                    title: title( 'Projects' )
+                },
+            },
+            {
+                path: '/careers',
+                component: view( 'Careers' ),
+                name: 'site.careers',
+                meta: {
+                    title: title( 'Work With Us' )
+                },
+            },
+            {
+                path: '/contact',
+                component: view( 'Contact' ),
+                name: 'site.contact',
+                meta: {
+                    title: title( 'Contact Us' )
+                },
+            },
+            {
+                path: '/services',
+                component: view( 'Services' ),
+                name: 'site.services',
+                meta: {
+                    title: title( 'Our Service' )
+                },
+                children: [ {
+                        path: 'valve-maintenance',
+                        component: view( 'services/Valve' ),
+                        name: 'site.services.valve',
+                        meta: {
+                            title: title( 'Valve Maintenance Service' )
+                        }
+                    },
+                    {
+                        path: 'i-&-e-services',
+                        component: view( 'services/IE' ),
+                        name: 'site.services.ie',
+                        meta: {
+                            title: title( 'I&amp;E Services' )
+                        }
+                    },
+                    {
+                        path: 'insulation-of-hot-surfaces',
+                        component: view( 'services/Insulation' ),
+                        name: 'site.services.insulation',
+                        meta: {
+                            title: title( 'Insulation Services' )
+                        }
+                    },
+                    {
+                        path: 'installation-and-repairs-of-pumps',
+                        component: view( 'services/Pumps' ),
+                        name: 'site.services.pumps',
+                        meta: {
+                            title: title( 'Pumps Installation' )
+                        }
+                    },
+                    {
+                        path: 'sand-blasting-and-painting.',
+                        component: view( 'services/SandBlasting' ),
+                        name: 'site.services.sand',
+                        meta: {
+                            title: title( 'Sand Blasting Services' )
+                        }
+                    },
+                    {
+                        path: 'vessel-cleaning',
+                        component: view( 'services/VesselCleaning' ),
+                        name: 'site.services.vessel',
+                        meta: {
+                            title: title( 'Vessel Cleaning Services' )
+                        }
+                    },
+                    {
+                        path: 'procurement-and-supplies',
+                        component: view( 'services/Procurement' ),
+                        name: 'site.services.supplies',
+                        meta: {
+                            title: title( 'Procurement Services' )
+                        }
+                    },
+                    {
+                        path: 'mhe-services',
+                        component: view( 'services/MHE' ),
+                        name: 'site.services.mhe',
+                        meta: {
+                            title: title( 'MHE Services' )
+                        }
+                    },
+                    {
+                        path: 'manpower-supply',
+                        component: view( 'services/ManpowerSupply' ),
+                        name: 'site.services.manpower',
+                        meta: {
+                            title: title( 'Manpower Supply Services' )
+                        }
+                    },
 
+                ],
             },
             {
                 path: '*',
