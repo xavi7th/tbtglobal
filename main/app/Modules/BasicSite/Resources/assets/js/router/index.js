@@ -79,6 +79,14 @@ export function createRouter() {
                 },
             },
             {
+                path: '/page-not-found',
+                component: view( '404' ),
+                name: 'site.404',
+                meta: {
+                    title: title( 'Page Not Found' )
+                },
+            },
+            {
                 path: '/services',
                 component: view( 'Services' ),
                 name: 'site.services',
@@ -163,7 +171,7 @@ export function createRouter() {
             {
                 path: '*',
                 redirect: {
-                    name: 'site.root'
+                    name: 'site.404'
                 }
             }
         ],

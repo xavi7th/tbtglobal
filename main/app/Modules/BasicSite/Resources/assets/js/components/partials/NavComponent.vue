@@ -111,10 +111,6 @@
           <a>projects</a>
         </router-link>
 
-        <router-link :to="{name: 'site.careers'}" tag="li">
-          <a>careers</a>
-        </router-link>
-
         <router-link :to="{name: 'site.contact'}" tag="li">
           <a>contact us</a>
         </router-link>

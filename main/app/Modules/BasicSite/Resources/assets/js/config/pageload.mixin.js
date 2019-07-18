@@ -5,5 +5,12 @@ export default {
 
     beforeDestroy() {
         this.$unloadScript( "/js/main.js" );
-    }
+    },
+    activated() {
+        this.$emit( "page-loaded" );
+    },
+
+    deactivated() {
+        this.$unloadScript( "/js/main.js" );
+    },
 }

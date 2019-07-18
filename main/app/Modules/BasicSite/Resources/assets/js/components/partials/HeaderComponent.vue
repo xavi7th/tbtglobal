@@ -22,15 +22,15 @@
             </ul>
             <nav class="tg-addnav tg-themecolor">
               <ul>
-                <li>
-                  <a href="#">careers</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-                <li>
-                  <a href="#">terms &amp; contions</a>
-                </li>
+                <router-link :to="{name: 'site.careers'}" tag="li">
+                  <a>careers</a>
+                </router-link>
+                <router-link :to="{name: 'site.contact'}" tag="li">
+                  <a>contact</a>
+                </router-link>
+                <!-- <router-link :to="{name: 'site.careers'}" tag="li">
+                  <a>terms &amp; conditions</a>
+                </router-link>-->
               </ul>
             </nav>
           </div>

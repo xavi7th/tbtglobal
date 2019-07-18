@@ -1202,6 +1202,12 @@ var logout = function logout() {
     },
     beforeDestroy: function beforeDestroy() {
         this.$unloadScript("/js/main.js");
+    },
+    activated: function activated() {
+        this.$emit("page-loaded");
+    },
+    deactivated: function deactivated() {
+        this.$unloadScript("/js/main.js");
     }
 });
 
@@ -1292,6 +1298,13 @@ function createRouter() {
                 title: title('Contact Us')
             }
         }, {
+            path: '/page-not-found',
+            component: view('404'),
+            name: 'site.404',
+            meta: {
+                title: title('Page Not Found')
+            }
+        }, {
             path: '/services',
             component: view('Services'),
             name: 'site.services',
@@ -1365,7 +1378,7 @@ function createRouter() {
         }, {
             path: '*',
             redirect: {
-                name: 'site.root'
+                name: 'site.404'
             }
         }]
 
@@ -3203,126 +3216,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Footer"
@@ -3407,10 +3300,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
 //
 //
 //
@@ -5473,7 +5362,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\nfooter {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/FooterComponent.vue"],"names":[],"mappings":";AAqOA;EACA,iBAAA;CACA","file":"FooterComponent.vue","sourcesContent":["<template>\n  <footer id=\"tg-footer\" class=\"tg-footer tg-haslayout\">\n    <div class=\"tg-footermiddlearea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"tg-footerwidgets\">\n            <div class=\"col-md-3 col-sm-6 col-xs-6\">\n              <div class=\"tg-widget tg-widgetinfo\">\n                <div id=\"tg-footerlocation-map\" class=\"tg-footerlocation-map\"></div>\n                <h4>Head office</h4>\n                <ul class=\"tg-contactinfo\">\n                  <li>\n                    <i class=\"fa fa-home\"></i>\n                    <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>\n                  </li>\n                  <li>\n                    <i class=\"fa fa-envelope-o\"></i>\n                    <span>\n                      <a\n                        href=\"mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#121;&#111;&#117;&#114;&#100;&#111;&#109;&#097;&#105;&#110;&#046;&#099;&#111;&#109;\"\n                      >&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#121;&#111;&#117;&#114;&#100;&#111;&#109;&#097;&#105;&#110;&#046;&#099;&#111;&#109;</a>\n                    </span>\n                  </li>\n                  <li>\n                    <i class=\"fa fa-phone\"></i>\n                    <span>+44 123 456 788 - 9</span>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div class=\"col-md-3 col-sm-6 col-xs-6\">\n              <div class=\"tg-widget tg-widgetusefulllinks\">\n                <div class=\"tg-widgettitle\">\n                  <h3>useful links</h3>\n                </div>\n                <ul>\n                  <li>\n                    <a href=\"#\">Wealth Planning</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Investment Management</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Year-End Tax Planning</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Tax Advisory Services</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Small Business Taxes</a>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div class=\"col-md-3 col-sm-6 col-xs-6\">\n              <div class=\"tg-widget tg-widgetrecentnews\">\n                <div class=\"tg-widgettitle\">\n                  <h3>Recent News</h3>\n                </div>\n                <ul>\n                  <li>\n                    <time datetime>\n                      <a href=\"#\">\n                        <span>04</span> Feb\n                      </a>\n                    </time>\n                    <div class=\"tg-posdata\">\n                      <h4>\n                        <a href=\"#\">Claritas dynamicus qui seqauri mutatem consum.</a>\n                      </h4>\n                      <ul class=\"tg-postmetadata\">\n                        <li>\n                          <a href=\"#\">\n                            <i class=\"fa fa-clock-o\"></i>\n                            <span>24 Min Ago</span>\n                          </a>\n                        </li>\n                      </ul>\n                    </div>\n                  </li>\n                  <li>\n                    <time datetime>\n                      <a href=\"#\">\n                        <span>04</span> Feb\n                      </a>\n                    </time>\n                    <div class=\"tg-posdata\">\n                      <h4>\n                        <a href=\"#\">Claritas dynamicus qui seqauri mutatem consum.</a>\n                      </h4>\n                      <ul class=\"tg-postmetadata\">\n                        <li>\n                          <a href=\"#\">\n                            <i class=\"fa fa-clock-o\"></i>\n                            <span>24 Min Ago</span>\n                          </a>\n                        </li>\n                      </ul>\n                    </div>\n                  </li>\n                  <li>\n                    <time datetime>\n                      <a href=\"#\">\n                        <span>04</span> Feb\n                      </a>\n                    </time>\n                    <div class=\"tg-posdata\">\n                      <h4>\n                        <a href=\"#\">Claritas dynamicus qui seqauri mutatem consum.</a>\n                      </h4>\n                      <ul class=\"tg-postmetadata\">\n                        <li>\n                          <a href=\"#\">\n                            <i class=\"fa fa-clock-o\"></i>\n                            <span>24 Min Ago</span>\n                          </a>\n                        </li>\n                      </ul>\n                    </div>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div class=\"col-md-3 col-sm-6 col-xs-6\">\n              <div class=\"tg-widget tg-widgetflicker\">\n                <div class=\"tg-widgettitle\">\n                  <h3>Flickr Widget</h3>\n                </div>\n                <ul>\n                  <li>\n                    <figure>\n                      <a href=\"#\">\n                        <img src=\"img/thumbs/img-03.jpg\" alt=\"image description\" />\n                      </a>\n                    </figure>\n                  </li>\n                  <li>\n                    <figure>\n                      <a href=\"#\">\n                        <img src=\"img/thumbs/img-04.jpg\" alt=\"image description\" />\n                      </a>\n                    </figure>\n                  </li>\n                  <li>\n                    <figure>\n                      <a href=\"#\">\n                        <img src=\"img/thumbs/img-05.jpg\" alt=\"image description\" />\n                      </a>\n                    </figure>\n                  </li>\n                  <li>\n                    <figure>\n                      <a href=\"#\">\n                        <img src=\"img/thumbs/img-06.jpg\" alt=\"image description\" />\n                      </a>\n                    </figure>\n                  </li>\n                  <li>\n                    <figure>\n                      <a href=\"#\">\n                        <img src=\"img/thumbs/img-07.jpg\" alt=\"image description\" />\n                      </a>\n                    </figure>\n                  </li>\n                  <li>\n                    <figure>\n                      <a href=\"#\">\n                        <img src=\"img/thumbs/img-08.jpg\" alt=\"image description\" />\n                      </a>\n                    </figure>\n                  </li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-footerbottombar\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <span class=\"tg-copyright\">&copy; 2016 | All Rights Reserved</span>\n            <ul class=\"tg-socialicons\">\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-linkedin\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-twitter\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-facebook-f\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-pinterest-p\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-google-plus\"></i>\n                </a>\n              </li>\n            </ul>\n            <strong class=\"tg-logo\">\n              <a href=\"#\">\n                <img src=\"img/flogo.png\" alt=\"image description\" />\n              </a>\n            </strong>\n          </div>\n        </div>\n      </div>\n    </div>\n  </footer>\n</template>\n\n<script>\n  export default {\n    name: \"Footer\"\n  };\n</script>\n\n<style lang=\"css\">\n  footer {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\nfooter {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/FooterComponent.vue"],"names":[],"mappings":";AA6GA;EACA,iBAAA;CACA","file":"FooterComponent.vue","sourcesContent":["<template>\n  <footer id=\"tg-footer\" class=\"tg-footer tg-haslayout\">\n    <div class=\"tg-footermiddlearea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"tg-footerwidgets\">\n            <div class=\"col-md-4 col-sm-6 col-xs-6\">\n              <div class=\"tg-widget tg-widgetinfo\">\n                <div id=\"tg-footerlocation-map\" class=\"tg-footerlocation-map\"></div>\n                <h4>Head office</h4>\n                <ul class=\"tg-contactinfo\">\n                  <li>\n                    <i class=\"fa fa-home\"></i>\n                    <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>\n                  </li>\n                  <li>\n                    <i class=\"fa fa-envelope-o\"></i>\n                    <span>\n                      <a href=\"mailto:\">hello@tftglobal.com</a>\n                    </span>\n                  </li>\n                  <li>\n                    <i class=\"fa fa-phone\"></i>\n                    <span>+44 123 456 788 - 9</span>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div class=\"col-md-4 col-md-offset-3 col-sm-6 col-xs-6\">\n              <div class=\"tg-widget tg-widgetusefulllinks\">\n                <div class=\"tg-widgettitle\">\n                  <h3>useful links</h3>\n                </div>\n                <ul>\n                  <li>\n                    <a href=\"#\">Wealth Planning</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Investment Management</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Year-End Tax Planning</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Tax Advisory Services</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Small Business Taxes</a>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div class=\"col-md-3 col-sm-6 col-xs-6\"></div>\n            <div class=\"col-md-3 col-sm-6 col-xs-6\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-footerbottombar\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <span class=\"tg-copyright\">&copy; 2016 | All Rights Reserved</span>\n            <ul class=\"tg-socialicons\">\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-linkedin\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-twitter\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-facebook-f\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-pinterest-p\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-google-plus\"></i>\n                </a>\n              </li>\n            </ul>\n            <strong class=\"tg-logo\">\n              <a href=\"#\">\n                <img src=\"img/flogo.png\" alt=\"image description\" />\n              </a>\n            </strong>\n          </div>\n        </div>\n      </div>\n    </div>\n  </footer>\n</template>\n\n<script>\n  export default {\n    name: \"Footer\"\n  };\n</script>\n\n<style lang=\"css\">\n  footer {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5608,7 +5497,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\nheader {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AAiEA;EACA,iBAAA;CACA","file":"HeaderComponent.vue","sourcesContent":["<template>\n  <header id=\"tg-header\" class=\"tg-header tg-haslayout\">\n    <div class=\"tg-topbar tg-bglight tg-haslayout\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <ul class=\"tg-topcontactinfo\">\n              <li>\n                <i class=\"fa fa-phone\"></i>\n                <span>+1 2535 56854</span>\n              </li>\n              <li>\n                <i class=\"fa fa-envelope-o\"></i>\n                <span>\n                  <a href=\"mailto:hello@domain.com \">hello@domain.com</a>\n                </span>\n              </li>\n              <li>\n                <i class=\"fa fa-map-marker\"></i>\n                <address>Birmingham, England, B3 2EW</address>\n              </li>\n            </ul>\n            <nav class=\"tg-addnav tg-themecolor\">\n              <ul>\n                <li>\n                  <a href=\"#\">careers</a>\n                </li>\n                <li>\n                  <a href=\"#\">Contact</a>\n                </li>\n                <li>\n                  <a href=\"#\">terms &amp; contions</a>\n                </li>\n              </ul>\n            </nav>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-navigationarea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <strong class=\"tg-logo\">\n              <a href=\"index.html\">\n                <img src=\"img/logo.png\" alt=\"image description\" />\n              </a>\n            </strong>\n            <site-nav></site-nav>\n          </div>\n        </div>\n      </div>\n    </div>\n  </header>\n</template>\n\n<script>\n  import SiteNav from \"@components/partials/NavComponent\";\n  export default {\n    name: \"Header\",\n    components: { SiteNav }\n  };\n</script>\n\n<style lang=\"css\">\n  header {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\nheader {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AAiEA;EACA,iBAAA;CACA","file":"HeaderComponent.vue","sourcesContent":["<template>\n  <header id=\"tg-header\" class=\"tg-header tg-haslayout\">\n    <div class=\"tg-topbar tg-bglight tg-haslayout\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <ul class=\"tg-topcontactinfo\">\n              <li>\n                <i class=\"fa fa-phone\"></i>\n                <span>+1 2535 56854</span>\n              </li>\n              <li>\n                <i class=\"fa fa-envelope-o\"></i>\n                <span>\n                  <a href=\"mailto:hello@domain.com \">hello@domain.com</a>\n                </span>\n              </li>\n              <li>\n                <i class=\"fa fa-map-marker\"></i>\n                <address>Birmingham, England, B3 2EW</address>\n              </li>\n            </ul>\n            <nav class=\"tg-addnav tg-themecolor\">\n              <ul>\n                <router-link :to=\"{name: 'site.careers'}\" tag=\"li\">\n                  <a>careers</a>\n                </router-link>\n                <router-link :to=\"{name: 'site.contact'}\" tag=\"li\">\n                  <a>contact</a>\n                </router-link>\n                <!-- <router-link :to=\"{name: 'site.careers'}\" tag=\"li\">\n                  <a>terms &amp; conditions</a>\n                </router-link>-->\n              </ul>\n            </nav>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-navigationarea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <strong class=\"tg-logo\">\n              <a href=\"index.html\">\n                <img src=\"img/logo.png\" alt=\"image description\" />\n              </a>\n            </strong>\n            <site-nav></site-nav>\n          </div>\n        </div>\n      </div>\n    </div>\n  </header>\n</template>\n\n<script>\n  import SiteNav from \"@components/partials/NavComponent\";\n  export default {\n    name: \"Header\",\n    components: { SiteNav }\n  };\n</script>\n\n<style lang=\"css\">\n  header {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -27052,7 +26941,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "container" }, [
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "tg-footerwidgets" }, [
-                _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
+                _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-6" }, [
                   _c("div", { staticClass: "tg-widget tg-widgetinfo" }, [
                     _c("div", {
                       staticClass: "tg-footerlocation-map",
@@ -27076,16 +26965,9 @@ var staticRenderFns = [
                         _c("i", { staticClass: "fa fa-envelope-o" }),
                         _vm._v(" "),
                         _c("span", [
-                          _c(
-                            "a",
-                            {
-                              attrs: {
-                                href:
-                                  "mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#121;&#111;&#117;&#114;&#100;&#111;&#109;&#097;&#105;&#110;&#046;&#099;&#111;&#109;"
-                              }
-                            },
-                            [_vm._v("support@yourdomain.com")]
-                          )
+                          _c("a", { attrs: { href: "mailto:" } }, [
+                            _vm._v("hello@tftglobal.com")
+                          ])
                         ])
                       ]),
                       _vm._v(" "),
@@ -27098,234 +26980,57 @@ var staticRenderFns = [
                   ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
-                  _c(
-                    "div",
-                    { staticClass: "tg-widget tg-widgetusefulllinks" },
-                    [
-                      _c("div", { staticClass: "tg-widgettitle" }, [
-                        _c("h3", [_vm._v("useful links")])
-                      ]),
-                      _vm._v(" "),
-                      _c("ul", [
-                        _c("li", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Wealth Planning")
-                          ])
+                _c(
+                  "div",
+                  { staticClass: "col-md-4 col-md-offset-3 col-sm-6 col-xs-6" },
+                  [
+                    _c(
+                      "div",
+                      { staticClass: "tg-widget tg-widgetusefulllinks" },
+                      [
+                        _c("div", { staticClass: "tg-widgettitle" }, [
+                          _c("h3", [_vm._v("useful links")])
                         ]),
                         _vm._v(" "),
-                        _c("li", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Investment Management")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Year-End Tax Planning")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Tax Advisory Services")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v("Small Business Taxes")
+                        _c("ul", [
+                          _c("li", [
+                            _c("a", { attrs: { href: "#" } }, [
+                              _vm._v("Wealth Planning")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c("a", { attrs: { href: "#" } }, [
+                              _vm._v("Investment Management")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c("a", { attrs: { href: "#" } }, [
+                              _vm._v("Year-End Tax Planning")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c("a", { attrs: { href: "#" } }, [
+                              _vm._v("Tax Advisory Services")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c("a", { attrs: { href: "#" } }, [
+                              _vm._v("Small Business Taxes")
+                            ])
                           ])
                         ])
-                      ])
-                    ]
-                  )
-                ]),
+                      ]
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
-                  _c("div", { staticClass: "tg-widget tg-widgetrecentnews" }, [
-                    _c("div", { staticClass: "tg-widgettitle" }, [
-                      _c("h3", [_vm._v("Recent News")])
-                    ]),
-                    _vm._v(" "),
-                    _c("ul", [
-                      _c("li", [
-                        _c("time", { attrs: { datetime: "" } }, [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _c("span", [_vm._v("04")]),
-                            _vm._v(" Feb\n                    ")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-posdata" }, [
-                          _c("h4", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "Claritas dynamicus qui seqauri mutatem consum."
-                              )
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", { staticClass: "tg-postmetadata" }, [
-                            _c("li", [
-                              _c("a", { attrs: { href: "#" } }, [
-                                _c("i", { staticClass: "fa fa-clock-o" }),
-                                _vm._v(" "),
-                                _c("span", [_vm._v("24 Min Ago")])
-                              ])
-                            ])
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("time", { attrs: { datetime: "" } }, [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _c("span", [_vm._v("04")]),
-                            _vm._v(" Feb\n                    ")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-posdata" }, [
-                          _c("h4", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "Claritas dynamicus qui seqauri mutatem consum."
-                              )
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", { staticClass: "tg-postmetadata" }, [
-                            _c("li", [
-                              _c("a", { attrs: { href: "#" } }, [
-                                _c("i", { staticClass: "fa fa-clock-o" }),
-                                _vm._v(" "),
-                                _c("span", [_vm._v("24 Min Ago")])
-                              ])
-                            ])
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("time", { attrs: { datetime: "" } }, [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _c("span", [_vm._v("04")]),
-                            _vm._v(" Feb\n                    ")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-posdata" }, [
-                          _c("h4", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "Claritas dynamicus qui seqauri mutatem consum."
-                              )
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", { staticClass: "tg-postmetadata" }, [
-                            _c("li", [
-                              _c("a", { attrs: { href: "#" } }, [
-                                _c("i", { staticClass: "fa fa-clock-o" }),
-                                _vm._v(" "),
-                                _c("span", [_vm._v("24 Min Ago")])
-                              ])
-                            ])
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
+                _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
-                  _c("div", { staticClass: "tg-widget tg-widgetflicker" }, [
-                    _c("div", { staticClass: "tg-widgettitle" }, [
-                      _c("h3", [_vm._v("Flickr Widget")])
-                    ]),
-                    _vm._v(" "),
-                    _c("ul", [
-                      _c("li", [
-                        _c("figure", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _c("img", {
-                              attrs: {
-                                src: "img/thumbs/img-03.jpg",
-                                alt: "image description"
-                              }
-                            })
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("figure", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _c("img", {
-                              attrs: {
-                                src: "img/thumbs/img-04.jpg",
-                                alt: "image description"
-                              }
-                            })
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("figure", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _c("img", {
-                              attrs: {
-                                src: "img/thumbs/img-05.jpg",
-                                alt: "image description"
-                              }
-                            })
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("figure", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _c("img", {
-                              attrs: {
-                                src: "img/thumbs/img-06.jpg",
-                                alt: "image description"
-                              }
-                            })
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("figure", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _c("img", {
-                              attrs: {
-                                src: "img/thumbs/img-07.jpg",
-                                alt: "image description"
-                              }
-                            })
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("figure", [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _c("img", {
-                              attrs: {
-                                src: "img/thumbs/img-08.jpg",
-                                alt: "image description"
-                              }
-                            })
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
+                _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" })
               ])
             ])
           ])
@@ -28676,12 +28381,6 @@ var render = function() {
               "router-link",
               { attrs: { to: { name: "site.projects" }, tag: "li" } },
               [_c("a", [_vm._v("projects")])]
-            ),
-            _vm._v(" "),
-            _c(
-              "router-link",
-              { attrs: { to: { name: "site.careers" }, tag: "li" } },
-              [_c("a", [_vm._v("careers")])]
             ),
             _vm._v(" "),
             _c(
@@ -30203,7 +29902,35 @@ var render = function() {
     "header",
     { staticClass: "tg-header tg-haslayout", attrs: { id: "tg-header" } },
     [
-      _vm._m(0),
+      _c("div", { staticClass: "tg-topbar tg-bglight tg-haslayout" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c("nav", { staticClass: "tg-addnav tg-themecolor" }, [
+                _c(
+                  "ul",
+                  [
+                    _c(
+                      "router-link",
+                      { attrs: { to: { name: "site.careers" }, tag: "li" } },
+                      [_c("a", [_vm._v("careers")])]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      { attrs: { to: { name: "site.contact" }, tag: "li" } },
+                      [_c("a", [_vm._v("contact")])]
+                    )
+                  ],
+                  1
+                )
+              ])
+            ])
+          ])
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "tg-navigationarea" }, [
         _c("div", { staticClass: "container" }, [
@@ -30225,53 +29952,27 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "tg-topbar tg-bglight tg-haslayout" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
-            _c("ul", { staticClass: "tg-topcontactinfo" }, [
-              _c("li", [
-                _c("i", { staticClass: "fa fa-phone" }),
-                _vm._v(" "),
-                _c("span", [_vm._v("+1 2535 56854")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("i", { staticClass: "fa fa-envelope-o" }),
-                _vm._v(" "),
-                _c("span", [
-                  _c("a", { attrs: { href: "mailto:hello@domain.com " } }, [
-                    _vm._v("hello@domain.com")
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("i", { staticClass: "fa fa-map-marker" }),
-                _vm._v(" "),
-                _c("address", [_vm._v("Birmingham, England, B3 2EW")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("nav", { staticClass: "tg-addnav tg-themecolor" }, [
-              _c("ul", [
-                _c("li", [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("careers")])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("Contact")])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _vm._v("terms & contions")
-                  ])
-                ])
-              ])
-            ])
+    return _c("ul", { staticClass: "tg-topcontactinfo" }, [
+      _c("li", [
+        _c("i", { staticClass: "fa fa-phone" }),
+        _vm._v(" "),
+        _c("span", [_vm._v("+1 2535 56854")])
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("i", { staticClass: "fa fa-envelope-o" }),
+        _vm._v(" "),
+        _c("span", [
+          _c("a", { attrs: { href: "mailto:hello@domain.com " } }, [
+            _vm._v("hello@domain.com")
           ])
         ])
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("i", { staticClass: "fa fa-map-marker" }),
+        _vm._v(" "),
+        _c("address", [_vm._v("Birmingham, England, B3 2EW")])
       ])
     ])
   },
