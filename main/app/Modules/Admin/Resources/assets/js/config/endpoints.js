@@ -1,38 +1,36 @@
-// import { mix } from 'laravel-mix';
-//
-// if (mix.inProduction()) {
-//     const domain = 'https://playground.fastplay24.com/admin/api/';
-// }
-// else{
-//   // const domain = 'http://localhost:3000/tcom01/agents/api/';
-//   const domain = 'https://playground.fastplay24.com/admin/api/';
-// }
-
-export const apiDomain = 'http://localhost:8000/admin/api';
-
-// End Points
-
+export const apiDomain = '/admin/api/';
 /**
  *
  * @param {string} url
  */
-export const rootUrl = (url) => '/' + (url || '');
-export const apiRootUrl = (url) => (apiDomain + (url || ''));
-export const httpUserApiRootUrl = (url) => (apiDomain + 'admin/api/' + (url || ''));
-
+export const rootUrl = ( url ) => '/admin/' + ( url || '' );
+export const apiRootUrl = ( url ) => ( apiDomain + ( url || '' ) );
 
 export const siteRootUrl = rootUrl();
-export const siteWelcome = rootUrl('welcome');
+export const createSlider = apiRootUrl( 'slider/create' );
+export const getSliders = apiRootUrl( 'sliders' );
+export const deleteSlider = id => apiRootUrl( `slider/${id}/delete` );
+export const createProject = apiRootUrl( 'project/create' );
+export const getProjects = apiRootUrl( 'projects' );
+export const deleteProject = id => apiRootUrl( `project/${id}/delete` );
+export const createTeamMember = apiRootUrl( 'team-member/create' );
+export const getTeamMembers = apiRootUrl( 'team-members' );
+export const deleteTeamMember = id => apiRootUrl( `team-member/${id}/delete` );
+export const createClient = apiRootUrl( 'client/create' );
+export const getClients = apiRootUrl( 'clients' );
+export const deleteClient = id => apiRootUrl( `client/${id}/delete` );
 
 
-export const logout = (msg = null) => {
-    if (!msg) {
+
+export const logout = ( msg = null ) => {
+    if ( !msg ) {
         msg = "Logging you out....";
     }
-    swal(msg, {
-        buttons: false,
-    });
-    axios.post(rootUrl('logout')).then(rsp => {
+    swal.fire( {
+        text: msg,
+        showConfirmButton: false,
+    } );
+    axios.post( rootUrl( 'logout' ) ).then( rsp => {
         location.reload();
-    });
+    } );
 };

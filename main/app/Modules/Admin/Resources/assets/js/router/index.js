@@ -1,31 +1,23 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import {
-    siteRootUrl,
-    siteWelcome
-} from '../config/endpoints';
 
-import App from '../components/AppComponent';
-
-Vue.use(VueRouter);
+Vue.use( VueRouter );
 
 /**
  * Asynchronously load view (Webpack Lazy loading compatible)
  * @param  {string}   name     the filename (basename) of the view to load.
  */
-function view(name) {
-    return function(resolve) {
-        require(['../components/' + name], resolve);
+function view( name ) {
+    return function ( resolve ) {
+        require( [ '@adminComponents/pages/' + name ], resolve );
     };
 }
 
-
-
 export function createRouter() {
-    return new VueRouter({
+    return new VueRouter( {
         mode: 'history',
-        scrollBehavior(to, from, savedPosition) {
-            if (savedPosition) {
+        scrollBehavior( to, from, savedPosition ) {
+            if ( savedPosition ) {
                 return savedPosition;
             } else {
                 return {
@@ -34,44 +26,68 @@ export function createRouter() {
                 };
             }
         },
-        routes: [{
-                path: siteRootUrl,
-                // redirect: {
-                //     name: 'site.root'
-                // },
-                component: App,
-                name: 'root',
+        routes: [ {
+                path: '/admin',
+                name: 'admin.root',
+                redirect: {
+                    name: 'admin.sliders'
+                }
+            },
+            {
+                path: '/admin/dashboard',
+                name: 'admin.dashboard',
+                component: view( 'Dashboard' ),
                 meta: {
-                    title: 'Welcome | Home'
+                    title: 'Admin Manage Sliders'
                 },
-                children: [{
-                        // ViewAgents will be rendered inside App's <router-view>
-                        // when /tcom01/agents is matched
-                        path: siteWelcome,
-                        component: view('ExampleComponent'),
-                        name: 'site.root',
-                        meta: {
-                            title: 'Home'
-                        }
-                    },
-                    {
-                        path: 'login',
-                        // component: view('AdminEditAgentsComponent'),
-                        name: 'user.login',
-                        meta: {
-                            title: 'Login | Fastplay24 Admin'
-                        }
-                    },
-                ],
-
+            },
+            {
+                path: '/admin/sliders',
+                name: 'admin.sliders',
+                component: view( 'Sliders' ),
+                meta: {
+                    title: 'Admin Manage Sliders'
+                },
+            },
+            {
+                path: '/admin/projects',
+                name: 'admin.projects',
+                component: view( 'Projects' ),
+                meta: {
+                    title: 'Admin Manage Projects'
+                },
+            },
+            {
+                path: '/admin/team-members',
+                name: 'admin.team_members',
+                component: view( 'TeamMembers' ),
+                meta: {
+                    title: 'Admin Manage Team Members'
+                },
+            },
+            {
+                path: '/admin/clients',
+                name: 'admin.clients',
+                component: view( 'Clients' ),
+                meta: {
+                    title: 'Admin Manage Clients'
+                },
+            },
+            {
+                path: '/admin/login',
+                name: 'admin.login',
+                component: view( 'Login' ),
+                meta: {
+                    title: 'Admin Login'
+                },
             },
             {
                 path: '*',
                 redirect: {
-                    name: 'root'
+                    name: 'admin.login'
                 }
             }
         ],
 
-    });
+    } );
 }

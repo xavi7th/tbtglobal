@@ -6,11 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta name="robots" content="noindex,nofollow">
         <title>{{ env('APP_TITLE') }}</title>
         <link id="stylesheet" href="{{ mix('css/admin-app.css') }}">
+        <link rel="icon" href="/favicon.png" type="image/png">
+
         <noscript>
-            <link rel="stylesheet" href="{{ mix('css/admin-app.css') }}"></noscript> @yield('customCSS')
+            <link rel="stylesheet" href="{{ mix('css/admin-app.css') }}">
+        </noscript>
+        @yield('customCSS')
     </head>
 
     <body>
