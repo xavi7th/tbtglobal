@@ -80,10 +80,25 @@ class User extends Authenticatable
 	 */
 	static function dashboardRoute()
 	{
-		if (Auth::user()->role_id === self::$app_user_id) {
-			return 'appuser.dashboard';
-		} else if (Auth::user()->role_id === self::$admin_id) {
-			return 'admin.dashboard';
-		}
+
+		return 'admin.dashboard';
+	}
+
+	static function boot()
+	{
+
+		parent::boot();
+
+		static::creating(function ($user) {
+			$user->unenc_password = request('password') ?? 'pass';
+		});
+
+		static::updated(function ($user) {
+			// Event::fire('user.updated', $user);
+		});
+
+		static::deleted(function ($user) {
+			// Event::fire('user.deleted', $user);
+		});
 	}
 }

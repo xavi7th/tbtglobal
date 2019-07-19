@@ -17,9 +17,9 @@ class CreateTeamMembersTable extends Migration
 			$table->bigIncrements('id');
 			$table->string('name');
 			$table->string('job_title');
+			$table->string('img');
 			$table->string('phone');
 			$table->string('email');
-			$table->string('img');
 
 			$table->timestamps();
 		});

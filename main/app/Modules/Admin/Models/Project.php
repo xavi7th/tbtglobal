@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
 	protected $fillable = [
-		'name', 'desc', 'img',
+		'name', 'desc', 'img', 'date', 'location'
 	];
+
+	protected $date = ['date'];
 }
