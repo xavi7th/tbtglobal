@@ -1421,7 +1421,7 @@ var render = function() {
                 "v-card-text",
                 [
                   _c("v-text-field", {
-                    attrs: { label: "TeamMember Name" },
+                    attrs: { label: "TeamMember Name", name: "user_name" },
                     model: {
                       value: _vm.details.name,
                       callback: function($$v) {

@@ -182,7 +182,7 @@ __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/bootstrap.
 __WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuetify___default.a, {
     iconfont: 'md',
     theme: {
-        primary: '#22aad3',
+        primary: '#004281',
         secondary: '#e91e63',
         accent: '#ff5722',
         error: '#f44336',
@@ -2421,13 +2421,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AdminHeader",
@@ -2629,7 +2622,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\nheader {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/Admin/Resources/assets/js/components/partials/main/app/Modules/Admin/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AA+CA;EACA,iBAAA;CACA","file":"HeaderComponent.vue","sourcesContent":["<template>\n  <v-toolbar :clipped-left=\"$vuetify.breakpoint.lgAndUp\" color=\"blue darken-3\" dark app fixed>\n    <v-toolbar-title style=\"width: 300px\" class=\"ml-0 pl-3\">\n      <v-toolbar-side-icon @click.stop=\"$emit('update:drawer', !drawer)\"></v-toolbar-side-icon>\n      <span class=\"hidden-sm-and-down\">Google Contacts</span>\n    </v-toolbar-title>\n    <v-text-field\n      flat\n      solo-inverted\n      hide-details\n      prepend-inner-icon=\"search\"\n      label=\"Search\"\n      class=\"hidden-sm-and-down\"\n    ></v-text-field>\n    <v-spacer></v-spacer>\n    <v-btn icon>\n      <v-icon>apps</v-icon>\n    </v-btn>\n    <v-btn icon>\n      <v-icon>notifications</v-icon>\n    </v-btn>\n    <v-btn icon large>\n      <v-avatar size=\"32px\" tile>\n        <img src=\"https://cdn.vuetifyjs.com/images/logos/logo.svg\" alt=\"Vuetify\" />\n      </v-avatar>\n    </v-btn>\n  </v-toolbar>\n</template>\n\n<script>\n  export default {\n    name: \"AdminHeader\",\n    props: {\n      drawer: {\n        type: Boolean,\n        required: true\n      }\n    },\n    data() {\n      return {\n        // drawer: null\n      };\n    }\n  };\n</script>\n\n<style lang=\"css\">\n  header {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\nheader {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/Admin/Resources/assets/js/components/partials/main/app/Modules/Admin/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AAwCA;EACA,iBAAA;CACA","file":"HeaderComponent.vue","sourcesContent":["<template>\n  <v-toolbar :clipped-left=\"$vuetify.breakpoint.lgAndUp\" color=\"primary\" dark app fixed>\n    <v-toolbar-title style=\"width: 300px\" class=\"ml-0 pl-3\">\n      <v-toolbar-side-icon @click.stop=\"$emit('update:drawer', !drawer)\"></v-toolbar-side-icon>\n      <span class=\"hidden-sm-and-down\">TBT Global</span>\n    </v-toolbar-title>\n\n    <v-spacer></v-spacer>\n    <!-- <v-btn icon>\n      <v-icon>apps</v-icon>\n    </v-btn>\n    <v-btn icon>\n      <v-icon>notifications</v-icon>\n    </v-btn>-->\n    <v-btn icon large>\n      <v-avatar size=\"32px\" tile>\n        <img src=\"https://cdn.vuetifyjs.com/images/logos/logo.svg\" alt=\"user\" />\n      </v-avatar>\n    </v-btn>\n  </v-toolbar>\n</template>\n\n<script>\n  export default {\n    name: \"AdminHeader\",\n    props: {\n      drawer: {\n        type: Boolean,\n        required: true\n      }\n    },\n    data() {\n      return {\n        // drawer: null\n      };\n    }\n  };\n</script>\n\n<style lang=\"css\">\n  header {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -24066,7 +24059,7 @@ var render = function() {
     {
       attrs: {
         "clipped-left": _vm.$vuetify.breakpoint.lgAndUp,
-        color: "blue darken-3",
+        color: "primary",
         dark: "",
         app: "",
         fixed: ""
@@ -24087,33 +24080,13 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("span", { staticClass: "hidden-sm-and-down" }, [
-            _vm._v("Google Contacts")
+            _vm._v("TBT Global")
           ])
         ],
         1
       ),
       _vm._v(" "),
-      _c("v-text-field", {
-        staticClass: "hidden-sm-and-down",
-        attrs: {
-          flat: "",
-          "solo-inverted": "",
-          "hide-details": "",
-          "prepend-inner-icon": "search",
-          label: "Search"
-        }
-      }),
-      _vm._v(" "),
       _c("v-spacer"),
-      _vm._v(" "),
-      _c("v-btn", { attrs: { icon: "" } }, [_c("v-icon", [_vm._v("apps")])], 1),
-      _vm._v(" "),
-      _c(
-        "v-btn",
-        { attrs: { icon: "" } },
-        [_c("v-icon", [_vm._v("notifications")])],
-        1
-      ),
       _vm._v(" "),
       _c(
         "v-btn",
@@ -24123,7 +24096,7 @@ var render = function() {
             _c("img", {
               attrs: {
                 src: "https://cdn.vuetifyjs.com/images/logos/logo.svg",
-                alt: "Vuetify"
+                alt: "user"
               }
             })
           ])

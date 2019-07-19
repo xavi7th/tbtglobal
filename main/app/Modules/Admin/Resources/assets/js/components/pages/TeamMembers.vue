@@ -30,7 +30,7 @@
     <v-dialog v-model="dialog" max-width="500px">
       <v-card>
         <v-card-text>
-          <v-text-field label="TeamMember Name" v-model="details.name"></v-text-field>
+          <v-text-field label="TeamMember Name" v-model="details.name" name="user_name"></v-text-field>
 
           <v-text-field label="Job Title" v-model="details.job_title"></v-text-field>
 

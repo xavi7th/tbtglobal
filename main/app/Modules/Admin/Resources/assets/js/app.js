@@ -21,7 +21,7 @@ import App from '@adminComponents/AppComponent.vue';
 Vue.use( Vuetify, {
     iconfont: 'md',
     theme: {
-        primary: '#22aad3',
+        primary: '#004281',
         secondary: '#e91e63',
         accent: '#ff5722',
         error: '#f44336',
