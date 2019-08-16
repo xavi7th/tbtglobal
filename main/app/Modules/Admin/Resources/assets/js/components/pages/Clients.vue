@@ -30,8 +30,6 @@
     <v-dialog v-model="dialog" max-width="500px">
       <v-card>
         <v-card-text>
-          <v-text-field label="Client Name" v-model="details.name"></v-text-field>
-
           <v-flex xs12 class="text-xs-center text-sm-center text-md-center text-lg-center">
             <img :src="details.imageUrl" height="150" v-if="details.imageUrl" />
             <v-text-field
@@ -48,6 +46,8 @@
               @change="onFilePicked"
             />
           </v-flex>
+
+          <v-text-field label="Client Name" v-model="details.name"></v-text-field>
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>

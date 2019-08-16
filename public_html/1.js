@@ -909,6 +909,29 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -940,27 +963,58 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         }
       });
     },
-    createSlider: function createSlider() {
+    pickFile: function pickFile() {
+      this.$refs.image.click();
+    },
+    onFilePicked: function onFilePicked(e) {
       var _this2 = this;
+
+      var files = e.target.files;
+      if (files[0] !== undefined) {
+        this.details.imageName = files[0].name;
+        if (this.details.imageName.lastIndexOf(".") <= 0) {
+          return;
+        }
+        var fr = new FileReader();
+        fr.readAsDataURL(files[0]);
+        fr.addEventListener("load", function () {
+          _this2.details.imageUrl = fr.result;
+        });
+      } else {
+        this.details.imageName = "";
+        this.details.imageUrl = "";
+      }
+    },
+    createSlider: function createSlider() {
+      var _this3 = this;
 
       BlockToast.fire({
         title: "Creating..."
       });
 
       axios.post(__WEBPACK_IMPORTED_MODULE_0__adminAssets_js_config_endpoints__["c" /* createSlider */], _extends({}, this.details)).then(function (rsp) {
-        if (rsp.status == 201) {
+        if (undefined !== rsp && rsp.status == 201) {
           swal.fire({
             title: "Created",
             type: "success"
           });
 
-          _this2.details = {};
-          _this2.dialog = false;
+          _this3.details = {};
+          _this3.dialog = false;
+        }
+      }).catch(function (err) {
+        console.log(err.response);
+        if (err.response.status == 520) {
+          swal.fire({
+            title: "Error",
+            html: err.response.data.message,
+            type: "error"
+          });
         }
       });
     },
     deleteSlider: function deleteSlider(slider) {
-      var _this3 = this;
+      var _this4 = this;
 
       swal.fire({
         title: "Are you sure?",
@@ -985,9 +1039,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 type: "success"
               });
 
-              var removed = _this3.rows.indexOf(slider);
+              var removed = _this4.rows.indexOf(slider);
               if (removed != -1) {
-                _this3.rows.splice(removed, 1);
+                _this4.rows.splice(removed, 1);
               }
             }
           });
@@ -2006,17 +2060,6 @@ var render = function() {
               _c(
                 "v-card-text",
                 [
-                  _c("v-text-field", {
-                    attrs: { label: "Client Name" },
-                    model: {
-                      value: _vm.details.name,
-                      callback: function($$v) {
-                        _vm.$set(_vm.details, "name", $$v)
-                      },
-                      expression: "details.name"
-                    }
-                  }),
-                  _vm._v(" "),
                   _c(
                     "v-flex",
                     {
@@ -2054,7 +2097,18 @@ var render = function() {
                       })
                     ],
                     1
-                  )
+                  ),
+                  _vm._v(" "),
+                  _c("v-text-field", {
+                    attrs: { label: "Client Name" },
+                    model: {
+                      value: _vm.details.name,
+                      callback: function($$v) {
+                        _vm.$set(_vm.details, "name", $$v)
+                      },
+                      expression: "details.name"
+                    }
+                  })
                 ],
                 1
               ),
@@ -2144,11 +2198,30 @@ var render = function() {
                         _c("td", [_vm._v(_vm._s(props.item.id))]),
                         _vm._v(" "),
                         _c("td", { staticClass: "text-xs-left" }, [
-                          _vm._v(_vm._s(props.item.highlight_text))
+                          _vm._v(_vm._s(props.item.small_title))
                         ]),
                         _vm._v(" "),
                         _c("td", { staticClass: "text-xs-left" }, [
-                          _vm._v(_vm._s(props.item.main_text))
+                          _vm._v(_vm._s(props.item.big_title))
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-xs-left" }, [
+                          _vm._v(_vm._s(props.item.desc))
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-xs-left" }, [
+                          _vm._v(_vm._s(props.item.position))
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-xs-left" }, [
+                          _c("img", {
+                            staticClass: "img-responsive",
+                            attrs: {
+                              src: props.item.img,
+                              alt: "",
+                              width: "200"
+                            }
+                          })
                         ]),
                         _vm._v(" "),
                         _c(
@@ -2226,34 +2299,103 @@ var render = function() {
               _c(
                 "v-card-text",
                 [
+                  _c(
+                    "v-flex",
+                    {
+                      staticClass:
+                        "text-xs-center text-sm-center text-md-center text-lg-center",
+                      attrs: { xs12: "" }
+                    },
+                    [
+                      _vm.details.imageUrl
+                        ? _c("img", {
+                            attrs: { src: _vm.details.imageUrl, height: "150" }
+                          })
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Select Image",
+                          "prepend-icon": "attach_file"
+                        },
+                        on: { click: _vm.pickFile },
+                        model: {
+                          value: _vm.details.imageName,
+                          callback: function($$v) {
+                            _vm.$set(_vm.details, "imageName", $$v)
+                          },
+                          expression: "details.imageName"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("input", {
+                        ref: "image",
+                        staticStyle: { display: "none" },
+                        attrs: { type: "file", accept: "image/*" },
+                        on: { change: _vm.onFilePicked }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
                   _c("v-text-field", {
-                    attrs: { label: "Highlight Text" },
+                    attrs: { label: "Small Title" },
                     model: {
-                      value: _vm.details.highlight_text,
+                      value: _vm.details.small_title,
                       callback: function($$v) {
-                        _vm.$set(_vm.details, "highlight_text", $$v)
+                        _vm.$set(_vm.details, "small_title", $$v)
                       },
-                      expression: "details.highlight_text"
+                      expression: "details.small_title"
                     }
                   }),
                   _vm._v(" "),
                   _c("small", { staticClass: "grey--text" }, [
-                    _vm._v("* The smaller writing.")
+                    _vm._v("* The smaller title text.")
                   ]),
                   _vm._v(" "),
                   _c("v-text-field", {
-                    attrs: { label: "Main Text" },
+                    attrs: { label: "Big Title" },
                     model: {
-                      value: _vm.details.main_text,
+                      value: _vm.details.big_title,
                       callback: function($$v) {
-                        _vm.$set(_vm.details, "main_text", $$v)
+                        _vm.$set(_vm.details, "big_title", $$v)
                       },
-                      expression: "details.main_text"
+                      expression: "details.big_title"
                     }
                   }),
                   _vm._v(" "),
                   _c("small", { staticClass: "grey--text" }, [
-                    _vm._v("* The larger writing.")
+                    _vm._v("* The larger title text.")
+                  ]),
+                  _vm._v(" "),
+                  _c("v-text-field", {
+                    attrs: { label: "Short Description" },
+                    model: {
+                      value: _vm.details.desc,
+                      callback: function($$v) {
+                        _vm.$set(_vm.details, "desc", $$v)
+                      },
+                      expression: "details.desc"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("small", { staticClass: "grey--text" }, [
+                    _vm._v("* The larger title text.")
+                  ]),
+                  _vm._v(" "),
+                  _c("v-text-field", {
+                    attrs: { label: "Text Position" },
+                    model: {
+                      value: _vm.details.position,
+                      callback: function($$v) {
+                        _vm.$set(_vm.details, "position", $$v)
+                      },
+                      expression: "details.position"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("small", { staticClass: "grey--text" }, [
+                    _vm._v("* left, right. center.")
                   ])
                 ],
                 1
@@ -2280,12 +2422,7 @@ var render = function() {
                   _c(
                     "v-btn",
                     {
-                      attrs: {
-                        flat: "",
-                        color: "primary",
-                        disabled:
-                          !_vm.details.highlight_text || !_vm.details.main_text
-                      },
+                      attrs: { flat: "", color: "primary" },
                       on: { click: _vm.createSlider }
                     },
                     [_vm._v("Submit")]
