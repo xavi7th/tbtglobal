@@ -9,8 +9,11 @@ class SlideTransformer
 	{
 		return [
 			'id' => $slide->id,
-			'highlight_text' => $slide->highlight_text,
-			'main_text' => $slide->main_text,
+			'small_title' => $slide->small_title,
+			'big_title' => $slide->big_title,
+			'desc' => $slide->desc,
+			'position' => $slide->position,
+			'img' => $slide->img,
 			// 'actions' => null
 		];
 	}
@@ -26,14 +29,30 @@ class SlideTransformer
 					'value' => "id"
 				],
 				[
-					'text' => 'Highlight Text',
-					'value' => "highlight_text",
+					'text' => 'Small Title',
+					'value' => "small_title",
 					'align' => "center",
 					'sortable' => true
 				],
 				[
-					'text' => 'Main Text',
-					'value' => "main_text",
+					'text' => 'Big Title',
+					'value' => "big_title",
+					'align' => "center",
+				],
+				[
+					'text' => 'Description',
+					'value' => "desc",
+					'align' => "center",
+					'sortable' => true
+				],
+				[
+					'text' => 'Position',
+					'value' => "position",
+					'align' => "center",
+				],
+				[
+					'text' => 'Image',
+					'value' => "img",
 					'align' => "center",
 				],
 				[

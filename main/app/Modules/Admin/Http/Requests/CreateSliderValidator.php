@@ -16,8 +16,12 @@ class CreateSliderValidator extends FormRequest
 	public function rules()
 	{
 		return [
-			'highlight_text' => 'required',
-			'main_text' => 'required|unique:sliders,main_text',
+			'small_title' => 'required',
+			'big_title' => 'required|unique:sliders,big_title',
+			'desc' => 'required',
+			'position' => 'required',
+			'imageUrl' => 'required',
+			'imageName' => 'required',
 		];
 	}
 

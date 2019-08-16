@@ -41,7 +41,17 @@ class AdminController extends Controller
 					});
 
 					Route::post('/slider/create', function (CreateSliderValidator $request) {
-						Slider::create($request->all());
+						try {
+							Slider::create([
+								'small_title' => request('small_title'),
+								'big_title' => request('big_title'),
+								'desc' => request('desc'),
+								'position' => request('position'),
+								'img' => ajax_upload_image(request('imageUrl'), 'projects'),
+							]);
+						} catch (\Throwable $e) {
+							return response()->json(['message' => $e->getMessage()], 520);
+						}
 						return response()->json(['status' => true], 201);
 					});
 
