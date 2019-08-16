@@ -2994,7 +2994,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_partials_home_AdsBar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_partials_home_AdsBar__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_partials_home_OurClients__ = __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/OurClients.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_partials_home_OurClients___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_partials_home_OurClients__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__assets_js_config_pageload_mixin__ = __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/config/pageload.mixin.js");
 //
 //
 //
@@ -3021,7 +3020,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
+// import pageLoad from "@assets/js/config/pageload.mixin";
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "HomePage",
   components: {
@@ -3036,7 +3035,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     AdsBar: __WEBPACK_IMPORTED_MODULE_8__components_partials_home_AdsBar___default.a,
     OurClients: __WEBPACK_IMPORTED_MODULE_9__components_partials_home_OurClients___default.a
   },
-  mixins: [__WEBPACK_IMPORTED_MODULE_10__assets_js_config_pageload_mixin__["a" /* default */]]
+  methods: {
+    loadPage: function loadPage() {
+      this.$emit("page-loaded");
+    }
+  }
+  // mixins: [pageLoad]
 });
 
 /***/ }),
@@ -3046,6 +3050,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3371,9 +3392,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
 //
 //
 //
@@ -4684,6 +4702,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_js_config_pageload_mixin__ = __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/config/pageload.mixin.js");
 //
 //
 //
@@ -4712,7 +4731,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  mixins: [__WEBPACK_IMPORTED_MODULE_0__assets_js_config_pageload_mixin__["a" /* default */]],
   data: function data() {
     return {
       slides: {}
@@ -5058,20 +5079,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -5169,7 +5176,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"WhatWeOffer.vue","sourceRoot":""}]);
+exports.push([module.i, "\n.tg-heading h4[data-v-0136c48a] {\n  line-height: 1.5;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/WhatWeOffer.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;CAAE","file":"WhatWeOffer.vue","sourcesContent":[".tg-heading h4 {\n  line-height: 1.5; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5244,7 +5251,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\nfooter {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/FooterComponent.vue"],"names":[],"mappings":";AA6GA;EACA,iBAAA;CACA","file":"FooterComponent.vue","sourcesContent":["<template>\n  <footer id=\"tg-footer\" class=\"tg-footer tg-haslayout\">\n    <div class=\"tg-footermiddlearea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"tg-footerwidgets\">\n            <div class=\"col-md-4 col-sm-6 col-xs-6\">\n              <div class=\"tg-widget tg-widgetinfo\">\n                <div id=\"tg-footerlocation-map\" class=\"tg-footerlocation-map\"></div>\n                <h4>Head office</h4>\n                <ul class=\"tg-contactinfo\">\n                  <li>\n                    <i class=\"fa fa-home\"></i>\n                    <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>\n                  </li>\n                  <li>\n                    <i class=\"fa fa-envelope-o\"></i>\n                    <span>\n                      <a href=\"mailto:\">hello@tftglobal.com</a>\n                    </span>\n                  </li>\n                  <li>\n                    <i class=\"fa fa-phone\"></i>\n                    <span>+44 123 456 788 - 9</span>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div class=\"col-md-4 col-md-offset-3 col-sm-6 col-xs-6\">\n              <div class=\"tg-widget tg-widgetusefulllinks\">\n                <div class=\"tg-widgettitle\">\n                  <h3>useful links</h3>\n                </div>\n                <ul>\n                  <li>\n                    <a href=\"#\">Wealth Planning</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Investment Management</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Year-End Tax Planning</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Tax Advisory Services</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Small Business Taxes</a>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div class=\"col-md-3 col-sm-6 col-xs-6\"></div>\n            <div class=\"col-md-3 col-sm-6 col-xs-6\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-footerbottombar\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <span class=\"tg-copyright\">&copy; 2016 | All Rights Reserved</span>\n            <ul class=\"tg-socialicons\">\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-linkedin\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-twitter\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-facebook-f\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-pinterest-p\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-google-plus\"></i>\n                </a>\n              </li>\n            </ul>\n            <strong class=\"tg-logo\">\n              <a href=\"#\">\n                <img src=\"img/flogo.png\" alt=\"image description\" />\n              </a>\n            </strong>\n          </div>\n        </div>\n      </div>\n    </div>\n  </footer>\n</template>\n\n<script>\n  export default {\n    name: \"Footer\"\n  };\n</script>\n\n<style lang=\"css\">\n  footer {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\nfooter {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/FooterComponent.vue"],"names":[],"mappings":";AA8HA;EACA,iBAAA;CACA","file":"FooterComponent.vue","sourcesContent":["<template>\n  <footer id=\"tg-footer\" class=\"tg-footer tg-haslayout\">\n    <div class=\"tg-footermiddlearea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"tg-footerwidgets\">\n            <div class=\"col-md-4 col-sm-6 col-xs-6\">\n              <div class=\"tg-widget tg-widgetinfo\">\n                <div id=\"tg-footerlocation-map\" class=\"tg-footerlocation-map\"></div>\n                <h4>Head office</h4>\n                <ul class=\"tg-contactinfo\">\n                  <li>\n                    <i class=\"fa fa-home\"></i>\n                    <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>\n                  </li>\n                  <li>\n                    <i class=\"fa fa-envelope-o\"></i>\n                    <span>\n                      <a href=\"mailto:\">hello@tftglobal.com</a>\n                    </span>\n                  </li>\n                  <li>\n                    <i class=\"fa fa-phone\"></i>\n                    <span>+44 123 456 788 - 9</span>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div class=\"col-md-3 col-sm-6 col-xs-6 col-md-offset-2\">\n              <div class=\"tg-widget tg-widgetusefulllinks\">\n                <div class=\"tg-widgettitle\">\n                  <h3>useful links</h3>\n                </div>\n                <ul>\n                  <li>\n                    <a href=\"#\">Valve Maintenance</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">I &amp; E Services</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Insulation of hot surfaces</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Sand blasting and painting</a>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div class=\"col-md-3 col-sm-6 col-xs-6\">\n              <div class=\"tg-widget tg-widgetusefulllinks\">\n                <div class=\"tg-widgettitle\">\n                  <h3>&nbsp;</h3>\n                </div>\n                <ul>\n                  <li>\n                    <a href=\"#\">Sand Vessel Cleaning</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Procurement &amp; Supplies</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">MHE Services</a>\n                  </li>\n                  <li>\n                    <a href=\"#\">Manpower Supply &amp; Service</a>\n                  </li>\n                </ul>\n              </div>\n            </div>\n            <div class=\"col-md-3 col-sm-6 col-xs-6\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-footerbottombar\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <span class=\"tg-copyright\">&copy; 2016 - 2019 | All Rights Reserved</span>\n            <ul class=\"tg-socialicons\">\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-linkedin\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-twitter\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-facebook-f\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-pinterest-p\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-google-plus\"></i>\n                </a>\n              </li>\n            </ul>\n            <strong class=\"tg-logo\">\n              <a href=\"#\">\n                <!-- <img src=\"img/logo.png\" alt=\"image description\" /> -->\n              </a>\n            </strong>\n          </div>\n        </div>\n      </div>\n    </div>\n  </footer>\n</template>\n\n<script>\n  export default {\n    name: \"Footer\"\n  };\n</script>\n\n<style lang=\"css\">\n  footer {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5364,7 +5371,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.tg-404content h2 .tg-svginject image,\n.tg-svginject path {\n  fill: #fff !important;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/Slider.vue"],"names":[],"mappings":";AA+DA;;EAEA,sBAAA;CACA","file":"Slider.vue","sourcesContent":["<template>\n  <div id=\"tg-homeslider\" class=\"tg-homeslider tg-haslayout\">\n    <figure class=\"item\" v-for=\"slide in slides\" :key=\"slide.name\">\n      <img :src=\"slide.img\" alt=\"image description\" />\n      <figcaption>\n        <div class=\"container\">\n          <div class=\"row\">\n            <div :class=\"`col-md-7 col-sm-10 col-xs-12 pull-${slide.position}`\">\n              <h1>{{ slide.small_text }}</h1>\n              <h2>{{ slide.big_text }}</h2>\n              <img class=\"tg-svginject\" src=\"img/img-01.svg\" alt=\"image description\" />\n              <div class=\"tg-description\">\n                <p>{{ slide.desc }}</p>\n              </div>\n              <div class=\"tg-btnsbox\">\n                <router-link class=\"tg-btn\" :to=\"{name: 'site.root'}\">\n                  <span>View services</span>\n                </router-link>\n              </div>\n            </div>\n          </div>\n        </div>\n      </figcaption>\n    </figure>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        slides: {}\n      };\n    },\n    created() {\n      axios.get(\"/api/sliders\").then(rsp => {\n        if (rsp.status == 200) {\n          this.slides = rsp.data.slides.rows;\n        }\n      });\n    }\n  };\n</script>\n\n<style lang=\"scss\" scoped>\n  .tg-btn {\n    color: #fff;\n    border-color: #fff;\n\n    &:hover {\n      border-color: #004281;\n    }\n  }\n\n  .tg-description {\n    color: #fff;\n  }\n  // \t.tg-404content h2 .tg-svginject image, .tg-svginject path {\n  //     fill: #004281 !important;\n  // }\n</style>\n\n<style>\n  .tg-404content h2 .tg-svginject image,\n  .tg-svginject path {\n    fill: #fff !important;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-404content h2 .tg-svginject image,\n.tg-svginject path {\n  fill: #fff !important;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/Slider.vue"],"names":[],"mappings":";AAiEA;;EAEA,sBAAA;CACA","file":"Slider.vue","sourcesContent":["<template>\n  <div id=\"tg-homeslider\" class=\"tg-homeslider tg-haslayout\">\n    <figure class=\"item\" v-for=\"slide in slides\" :key=\"slide.name\">\n      <img :src=\"slide.img\" alt=\"image description\" />\n      <figcaption>\n        <div class=\"container\">\n          <div class=\"row\">\n            <div :class=\"`col-md-7 col-sm-10 col-xs-12 pull-${slide.position}`\">\n              <h1>{{ slide.small_text }}</h1>\n              <h2>{{ slide.big_text }}</h2>\n              <img class=\"tg-svginject\" src=\"img/img-01.svg\" alt=\"image description\" />\n              <div class=\"tg-description\">\n                <p>{{ slide.desc }}</p>\n              </div>\n              <div class=\"tg-btnsbox\">\n                <router-link class=\"tg-btn\" :to=\"{name: 'site.root'}\">\n                  <span>View services</span>\n                </router-link>\n              </div>\n            </div>\n          </div>\n        </div>\n      </figcaption>\n    </figure>\n  </div>\n</template>\n\n<script>\n  import pageLoad from \"@assets/js/config/pageload.mixin\";\n  export default {\n    mixins: [pageLoad],\n    data() {\n      return {\n        slides: {}\n      };\n    },\n    created() {\n      axios.get(\"/api/sliders\").then(rsp => {\n        if (rsp.status == 200) {\n          this.slides = rsp.data.slides.rows;\n        }\n      });\n    }\n  };\n</script>\n\n<style lang=\"scss\" scoped>\n  .tg-btn {\n    color: #fff;\n    border-color: #fff;\n\n    &:hover {\n      border-color: #004281;\n    }\n  }\n\n  .tg-description {\n    color: #fff;\n  }\n  // \t.tg-404content h2 .tg-svginject image, .tg-svginject path {\n  //     fill: #004281 !important;\n  // }\n</style>\n\n<style>\n  .tg-404content h2 .tg-svginject image,\n  .tg-svginject path {\n    fill: #fff !important;\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5394,7 +5401,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\nheader {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AAiEA;EACA,iBAAA;CACA","file":"HeaderComponent.vue","sourcesContent":["<template>\n  <header id=\"tg-header\" class=\"tg-header tg-haslayout\">\n    <div class=\"tg-topbar tg-bglight tg-haslayout\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <ul class=\"tg-topcontactinfo\">\n              <li>\n                <i class=\"fa fa-phone\"></i>\n                <span>+1 2535 56854</span>\n              </li>\n              <li>\n                <i class=\"fa fa-envelope-o\"></i>\n                <span>\n                  <a href=\"mailto:hello@domain.com \">hello@domain.com</a>\n                </span>\n              </li>\n              <li>\n                <i class=\"fa fa-map-marker\"></i>\n                <address>Birmingham, England, B3 2EW</address>\n              </li>\n            </ul>\n            <nav class=\"tg-addnav tg-themecolor\">\n              <ul>\n                <router-link :to=\"{name: 'site.careers'}\" tag=\"li\">\n                  <a>careers</a>\n                </router-link>\n                <router-link :to=\"{name: 'site.contact'}\" tag=\"li\">\n                  <a>contact</a>\n                </router-link>\n                <!-- <router-link :to=\"{name: 'site.careers'}\" tag=\"li\">\n                  <a>terms &amp; conditions</a>\n                </router-link>-->\n              </ul>\n            </nav>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-navigationarea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <strong class=\"tg-logo\">\n              <a href=\"index.html\">\n                <img src=\"img/logo.png\" alt=\"image description\" />\n              </a>\n            </strong>\n            <site-nav></site-nav>\n          </div>\n        </div>\n      </div>\n    </div>\n  </header>\n</template>\n\n<script>\n  import SiteNav from \"@components/partials/NavComponent\";\n  export default {\n    name: \"Header\",\n    components: { SiteNav }\n  };\n</script>\n\n<style lang=\"css\">\n  header {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-logo {\n  margin: 0;\n  width: 11%;\n}\nbody.tg-fixednav .tg-logo {\n  margin: 0;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AAiEA;EACA,UAAA;EACA,WAAA;CACA;AAEA;EACA,UAAA;CACA","file":"HeaderComponent.vue","sourcesContent":["<template>\n  <header id=\"tg-header\" class=\"tg-header tg-haslayout\">\n    <div class=\"tg-topbar tg-bglight tg-haslayout\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <ul class=\"tg-topcontactinfo\">\n              <li>\n                <i class=\"fa fa-phone\"></i>\n                <span>+234 803 441 1661</span>\n              </li>\n              <li>\n                <i class=\"fa fa-envelope-o\"></i>\n                <span>\n                  <a href=\"mailto:hello@domain.com \">hello@tbt-gbc.com</a>\n                </span>\n              </li>\n              <li>\n                <i class=\"fa fa-map-marker\"></i>\n                <address>Warri, Delta State Nigeria</address>\n              </li>\n            </ul>\n            <nav class=\"tg-addnav tg-themecolor\">\n              <ul>\n                <router-link :to=\"{name: 'site.careers'}\" tag=\"li\">\n                  <a>careers</a>\n                </router-link>\n                <router-link :to=\"{name: 'site.contact'}\" tag=\"li\">\n                  <a>contact</a>\n                </router-link>\n                <!-- <router-link :to=\"{name: 'site.careers'}\" tag=\"li\">\n                  <a>terms &amp; conditions</a>\n                </router-link>-->\n              </ul>\n            </nav>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-navigationarea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <strong class=\"tg-logo\">\n              <a href=\"index.html\">\n                <img src=\"img/logo.png\" alt=\"image description\" />\n              </a>\n            </strong>\n            <site-nav></site-nav>\n          </div>\n        </div>\n      </div>\n    </div>\n  </header>\n</template>\n\n<script>\n  import SiteNav from \"@components/partials/NavComponent\";\n  export default {\n    name: \"Header\",\n    components: { SiteNav }\n  };\n</script>\n\n<style lang=\"css\">\n  .tg-logo {\n    margin: 0;\n    width: 11%;\n  }\n\n  body.tg-fixednav .tg-logo {\n    margin: 0;\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -26096,10 +26103,6 @@ var staticRenderFns = [
             },
             [
               _c("div", { staticClass: "item tg-service" }, [
-                _c("span", { staticClass: "tg-seviceicon" }, [
-                  _c("i", { staticClass: "fa fa-balance-scale" })
-                ]),
-                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
@@ -26118,14 +26121,10 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
-                _c("span", { staticClass: "tg-seviceicon" }, [
-                  _c("i", { staticClass: "fa fa-line-chart" })
-                ]),
-                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Financial planning")
+                      _vm._v("Valve Maintenence")
                     ])
                   ])
                 ]),
@@ -26140,14 +26139,26 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
-                _c("span", { staticClass: "tg-seviceicon" }, [
-                  _c("i", { staticClass: "fa fa-trophy" })
+                _c("div", { staticClass: "tg-heading" }, [
+                  _c("h4", [
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("I&E Services")])
+                  ])
                 ]),
                 _vm._v(" "),
+                _c("div", { staticClass: "tg-description" }, [
+                  _c("p", [
+                    _vm._v(
+                      "\n              Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore\n              magna aliqua.\n            "
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "item tg-service" }, [
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("investment banking")
+                      _vm._v("Insulation of hot surfaces")
                     ])
                   ])
                 ]),
@@ -26162,14 +26173,10 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
-                _c("span", { staticClass: "tg-seviceicon" }, [
-                  _c("i", { staticClass: "fa fa-balance-scale" })
-                ]),
-                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Wealth management")
+                      _vm._v("Repairs and Installations of pumps")
                     ])
                   ])
                 ]),
@@ -26184,14 +26191,10 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
-                _c("span", { staticClass: "tg-seviceicon" }, [
-                  _c("i", { staticClass: "fa fa-line-chart" })
-                ]),
-                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Financial planning")
+                      _vm._v("Sand Blasting & Painting")
                     ])
                   ])
                 ]),
@@ -26206,14 +26209,10 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
-                _c("span", { staticClass: "tg-seviceicon" }, [
-                  _c("i", { staticClass: "fa fa-trophy" })
-                ]),
-                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("investment banking")
+                      _vm._v("Sand Vessel Cleaning")
                     ])
                   ])
                 ]),
@@ -26228,14 +26227,10 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
-                _c("span", { staticClass: "tg-seviceicon" }, [
-                  _c("i", { staticClass: "fa fa-balance-scale" })
-                ]),
-                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Wealth management")
+                      _vm._v("Procurement and Supplies")
                     ])
                   ])
                 ]),
@@ -26250,15 +26245,9 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
-                _c("span", { staticClass: "tg-seviceicon" }, [
-                  _c("i", { staticClass: "fa fa-line-chart" })
-                ]),
-                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Financial planning")
-                    ])
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("MHE Services")])
                   ])
                 ]),
                 _vm._v(" "),
@@ -26272,14 +26261,10 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
-                _c("span", { staticClass: "tg-seviceicon" }, [
-                  _c("i", { staticClass: "fa fa-trophy" })
-                ]),
-                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("investment banking")
+                      _vm._v("Manpower Supply and Services")
                     ])
                   ])
                 ]),
@@ -26321,13 +26306,11 @@ var render = function() {
     "main",
     { staticClass: "tg-main tg-haslayout", attrs: { id: "tg-main" } },
     [
-      _c("page-slider"),
+      _c("page-slider", { on: { "page-loaded": _vm.loadPage } }),
       _vm._v(" "),
       _c("what-we-offer"),
       _vm._v(" "),
       _c("why-choose-us"),
-      _vm._v(" "),
-      _c("our-team"),
       _vm._v(" "),
       _c("company-statistics"),
       _vm._v(" "),
@@ -26564,13 +26547,9 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "\n            Contact us for information or any queries related to\n            "
+                    "\n            Contact us for information or any queries related to the\n            "
                   ),
-                  _c("strong", [
-                    _vm._v(
-                      "\n              financial\n              investments\n            "
-                    )
-                  ])
+                  _c("strong", [_vm._v("OIL & GAS Industry")])
                 ])
               ])
             ])
@@ -26918,7 +26897,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c(
                   "div",
-                  { staticClass: "col-md-4 col-md-offset-3 col-sm-6 col-xs-6" },
+                  { staticClass: "col-md-3 col-sm-6 col-xs-6 col-md-offset-2" },
                   [
                     _c(
                       "div",
@@ -26931,31 +26910,25 @@ var staticRenderFns = [
                         _c("ul", [
                           _c("li", [
                             _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Wealth Planning")
+                              _vm._v("Valve Maintenance")
                             ])
                           ]),
                           _vm._v(" "),
                           _c("li", [
                             _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Investment Management")
+                              _vm._v("I & E Services")
                             ])
                           ]),
                           _vm._v(" "),
                           _c("li", [
                             _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Year-End Tax Planning")
+                              _vm._v("Insulation of hot surfaces")
                             ])
                           ]),
                           _vm._v(" "),
                           _c("li", [
                             _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Tax Advisory Services")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Small Business Taxes")
+                              _vm._v("Sand blasting and painting")
                             ])
                           ])
                         ])
@@ -26964,7 +26937,43 @@ var staticRenderFns = [
                   ]
                 ),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }),
+                _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
+                  _c(
+                    "div",
+                    { staticClass: "tg-widget tg-widgetusefulllinks" },
+                    [
+                      _c("div", { staticClass: "tg-widgettitle" }, [
+                        _c("h3", [_vm._v(" ")])
+                      ]),
+                      _vm._v(" "),
+                      _c("ul", [
+                        _c("li", [
+                          _c("a", { attrs: { href: "#" } }, [
+                            _vm._v("Sand Vessel Cleaning")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c("a", { attrs: { href: "#" } }, [
+                            _vm._v("Procurement & Supplies")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c("a", { attrs: { href: "#" } }, [
+                            _vm._v("MHE Services")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c("a", { attrs: { href: "#" } }, [
+                            _vm._v("Manpower Supply & Service")
+                          ])
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" })
               ])
@@ -26977,7 +26986,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
                 _c("span", { staticClass: "tg-copyright" }, [
-                  _vm._v("© 2016 | All Rights Reserved")
+                  _vm._v("© 2016 - 2019 | All Rights Reserved")
                 ]),
                 _vm._v(" "),
                 _c("ul", { staticClass: "tg-socialicons" }, [
@@ -27013,11 +27022,7 @@ var staticRenderFns = [
                 ]),
                 _vm._v(" "),
                 _c("strong", { staticClass: "tg-logo" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("img", {
-                      attrs: { src: "img/flogo.png", alt: "image description" }
-                    })
-                  ])
+                  _c("a", { attrs: { href: "#" } })
                 ])
               ])
             ])
@@ -27947,12 +27952,12 @@ var staticRenderFns = [
                         staticClass: "tg-statistic-count",
                         attrs: {
                           "data-from": "0",
-                          "data-to": "1900",
-                          "data-speed": "8000",
-                          "data-refresh-interval": "50"
+                          "data-to": "60",
+                          "data-speed": "4000",
+                          "data-refresh-interval": "5"
                         }
                       },
-                      [_vm._v("1900+")]
+                      [_vm._v("60+")]
                     )
                   ]),
                   _vm._v(" "),
@@ -27971,12 +27976,12 @@ var staticRenderFns = [
                         staticClass: "tg-statistic-count",
                         attrs: {
                           "data-from": "0",
-                          "data-to": "967",
+                          "data-to": "163",
                           "data-speed": "8000",
                           "data-refresh-interval": "50"
                         }
                       },
-                      [_vm._v("967")]
+                      [_vm._v("163")]
                     )
                   ]),
                   _vm._v(" "),
@@ -27995,12 +28000,12 @@ var staticRenderFns = [
                         staticClass: "tg-statistic-count",
                         attrs: {
                           "data-from": "0",
-                          "data-to": "1208",
+                          "data-to": "7",
                           "data-speed": "8000",
                           "data-refresh-interval": "50"
                         }
                       },
-                      [_vm._v("1208")]
+                      [_vm._v("7")]
                     )
                   ]),
                   _vm._v(" "),
@@ -28443,7 +28448,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "tg-whychooseus" }, [
           _c("div", { staticClass: "tg-sectionhead" }, [
             _c("div", { staticClass: "tg-sectiontitle" }, [
-              _c("h2", [_vm._v("best in town")]),
+              _c("h2", [_vm._v("best in the industry")]),
               _vm._v(" "),
               _c("h3", [_vm._v("why choose us?")])
             ]),
@@ -28465,7 +28470,7 @@ var staticRenderFns = [
             },
             [
               _c("div", { staticClass: "tg-skill" }, [
-                _c("h4", [_vm._v("FINANCIAL ANALYSIS")]),
+                _c("h4", [_vm._v("PROJECT DELIVERY")]),
                 _vm._v(" "),
                 _c(
                   "div",
@@ -28482,7 +28487,7 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "tg-skill tg-active" }, [
-                _c("h4", [_vm._v("INVESTMENTS")]),
+                _c("h4", [_vm._v("TIMELINE MANAGEMENT")]),
                 _vm._v(" "),
                 _c(
                   "div",
@@ -28499,7 +28504,7 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "tg-skill" }, [
-                _c("h4", [_vm._v("FINANCIAL PLANNER")]),
+                _c("h4", [_vm._v("FINANCIAL PLANNING")]),
                 _vm._v(" "),
                 _c(
                   "div",
@@ -28592,89 +28597,6 @@ var staticRenderFns = [
           ),
           _vm._v(" "),
           _c("div", { staticClass: "tg-themetabs" }, [
-            _c("nav", { staticClass: "tg-themetabnav" }, [
-              _c("ul", { attrs: { role: "tablist" } }, [
-                _c(
-                  "li",
-                  { staticClass: "active", attrs: { role: "presentation" } },
-                  [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "#all",
-                          "aria-controls": "all",
-                          role: "tab",
-                          "data-toggle": "tab"
-                        }
-                      },
-                      [_vm._v("All")]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("li", { attrs: { role: "presentation" } }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#investment",
-                        "aria-controls": "investment",
-                        role: "tab",
-                        "data-toggle": "tab"
-                      }
-                    },
-                    [_vm._v("Investment")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { attrs: { role: "presentation" } }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#taxes",
-                        "aria-controls": "taxes",
-                        role: "tab",
-                        "data-toggle": "tab"
-                      }
-                    },
-                    [_vm._v("Taxes")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { attrs: { role: "presentation" } }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#planning",
-                        "aria-controls": "planning",
-                        role: "tab",
-                        "data-toggle": "tab"
-                      }
-                    },
-                    [_vm._v("Planning")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { attrs: { role: "presentation" } }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#financial",
-                        "aria-controls": "financial",
-                        role: "tab",
-                        "data-toggle": "tab"
-                      }
-                    },
-                    [_vm._v("Financial")]
-                  )
-                ])
-              ])
-            ]),
-            _vm._v(" "),
             _c("div", { staticClass: "tab-content tg-themetabcontent" }, [
               _c(
                 "div",
@@ -29798,7 +29720,7 @@ var staticRenderFns = [
       _c("li", [
         _c("i", { staticClass: "fa fa-phone" }),
         _vm._v(" "),
-        _c("span", [_vm._v("+1 2535 56854")])
+        _c("span", [_vm._v("+234 803 441 1661")])
       ]),
       _vm._v(" "),
       _c("li", [
@@ -29806,7 +29728,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("span", [
           _c("a", { attrs: { href: "mailto:hello@domain.com " } }, [
-            _vm._v("hello@domain.com")
+            _vm._v("hello@tbt-gbc.com")
           ])
         ])
       ]),
@@ -29814,7 +29736,7 @@ var staticRenderFns = [
       _c("li", [
         _c("i", { staticClass: "fa fa-map-marker" }),
         _vm._v(" "),
-        _c("address", [_vm._v("Birmingham, England, B3 2EW")])
+        _c("address", [_vm._v("Warri, Delta State Nigeria")])
       ])
     ])
   },

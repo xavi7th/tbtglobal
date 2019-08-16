@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="tg-themetabs">
-          <nav class="tg-themetabnav">
+          <!-- <nav class="tg-themetabnav">
             <ul role="tablist">
               <li role="presentation" class="active">
                 <a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a>
@@ -48,7 +48,7 @@
                 >Financial</a>
               </li>
             </ul>
-          </nav>
+          </nav>-->
           <div class="tab-content tg-themetabcontent">
             <div role="tabpanel" class="tab-pane in active" id="all">
               <div id="tg-projectsliderall" class="tg-projectsliderall tg-projects">

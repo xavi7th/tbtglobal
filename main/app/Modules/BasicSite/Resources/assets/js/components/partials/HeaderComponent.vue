@@ -7,17 +7,17 @@
             <ul class="tg-topcontactinfo">
               <li>
                 <i class="fa fa-phone"></i>
-                <span>+1 2535 56854</span>
+                <span>+234 803 441 1661</span>
               </li>
               <li>
                 <i class="fa fa-envelope-o"></i>
                 <span>
-                  <a href="mailto:hello@domain.com ">hello@domain.com</a>
+                  <a href="mailto:hello@domain.com ">hello@tbt-gbc.com</a>
                 </span>
               </li>
               <li>
                 <i class="fa fa-map-marker"></i>
-                <address>Birmingham, England, B3 2EW</address>
+                <address>Warri, Delta State Nigeria</address>
               </li>
             </ul>
             <nav class="tg-addnav tg-themecolor">
@@ -63,7 +63,12 @@
 </script>
 
 <style lang="css">
-  header {
-    color: aliceblue;
+  .tg-logo {
+    margin: 0;
+    width: 11%;
+  }
+
+  body.tg-fixednav .tg-logo {
+    margin: 0;
   }
 </style>

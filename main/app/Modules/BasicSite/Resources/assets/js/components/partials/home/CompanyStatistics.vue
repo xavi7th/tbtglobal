@@ -15,10 +15,10 @@
                 <span
                   class="tg-statistic-count"
                   data-from="0"
-                  data-to="1900"
-                  data-speed="8000"
-                  data-refresh-interval="50"
-                >1900+</span>
+                  data-to="60"
+                  data-speed="4000"
+                  data-refresh-interval="5"
+                >60+</span>
               </h2>
               <h3>Happy customers</h3>
             </div>
@@ -30,10 +30,10 @@
                 <span
                   class="tg-statistic-count"
                   data-from="0"
-                  data-to="967"
+                  data-to="163"
                   data-speed="8000"
                   data-refresh-interval="50"
-                >967</span>
+                >163</span>
               </h2>
               <h3>Successful Deals</h3>
             </div>
@@ -45,10 +45,10 @@
                 <span
                   class="tg-statistic-count"
                   data-from="0"
-                  data-to="1208"
+                  data-to="7"
                   data-speed="8000"
                   data-refresh-interval="50"
-                >1208</span>
+                >7</span>
               </h2>
               <h3>awards earned</h3>
             </div>

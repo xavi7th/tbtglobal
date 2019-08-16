@@ -13,11 +13,8 @@
               <span>Get Advice</span>
             </a>
             <p>
-              Contact us for information or any queries related to
-              <strong>
-                financial
-                investments
-              </strong>
+              Contact us for information or any queries related to the
+              <strong>OIL &amp; GAS Industry</strong>
             </p>
           </div>
         </div>

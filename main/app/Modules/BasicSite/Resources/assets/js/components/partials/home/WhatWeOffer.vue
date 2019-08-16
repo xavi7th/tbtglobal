@@ -21,9 +21,6 @@
         </div>
         <div id="tg-servicesslider" class="tg-servicesslider tg-services">
           <div class="item tg-service">
-            <span class="tg-seviceicon">
-              <i class="fa fa-balance-scale"></i>
-            </span>
             <div class="tg-heading">
               <h4>
                 <a href="#">Wealth management</a>
@@ -37,12 +34,9 @@
             </div>
           </div>
           <div class="item tg-service">
-            <span class="tg-seviceicon">
-              <i class="fa fa-line-chart"></i>
-            </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Financial planning</a>
+                <a href="#">Valve Maintenence</a>
               </h4>
             </div>
             <div class="tg-description">
@@ -53,12 +47,9 @@
             </div>
           </div>
           <div class="item tg-service">
-            <span class="tg-seviceicon">
-              <i class="fa fa-trophy"></i>
-            </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">investment banking</a>
+                <a href="#">I&amp;E Services</a>
               </h4>
             </div>
             <div class="tg-description">
@@ -69,12 +60,9 @@
             </div>
           </div>
           <div class="item tg-service">
-            <span class="tg-seviceicon">
-              <i class="fa fa-balance-scale"></i>
-            </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Wealth management</a>
+                <a href="#">Insulation of hot surfaces</a>
               </h4>
             </div>
             <div class="tg-description">
@@ -85,12 +73,9 @@
             </div>
           </div>
           <div class="item tg-service">
-            <span class="tg-seviceicon">
-              <i class="fa fa-line-chart"></i>
-            </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Financial planning</a>
+                <a href="#">Repairs and Installations of pumps</a>
               </h4>
             </div>
             <div class="tg-description">
@@ -101,12 +86,9 @@
             </div>
           </div>
           <div class="item tg-service">
-            <span class="tg-seviceicon">
-              <i class="fa fa-trophy"></i>
-            </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">investment banking</a>
+                <a href="#">Sand Blasting & Painting</a>
               </h4>
             </div>
             <div class="tg-description">
@@ -117,12 +99,9 @@
             </div>
           </div>
           <div class="item tg-service">
-            <span class="tg-seviceicon">
-              <i class="fa fa-balance-scale"></i>
-            </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Wealth management</a>
+                <a href="#">Sand Vessel Cleaning</a>
               </h4>
             </div>
             <div class="tg-description">
@@ -133,12 +112,9 @@
             </div>
           </div>
           <div class="item tg-service">
-            <span class="tg-seviceicon">
-              <i class="fa fa-line-chart"></i>
-            </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Financial planning</a>
+                <a href="#">Procurement and Supplies</a>
               </h4>
             </div>
             <div class="tg-description">
@@ -149,12 +125,22 @@
             </div>
           </div>
           <div class="item tg-service">
-            <span class="tg-seviceicon">
-              <i class="fa fa-trophy"></i>
-            </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">investment banking</a>
+                <a href="#">MHE Services</a>
+              </h4>
+            </div>
+            <div class="tg-description">
+              <p>
+                Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="item tg-service">
+            <div class="tg-heading">
+              <h4>
+                <a href="#">Manpower Supply and Services</a>
               </h4>
             </div>
             <div class="tg-description">
@@ -175,4 +161,7 @@
 </script>
 
 <style lang="scss" scoped>
+  .tg-heading h4 {
+    line-height: 1.5;
+  }
 </style>

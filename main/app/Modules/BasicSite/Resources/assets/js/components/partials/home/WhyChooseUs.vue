@@ -23,7 +23,7 @@
       <div class="tg-whychooseus">
         <div class="tg-sectionhead">
           <div class="tg-sectiontitle">
-            <h2>best in town</h2>
+            <h2>best in the industry</h2>
             <h3>why choose us?</h3>
           </div>
           <div class="tg-description">
@@ -35,7 +35,7 @@
         </div>
         <div id="tg-ourskill" class="tg-ourskill tg-skillgroup">
           <div class="tg-skill">
-            <h4>FINANCIAL ANALYSIS</h4>
+            <h4>PROJECT DELIVERY</h4>
             <div class="tg-skillholder" data-percent="95%">
               <div class="tg-skillbar">
                 <h5>95%</h5>
@@ -43,7 +43,7 @@
             </div>
           </div>
           <div class="tg-skill tg-active">
-            <h4>INVESTMENTS</h4>
+            <h4>TIMELINE MANAGEMENT</h4>
             <div class="tg-skillholder" data-percent="80%">
               <div class="tg-skillbar">
                 <h5>80%</h5>
@@ -51,7 +51,7 @@
             </div>
           </div>
           <div class="tg-skill">
-            <h4>FINANCIAL PLANNER</h4>
+            <h4>FINANCIAL PLANNING</h4>
             <div class="tg-skillholder" data-percent="50%">
               <div class="tg-skillbar">
                 <h5>50%</h5>

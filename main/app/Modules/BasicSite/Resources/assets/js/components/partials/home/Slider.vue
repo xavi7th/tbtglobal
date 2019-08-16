@@ -26,7 +26,9 @@
 </template>
 
 <script>
+  import pageLoad from "@assets/js/config/pageload.mixin";
   export default {
+    mixins: [pageLoad],
     data() {
       return {
         slides: {}

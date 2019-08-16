@@ -317,7 +317,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-xs-12">
+            <!-- <div class="col-sm-12 col-xs-12">
               <nav class="tg-pagination">
                 <ul>
                   <li class="tg-prevpage">
@@ -351,7 +351,7 @@
                   </li>
                 </ul>
               </nav>
-            </div>
+            </div>-->
           </div>
         </div>
       </div>
@@ -370,4 +370,8 @@
 </script>
 
 <style lang="scss" scoped>
+  .tg-newsimg img,
+  .tg-news figure img {
+    height: 270px;
+  }
 </style>

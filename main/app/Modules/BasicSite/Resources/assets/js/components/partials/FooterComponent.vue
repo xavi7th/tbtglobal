@@ -26,31 +26,48 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-4 col-md-offset-3 col-sm-6 col-xs-6">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-md-offset-2">
               <div class="tg-widget tg-widgetusefulllinks">
                 <div class="tg-widgettitle">
                   <h3>useful links</h3>
                 </div>
                 <ul>
                   <li>
-                    <a href="#">Wealth Planning</a>
+                    <a href="#">Valve Maintenance</a>
                   </li>
                   <li>
-                    <a href="#">Investment Management</a>
+                    <a href="#">I &amp; E Services</a>
                   </li>
                   <li>
-                    <a href="#">Year-End Tax Planning</a>
+                    <a href="#">Insulation of hot surfaces</a>
                   </li>
                   <li>
-                    <a href="#">Tax Advisory Services</a>
-                  </li>
-                  <li>
-                    <a href="#">Small Business Taxes</a>
+                    <a href="#">Sand blasting and painting</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-6"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="tg-widget tg-widgetusefulllinks">
+                <div class="tg-widgettitle">
+                  <h3>&nbsp;</h3>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Sand Vessel Cleaning</a>
+                  </li>
+                  <li>
+                    <a href="#">Procurement &amp; Supplies</a>
+                  </li>
+                  <li>
+                    <a href="#">MHE Services</a>
+                  </li>
+                  <li>
+                    <a href="#">Manpower Supply &amp; Service</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <div class="col-md-3 col-sm-6 col-xs-6"></div>
           </div>
         </div>
@@ -60,7 +77,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-xs-12">
-            <span class="tg-copyright">&copy; 2016 | All Rights Reserved</span>
+            <span class="tg-copyright">&copy; 2016 - 2019 | All Rights Reserved</span>
             <ul class="tg-socialicons">
               <li>
                 <a href="#">
@@ -90,7 +107,7 @@
             </ul>
             <strong class="tg-logo">
               <a href="#">
-                <img src="img/flogo.png" alt="image description" />
+                <!-- <img src="img/logo.png" alt="image description" /> -->
               </a>
             </strong>
           </div>

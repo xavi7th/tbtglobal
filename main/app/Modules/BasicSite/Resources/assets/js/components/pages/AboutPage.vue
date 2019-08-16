@@ -81,80 +81,11 @@
       <!--************************************
 					What We Offers End
       *************************************-->
-      <!--************************************
-					Video Why Choose Us? Start
-      *************************************-->
-      <section class="tg-bglight tg-haslayout">
-        <div class="col-sm-6">
-          <div class="row">
-            <div class="tg-videosection">
-              <figure>
-                <img src="/img/img-01.jpg" alt="image description" />
-                <figcaption>
-                  <a class="tg-btnplay" href="#">
-                    <i class="fa fa-play"></i>
-                  </a>
-                  <h2>our business Introduction</h2>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="tg-whychooseus">
-            <div class="tg-sectionhead">
-              <div class="tg-sectiontitle">
-                <h2>best in town</h2>
-                <h3>why choose us?</h3>
-              </div>
-              <div class="tg-description">
-                <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore iqua Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-              </div>
-            </div>
-            <div id="tg-ourskill" class="tg-ourskill tg-skillgroup">
-              <div class="tg-skill">
-                <h4>FINANCIAL ANALYSIS</h4>
-                <div class="tg-skillholder" data-percent="95%">
-                  <div class="tg-skillbar">
-                    <h5>95%</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="tg-skill tg-active">
-                <h4>INVESTMENTS</h4>
-                <div class="tg-skillholder" data-percent="80%">
-                  <div class="tg-skillbar">
-                    <h5>80%</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="tg-skill">
-                <h4>FINANCIAL PLANNER</h4>
-                <div class="tg-skillholder" data-percent="50%">
-                  <div class="tg-skillbar">
-                    <h5>50%</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="tg-skill">
-                <h4>BUSINESS SUPPORT</h4>
-                <div class="tg-skillholder" data-percent="90%">
-                  <div class="tg-skillbar">
-                    <h5>90%</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--************************************
-					Video Why Choose Us? End
-      *************************************-->
+
       <!--************************************
 					Perfessional Team Start
       *************************************-->
-      <section class="tg-main-section tg-haslayout">
+      <!-- <section class="tg-main-section tg-haslayout">
         <div class="container">
           <div class="row">
             <div
@@ -606,122 +537,21 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
       <!--************************************
 					Perfessional Team End
       *************************************-->
       <!--************************************
 					Get Advice Start
       *************************************-->
-      <section
-        class="tg-main-section tg-haslayout tg-parallax-window"
-        data-appear-top-offset="600"
-        data-parallax="scroll"
-        data-image-src="/img/parallax/bgparallax-02.jpg"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-xs-12">
-              <div class="tg-getadvice">
-                <a class="tg-btn" href="#">
-                  <span>Get Advice</span>
-                </a>
-                <p>
-                  Contact us for information or any queries related to
-                  <strong>financial investments</strong>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ads-bar></ads-bar>
       <!--************************************
 					Get Advice End
       *************************************-->
       <!--************************************
 					Trusted by Many Start
       *************************************-->
-      <section class="tg-main-section tg-haslayout">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12"
-            >
-              <div class="tg-sectionhead">
-                <div class="tg-sectiontitle">
-                  <h2>we are</h2>
-                  <h3>trusted by many</h3>
-                </div>
-                <div class="tg-description">
-                  <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
-            <div id="tg-brandsslider" class="tg-brandsslider tg-brands">
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-01.png" alt="image description" />
-                </a>
-              </figure>
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-02.png" alt="image description" />
-                </a>
-              </figure>
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-03.png" alt="image description" />
-                </a>
-              </figure>
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-04.png" alt="image description" />
-                </a>
-              </figure>
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-01.png" alt="image description" />
-                </a>
-              </figure>
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-02.png" alt="image description" />
-                </a>
-              </figure>
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-03.png" alt="image description" />
-                </a>
-              </figure>
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-04.png" alt="image description" />
-                </a>
-              </figure>
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-01.png" alt="image description" />
-                </a>
-              </figure>
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-02.png" alt="image description" />
-                </a>
-              </figure>
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-03.png" alt="image description" />
-                </a>
-              </figure>
-              <figure class="item tg-brand">
-                <a href="#">
-                  <img src="/img/brands/img-04.png" alt="image description" />
-                </a>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
+      <our-clients></our-clients>
       <!--************************************
 					Trusted by Many End
       *************************************-->
@@ -732,10 +562,12 @@
 <script>
   import pageLoad from "@assets/js/config/pageload.mixin";
   import PageHeader from "@components/partials/PageHeader";
+  import AdsBar from "@components/partials/home/AdsBar";
+  import OurClients from "@components/partials/home/OurClients";
   export default {
     name: "AboutPage",
     mixins: [pageLoad],
-    components: { PageHeader }
+    components: { PageHeader, OurClients, AdsBar }
   };
 </script>
 
