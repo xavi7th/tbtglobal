@@ -43,5 +43,18 @@
   };
 </script>
 
-<style>
+<style scoped lang="scss">
+  .tg-main {
+    margin-top: 110px;
+
+    @media (max-width: 576px) {
+      margin-top: 70px;
+    }
+  }
+
+  .tg-homeslider figure figcaption .tg-btnsbox .tg-btn {
+    @media (max-width: 576px) {
+      width: 75%;
+    }
+  }
 </style>

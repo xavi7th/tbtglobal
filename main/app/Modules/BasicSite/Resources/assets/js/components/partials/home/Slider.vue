@@ -1,86 +1,21 @@
 <template>
   <div id="tg-homeslider" class="tg-homeslider tg-haslayout">
-    <figure class="item">
-      <img src="img/slider/img-01.jpg" alt="image description" />
+    <figure class="item" v-for="slide in slides" :key="slide.name">
+      <img :src="slide.img" alt="image description" />
       <figcaption>
         <div class="container">
           <div class="row">
-            <div class="col-md-7 col-sm-10 col-xs-12 pull-right">
-              <h1>Five star service</h1>
-              <h2>guaranteed</h2>
+            <div :class="`col-md-7 col-sm-10 col-xs-12 pull-${slide.position}`">
+              <h1>{{ slide.small_text }}</h1>
+              <h2>{{ slide.big_text }}</h2>
               <img class="tg-svginject" src="img/img-01.svg" alt="image description" />
               <div class="tg-description">
-                <p>
-                  Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua enim minim veniam quis nostrud exercitation laboris nisi
-                  aliquip ex ea commodo consequat aute irure dolor in sprehen.
-                </p>
+                <p>{{ slide.desc }}</p>
               </div>
               <div class="tg-btnsbox">
-                <a class="tg-btn" href="#">
-                  <span>Read more</span>
-                </a>
-                <a class="tg-btn" href="#">
-                  <span>buy now</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figcaption>
-    </figure>
-    <figure class="item">
-      <img src="img/slider/img-01.jpg" alt="image description" />
-      <figcaption>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 col-sm-10 col-xs-12 pull-right">
-              <h1>Five star service</h1>
-              <h2>guaranteed</h2>
-              <img class="tg-svginject" src="img/img-01.svg" alt="image description" />
-              <div class="tg-description">
-                <p>
-                  Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua enim minim veniam quis nostrud exercitation laboris nisi
-                  aliquip ex ea commodo consequat aute irure dolor in sprehen.
-                </p>
-              </div>
-              <div class="tg-btnsbox">
-                <a class="tg-btn" href="#">
-                  <span>Read more</span>
-                </a>
-                <a class="tg-btn" href="#">
-                  <span>buy now</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figcaption>
-    </figure>
-    <figure class="item">
-      <img src="img/slider/img-01.jpg" alt="image description" />
-      <figcaption>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 col-sm-10 col-xs-12 pull-right">
-              <h1>Five star service</h1>
-              <h2>guaranteed</h2>
-              <img class="tg-svginject" src="img/img-01.svg" alt="image description" />
-              <div class="tg-description">
-                <p>
-                  Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua enim minim veniam quis nostrud exercitation laboris nisi
-                  aliquip ex ea commodo consequat aute irure dolor in sprehen.
-                </p>
-              </div>
-              <div class="tg-btnsbox">
-                <a class="tg-btn" href="#">
-                  <span>Read more</span>
-                </a>
-                <a class="tg-btn" href="#">
-                  <span>buy now</span>
-                </a>
+                <router-link class="tg-btn" :to="{name: 'site.root'}">
+                  <span>View services</span>
+                </router-link>
               </div>
             </div>
           </div>
@@ -91,8 +26,43 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    data() {
+      return {
+        slides: {}
+      };
+    },
+    created() {
+      axios.get("/api/sliders").then(rsp => {
+        if (rsp.status == 200) {
+          this.slides = rsp.data.slides.rows;
+        }
+      });
+    }
+  };
 </script>
 
 <style lang="scss" scoped>
+  .tg-btn {
+    color: #fff;
+    border-color: #fff;
+
+    &:hover {
+      border-color: #004281;
+    }
+  }
+
+  .tg-description {
+    color: #fff;
+  }
+  // 	.tg-404content h2 .tg-svginject image, .tg-svginject path {
+  //     fill: #004281 !important;
+  // }
+</style>
+
+<style>
+  .tg-404content h2 .tg-svginject image,
+  .tg-svginject path {
+    fill: #fff !important;
+  }
 </style>
