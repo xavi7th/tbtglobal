@@ -13,6 +13,12 @@ import LoadScript from 'vue-plugin-load-script'
 
 import App from '@components/AppComponent.vue';
 
+/**
+ * Initialise a global window object containing a Vue instance
+ * for the purpose of sending events from Vue to outer space (jQuery in this instance)
+ */
+window.vueEventBus = new Vue();
+
 
 import {
     createRouter

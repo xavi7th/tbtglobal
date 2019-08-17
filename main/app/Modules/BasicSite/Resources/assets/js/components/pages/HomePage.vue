@@ -1,6 +1,6 @@
 <template>
   <main id="tg-main" class="tg-main tg-haslayout">
-    <page-slider @page-loaded="loadPage"></page-slider>
+    <page-slider></page-slider>
     <what-we-offer></what-we-offer>
     <why-choose-us></why-choose-us>
     <!-- <our-team></our-team> -->
@@ -24,7 +24,7 @@
   import Testimonials from "@components/partials/home/Testimonials";
   import AdsBar from "@components/partials/home/AdsBar";
   import OurClients from "@components/partials/home/OurClients";
-  // import pageLoad from "@assets/js/config/pageload.mixin";
+  import pageLoad from "@assets/js/config/pageload.mixin";
   export default {
     name: "HomePage",
     components: {
@@ -39,12 +39,7 @@
       AdsBar,
       OurClients
     },
-    methods: {
-      loadPage() {
-        this.$emit("page-loaded");
-      }
-    }
-    // mixins: [pageLoad]
+    mixins: [pageLoad]
   };
 </script>
 

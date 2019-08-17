@@ -69,17 +69,38 @@
 
         /* -------------------------------------
         		HOME SLIDER
-        -------------------------------------- */
-        var owl = $( "#tg-homeslider" );
-        owl.owlCarousel( {
-            pagination: false,
-            navigation: true,
-            singleItem: true,
-            navigationText: [
-                "<i class='tg-btnnext fa fa-angle-left'></i>",
-                "<i class='tg-btnprev fa fa-angle-right'></i>"
-            ],
+				-------------------------------------- */
+        window.vueEventBus.$on( 'slide-loaded', function () {
+            console.log( 'slide-loaded' );
+
+            // react on the event somehow
+            var owl = $( "#tg-homeslider" );
+
+            owl.owlCarousel( {
+                pagination: false,
+                navigation: true,
+                singleItem: true,
+                navigationText: [
+                    "<i class='tg-btnnext fa fa-angle-left'></i>",
+                    "<i class='tg-btnprev fa fa-angle-right'></i>"
+                ],
+            } );
         } );
+
+        //  setTimeout( () => {
+        //      console.log( 'fired' );
+        //      var owl = $( "#tg-homeslider" );
+        //      owl.owlCarousel( {
+        //          pagination: false,
+        //          navigation: true,
+        //          singleItem: true,
+        //          navigationText: [
+        //              "<i class='tg-btnnext fa fa-angle-left'></i>",
+        //              "<i class='tg-btnprev fa fa-angle-right'></i>"
+        //          ],
+        //      } );
+        //  }, 2000 );
+
         /* -------------------------------------
         		WHAT WE OFFERS SLIDER
         -------------------------------------- */
@@ -472,3 +493,5 @@
         }
     };
 } )( jQuery );
+
+window.vueEventBus.$emit( 'mainjs-loaded' );

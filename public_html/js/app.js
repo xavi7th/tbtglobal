@@ -29,7 +29,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		2: 0
+/******/ 		3: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -172,6 +172,12 @@ __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/bootstrap.
 // import VeeValidate from 'vee-validate';
 
 
+
+/**
+ * Initialise a global window object containing a Vue instance
+ * for the purpose of sending events from Vue to outer space (jQuery in this instance)
+ */
+window.vueEventBus = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
 
 
 
@@ -2994,6 +3000,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_partials_home_AdsBar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_partials_home_AdsBar__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_partials_home_OurClients__ = __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/OurClients.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_partials_home_OurClients___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_partials_home_OurClients__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__assets_js_config_pageload_mixin__ = __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/config/pageload.mixin.js");
 //
 //
 //
@@ -3020,7 +3027,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-// import pageLoad from "@assets/js/config/pageload.mixin";
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "HomePage",
   components: {
@@ -3035,12 +3042,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     AdsBar: __WEBPACK_IMPORTED_MODULE_8__components_partials_home_AdsBar___default.a,
     OurClients: __WEBPACK_IMPORTED_MODULE_9__components_partials_home_OurClients___default.a
   },
-  methods: {
-    loadPage: function loadPage() {
-      this.$emit("page-loaded");
-    }
-  }
-  // mixins: [pageLoad]
+  mixins: [__WEBPACK_IMPORTED_MODULE_10__assets_js_config_pageload_mixin__["a" /* default */]]
 });
 
 /***/ }),
@@ -4702,7 +4704,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_js_config_pageload_mixin__ = __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/config/pageload.mixin.js");
 //
 //
 //
@@ -4730,22 +4731,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mixins: [__WEBPACK_IMPORTED_MODULE_0__assets_js_config_pageload_mixin__["a" /* default */]],
   data: function data() {
     return {
       slides: {}
     };
   },
-  created: function created() {
+  beforeCreate: function beforeCreate() {
     var _this = this;
 
     axios.get("/api/sliders").then(function (rsp) {
       if (rsp.status == 200) {
         _this.slides = rsp.data.slides.rows;
       }
+    });
+  },
+  mounted: function mounted() {
+    window.vueEventBus.$on("mainjs-loaded", function () {
+      console.log("mainjs-loaded");
+
+      setTimeout(function () {
+        window.vueEventBus.$emit("slide-loaded");
+      }, 1000);
     });
   }
 });
@@ -5326,7 +5334,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.loader {\n  display: block;\n  border: 5px solid rgba(189,189,189, 0.25);\n  border-left-color: rgb(3, 169, 244);\n  border-top-color: rgb(3, 169, 244);\n  border-radius: 50%;\n  -webkit-animation: rotate 600ms infinite linear;\n          animation: rotate 600ms infinite linear;\n  margin: 0 auto;\n}\n@-webkit-keyframes rotate {\nto {\n        -webkit-transform: rotate(1turn);\n                transform: rotate(1turn)\n}\n}\n@keyframes rotate {\nto {\n        -webkit-transform: rotate(1turn);\n                transform: rotate(1turn)\n}\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/misc/main/app/Modules/BasicSite/Resources/assets/js/components/misc/LoaderComponent.vue"],"names":[],"mappings":";AAiBA;EACA,eAAA;EACA,0CAAA;EACA,oCAAA;EACA,mCAAA;EACA,mBAAA;EACA,gDAAA;UAAA,wCAAA;EACA,eAAA;CACA;AAEA;AACA;QACA,iCAAA;gBAAA,wBAAA;CACA;CACA;AAJA;AACA;QACA,iCAAA;gBAAA,wBAAA;CACA;CACA","file":"LoaderComponent.vue","sourcesContent":["<template>\n  <div class=\"loader\" :style=\"{ width: size + 'px', height: size + 'px' }\"></div>\n</template>\n\n<script>\n  export default {\n      name: 'Loader',\n      props: {\n        size: {\n          type: Number,\n          default: 30\n        }\n      }\n  }\n</script>\n\n<style>\n  .loader {\n    display: block;\n    border: 5px solid rgba(189,189,189, 0.25);\n    border-left-color: rgb(3, 169, 244);\n    border-top-color: rgb(3, 169, 244);\n    border-radius: 50%;\n    animation: rotate 600ms infinite linear;\n    margin: 0 auto;\n  }\n\n  @keyframes rotate {\n      to {\n          transform: rotate(1turn)\n        }\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.loader {\n  display: block;\n  border: 5px solid rgba(189,189,189, 0.25);\n  border-left-color: rgb(3, 169, 244);\n  border-top-color: rgb(3, 169, 244);\n  border-radius: 50%;\n  -webkit-animation: rotate 600ms infinite linear;\n          animation: rotate 600ms infinite linear;\n  margin: 0 auto;\n}\n@-webkit-keyframes rotate {\nto {\n        -webkit-transform: rotate(1turn);\n                transform: rotate(1turn)\n}\n}\n@keyframes rotate {\nto {\n        -webkit-transform: rotate(1turn);\n                transform: rotate(1turn)\n}\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/misc/main/app/Modules/Admin/Resources/assets/js/components/misc/LoaderComponent.vue"],"names":[],"mappings":";AAiBA;EACA,eAAA;EACA,0CAAA;EACA,oCAAA;EACA,mCAAA;EACA,mBAAA;EACA,gDAAA;UAAA,wCAAA;EACA,eAAA;CACA;AAEA;AACA;QACA,iCAAA;gBAAA,wBAAA;CACA;CACA;AAJA;AACA;QACA,iCAAA;gBAAA,wBAAA;CACA;CACA","file":"LoaderComponent.vue","sourcesContent":["<template>\n  <div class=\"loader\" :style=\"{ width: size + 'px', height: size + 'px' }\"></div>\n</template>\n\n<script>\n  export default {\n      name: 'Loader',\n      props: {\n        size: {\n          type: Number,\n          default: 30\n        }\n      }\n  }\n</script>\n\n<style>\n  .loader {\n    display: block;\n    border: 5px solid rgba(189,189,189, 0.25);\n    border-left-color: rgb(3, 169, 244);\n    border-top-color: rgb(3, 169, 244);\n    border-radius: 50%;\n    animation: rotate 600ms infinite linear;\n    margin: 0 auto;\n  }\n\n  @keyframes rotate {\n      to {\n          transform: rotate(1turn)\n        }\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5371,7 +5379,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.tg-404content h2 .tg-svginject image,\n.tg-svginject path {\n  fill: #fff !important;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/Slider.vue"],"names":[],"mappings":";AAiEA;;EAEA,sBAAA;CACA","file":"Slider.vue","sourcesContent":["<template>\n  <div id=\"tg-homeslider\" class=\"tg-homeslider tg-haslayout\">\n    <figure class=\"item\" v-for=\"slide in slides\" :key=\"slide.name\">\n      <img :src=\"slide.img\" alt=\"image description\" />\n      <figcaption>\n        <div class=\"container\">\n          <div class=\"row\">\n            <div :class=\"`col-md-7 col-sm-10 col-xs-12 pull-${slide.position}`\">\n              <h1>{{ slide.small_text }}</h1>\n              <h2>{{ slide.big_text }}</h2>\n              <img class=\"tg-svginject\" src=\"img/img-01.svg\" alt=\"image description\" />\n              <div class=\"tg-description\">\n                <p>{{ slide.desc }}</p>\n              </div>\n              <div class=\"tg-btnsbox\">\n                <router-link class=\"tg-btn\" :to=\"{name: 'site.root'}\">\n                  <span>View services</span>\n                </router-link>\n              </div>\n            </div>\n          </div>\n        </div>\n      </figcaption>\n    </figure>\n  </div>\n</template>\n\n<script>\n  import pageLoad from \"@assets/js/config/pageload.mixin\";\n  export default {\n    mixins: [pageLoad],\n    data() {\n      return {\n        slides: {}\n      };\n    },\n    created() {\n      axios.get(\"/api/sliders\").then(rsp => {\n        if (rsp.status == 200) {\n          this.slides = rsp.data.slides.rows;\n        }\n      });\n    }\n  };\n</script>\n\n<style lang=\"scss\" scoped>\n  .tg-btn {\n    color: #fff;\n    border-color: #fff;\n\n    &:hover {\n      border-color: #004281;\n    }\n  }\n\n  .tg-description {\n    color: #fff;\n  }\n  // \t.tg-404content h2 .tg-svginject image, .tg-svginject path {\n  //     fill: #004281 !important;\n  // }\n</style>\n\n<style>\n  .tg-404content h2 .tg-svginject image,\n  .tg-svginject path {\n    fill: #fff !important;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-404content h2 .tg-svginject image,\n.tg-svginject path {\n  fill: #fff !important;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/Slider.vue"],"names":[],"mappings":";AAwEA;;EAEA,sBAAA;CACA","file":"Slider.vue","sourcesContent":["<template>\n  <div id=\"tg-homeslider\" class=\"tg-homeslider tg-haslayout\">\n    <figure class=\"item\" v-for=\"slide in slides\" :key=\"slide.name\">\n      <img :src=\"slide.img\" alt=\"image description\" />\n      <figcaption>\n        <div class=\"container\">\n          <div class=\"row\">\n            <div :class=\"`col-md-7 col-sm-10 col-xs-12 pull-${slide.position}`\">\n              <h1>{{ slide.small_text }}</h1>\n              <h2>{{ slide.big_text }}</h2>\n              <img class=\"tg-svginject\" src=\"img/img-01.svg\" alt=\"image description\" />\n              <div class=\"tg-description\">\n                <p>{{ slide.desc }}</p>\n              </div>\n              <div class=\"tg-btnsbox\">\n                <router-link class=\"tg-btn\" :to=\"{name: 'site.root'}\">\n                  <span>View services</span>\n                </router-link>\n              </div>\n            </div>\n          </div>\n        </div>\n      </figcaption>\n    </figure>\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        slides: {}\n      };\n    },\n    beforeCreate() {\n      axios.get(\"/api/sliders\").then(rsp => {\n        if (rsp.status == 200) {\n          this.slides = rsp.data.slides.rows;\n        }\n      });\n    },\n    mounted() {\n      window.vueEventBus.$on(\"mainjs-loaded\", function() {\n        console.log(\"mainjs-loaded\");\n\n        setTimeout(() => {\n          window.vueEventBus.$emit(\"slide-loaded\");\n        }, 1000);\n      });\n    }\n  };\n</script>\n\n<style lang=\"scss\" scoped>\n  .tg-btn {\n    color: #fff;\n    border-color: #fff;\n\n    &:hover {\n      border-color: #004281;\n    }\n  }\n\n  .tg-description {\n    color: #fff;\n  }\n  // \t.tg-404content h2 .tg-svginject image, .tg-svginject path {\n  //     fill: #004281 !important;\n  // }\n</style>\n\n<style>\n  .tg-404content h2 .tg-svginject image,\n  .tg-svginject path {\n    fill: #fff !important;\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -26306,7 +26314,7 @@ var render = function() {
     "main",
     { staticClass: "tg-main tg-haslayout", attrs: { id: "tg-main" } },
     [
-      _c("page-slider", { on: { "page-loaded": _vm.loadPage } }),
+      _c("page-slider"),
       _vm._v(" "),
       _c("what-we-offer"),
       _vm._v(" "),

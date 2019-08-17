@@ -26,19 +26,26 @@
 </template>
 
 <script>
-  import pageLoad from "@assets/js/config/pageload.mixin";
   export default {
-    mixins: [pageLoad],
     data() {
       return {
         slides: {}
       };
     },
-    created() {
+    beforeCreate() {
       axios.get("/api/sliders").then(rsp => {
         if (rsp.status == 200) {
           this.slides = rsp.data.slides.rows;
         }
+      });
+    },
+    mounted() {
+      window.vueEventBus.$on("mainjs-loaded", function() {
+        console.log("mainjs-loaded");
+
+        setTimeout(() => {
+          window.vueEventBus.$emit("slide-loaded");
+        }, 1000);
       });
     }
   };
