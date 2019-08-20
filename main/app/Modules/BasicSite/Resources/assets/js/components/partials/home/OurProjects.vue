@@ -104,7 +104,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-01.jpg" alt="image description" />
+                    <img src="img/projects/img-06.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-02.jpg" alt="image description" />
+                    <img src="img/projects/img-07.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -124,7 +124,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-03.jpg" alt="image description" />
+                    <img src="img/projects/img-08.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -134,7 +134,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-04.jpg" alt="image description" />
+                    <img src="img/projects/img-09.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -144,7 +144,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-05.jpg" alt="image description" />
+                    <img src="img/projects/img-10.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -154,7 +154,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-01.jpg" alt="image description" />
+                    <img src="img/projects/img-11.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -164,7 +164,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-02.jpg" alt="image description" />
+                    <img src="img/projects/img-12.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -174,7 +174,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-03.jpg" alt="image description" />
+                    <img src="img/projects/img-13.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-04.jpg" alt="image description" />
+                    <img src="img/projects/img-14.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -194,7 +194,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-05.jpg" alt="image description" />
+                    <img src="img/projects/img-15.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -208,7 +208,7 @@
               <div id="tg-projectsliderinvestment" class="tg-projectsliderinvestment tg-projects">
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-01.jpg" alt="image description" />
+                    <img src="img/projects/img-16.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -218,7 +218,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-02.jpg" alt="image description" />
+                    <img src="img/projects/img-17.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -228,7 +228,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-03.jpg" alt="image description" />
+                    <img src="img/projects/img-18.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -238,7 +238,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-04.jpg" alt="image description" />
+                    <img src="img/projects/img-19.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -248,7 +248,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-01.jpg" alt="image description" />
+                    <img src="img/projects/img-20.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -258,7 +258,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-02.jpg" alt="image description" />
+                    <img src="img/projects/img-21.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -268,7 +268,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-03.jpg" alt="image description" />
+                    <img src="img/projects/img-22.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -278,7 +278,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-05.jpg" alt="image description" />
+                    <img src="img/projects/img-23.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -292,7 +292,7 @@
               <div id="tg-projectslidertaxes" class="tg-projectslidertaxes tg-projects">
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-04.jpg" alt="image description" />
+                    <img src="img/projects/img-24.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -302,7 +302,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-05.jpg" alt="image description" />
+                    <img src="img/projects/img-25.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -312,7 +312,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-01.jpg" alt="image description" />
+                    <img src="img/projects/img-26.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -322,7 +322,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-02.jpg" alt="image description" />
+                    <img src="img/projects/img-27.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -332,7 +332,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-03.jpg" alt="image description" />
+                    <img src="img/projects/img-28.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -342,7 +342,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-04.jpg" alt="image description" />
+                    <img src="img/projects/img-29.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -352,7 +352,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-05.jpg" alt="image description" />
+                    <img src="img/projects/img-30.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -362,7 +362,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-01.jpg" alt="image description" />
+                    <img src="img/projects/img-31.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -372,7 +372,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-02.jpg" alt="image description" />
+                    <img src="img/projects/img-32.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -382,7 +382,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-03.jpg" alt="image description" />
+                    <img src="img/projects/img-33.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -396,7 +396,7 @@
               <div id="tg-projectsliderplanning" class="tg-projectsliderplanning tg-projects">
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-01.jpg" alt="image description" />
+                    <img src="img/projects/img-34.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -406,7 +406,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-02.jpg" alt="image description" />
+                    <img src="img/projects/img-35.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -416,7 +416,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-04.jpg" alt="image description" />
+                    <img src="img/projects/img-36.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -426,7 +426,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-05.jpg" alt="image description" />
+                    <img src="img/projects/img-37.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -436,7 +436,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-03.jpg" alt="image description" />
+                    <img src="img/projects/img-38.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -446,7 +446,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-01.jpg" alt="image description" />
+                    <img src="img/projects/img-39.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -456,7 +456,7 @@
                 </div>
                 <div class="item tg-project">
                   <figure>
-                    <img src="img/projects/img-02.jpg" alt="image description" />
+                    <img src="img/projects/img-40.jpg" alt="image description" />
                     <figcaption>
                       <h4>
                         <a href="#">sicing elit sed doi tempor</a>
@@ -542,4 +542,9 @@
 </script>
 
 <style lang="scss" scoped>
+  .tg-project figure img {
+    height: 165px;
+    object-fit: cover;
+    object-position: top;
+  }
 </style>

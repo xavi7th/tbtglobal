@@ -2,9 +2,9 @@
   <main id="tg-main" class="tg-main tg-haslayout">
     <page-slider></page-slider>
     <what-we-offer></what-we-offer>
-    <why-choose-us></why-choose-us>
+    <!-- <why-choose-us></why-choose-us> -->
     <!-- <our-team></our-team> -->
-    <company-statistics></company-statistics>
+    <!-- <company-statistics></company-statistics> -->
     <our-projects></our-projects>
     <contact-us></contact-us>
     <testimonials></testimonials>

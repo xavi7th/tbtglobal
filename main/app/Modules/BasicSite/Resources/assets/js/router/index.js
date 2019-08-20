@@ -20,7 +20,7 @@ function view( name ) {
     };
 }
 
-const title = title => title + ' | TFT Global'
+const title = title => title + ' | TBT Global'
 
 
 

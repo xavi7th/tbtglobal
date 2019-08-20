@@ -33,7 +33,7 @@
                           </span>
                           <div class="tg-heading">
                             <h4>
-                              <a href="#">Future planning</a>
+                              <a href="#">Valve Maintenance</a>
                             </h4>
                           </div>
                           <div class="tg-description">
@@ -50,7 +50,7 @@
                           </span>
                           <div class="tg-heading">
                             <h4>
-                              <a href="#">Future planning</a>
+                              <a href="#">Insulation of Hot Surfaces</a>
                             </h4>
                           </div>
                           <div class="tg-description">
@@ -67,7 +67,7 @@
                           </span>
                           <div class="tg-heading">
                             <h4>
-                              <a href="#">Future planning</a>
+                              <a href="#">I &amp; E Services</a>
                             </h4>
                           </div>
                           <div class="tg-description">
@@ -84,7 +84,7 @@
                           </span>
                           <div class="tg-heading">
                             <h4>
-                              <a href="#">Future planning</a>
+                              <a href="#">MHE Services</a>
                             </h4>
                           </div>
                           <div class="tg-description">
@@ -110,7 +110,7 @@
         <!--************************************
 					Statistics Start
         *************************************-->
-        <company-statistics></company-statistics>
+        <!-- <company-statistics></company-statistics> -->
         <!--************************************
 					Statistics End
         *************************************-->
@@ -278,4 +278,7 @@
 </script>
 
 <style lang="scss" scoped>
+  .tg-heading h4 a {
+    line-height: 1.2;
+  }
 </style>

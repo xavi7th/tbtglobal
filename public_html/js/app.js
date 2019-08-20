@@ -29,7 +29,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		3: 0
+/******/ 		2: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -538,7 +538,7 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue")
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue")
 }
 var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
 /* script */
@@ -1251,7 +1251,7 @@ function view(name) {
 }
 
 var title = function title(_title) {
-    return _title + ' | TFT Global';
+    return _title + ' | TBT Global';
 };
 
 function createRouter() {
@@ -5334,7 +5334,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.loader {\n  display: block;\n  border: 5px solid rgba(189,189,189, 0.25);\n  border-left-color: rgb(3, 169, 244);\n  border-top-color: rgb(3, 169, 244);\n  border-radius: 50%;\n  -webkit-animation: rotate 600ms infinite linear;\n          animation: rotate 600ms infinite linear;\n  margin: 0 auto;\n}\n@-webkit-keyframes rotate {\nto {\n        -webkit-transform: rotate(1turn);\n                transform: rotate(1turn)\n}\n}\n@keyframes rotate {\nto {\n        -webkit-transform: rotate(1turn);\n                transform: rotate(1turn)\n}\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/misc/main/app/Modules/Admin/Resources/assets/js/components/misc/LoaderComponent.vue"],"names":[],"mappings":";AAiBA;EACA,eAAA;EACA,0CAAA;EACA,oCAAA;EACA,mCAAA;EACA,mBAAA;EACA,gDAAA;UAAA,wCAAA;EACA,eAAA;CACA;AAEA;AACA;QACA,iCAAA;gBAAA,wBAAA;CACA;CACA;AAJA;AACA;QACA,iCAAA;gBAAA,wBAAA;CACA;CACA","file":"LoaderComponent.vue","sourcesContent":["<template>\n  <div class=\"loader\" :style=\"{ width: size + 'px', height: size + 'px' }\"></div>\n</template>\n\n<script>\n  export default {\n      name: 'Loader',\n      props: {\n        size: {\n          type: Number,\n          default: 30\n        }\n      }\n  }\n</script>\n\n<style>\n  .loader {\n    display: block;\n    border: 5px solid rgba(189,189,189, 0.25);\n    border-left-color: rgb(3, 169, 244);\n    border-top-color: rgb(3, 169, 244);\n    border-radius: 50%;\n    animation: rotate 600ms infinite linear;\n    margin: 0 auto;\n  }\n\n  @keyframes rotate {\n      to {\n          transform: rotate(1turn)\n        }\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.loader {\n  display: block;\n  border: 5px solid rgba(189,189,189, 0.25);\n  border-left-color: rgb(3, 169, 244);\n  border-top-color: rgb(3, 169, 244);\n  border-radius: 50%;\n  -webkit-animation: rotate 600ms infinite linear;\n          animation: rotate 600ms infinite linear;\n  margin: 0 auto;\n}\n@-webkit-keyframes rotate {\nto {\n        -webkit-transform: rotate(1turn);\n                transform: rotate(1turn)\n}\n}\n@keyframes rotate {\nto {\n        -webkit-transform: rotate(1turn);\n                transform: rotate(1turn)\n}\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/misc/main/app/Modules/BasicSite/Resources/assets/js/components/misc/LoaderComponent.vue"],"names":[],"mappings":";AAiBA;EACA,eAAA;EACA,0CAAA;EACA,oCAAA;EACA,mCAAA;EACA,mBAAA;EACA,gDAAA;UAAA,wCAAA;EACA,eAAA;CACA;AAEA;AACA;QACA,iCAAA;gBAAA,wBAAA;CACA;CACA;AAJA;AACA;QACA,iCAAA;gBAAA,wBAAA;CACA;CACA","file":"LoaderComponent.vue","sourcesContent":["<template>\n  <div class=\"loader\" :style=\"{ width: size + 'px', height: size + 'px' }\"></div>\n</template>\n\n<script>\n  export default {\n      name: 'Loader',\n      props: {\n        size: {\n          type: Number,\n          default: 30\n        }\n      }\n  }\n</script>\n\n<style>\n  .loader {\n    display: block;\n    border: 5px solid rgba(189,189,189, 0.25);\n    border-left-color: rgb(3, 169, 244);\n    border-top-color: rgb(3, 169, 244);\n    border-radius: 50%;\n    animation: rotate 600ms infinite linear;\n    margin: 0 auto;\n  }\n\n  @keyframes rotate {\n      to {\n          transform: rotate(1turn)\n        }\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5364,7 +5364,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"OurProjects.vue","sourceRoot":""}]);
+exports.push([module.i, "\n.tg-project figure img[data-v-619ec1a6] {\n  height: 165px;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: top;\n     object-position: top;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/OurProjects.vue"],"names":[],"mappings":";AAAA;EACE,cAAc;EACd,qBAAkB;KAAlB,kBAAkB;EAClB,wBAAqB;KAArB,qBAAqB;CAAE","file":"OurProjects.vue","sourcesContent":[".tg-project figure img {\n  height: 165px;\n  object-fit: cover;\n  object-position: top; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5401,7 +5401,7 @@ exports.push([module.i, "\n.tg-btn[data-v-7364705e] {\n  color: #fff;\n  border-
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue":
+/***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(true);
@@ -5409,7 +5409,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.tg-logo {\n  margin: 0;\n  width: 11%;\n}\nbody.tg-fixednav .tg-logo {\n  margin: 0;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AAiEA;EACA,UAAA;EACA,WAAA;CACA;AAEA;EACA,UAAA;CACA","file":"HeaderComponent.vue","sourcesContent":["<template>\n  <header id=\"tg-header\" class=\"tg-header tg-haslayout\">\n    <div class=\"tg-topbar tg-bglight tg-haslayout\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <ul class=\"tg-topcontactinfo\">\n              <li>\n                <i class=\"fa fa-phone\"></i>\n                <span>+234 803 441 1661</span>\n              </li>\n              <li>\n                <i class=\"fa fa-envelope-o\"></i>\n                <span>\n                  <a href=\"mailto:hello@domain.com \">hello@tbt-gbc.com</a>\n                </span>\n              </li>\n              <li>\n                <i class=\"fa fa-map-marker\"></i>\n                <address>Warri, Delta State Nigeria</address>\n              </li>\n            </ul>\n            <nav class=\"tg-addnav tg-themecolor\">\n              <ul>\n                <router-link :to=\"{name: 'site.careers'}\" tag=\"li\">\n                  <a>careers</a>\n                </router-link>\n                <router-link :to=\"{name: 'site.contact'}\" tag=\"li\">\n                  <a>contact</a>\n                </router-link>\n                <!-- <router-link :to=\"{name: 'site.careers'}\" tag=\"li\">\n                  <a>terms &amp; conditions</a>\n                </router-link>-->\n              </ul>\n            </nav>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-navigationarea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <strong class=\"tg-logo\">\n              <a href=\"index.html\">\n                <img src=\"img/logo.png\" alt=\"image description\" />\n              </a>\n            </strong>\n            <site-nav></site-nav>\n          </div>\n        </div>\n      </div>\n    </div>\n  </header>\n</template>\n\n<script>\n  import SiteNav from \"@components/partials/NavComponent\";\n  export default {\n    name: \"Header\",\n    components: { SiteNav }\n  };\n</script>\n\n<style lang=\"css\">\n  .tg-logo {\n    margin: 0;\n    width: 11%;\n  }\n\n  body.tg-fixednav .tg-logo {\n    margin: 0;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-logo {\n  margin: 30px 0 0;\n  width: 14%;\n}\n@media (max-width: 576px) {\n.tg-logo {\n      margin-top: 15px;\n      width: 22%;\n}\n}\nbody.tg-fixednav .tg-logo {\n  margin: 0;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;EACjB,WAAW;CAAE;AACb;AACE;MACE,iBAAiB;MACjB,WAAW;CAAE;CAAE;AAErB;EACE,UAAU;CAAE","file":"HeaderComponent.vue","sourcesContent":[".tg-logo {\n  margin: 30px 0 0;\n  width: 14%; }\n  @media (max-width: 576px) {\n    .tg-logo {\n      margin-top: 15px;\n      width: 22%; } }\n\nbody.tg-fixednav .tg-logo {\n  margin: 0; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -26318,10 +26318,6 @@ var render = function() {
       _vm._v(" "),
       _c("what-we-offer"),
       _vm._v(" "),
-      _c("why-choose-us"),
-      _vm._v(" "),
-      _c("company-statistics"),
-      _vm._v(" "),
       _c("our-projects"),
       _vm._v(" "),
       _c("contact-us"),
@@ -28719,7 +28715,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-01.jpg",
+                              src: "img/projects/img-06.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28738,7 +28734,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-02.jpg",
+                              src: "img/projects/img-07.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28757,7 +28753,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-03.jpg",
+                              src: "img/projects/img-08.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28776,7 +28772,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-04.jpg",
+                              src: "img/projects/img-09.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28795,7 +28791,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-05.jpg",
+                              src: "img/projects/img-10.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28814,7 +28810,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-01.jpg",
+                              src: "img/projects/img-11.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28833,7 +28829,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-02.jpg",
+                              src: "img/projects/img-12.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28852,7 +28848,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-03.jpg",
+                              src: "img/projects/img-13.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28871,7 +28867,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-04.jpg",
+                              src: "img/projects/img-14.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28890,7 +28886,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-05.jpg",
+                              src: "img/projects/img-15.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28927,7 +28923,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-01.jpg",
+                              src: "img/projects/img-16.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28946,7 +28942,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-02.jpg",
+                              src: "img/projects/img-17.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28965,7 +28961,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-03.jpg",
+                              src: "img/projects/img-18.jpg",
                               alt: "image description"
                             }
                           }),
@@ -28984,7 +28980,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-04.jpg",
+                              src: "img/projects/img-19.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29003,7 +28999,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-01.jpg",
+                              src: "img/projects/img-20.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29022,7 +29018,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-02.jpg",
+                              src: "img/projects/img-21.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29041,7 +29037,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-03.jpg",
+                              src: "img/projects/img-22.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29060,7 +29056,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-05.jpg",
+                              src: "img/projects/img-23.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29097,7 +29093,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-04.jpg",
+                              src: "img/projects/img-24.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29116,7 +29112,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-05.jpg",
+                              src: "img/projects/img-25.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29135,7 +29131,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-01.jpg",
+                              src: "img/projects/img-26.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29154,7 +29150,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-02.jpg",
+                              src: "img/projects/img-27.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29173,7 +29169,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-03.jpg",
+                              src: "img/projects/img-28.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29192,7 +29188,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-04.jpg",
+                              src: "img/projects/img-29.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29211,7 +29207,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-05.jpg",
+                              src: "img/projects/img-30.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29230,7 +29226,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-01.jpg",
+                              src: "img/projects/img-31.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29249,7 +29245,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-02.jpg",
+                              src: "img/projects/img-32.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29268,7 +29264,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-03.jpg",
+                              src: "img/projects/img-33.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29305,7 +29301,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-01.jpg",
+                              src: "img/projects/img-34.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29324,7 +29320,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-02.jpg",
+                              src: "img/projects/img-35.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29343,7 +29339,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-04.jpg",
+                              src: "img/projects/img-36.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29362,7 +29358,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-05.jpg",
+                              src: "img/projects/img-37.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29381,7 +29377,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-03.jpg",
+                              src: "img/projects/img-38.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29400,7 +29396,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-01.jpg",
+                              src: "img/projects/img-39.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29419,7 +29415,7 @@ var staticRenderFns = [
                         _c("figure", [
                           _c("img", {
                             attrs: {
-                              src: "img/projects/img-02.jpg",
+                              src: "img/projects/img-40.jpg",
                               alt: "image description"
                             }
                           }),
@@ -29674,35 +29670,7 @@ var render = function() {
     "header",
     { staticClass: "tg-header tg-haslayout", attrs: { id: "tg-header" } },
     [
-      _c("div", { staticClass: "tg-topbar tg-bglight tg-haslayout" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("nav", { staticClass: "tg-addnav tg-themecolor" }, [
-                _c(
-                  "ul",
-                  [
-                    _c(
-                      "router-link",
-                      { attrs: { to: { name: "site.careers" }, tag: "li" } },
-                      [_c("a", [_vm._v("careers")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "router-link",
-                      { attrs: { to: { name: "site.contact" }, tag: "li" } },
-                      [_c("a", [_vm._v("contact")])]
-                    )
-                  ],
-                  1
-                )
-              ])
-            ])
-          ])
-        ])
-      ]),
+      _vm._m(0),
       _vm._v(" "),
       _c("div", { staticClass: "tg-navigationarea" }, [
         _c("div", { staticClass: "container" }, [
@@ -29724,27 +29692,35 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "tg-topcontactinfo" }, [
-      _c("li", [
-        _c("i", { staticClass: "fa fa-phone" }),
-        _vm._v(" "),
-        _c("span", [_vm._v("+234 803 441 1661")])
-      ]),
-      _vm._v(" "),
-      _c("li", [
-        _c("i", { staticClass: "fa fa-envelope-o" }),
-        _vm._v(" "),
-        _c("span", [
-          _c("a", { attrs: { href: "mailto:hello@domain.com " } }, [
-            _vm._v("hello@tbt-gbc.com")
+    return _c("div", { staticClass: "tg-topbar tg-bglight tg-haslayout" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
+            _c("ul", { staticClass: "tg-topcontactinfo" }, [
+              _c("li", [
+                _c("i", { staticClass: "fa fa-phone" }),
+                _vm._v(" "),
+                _c("span", [_vm._v("+234 803 441 1661")])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("i", { staticClass: "fa fa-envelope-o" }),
+                _vm._v(" "),
+                _c("span", [
+                  _c("a", { attrs: { href: "mailto:hello@domain.com " } }, [
+                    _vm._v("hello@tbt-gbc.com")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("i", { staticClass: "fa fa-map-marker" }),
+                _vm._v(" "),
+                _c("address", [_vm._v("Warri, Delta State Nigeria")])
+              ])
+            ])
           ])
         ])
-      ]),
-      _vm._v(" "),
-      _c("li", [
-        _c("i", { staticClass: "fa fa-map-marker" }),
-        _vm._v(" "),
-        _c("address", [_vm._v("Warri, Delta State Nigeria")])
       ])
     ])
   },
@@ -32957,23 +32933,23 @@ if(false) {
 
 /***/ }),
 
-/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue":
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue");
+var content = __webpack_require__("./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/HeaderComponent.vue");
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("baa0660a", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("9e826f3e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./HeaderComponent.vue", function() {
-     var newContent = require("!!../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./HeaderComponent.vue");
+   module.hot.accept("!!../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./HeaderComponent.vue", function() {
+     var newContent = require("!!../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cbc14f0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./HeaderComponent.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });

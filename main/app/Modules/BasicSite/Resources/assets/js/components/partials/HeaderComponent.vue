@@ -20,7 +20,7 @@
                 <address>Warri, Delta State Nigeria</address>
               </li>
             </ul>
-            <nav class="tg-addnav tg-themecolor">
+            <!-- <nav class="tg-addnav tg-themecolor">
               <ul>
                 <router-link :to="{name: 'site.careers'}" tag="li">
                   <a>careers</a>
@@ -28,11 +28,11 @@
                 <router-link :to="{name: 'site.contact'}" tag="li">
                   <a>contact</a>
                 </router-link>
-                <!-- <router-link :to="{name: 'site.careers'}" tag="li">
+                <router-link :to="{name: 'site.careers'}" tag="li">
                   <a>terms &amp; conditions</a>
-                </router-link>-->
+                </router-link>
               </ul>
-            </nav>
+            </nav>-->
           </div>
         </div>
       </div>
@@ -62,10 +62,15 @@
   };
 </script>
 
-<style lang="css">
+<style lang="scss">
   .tg-logo {
-    margin: 0;
-    width: 11%;
+    margin: 30px 0 0;
+    width: 14%;
+
+    @media (max-width: 576px) {
+      margin-top: 15px;
+      width: 22%;
+    }
   }
 
   body.tg-fixednav .tg-logo {

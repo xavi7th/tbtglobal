@@ -5525,7 +5525,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"ServicesPage.vue","sourceRoot":""}]);
+exports.push([module.i, "\n.tg-heading h4 a[data-v-25e24ef5] {\n  line-height: 1.2;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ServicesPage.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;CAAE","file":"ServicesPage.vue","sourcesContent":[".tg-heading h4 a {\n  line-height: 1.2; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5585,7 +5585,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"AboutPage.vue","sourceRoot":""}]);
+exports.push([module.i, "\n.tg-whatwedoimages figure img[data-v-39b520f8] {\n  width: 100%;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/AboutPage.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;CAAE","file":"AboutPage.vue","sourcesContent":[".tg-whatwedoimages figure img {\n  width: 100%; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5875,7 +5875,11 @@ var render = function() {
                                                   _c(
                                                     "a",
                                                     { attrs: { href: "#" } },
-                                                    [_vm._v("Future planning")]
+                                                    [
+                                                      _vm._v(
+                                                        "Valve Maintenance"
+                                                      )
+                                                    ]
                                                   )
                                                 ])
                                               ]
@@ -5922,7 +5926,11 @@ var render = function() {
                                                   _c(
                                                     "a",
                                                     { attrs: { href: "#" } },
-                                                    [_vm._v("Future planning")]
+                                                    [
+                                                      _vm._v(
+                                                        "Insulation of Hot Surfaces"
+                                                      )
+                                                    ]
                                                   )
                                                 ])
                                               ]
@@ -5968,7 +5976,7 @@ var render = function() {
                                                   _c(
                                                     "a",
                                                     { attrs: { href: "#" } },
-                                                    [_vm._v("Future planning")]
+                                                    [_vm._v("I & E Services")]
                                                   )
                                                 ])
                                               ]
@@ -6014,7 +6022,7 @@ var render = function() {
                                                   _c(
                                                     "a",
                                                     { attrs: { href: "#" } },
-                                                    [_vm._v("Future planning")]
+                                                    [_vm._v("MHE Services")]
                                                   )
                                                 ])
                                               ]
@@ -6059,8 +6067,6 @@ var render = function() {
                       ])
                     ]
                   ),
-                  _vm._v(" "),
-                  _c("company-statistics"),
                   _vm._v(" "),
                   _c(
                     "section",
