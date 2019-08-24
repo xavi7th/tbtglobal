@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
-Route::get('/install-migrations', function () {
-	/**
-	 * ! L5.8 use the commands directly
-	 */
-	return Artisan::call('migrate:install --database=foo');
-});
+// Route::get('/install-migrations', function () {
+// 	/**
+// 	 * ! L5.8 use the commands directly
+// 	 */
+// 	return Artisan::call('migrate:install --database=foo');
+// });

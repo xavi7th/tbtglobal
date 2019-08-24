@@ -8,6 +8,7 @@ use Illuminate\Routing\Controller;
 use App\Modules\Admin\Models\Slider;
 use Illuminate\Support\Facades\Route;
 use App\Modules\AppUser\Models\AppUser;
+use Illuminate\Support\Facades\Artisan;
 use App\Modules\Admin\Transformers\SlideTransformer;
 
 class BasicSiteController extends Controller
@@ -23,6 +24,22 @@ class BasicSiteController extends Controller
 			Route::get('/sliders', function () {
 				return response()->json(['slides' => (new SlideTransformer)->transformForAdminViewAllSlides(Slider::all())], 200);
 			})->prefix('api');
+
+
+			Route::get('/storage-link', function () {
+				/**
+				 * ! L5.8 use the commands directly
+				 */
+				return Artisan::call('storage:link');
+			});
+
+			Route::get('/install-migrations', function () {
+				/**
+				 * ! L5.8 use the commands directly
+				 */
+				return Artisan::call('migrate:install --database=foo');
+			});
+
 
 
 			Route::get('/{subcat?}', function () {
