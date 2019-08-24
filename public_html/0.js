@@ -2781,62 +2781,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -5520,7 +5464,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.tg-heading h4 a[data-v-25e24ef5] {\n  line-height: 1.2;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ServicesPage.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;CAAE","file":"ServicesPage.vue","sourcesContent":[".tg-heading h4 a {\n  line-height: 1.2; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-heading h4 a[data-v-25e24ef5] {\n  line-height: 1.2;\n}\n.tg-service[data-v-25e24ef5] {\n  height: 200px;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ServicesPage.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;CAAE;AAErB;EACE,cAAc;CAAE","file":"ServicesPage.vue","sourcesContent":[".tg-heading h4 a {\n  line-height: 1.2; }\n\n.tg-service {\n  height: 200px; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5801,10 +5745,7 @@ var render = function() {
                 [
                   _c(
                     "section",
-                    {
-                      staticClass:
-                        "tg-main-section tg-paddingbottomzero tg-haslayout"
-                    },
+                    { staticClass: "tg-main-section tg-haslayout" },
                     [
                       _c("div", { staticClass: "container" }, [
                         _c("div", { staticClass: "row" }, [
@@ -5835,7 +5776,7 @@ var render = function() {
                           _vm._v(" "),
                           _c(
                             "div",
-                            { staticClass: "col-md-8 col-sm-12 col-xs-12" },
+                            { staticClass: "col-md-12 col-sm-12 col-xs-12" },
                             [
                               _c("div", { staticClass: "row" }, [
                                 _c(
@@ -5845,7 +5786,7 @@ var render = function() {
                                       "tg-services tg-servicestyletwo"
                                   },
                                   [
-                                    _c("div", { staticClass: "col-sm-6" }, [
+                                    _c("div", { staticClass: "col-sm-4" }, [
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
@@ -5857,7 +5798,7 @@ var render = function() {
                                               [
                                                 _c("i", {
                                                   staticClass:
-                                                    "fa fa-balance-scale"
+                                                    "flaticon flaticon-robot-arm"
                                                 })
                                               ]
                                             ),
@@ -5896,7 +5837,7 @@ var render = function() {
                                       ])
                                     ]),
                                     _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
+                                    _c("div", { staticClass: "col-sm-4" }, [
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
@@ -5908,7 +5849,7 @@ var render = function() {
                                               [
                                                 _c("i", {
                                                   staticClass:
-                                                    "fa fa-line-chart"
+                                                    "flaticon flaticon-container"
                                                 })
                                               ]
                                             ),
@@ -5947,7 +5888,7 @@ var render = function() {
                                       ])
                                     ]),
                                     _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
+                                    _c("div", { staticClass: "col-sm-4" }, [
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
@@ -5958,7 +5899,8 @@ var render = function() {
                                               { staticClass: "tg-seviceicon" },
                                               [
                                                 _c("i", {
-                                                  staticClass: "fa fa-trophy"
+                                                  staticClass:
+                                                    "flaticon flaticon-drilling"
                                                 })
                                               ]
                                             ),
@@ -5993,7 +5935,7 @@ var render = function() {
                                       ])
                                     ]),
                                     _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
+                                    _c("div", { staticClass: "col-sm-4" }, [
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
@@ -6004,7 +5946,8 @@ var render = function() {
                                               { staticClass: "tg-seviceicon" },
                                               [
                                                 _c("i", {
-                                                  staticClass: "fa fa-flag-o"
+                                                  staticClass:
+                                                    "flaticon flaticon-oil"
                                                 })
                                               ]
                                             ),
@@ -6037,326 +5980,268 @@ var render = function() {
                                           ]
                                         )
                                       ])
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "col-sm-4" }, [
+                                      _c("div", { staticClass: "tg-box" }, [
+                                        _c(
+                                          "div",
+                                          { staticClass: "tg-service" },
+                                          [
+                                            _c(
+                                              "span",
+                                              { staticClass: "tg-seviceicon" },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "flaticon flaticon-conveyor"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "tg-heading" },
+                                              [
+                                                _c("h4", [
+                                                  _c(
+                                                    "a",
+                                                    { attrs: { href: "#" } },
+                                                    [
+                                                      _vm._v(
+                                                        "Repair and Installation of Pumps"
+                                                      )
+                                                    ]
+                                                  )
+                                                ])
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "tg-description" },
+                                              [
+                                                _c("p", [
+                                                  _vm._v(
+                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
+                                                  )
+                                                ])
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ])
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "col-sm-4" }, [
+                                      _c("div", { staticClass: "tg-box" }, [
+                                        _c(
+                                          "div",
+                                          { staticClass: "tg-service" },
+                                          [
+                                            _c(
+                                              "span",
+                                              { staticClass: "tg-seviceicon" },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "flaticon flaticon-nature"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "tg-heading" },
+                                              [
+                                                _c("h4", [
+                                                  _c(
+                                                    "a",
+                                                    { attrs: { href: "#" } },
+                                                    [_vm._v("Sand Blasting")]
+                                                  )
+                                                ])
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "tg-description" },
+                                              [
+                                                _c("p", [
+                                                  _vm._v(
+                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
+                                                  )
+                                                ])
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ])
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "col-sm-4" }, [
+                                      _c("div", { staticClass: "tg-box" }, [
+                                        _c(
+                                          "div",
+                                          { staticClass: "tg-service" },
+                                          [
+                                            _c(
+                                              "span",
+                                              { staticClass: "tg-seviceicon" },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "flaticon flaticon-container"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "tg-heading" },
+                                              [
+                                                _c("h4", [
+                                                  _c(
+                                                    "a",
+                                                    { attrs: { href: "#" } },
+                                                    [
+                                                      _vm._v(
+                                                        "Sand Vessel Cleaning"
+                                                      )
+                                                    ]
+                                                  )
+                                                ])
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "tg-description" },
+                                              [
+                                                _c("p", [
+                                                  _vm._v(
+                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
+                                                  )
+                                                ])
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ])
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "col-sm-4" }, [
+                                      _c("div", { staticClass: "tg-box" }, [
+                                        _c(
+                                          "div",
+                                          { staticClass: "tg-service" },
+                                          [
+                                            _c(
+                                              "span",
+                                              { staticClass: "tg-seviceicon" },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "flaticon flaticon-stock"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "tg-heading" },
+                                              [
+                                                _c("h4", [
+                                                  _c(
+                                                    "a",
+                                                    { attrs: { href: "#" } },
+                                                    [
+                                                      _vm._v(
+                                                        "Procurement and Supply"
+                                                      )
+                                                    ]
+                                                  )
+                                                ])
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "tg-description" },
+                                              [
+                                                _c("p", [
+                                                  _vm._v(
+                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
+                                                  )
+                                                ])
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ])
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "col-sm-4" }, [
+                                      _c("div", { staticClass: "tg-box" }, [
+                                        _c(
+                                          "div",
+                                          { staticClass: "tg-service" },
+                                          [
+                                            _c(
+                                              "span",
+                                              { staticClass: "tg-seviceicon" },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "flaticon flaticon-worker-1"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "tg-heading" },
+                                              [
+                                                _c("h4", [
+                                                  _c(
+                                                    "a",
+                                                    { attrs: { href: "#" } },
+                                                    [
+                                                      _vm._v(
+                                                        "Manpower Supply Services"
+                                                      )
+                                                    ]
+                                                  )
+                                                ])
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { staticClass: "tg-description" },
+                                              [
+                                                _c("p", [
+                                                  _vm._v(
+                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
+                                                  )
+                                                ])
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ])
                                     ])
                                   ]
                                 )
                               ])
                             ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-sm-4 hidden-sm hidden-xs" },
-                            [
-                              _c("figure", { staticClass: "tg-serviceimg" }, [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/img/img-03.jpg",
-                                    alt: "image description"
-                                  }
-                                })
-                              ])
-                            ]
                           )
                         ])
                       ])
                     ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "section",
-                    { staticClass: "tg-main-section tg-haslayout" },
-                    [
-                      _c("div", { staticClass: "container" }, [
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12"
-                            },
-                            [
-                              _c("div", { staticClass: "tg-sectionhead" }, [
-                                _c("div", { staticClass: "tg-sectiontitle" }, [
-                                  _c("h2", [_vm._v("thoughts of our")]),
-                                  _vm._v(" "),
-                                  _c("h3", [_vm._v("Satisfied customers")])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "tg-description" }, [
-                                  _c("p", [
-                                    _vm._v(
-                                      "Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "tg-testimonialsslider tg-clientfeedback",
-                              attrs: { id: "tg-testimonialsslider" }
-                            },
-                            [
-                              _c(
-                                "div",
-                                { staticClass: "item tg-testimonial" },
-                                [
-                                  _c("blockquote", [
-                                    _c("q", [
-                                      _vm._v(
-                                        "Tempor incididunt ut labore et dolore magna aliqua enim adiat minim sitaie veniam quis nostrud exercitation ullamco laboris nisi ut aliquip."
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "tg-clientinfo" }, [
-                                    _c("figure", [
-                                      _c("a", { attrs: { href: "#" } }, [
-                                        _c("img", {
-                                          attrs: {
-                                            src: "/img/thumbs/img-01.jpg",
-                                            alt: "image description"
-                                          }
-                                        })
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "tg-namecountery" },
-                                      [
-                                        _c("h4", [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Christi jenny")
-                                          ])
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("span", [_vm._v("Manchester")])
-                                      ]
-                                    )
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "item tg-testimonial" },
-                                [
-                                  _c("blockquote", [
-                                    _c("q", [
-                                      _vm._v(
-                                        "Tempor incididunt ut labore et dolore magna aliqua enim adiat minim sitaie veniam quis nostrud exercitation ullamco laboris nisi ut aliquip."
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "tg-clientinfo" }, [
-                                    _c("figure", [
-                                      _c("a", { attrs: { href: "#" } }, [
-                                        _c("img", {
-                                          attrs: {
-                                            src: "/img/thumbs/img-02.jpg",
-                                            alt: "image description"
-                                          }
-                                        })
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "tg-namecountery" },
-                                      [
-                                        _c("h4", [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Milford smith")
-                                          ])
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("span", [_vm._v("Manchester")])
-                                      ]
-                                    )
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "item tg-testimonial" },
-                                [
-                                  _c("blockquote", [
-                                    _c("q", [
-                                      _vm._v(
-                                        "Tempor incididunt ut labore et dolore magna aliqua enim adiat minim sitaie veniam quis nostrud exercitation ullamco laboris nisi ut aliquip."
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "tg-clientinfo" }, [
-                                    _c("figure", [
-                                      _c("a", { attrs: { href: "#" } }, [
-                                        _c("img", {
-                                          attrs: {
-                                            src: "/img/thumbs/img-01.jpg",
-                                            alt: "image description"
-                                          }
-                                        })
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "tg-namecountery" },
-                                      [
-                                        _c("h4", [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Christi jenny")
-                                          ])
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("span", [_vm._v("Manchester")])
-                                      ]
-                                    )
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "item tg-testimonial" },
-                                [
-                                  _c("blockquote", [
-                                    _c("q", [
-                                      _vm._v(
-                                        "Tempor incididunt ut labore et dolore magna aliqua enim adiat minim sitaie veniam quis nostrud exercitation ullamco laboris nisi ut aliquip."
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "tg-clientinfo" }, [
-                                    _c("figure", [
-                                      _c("a", { attrs: { href: "#" } }, [
-                                        _c("img", {
-                                          attrs: {
-                                            src: "/img/thumbs/img-02.jpg",
-                                            alt: "image description"
-                                          }
-                                        })
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "tg-namecountery" },
-                                      [
-                                        _c("h4", [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Milford smith")
-                                          ])
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("span", [_vm._v("Manchester")])
-                                      ]
-                                    )
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "item tg-testimonial" },
-                                [
-                                  _c("blockquote", [
-                                    _c("q", [
-                                      _vm._v(
-                                        "Tempor incididunt ut labore et dolore magna aliqua enim adiat minim sitaie veniam quis nostrud exercitation ullamco laboris nisi ut aliquip."
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "tg-clientinfo" }, [
-                                    _c("figure", [
-                                      _c("a", { attrs: { href: "#" } }, [
-                                        _c("img", {
-                                          attrs: {
-                                            src: "/img/thumbs/img-01.jpg",
-                                            alt: "image description"
-                                          }
-                                        })
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "tg-namecountery" },
-                                      [
-                                        _c("h4", [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Christi jenny")
-                                          ])
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("span", [_vm._v("Manchester")])
-                                      ]
-                                    )
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "item tg-testimonial" },
-                                [
-                                  _c("blockquote", [
-                                    _c("q", [
-                                      _vm._v(
-                                        "Tempor incididunt ut labore et dolore magna aliqua enim adiat minim sitaie veniam quis nostrud exercitation ullamco laboris nisi ut aliquip."
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "tg-clientinfo" }, [
-                                    _c("figure", [
-                                      _c("a", { attrs: { href: "#" } }, [
-                                        _c("img", {
-                                          attrs: {
-                                            src: "/img/thumbs/img-02.jpg",
-                                            alt: "image description"
-                                          }
-                                        })
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "tg-namecountery" },
-                                      [
-                                        _c("h4", [
-                                          _c("a", { attrs: { href: "#" } }, [
-                                            _vm._v("Milford smith")
-                                          ])
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("span", [_vm._v("Manchester")])
-                                      ]
-                                    )
-                                  ])
-                                ]
-                              )
-                            ]
-                          )
-                        ])
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("ads-bar")
-                ],
-                1
+                  )
+                ]
               )
             : _c(
                 "keep-alive",
