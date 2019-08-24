@@ -4,71 +4,61 @@
       <div class="container">
         <div class="row">
           <div class="tg-footerwidgets">
-            <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="col-md-6 col-sm-12 col-xs-12">
               <div class="tg-widget tg-widgetinfo">
-                <div id="tg-footerlocation-map" class="tg-footerlocation-map"></div>
-                <h4>Head office</h4>
-                <ul class="tg-contactinfo">
-                  <li>
-                    <i class="fa fa-home"></i>
-                    <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
-                  </li>
-                  <li>
-                    <i class="fa fa-envelope-o"></i>
-                    <span>
-                      <a href="mailto:">hello@tftglobal.com</a>
-                    </span>
-                  </li>
-                  <li>
-                    <i class="fa fa-phone"></i>
-                    <span>+44 123 456 788 - 9</span>
-                  </li>
-                </ul>
+                <div id="tg-footerlocation-map" class="tg-footerlocation-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.196040245999!2d5.7441429152009365!3d5.537918535369969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad5ec810070d%3A0xb060401e1d0c99e2!2sAirport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566652457002!5m2!1sen!2sng"
+                    frameborder="0"
+                    style="border:0; height:auto; width:100%;"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="footer-address">
+                  <h4>Head office</h4>
+                  <ul class="tg-contactinfo">
+                    <li>
+                      <i class="fa fa-home"></i>
+                      <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope-o"></i>
+                      <span>
+                        <a href="mailto:">hello@tftglobal.com</a>
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa fa-phone"></i>
+                      <span>+44 123 456 788 - 9</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-6 col-md-offset-2">
+            <div class="col-md-6 col-sm-12 col-xs-12">
               <div class="tg-widget tg-widgetusefulllinks">
                 <div class="tg-widgettitle">
                   <h3>useful links</h3>
                 </div>
                 <ul>
                   <li>
-                    <a href="#">Valve Maintenance</a>
+                    <router-link :to="{name: 'site.root'}">Home</router-link>
                   </li>
                   <li>
-                    <a href="#">I &amp; E Services</a>
+                    <router-link :to="{name: 'site.about'}">About</router-link>
                   </li>
                   <li>
-                    <a href="#">Insulation of hot surfaces</a>
+                    <router-link :to="{name: 'site.services'}">Services</router-link>
                   </li>
                   <li>
-                    <a href="#">Sand blasting and painting</a>
+                    <router-link :to="{name: 'site.projects'}">Projects</router-link>
+                  </li>
+                  <li>
+                    <router-link :to="{name: 'site.contact'}">Contact Us</router-link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-6">
-              <div class="tg-widget tg-widgetusefulllinks">
-                <div class="tg-widgettitle">
-                  <h3>&nbsp;</h3>
-                </div>
-                <ul>
-                  <li>
-                    <a href="#">Sand Vessel Cleaning</a>
-                  </li>
-                  <li>
-                    <a href="#">Procurement &amp; Supplies</a>
-                  </li>
-                  <li>
-                    <a href="#">MHE Services</a>
-                  </li>
-                  <li>
-                    <a href="#">Manpower Supply &amp; Service</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-6"></div>
           </div>
         </div>
       </div>
@@ -124,7 +114,35 @@
 </script>
 
 <style lang="css">
-  footer {
-    color: aliceblue;
+  .tg-footerwidgets .tg-widget.tg-widgetinfo,
+  .tg-widget {
+    padding: 40px 0;
+    display: flex;
+  }
+
+  .tg-widget {
+    flex-direction: column;
+  }
+
+  .tg-widget ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tg-widget ul li {
+    width: auto;
+  }
+
+  .tg-footerwidgets .tg-widget ul li + li {
+    border-color: transparent;
+  }
+
+  .tg-widgetusefulllinks ul li:first-child {
+    padding-top: 20px;
+  }
+
+  .footer-address {
+    margin-top: 20px;
   }
 </style>

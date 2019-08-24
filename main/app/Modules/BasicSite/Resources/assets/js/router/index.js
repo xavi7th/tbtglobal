@@ -93,80 +93,80 @@ export function createRouter() {
                 meta: {
                     title: title( 'Our Service' )
                 },
-                children: [ {
-                        path: 'valve-maintenance',
-                        component: view( 'services/Valve' ),
-                        name: 'site.services.valve',
-                        meta: {
-                            title: title( 'Valve Maintenance Service' )
-                        }
-                    },
-                    {
-                        path: 'i-&-e-services',
-                        component: view( 'services/IE' ),
-                        name: 'site.services.ie',
-                        meta: {
-                            title: title( 'I&amp;E Services' )
-                        }
-                    },
-                    {
-                        path: 'insulation-of-hot-surfaces',
-                        component: view( 'services/Insulation' ),
-                        name: 'site.services.insulation',
-                        meta: {
-                            title: title( 'Insulation Services' )
-                        }
-                    },
-                    {
-                        path: 'installation-and-repairs-of-pumps',
-                        component: view( 'services/Pumps' ),
-                        name: 'site.services.pumps',
-                        meta: {
-                            title: title( 'Pumps Installation' )
-                        }
-                    },
-                    {
-                        path: 'sand-blasting-and-painting.',
-                        component: view( 'services/SandBlasting' ),
-                        name: 'site.services.sand',
-                        meta: {
-                            title: title( 'Sand Blasting Services' )
-                        }
-                    },
-                    {
-                        path: 'vessel-cleaning',
-                        component: view( 'services/VesselCleaning' ),
-                        name: 'site.services.vessel',
-                        meta: {
-                            title: title( 'Vessel Cleaning Services' )
-                        }
-                    },
-                    {
-                        path: 'procurement-and-supplies',
-                        component: view( 'services/Procurement' ),
-                        name: 'site.services.supplies',
-                        meta: {
-                            title: title( 'Procurement Services' )
-                        }
-                    },
-                    {
-                        path: 'mhe-services',
-                        component: view( 'services/MHE' ),
-                        name: 'site.services.mhe',
-                        meta: {
-                            title: title( 'MHE Services' )
-                        }
-                    },
-                    {
-                        path: 'manpower-supply',
-                        component: view( 'services/ManpowerSupply' ),
-                        name: 'site.services.manpower',
-                        meta: {
-                            title: title( 'Manpower Supply Services' )
-                        }
-                    },
+                // children: [ {
+                //         path: 'valve-maintenance',
+                //         component: view( 'services/Valve' ),
+                //         name: 'site.services.valve',
+                //         meta: {
+                //             title: title( 'Valve Maintenance Service' )
+                //         }
+                //     },
+                //     {
+                //         path: 'i-&-e-services',
+                //         component: view( 'services/IE' ),
+                //         name: 'site.services.ie',
+                //         meta: {
+                //             title: title( 'I&amp;E Services' )
+                //         }
+                //     },
+                //     {
+                //         path: 'insulation-of-hot-surfaces',
+                //         component: view( 'services/Insulation' ),
+                //         name: 'site.services.insulation',
+                //         meta: {
+                //             title: title( 'Insulation Services' )
+                //         }
+                //     },
+                //     {
+                //         path: 'installation-and-repairs-of-pumps',
+                //         component: view( 'services/Pumps' ),
+                //         name: 'site.services.pumps',
+                //         meta: {
+                //             title: title( 'Pumps Installation' )
+                //         }
+                //     },
+                //     {
+                //         path: 'sand-blasting-and-painting.',
+                //         component: view( 'services/SandBlasting' ),
+                //         name: 'site.services.sand',
+                //         meta: {
+                //             title: title( 'Sand Blasting Services' )
+                //         }
+                //     },
+                //     {
+                //         path: 'vessel-cleaning',
+                //         component: view( 'services/VesselCleaning' ),
+                //         name: 'site.services.vessel',
+                //         meta: {
+                //             title: title( 'Vessel Cleaning Services' )
+                //         }
+                //     },
+                //     {
+                //         path: 'procurement-and-supplies',
+                //         component: view( 'services/Procurement' ),
+                //         name: 'site.services.supplies',
+                //         meta: {
+                //             title: title( 'Procurement Services' )
+                //         }
+                //     },
+                //     {
+                //         path: 'mhe-services',
+                //         component: view( 'services/MHE' ),
+                //         name: 'site.services.mhe',
+                //         meta: {
+                //             title: title( 'MHE Services' )
+                //         }
+                //     },
+                //     {
+                //         path: 'manpower-supply',
+                //         component: view( 'services/ManpowerSupply' ),
+                //         name: 'site.services.manpower',
+                //         meta: {
+                //             title: title( 'Manpower Supply Services' )
+                //         }
+                //     },
 
-                ],
+                // ],
             },
             {
                 path: '*',

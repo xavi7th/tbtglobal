@@ -26,58 +26,58 @@
           <a>services</a>
           <div class="mega-menu">
             <ul class="mega-menu-row">
-              <router-link :to="{name: 'site.about'}" tag="li" class="mega-menu-col">
+              <router-link :to="{name: 'site.services'}" tag="li" class="mega-menu-col w-md-100">
                 <a>Our Services</a>
                 <ul>
-                  <router-link :to="{name: 'site.services.valve'}" tag="li">
+                  <router-link :to="{name: 'site.services'}" tag="li">
                     <a class="fa fa-angle-right">valve maintenance</a>
                   </router-link>
 
-                  <router-link :to="{name: 'site.services.ie'}" tag="li">
+                  <router-link :to="{name: 'site.services'}" tag="li">
                     <a class="fa fa-angle-right">i &amp; e services</a>
                   </router-link>
 
-                  <router-link :to="{name: 'site.services.insulation'}" tag="li">
+                  <router-link :to="{name: 'site.services'}" tag="li">
                     <a class="fa fa-angle-right">insulation of hot surfaces</a>
                   </router-link>
 
-                  <router-link :to="{name: 'site.services.pumps'}" tag="li">
+                  <router-link :to="{name: 'site.services'}" tag="li">
                     <a class="fa fa-angle-right">repair and installation of pumps</a>
                   </router-link>
 
-                  <router-link :to="{name: 'site.services.sand'}" tag="li">
+                  <router-link :to="{name: 'site.services'}" tag="li">
                     <a class="fa fa-angle-right">sand blasting and painting</a>
                   </router-link>
 
-                  <router-link :to="{name: 'site.services.vessel'}" tag="li">
+                  <router-link :to="{name: 'site.services'}" tag="li">
                     <a class="fa fa-angle-right">sand vessel cleaning</a>
                   </router-link>
 
-                  <router-link :to="{name: 'site.services.supplies'}" tag="li">
+                  <router-link :to="{name: 'site.services'}" tag="li">
                     <a class="fa fa-angle-right">procurement and supplies</a>
                   </router-link>
 
-                  <router-link :to="{name: 'site.services.mhe'}" tag="li">
+                  <router-link :to="{name: 'site.services'}" tag="li">
                     <a class="fa fa-angle-right">mhe services</a>
                   </router-link>
 
-                  <router-link :to="{name: 'site.services.manpower'}" tag="li">
+                  <router-link :to="{name: 'site.services'}" tag="li">
                     <a class="fa fa-angle-right">manpower supply services</a>
                   </router-link>
 
                   <router-link :to="{name: 'site.services'}" tag="li">
-                    <a>View all</a>
+                    <a>View Services</a>
                   </router-link>
                 </ul>
               </router-link>
 
-              <li class="mega-menu-col">
+              <li class="mega-menu-col hidden-sm hidden-xs">
                 <a href="#">Head office</a>
                 <ul>
                   <li>
                     <div id="tg-location-map" class="tg-location-map">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31768.111194440487!2d5.765151139550782!3d5.564956500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfr!4v1563331258312!5m2!1sen!2sfr"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.196040245999!2d5.7441429152009365!3d5.537918535369969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad5ec810070d%3A0xb060401e1d0c99e2!2sAirport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566652457002!5m2!1sen!2sng"
                         frameborder="0"
                         style="border:0"
                         allowfullscreen
@@ -133,5 +133,11 @@
 <style lang="scss" scoped>
   iframe {
     width: 100%;
+  }
+
+  .w-md-100 {
+    @media (max-width: 767px) {
+      width: 100% !important;
+    }
   }
 </style>
