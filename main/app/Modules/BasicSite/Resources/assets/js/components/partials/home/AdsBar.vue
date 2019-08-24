@@ -1,10 +1,5 @@
 <template>
-  <section
-    class="tg-main-section tg-haslayout tg-parallax-window"
-    data-appear-top-offset="600"
-    data-parallax="scroll"
-    data-image-src="img/parallax/bgparallax-02.jpg"
-  >
+  <section class="tg-main-section tg-haslayout">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-xs-12">
@@ -28,4 +23,10 @@
 </script>
 
 <style lang="scss" scoped>
+  .tg-main-section {
+    background-image: url("/img/parallax/bgparallax-02.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 </style>

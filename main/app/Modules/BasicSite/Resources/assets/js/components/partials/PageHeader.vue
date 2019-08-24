@@ -1,11 +1,6 @@
 <template>
   <div id="tg-innerbanner" class="tg-innerbanner tg-haslayout">
-    <div
-      class="tg-parallaximg"
-      data-appear-top-offset="600"
-      data-parallax="scroll"
-      data-image-src="/img/parallax/bgparallax-03.jpg"
-    ></div>
+    <div class="tg-parallaximg"></div>
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -48,4 +43,7 @@
 </script>
 
 <style lang="scss" scoped>
+  .tg-parallaximg {
+    background-image: url("/img/parallax/bgparallax-03.jpg");
+  }
 </style>

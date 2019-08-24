@@ -3414,11 +3414,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -5224,7 +5219,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"AdsBar.vue","sourceRoot":""}]);
+exports.push([module.i, "\n.tg-main-section[data-v-0f36499a] {\n  background-image: url(\"/img/parallax/bgparallax-02.jpg\");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-position: top;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/AdsBar.vue"],"names":[],"mappings":";AAAA;EACE,yDAAyD;EACzD,6BAA6B;EAC7B,6BAA6B;EAC7B,yBAAyB;CAAE","file":"AdsBar.vue","sourcesContent":[".tg-main-section {\n  background-image: url(\"/img/parallax/bgparallax-02.jpg\");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-position: top; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -26481,42 +26476,31 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "section",
-    {
-      staticClass: "tg-main-section tg-haslayout tg-parallax-window",
-      attrs: {
-        "data-appear-top-offset": "600",
-        "data-parallax": "scroll",
-        "data-image-src": "img/parallax/bgparallax-02.jpg"
-      }
-    },
-    [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
-            _c(
-              "div",
-              { staticClass: "tg-getadvice" },
-              [
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "tg-btn",
-                    attrs: { to: { name: "site.contact" } }
-                  },
-                  [_c("span", [_vm._v("Get Advice")])]
-                ),
-                _vm._v(" "),
-                _vm._m(0)
-              ],
-              1
-            )
-          ])
+  return _c("section", { staticClass: "tg-main-section tg-haslayout" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
+          _c(
+            "div",
+            { staticClass: "tg-getadvice" },
+            [
+              _c(
+                "router-link",
+                {
+                  staticClass: "tg-btn",
+                  attrs: { to: { name: "site.contact" } }
+                },
+                [_c("span", [_vm._v("Get Advice")])]
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ],
+            1
+          )
         ])
       ])
-    ]
-  )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {

@@ -5432,11 +5432,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["title"],
@@ -5585,7 +5580,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.tg-whatwedoimages figure img[data-v-39b520f8] {\n  width: 100%;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/AboutPage.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;CAAE","file":"AboutPage.vue","sourcesContent":[".tg-whatwedoimages figure img {\n  width: 100%; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-whatwedoimages figure img[data-v-39b520f8] {\n  width: 100%;\n  min-height: 210px;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/AboutPage.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;EACZ,kBAAkB;CAAE","file":"AboutPage.vue","sourcesContent":[".tg-whatwedoimages figure img {\n  width: 100%;\n  min-height: 210px; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5645,7 +5640,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"PageHeader.vue","sourceRoot":""}]);
+exports.push([module.i, "\n.tg-parallaximg[data-v-6b646c2c] {\n  background-image: url(\"/img/parallax/bgparallax-03.jpg\");\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/PageHeader.vue"],"names":[],"mappings":";AAAA;EACE,yDAAyD;CAAE","file":"PageHeader.vue","sourcesContent":[".tg-parallaximg {\n  background-image: url(\"/img/parallax/bgparallax-03.jpg\"); }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -9713,14 +9708,7 @@ var render = function() {
       attrs: { id: "tg-innerbanner" }
     },
     [
-      _c("div", {
-        staticClass: "tg-parallaximg",
-        attrs: {
-          "data-appear-top-offset": "600",
-          "data-parallax": "scroll",
-          "data-image-src": "/img/parallax/bgparallax-03.jpg"
-        }
-      }),
+      _c("div", { staticClass: "tg-parallaximg" }),
       _vm._v(" "),
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
