@@ -3,6 +3,21 @@
     <page-header title="Contact Us"></page-header>
     <main id="tg-main" class="tg-main tg-haslayout">
       <!--************************************
+					Location Map Start
+      *************************************-->
+      <div id="tg-locationmap" class="tg-locationmap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.196040245999!2d5.7441429152009365!3d5.537918535369969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad5ec810070d%3A0xb060401e1d0c99e2!2sAirport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566652457002!5m2!1sen!2sng"
+          frameborder="0"
+          style="border:0; height:100%; width:100%;"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!--************************************
+					Location Map End
+      *************************************-->
+
+      <!--************************************
 					Get In Touch Start
       *************************************-->
       <section class="tg-main-section tg-haslayout">
@@ -17,7 +32,7 @@
                   <h3>Get in Touch</h3>
                 </div>
                 <div class="tg-description">
-                  <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <!-- <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
                 </div>
               </div>
             </div>
@@ -55,319 +70,6 @@
       </section>
       <!--************************************
 					Get In Touch End
-      *************************************-->
-      <!--************************************
-					Location Map Start
-      *************************************-->
-      <div id="tg-locationmap" class="tg-locationmap"></div>
-      <!--************************************
-					Location Map End
-      *************************************-->
-      <!--************************************
-					Active Location Start
-      *************************************-->
-      <section class="tg-main-section tg-haslayout">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12"
-            >
-              <div class="tg-sectionhead">
-                <div class="tg-sectiontitle">
-                  <h2>some of our</h2>
-                  <h3>active Location</h3>
-                </div>
-                <div class="tg-description">
-                  <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
-            <div id="tg-addressslider" class="tg-addressslider">
-              <div class="item">
-                <div class="tg-addressbox">
-                  <div class="tg-map">
-                    <div class="tg-getdirection">
-                      <a class="tg-btngetdirection" href="#">
-                        <i class="fa fa-paper-plane"></i>
-                      </a>
-                    </div>
-                    <div id="tg-addressmapone" class="tg-addressmap"></div>
-                  </div>
-                  <div class="tg-addresscontent">
-                    <h4>HEAD OFFICE</h4>
-                    <ul class="tg-contactinfo">
-                      <li>
-                        <i class="fa fa-home"></i>
-                        <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
-                      </li>
-                      <li>
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
-                          <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-                        </span>
-                      </li>
-                      <li>
-                        <i class="fa fa-phone"></i>
-                        <span>+44 123 456 788 - 9</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="tg-addressbox">
-                  <div class="tg-map">
-                    <div class="tg-getdirection">
-                      <a class="tg-btngetdirection" href="#">
-                        <i class="fa fa-paper-plane"></i>
-                      </a>
-                    </div>
-                    <div id="tg-addressmaptwo" class="tg-addressmap"></div>
-                  </div>
-                  <div class="tg-addresscontent">
-                    <h4>Prestwich branch</h4>
-                    <ul class="tg-contactinfo">
-                      <li>
-                        <i class="fa fa-home"></i>
-                        <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
-                      </li>
-                      <li>
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
-                          <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-                        </span>
-                      </li>
-                      <li>
-                        <i class="fa fa-phone"></i>
-                        <span>+44 123 456 788 - 9</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="tg-addressbox">
-                  <div class="tg-map">
-                    <div class="tg-getdirection">
-                      <a class="tg-btngetdirection" href="#">
-                        <i class="fa fa-paper-plane"></i>
-                      </a>
-                    </div>
-                    <div id="tg-addressmapthree" class="tg-addressmap"></div>
-                  </div>
-                  <div class="tg-addresscontent">
-                    <h4>Newyork Branch</h4>
-                    <ul class="tg-contactinfo">
-                      <li>
-                        <i class="fa fa-home"></i>
-                        <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
-                      </li>
-                      <li>
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
-                          <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-                        </span>
-                      </li>
-                      <li>
-                        <i class="fa fa-phone"></i>
-                        <span>+44 123 456 788 - 9</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="tg-addressbox">
-                  <div class="tg-map">
-                    <div class="tg-getdirection">
-                      <a class="tg-btngetdirection" href="#">
-                        <i class="fa fa-paper-plane"></i>
-                      </a>
-                    </div>
-                    <div id="tg-addressmapone" class="tg-addressmap"></div>
-                  </div>
-                  <div class="tg-addresscontent">
-                    <h4>HEAD OFFICE</h4>
-                    <ul class="tg-contactinfo">
-                      <li>
-                        <i class="fa fa-home"></i>
-                        <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
-                      </li>
-                      <li>
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
-                          <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-                        </span>
-                      </li>
-                      <li>
-                        <i class="fa fa-phone"></i>
-                        <span>+44 123 456 788 - 9</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="tg-addressbox">
-                  <div class="tg-map">
-                    <div class="tg-getdirection">
-                      <a class="tg-btngetdirection" href="#">
-                        <i class="fa fa-paper-plane"></i>
-                      </a>
-                    </div>
-                    <div id="tg-addressmaptwo" class="tg-addressmap"></div>
-                  </div>
-                  <div class="tg-addresscontent">
-                    <h4>Prestwich branch</h4>
-                    <ul class="tg-contactinfo">
-                      <li>
-                        <i class="fa fa-home"></i>
-                        <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
-                      </li>
-                      <li>
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
-                          <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-                        </span>
-                      </li>
-                      <li>
-                        <i class="fa fa-phone"></i>
-                        <span>+44 123 456 788 - 9</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="tg-addressbox">
-                  <div class="tg-map">
-                    <div class="tg-getdirection">
-                      <a class="tg-btngetdirection" href="#">
-                        <i class="fa fa-paper-plane"></i>
-                      </a>
-                    </div>
-                    <div id="tg-addressmapthree" class="tg-addressmap"></div>
-                  </div>
-                  <div class="tg-addresscontent">
-                    <h4>Newyork Branch</h4>
-                    <ul class="tg-contactinfo">
-                      <li>
-                        <i class="fa fa-home"></i>
-                        <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
-                      </li>
-                      <li>
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
-                          <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-                        </span>
-                      </li>
-                      <li>
-                        <i class="fa fa-phone"></i>
-                        <span>+44 123 456 788 - 9</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="tg-addressbox">
-                  <div class="tg-map">
-                    <div class="tg-getdirection">
-                      <a class="tg-btngetdirection" href="#">
-                        <i class="fa fa-paper-plane"></i>
-                      </a>
-                    </div>
-                    <div id="tg-addressmapone" class="tg-addressmap"></div>
-                  </div>
-                  <div class="tg-addresscontent">
-                    <h4>HEAD OFFICE</h4>
-                    <ul class="tg-contactinfo">
-                      <li>
-                        <i class="fa fa-home"></i>
-                        <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
-                      </li>
-                      <li>
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
-                          <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-                        </span>
-                      </li>
-                      <li>
-                        <i class="fa fa-phone"></i>
-                        <span>+44 123 456 788 - 9</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="tg-addressbox">
-                  <div class="tg-map">
-                    <div class="tg-getdirection">
-                      <a class="tg-btngetdirection" href="#">
-                        <i class="fa fa-paper-plane"></i>
-                      </a>
-                    </div>
-                    <div id="tg-addressmaptwo" class="tg-addressmap"></div>
-                  </div>
-                  <div class="tg-addresscontent">
-                    <h4>Prestwich branch</h4>
-                    <ul class="tg-contactinfo">
-                      <li>
-                        <i class="fa fa-home"></i>
-                        <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
-                      </li>
-                      <li>
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
-                          <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-                        </span>
-                      </li>
-                      <li>
-                        <i class="fa fa-phone"></i>
-                        <span>+44 123 456 788 - 9</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="tg-addressbox">
-                  <div class="tg-map">
-                    <div class="tg-getdirection">
-                      <a class="tg-btngetdirection" href="#">
-                        <i class="fa fa-paper-plane"></i>
-                      </a>
-                    </div>
-                    <div id="tg-addressmapthree" class="tg-addressmap"></div>
-                  </div>
-                  <div class="tg-addresscontent">
-                    <h4>Newyork Branch</h4>
-                    <ul class="tg-contactinfo">
-                      <li>
-                        <i class="fa fa-home"></i>
-                        <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
-                      </li>
-                      <li>
-                        <i class="fa fa-envelope-o"></i>
-                        <span>
-                          <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-                        </span>
-                      </li>
-                      <li>
-                        <i class="fa fa-phone"></i>
-                        <span>+44 123 456 788 - 9</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--************************************
-					Active Location End
       *************************************-->
     </main>
   </div>
