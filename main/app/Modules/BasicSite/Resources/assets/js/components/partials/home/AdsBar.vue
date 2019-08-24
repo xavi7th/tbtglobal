@@ -9,9 +9,9 @@
       <div class="row">
         <div class="col-sm-12 col-xs-12">
           <div class="tg-getadvice">
-            <a class="tg-btn" href="#">
+            <router-link class="tg-btn" :to="{name: 'site.contact'}">
               <span>Get Advice</span>
-            </a>
+            </router-link>
             <p>
               Contact us for information or any queries related to the
               <strong>OIL &amp; GAS Industry</strong>

@@ -12,9 +12,9 @@
             </div>
             <div class="tg-description">
               <p>
-                Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                We have built a reputaion in the industry for minimal overhead costs, timely delivery,
+                safety conscious workforce and excellent relationship with business partners. Furthering
+                client business objetives sits at the forefront of all enganements with our esteemed clients
               </p>
             </div>
           </div>

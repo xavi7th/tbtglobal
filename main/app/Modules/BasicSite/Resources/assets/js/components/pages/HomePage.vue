@@ -7,7 +7,7 @@
     <!-- <company-statistics></company-statistics> -->
     <our-projects></our-projects>
     <contact-us></contact-us>
-    <testimonials></testimonials>
+    <!-- <testimonials></testimonials> -->
     <ads-bar></ads-bar>
     <our-clients></our-clients>
   </main>

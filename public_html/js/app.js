@@ -3572,11 +3572,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -26092,13 +26087,7 @@ var staticRenderFns = [
                   _c("h3", [_vm._v("What We Offer")])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et\n              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation\n              ullamco laboris nisi ut aliquip ex ea commodo consequat.\n            "
-                    )
-                  ])
-                ])
+                _c("div", { staticClass: "tg-description" }, [_c("p")])
               ])
             ]
           ),
@@ -26322,8 +26311,6 @@ var render = function() {
       _vm._v(" "),
       _c("contact-us"),
       _vm._v(" "),
-      _c("testimonials"),
-      _vm._v(" "),
       _c("ads-bar"),
       _vm._v(" "),
       _c("our-clients")
@@ -26364,15 +26351,9 @@ var staticRenderFns = [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "tg-requestcallback" }, [
-              _c("div", { staticClass: "col-sm-3 hidden-xs" }, [
-                _c("figure", [
-                  _c("img", {
-                    attrs: { src: "img/img-02.png", alt: "image description" }
-                  })
-                ])
-              ]),
+              _c("div", { staticClass: "col-sm-2 hidden-xs" }),
               _vm._v(" "),
-              _c("div", { staticClass: "col-sm-9 col-xs-12" }, [
+              _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
                 _c("div", { staticClass: "tg-contentbox" }, [
                   _c("div", { staticClass: "tg-sectionhead" }, [
                     _c("div", { staticClass: "tg-sectiontitle" }, [
@@ -26381,13 +26362,7 @@ var staticRenderFns = [
                       _c("h3", [_vm._v("request a call back")])
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "tg-description" }, [
-                      _c("p", [
-                        _vm._v(
-                          "\n                  Consectetur adipisicing elit sed do eiusmod tempor incididunt ut\n                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud\n                  exercitation ullamco laboris nisi ut aliquip ex ea commodo\n                  consequat.\n                "
-                        )
-                      ])
-                    ])
+                    _c("div", { staticClass: "tg-description" }, [_c("p")])
                   ]),
                   _vm._v(" "),
                   _c(
@@ -26444,35 +26419,24 @@ var staticRenderFns = [
                           _vm._v(" "),
                           _c(
                             "div",
-                            { staticClass: "col-lg-9 col-md-8 col-sm-7" },
+                            { staticClass: "col-lg-10 col-md-9 col-sm-9" },
                             [
                               _c("div", { staticClass: "form-group" }, [
-                                _c("div", { staticClass: "tg-select" }, [
-                                  _c("select", [
-                                    _c("option", [
-                                      _vm._v("I would like to discuss")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("option", [
-                                      _vm._v("I would like to discuss")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("option", [
-                                      _vm._v("I would like to discuss")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("option", [
-                                      _vm._v("I would like to discuss")
-                                    ])
-                                  ])
-                                ])
+                                _c("input", {
+                                  staticClass: "form-control",
+                                  attrs: {
+                                    type: "text",
+                                    name: "",
+                                    placeholder: "I would like to discuss"
+                                  }
+                                })
                               ])
                             ]
                           ),
                           _vm._v(" "),
                           _c(
                             "div",
-                            { staticClass: "col-lg-3 col-md-4 col-sm-5" },
+                            { staticClass: "col-lg-2 col-md-3 col-sm-3" },
                             [
                               _c("div", { staticClass: "form-group" }, [
                                 _c(
@@ -26481,13 +26445,7 @@ var staticRenderFns = [
                                     staticClass: "tg-btn tg-btn-lg",
                                     attrs: { type: "button" }
                                   },
-                                  [
-                                    _c("span", [
-                                      _vm._v(
-                                        "\n                          i’m\n                          waiting\n                        "
-                                      )
-                                    ])
-                                  ]
+                                  [_c("span", [_vm._v("send")])]
                                 )
                               ])
                             ]
@@ -26523,44 +26481,54 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "section",
+    {
+      staticClass: "tg-main-section tg-haslayout tg-parallax-window",
+      attrs: {
+        "data-appear-top-offset": "600",
+        "data-parallax": "scroll",
+        "data-image-src": "img/parallax/bgparallax-02.jpg"
+      }
+    },
+    [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
+            _c(
+              "div",
+              { staticClass: "tg-getadvice" },
+              [
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "tg-btn",
+                    attrs: { to: { name: "site.contact" } }
+                  },
+                  [_c("span", [_vm._v("Get Advice")])]
+                ),
+                _vm._v(" "),
+                _vm._m(0)
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      {
-        staticClass: "tg-main-section tg-haslayout tg-parallax-window",
-        attrs: {
-          "data-appear-top-offset": "600",
-          "data-parallax": "scroll",
-          "data-image-src": "img/parallax/bgparallax-02.jpg"
-        }
-      },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
-              _c("div", { staticClass: "tg-getadvice" }, [
-                _c("a", { staticClass: "tg-btn", attrs: { href: "#" } }, [
-                  _c("span", [_vm._v("Get Advice")])
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n            Contact us for information or any queries related to the\n            "
-                  ),
-                  _c("strong", [_vm._v("OIL & GAS Industry")])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]
-    )
+    return _c("p", [
+      _vm._v(
+        "\n            Contact us for information or any queries related to the\n            "
+      ),
+      _c("strong", [_vm._v("OIL & GAS Industry")])
+    ])
   }
 ]
 render._withStripped = true
@@ -27097,7 +27065,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "tg-description" }, [
                   _c("p", [
                     _vm._v(
-                      "\n              Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et\n              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation\n              ullamco laboris nisi ut aliquip ex ea commodo consequat.\n            "
+                      "\n              We have built a reputaion in the industry for minimal overhead costs, timely delivery,\n              safety conscious workforce and excellent relationship with business partners. Furthering\n              client business objetives sits at the forefront of all enganements with our esteemed clients\n            "
                     )
                   ])
                 ])
@@ -28609,13 +28577,7 @@ var staticRenderFns = [
                   _c("h3", [_vm._v("Featured Projects")])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et\n              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation\n              ullamco laboris nisi ut aliquip ex ea commodo consequat.\n            "
-                    )
-                  ])
-                ])
+                _c("div", { staticClass: "tg-description" }, [_c("p")])
               ])
             ]
           ),

@@ -3,12 +3,12 @@
     <div class="container">
       <div class="row">
         <div class="tg-requestcallback">
-          <div class="col-sm-3 hidden-xs">
-            <figure>
+          <div class="col-sm-2 hidden-xs">
+            <!-- <figure>
               <img src="img/img-02.png" alt="image description" />
-            </figure>
+            </figure>-->
           </div>
-          <div class="col-sm-9 col-xs-12">
+          <div class="col-sm-12 col-xs-12">
             <div class="tg-contentbox">
               <div class="tg-sectionhead">
                 <div class="tg-sectiontitle">
@@ -17,10 +17,10 @@
                 </div>
                 <div class="tg-description">
                   <p>
-                    Consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                    <!-- Consectetur adipisicing elit sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
+                    consequat.-->
                   </p>
                 </div>
               </div>
@@ -42,25 +42,20 @@
                         <input type="text" class="form-control" name placeholder="Your Email" />
                       </div>
                     </div>
-                    <div class="col-lg-9 col-md-8 col-sm-7">
+                    <div class="col-lg-10 col-md-9 col-sm-9">
                       <div class="form-group">
-                        <div class="tg-select">
-                          <select>
-                            <option>I would like to discuss</option>
-                            <option>I would like to discuss</option>
-                            <option>I would like to discuss</option>
-                            <option>I would like to discuss</option>
-                          </select>
-                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name
+                          placeholder="I would like to discuss"
+                        />
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-5">
+                    <div class="col-lg-2 col-md-3 col-sm-3">
                       <div class="form-group">
                         <button type="button" class="tg-btn tg-btn-lg">
-                          <span>
-                            i’m
-                            waiting
-                          </span>
+                          <span>send</span>
                         </button>
                       </div>
                     </div>
