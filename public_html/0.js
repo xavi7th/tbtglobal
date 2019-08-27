@@ -1778,6 +1778,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -6068,7 +6073,11 @@ var staticRenderFns = [
                                 _c("li", [
                                   _c("address", [
                                     _vm._v(
-                                      "123 Eccles Old Road,Salford Road, East London, Uk, M6 7AF"
+                                      "\n                            Head Office: Plot 106 Airport Road, Warri, Delta State.\n                            "
+                                    ),
+                                    _c("br"),
+                                    _vm._v(
+                                      "Branch Office: No 50 Country Road, off Sapele Road, Benin City, Edo State.\n                          "
                                     )
                                   ])
                                 ]),
@@ -6458,7 +6467,7 @@ var staticRenderFns = [
               staticStyle: { border: "0", height: "100%", width: "100%" },
               attrs: {
                 src:
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.196040245999!2d5.7441429152009365!3d5.537918535369969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad5ec810070d%3A0xb060401e1d0c99e2!2sAirport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566652457002!5m2!1sen!2sng",
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.170341675013!2d5.764113715200978!3d5.541741335332661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad7bc9b5f72b%3A0x2cff4bbb9faab27a!2s106%20Airport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566875115241!5m2!1sen!2sng",
                 frameborder: "0",
                 allowfullscreen: ""
               }

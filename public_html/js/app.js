@@ -3171,6 +3171,31 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Footer"
@@ -3185,6 +3210,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_partials_NavComponent__ = __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/components/partials/NavComponent.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_partials_NavComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_partials_NavComponent__);
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -5249,7 +5282,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.tg-footerwidgets .tg-widget.tg-widgetinfo,\n.tg-widget {\n  padding: 40px 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.tg-widget {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.tg-widget ul {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.tg-widget ul li {\n  width: auto;\n}\n.tg-footerwidgets .tg-widget ul li + li {\n  border-color: transparent;\n}\n.tg-widgetusefulllinks ul li:first-child {\n  padding-top: 20px;\n}\n.footer-address {\n  margin-top: 20px;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/FooterComponent.vue"],"names":[],"mappings":";AAoHA;;EAEA,gBAAA;EACA,qBAAA;EAAA,qBAAA;EAAA,cAAA;CACA;AAEA;EACA,6BAAA;EAAA,8BAAA;MAAA,2BAAA;UAAA,uBAAA;CACA;AAEA;EACA,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,0BAAA;MAAA,uBAAA;UAAA,+BAAA;EACA,oBAAA;MAAA,gBAAA;CACA;AAEA;EACA,YAAA;CACA;AAEA;EACA,0BAAA;CACA;AAEA;EACA,kBAAA;CACA;AAEA;EACA,iBAAA;CACA","file":"FooterComponent.vue","sourcesContent":["<template>\n  <footer id=\"tg-footer\" class=\"tg-footer tg-haslayout\">\n    <div class=\"tg-footermiddlearea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"tg-footerwidgets\">\n            <div class=\"col-md-6 col-sm-12 col-xs-12\">\n              <div class=\"tg-widget tg-widgetinfo\">\n                <div id=\"tg-footerlocation-map\" class=\"tg-footerlocation-map\">\n                  <iframe\n                    src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.196040245999!2d5.7441429152009365!3d5.537918535369969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad5ec810070d%3A0xb060401e1d0c99e2!2sAirport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566652457002!5m2!1sen!2sng\"\n                    frameborder=\"0\"\n                    style=\"border:0; height:auto; width:100%;\"\n                    allowfullscreen\n                  ></iframe>\n                </div>\n                <div class=\"footer-address\">\n                  <h4>Head office</h4>\n                  <ul class=\"tg-contactinfo\">\n                    <li>\n                      <i class=\"fa fa-home\"></i>\n                      <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>\n                    </li>\n                    <li>\n                      <i class=\"fa fa-envelope-o\"></i>\n                      <span>\n                        <a href=\"mailto:\">hello@tftglobal.com</a>\n                      </span>\n                    </li>\n                    <li>\n                      <i class=\"fa fa-phone\"></i>\n                      <span>+44 123 456 788 - 9</span>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </div>\n            <div class=\"col-md-6 col-sm-12 col-xs-12\">\n              <div class=\"tg-widget tg-widgetusefulllinks\">\n                <div class=\"tg-widgettitle\">\n                  <h3>useful links</h3>\n                </div>\n                <ul>\n                  <li>\n                    <router-link :to=\"{name: 'site.root'}\">Home</router-link>\n                  </li>\n                  <li>\n                    <router-link :to=\"{name: 'site.about'}\">About</router-link>\n                  </li>\n                  <li>\n                    <router-link :to=\"{name: 'site.services'}\">Services</router-link>\n                  </li>\n                  <li>\n                    <router-link :to=\"{name: 'site.projects'}\">Projects</router-link>\n                  </li>\n                  <li>\n                    <router-link :to=\"{name: 'site.contact'}\">Contact Us</router-link>\n                  </li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-footerbottombar\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <span class=\"tg-copyright\">&copy; 2016 - 2019 | All Rights Reserved</span>\n            <ul class=\"tg-socialicons\">\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-linkedin\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-twitter\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-facebook-f\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-pinterest-p\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-google-plus\"></i>\n                </a>\n              </li>\n            </ul>\n            <strong class=\"tg-logo\">\n              <a href=\"#\">\n                <!-- <img src=\"img/logo.png\" alt=\"image description\" /> -->\n              </a>\n            </strong>\n          </div>\n        </div>\n      </div>\n    </div>\n  </footer>\n</template>\n\n<script>\n  export default {\n    name: \"Footer\"\n  };\n</script>\n\n<style lang=\"css\">\n  .tg-footerwidgets .tg-widget.tg-widgetinfo,\n  .tg-widget {\n    padding: 40px 0;\n    display: flex;\n  }\n\n  .tg-widget {\n    flex-direction: column;\n  }\n\n  .tg-widget ul {\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n  }\n\n  .tg-widget ul li {\n    width: auto;\n  }\n\n  .tg-footerwidgets .tg-widget ul li + li {\n    border-color: transparent;\n  }\n\n  .tg-widgetusefulllinks ul li:first-child {\n    padding-top: 20px;\n  }\n\n  .footer-address {\n    margin-top: 20px;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-footerwidgets .tg-widget.tg-widgetinfo,\n.tg-widget {\n  padding: 40px 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.tg-widget {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.tg-widget ul {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.tg-widget ul li {\n  width: auto;\n}\n.tg-footerwidgets .tg-widget ul li + li {\n  border-color: transparent;\n}\n.tg-widgetusefulllinks ul li:first-child {\n  padding-top: 20px;\n}\n.footer-address {\n  margin-top: 20px;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/FooterComponent.vue"],"names":[],"mappings":";AA6IA;;EAEA,gBAAA;EACA,qBAAA;EAAA,qBAAA;EAAA,cAAA;CACA;AAEA;EACA,6BAAA;EAAA,8BAAA;MAAA,2BAAA;UAAA,uBAAA;CACA;AAEA;EACA,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,0BAAA;MAAA,uBAAA;UAAA,+BAAA;EACA,oBAAA;MAAA,gBAAA;CACA;AAEA;EACA,YAAA;CACA;AAEA;EACA,0BAAA;CACA;AAEA;EACA,kBAAA;CACA;AAEA;EACA,iBAAA;CACA","file":"FooterComponent.vue","sourcesContent":["<template>\n  <footer id=\"tg-footer\" class=\"tg-footer tg-haslayout\">\n    <div class=\"tg-footermiddlearea\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"tg-footerwidgets\">\n            <div class=\"col-md-6 col-sm-12 col-xs-12\">\n              <div class=\"tg-widget tg-widgetinfo\">\n                <div id=\"tg-footerlocation-map\" class=\"tg-footerlocation-map\">\n                  <iframe\n                    src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.170341675013!2d5.764113715200978!3d5.541741335332661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad7bc9b5f72b%3A0x2cff4bbb9faab27a!2s106%20Airport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566875115241!5m2!1sen!2sng\"\n                    frameborder=\"0\"\n                    style=\"border:0; height:auto; width:100%;\"\n                    allowfullscreen\n                  ></iframe>\n                </div>\n                <div class=\"footer-address\">\n                  <h4>Office Address</h4>\n                  <ul class=\"tg-contactinfo\">\n                    <li>\n                      <i class=\"fa fa-home\"></i>\n                      <address>\n                        <b>Head Office:</b> Plot 106 Airport Road, Warri, Delta State.\n                        <br />\n                        <b>Branch Office:</b> 50 Country Road, off Sapele Road, Benin City, Edo State.\n                      </address>\n                    </li>\n\n                    <li>\n                      <i class=\"fa fa-envelope-o\"></i>\n                      <span>\n                        <a href=\"mailto:info@tbtnigeria.com\">info@tbtnigeria.com</a>\n                      </span>\n                    </li>\n                    <li>\n                      <i class=\"fa fa-envelope-o\"></i>\n                      <span>\n                        <a href=\"mailto:tbtglobal@yahoo.com\">tbtglobal@yahoo.com</a>\n                      </span>\n                    </li>\n                    <li>\n                      <i class=\"fa fa-envelope-o\"></i>\n                      <span>\n                        <a href=\"mailto:tbtglobal2@gmail.com\">tbtglobal2@gmail.com</a>\n                      </span>\n                    </li>\n                    <li>\n                      <i class=\"fa fa-phone\"></i>\n                      <span>\n                        <a href=\"tel:+234 805 986 1188\">+234 805 986 1188</a>\n                      </span>\n                    </li>\n                    <li>\n                      <i class=\"fa fa-phone\"></i>\n                      <span>\n                        <a href=\"tel:+234 703 356 5330\">+234 703 356 5330</a>\n                      </span>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n            </div>\n            <div class=\"col-md-6 col-sm-12 col-xs-12\">\n              <div class=\"tg-widget tg-widgetusefulllinks\">\n                <div class=\"tg-widgettitle\">\n                  <h3>useful links</h3>\n                </div>\n                <ul>\n                  <li>\n                    <router-link :to=\"{name: 'site.root'}\">Home</router-link>\n                  </li>\n                  <li>\n                    <router-link :to=\"{name: 'site.about'}\">About</router-link>\n                  </li>\n                  <li>\n                    <router-link :to=\"{name: 'site.services'}\">Services</router-link>\n                  </li>\n                  <li>\n                    <router-link :to=\"{name: 'site.projects'}\">Projects</router-link>\n                  </li>\n                  <li>\n                    <router-link :to=\"{name: 'site.contact'}\">Contact Us</router-link>\n                  </li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"tg-footerbottombar\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-xs-12\">\n            <span class=\"tg-copyright\">&copy; 2016 - 2019 | All Rights Reserved</span>\n            <ul class=\"tg-socialicons\">\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-linkedin\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-twitter\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-facebook-f\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-pinterest-p\"></i>\n                </a>\n              </li>\n              <li>\n                <a href=\"#\">\n                  <i class=\"fa fa-google-plus\"></i>\n                </a>\n              </li>\n            </ul>\n            <strong class=\"tg-logo\">\n              <a href=\"#\">\n                <!-- <img src=\"img/logo.png\" alt=\"image description\" /> -->\n              </a>\n            </strong>\n          </div>\n        </div>\n      </div>\n    </div>\n  </footer>\n</template>\n\n<script>\n  export default {\n    name: \"Footer\"\n  };\n</script>\n\n<style lang=\"css\">\n  .tg-footerwidgets .tg-widget.tg-widgetinfo,\n  .tg-widget {\n    padding: 40px 0;\n    display: flex;\n  }\n\n  .tg-widget {\n    flex-direction: column;\n  }\n\n  .tg-widget ul {\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n  }\n\n  .tg-widget ul li {\n    width: auto;\n  }\n\n  .tg-footerwidgets .tg-widget ul li + li {\n    border-color: transparent;\n  }\n\n  .tg-widgetusefulllinks ul li:first-child {\n    padding-top: 20px;\n  }\n\n  .footer-address {\n    margin-top: 20px;\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -26901,7 +26934,7 @@ var staticRenderFns = [
               staticStyle: { border: "0", height: "auto", width: "100%" },
               attrs: {
                 src:
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.196040245999!2d5.7441429152009365!3d5.537918535369969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad5ec810070d%3A0xb060401e1d0c99e2!2sAirport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566652457002!5m2!1sen!2sng",
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.170341675013!2d5.764113715200978!3d5.541741335332661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad7bc9b5f72b%3A0x2cff4bbb9faab27a!2s106%20Airport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566875115241!5m2!1sen!2sng",
                 frameborder: "0",
                 allowfullscreen: ""
               }
@@ -26910,15 +26943,22 @@ var staticRenderFns = [
         ),
         _vm._v(" "),
         _c("div", { staticClass: "footer-address" }, [
-          _c("h4", [_vm._v("Head office")]),
+          _c("h4", [_vm._v("Office Address")]),
           _vm._v(" "),
           _c("ul", { staticClass: "tg-contactinfo" }, [
             _c("li", [
               _c("i", { staticClass: "fa fa-home" }),
               _vm._v(" "),
               _c("address", [
+                _c("b", [_vm._v("Head Office:")]),
                 _vm._v(
-                  "123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF"
+                  " Plot 106 Airport Road, Warri, Delta State.\n                      "
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c("b", [_vm._v("Branch Office:")]),
+                _vm._v(
+                  " 50 Country Road, off Sapele Road, Benin City, Edo State.\n                    "
                 )
               ])
             ]),
@@ -26927,8 +26967,28 @@ var staticRenderFns = [
               _c("i", { staticClass: "fa fa-envelope-o" }),
               _vm._v(" "),
               _c("span", [
-                _c("a", { attrs: { href: "mailto:" } }, [
-                  _vm._v("hello@tftglobal.com")
+                _c("a", { attrs: { href: "mailto:info@tbtnigeria.com" } }, [
+                  _vm._v("info@tbtnigeria.com")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa fa-envelope-o" }),
+              _vm._v(" "),
+              _c("span", [
+                _c("a", { attrs: { href: "mailto:tbtglobal@yahoo.com" } }, [
+                  _vm._v("tbtglobal@yahoo.com")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa fa-envelope-o" }),
+              _vm._v(" "),
+              _c("span", [
+                _c("a", { attrs: { href: "mailto:tbtglobal2@gmail.com" } }, [
+                  _vm._v("tbtglobal2@gmail.com")
                 ])
               ])
             ]),
@@ -26936,7 +26996,21 @@ var staticRenderFns = [
             _c("li", [
               _c("i", { staticClass: "fa fa-phone" }),
               _vm._v(" "),
-              _c("span", [_vm._v("+44 123 456 788 - 9")])
+              _c("span", [
+                _c("a", { attrs: { href: "tel:+234 805 986 1188" } }, [
+                  _vm._v("+234 805 986 1188")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa fa-phone" }),
+              _vm._v(" "),
+              _c("span", [
+                _c("a", { attrs: { href: "tel:+234 703 356 5330" } }, [
+                  _vm._v("+234 703 356 5330")
+                ])
+              ])
             ])
           ])
         ])
@@ -28250,7 +28324,7 @@ var render = function() {
                                     staticStyle: { border: "0" },
                                     attrs: {
                                       src:
-                                        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.196040245999!2d5.7441429152009365!3d5.537918535369969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad5ec810070d%3A0xb060401e1d0c99e2!2sAirport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566652457002!5m2!1sen!2sng",
+                                        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.170341675013!2d5.764113715200978!3d5.541741335332661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad7bc9b5f72b%3A0x2cff4bbb9faab27a!2s106%20Airport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566875115241!5m2!1sen!2sng",
                                       frameborder: "0",
                                       allowfullscreen: ""
                                     }
@@ -29666,15 +29740,29 @@ var staticRenderFns = [
               _c("li", [
                 _c("i", { staticClass: "fa fa-phone" }),
                 _vm._v(" "),
-                _c("span", [_vm._v("+234 803 441 1661")])
+                _c("span", [
+                  _c("a", { attrs: { href: "tel:+234 805 986 1188" } }, [
+                    _vm._v("+234 805 986 1188")
+                  ])
+                ])
               ]),
               _vm._v(" "),
               _c("li", [
                 _c("i", { staticClass: "fa fa-envelope-o" }),
                 _vm._v(" "),
                 _c("span", [
-                  _c("a", { attrs: { href: "mailto:hello@domain.com " } }, [
-                    _vm._v("hello@tbt-gbc.com")
+                  _c("a", { attrs: { href: "mailto:info@tbtnigeria.com " } }, [
+                    _vm._v("info@tbtnigeria.com")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("i", { staticClass: "fa fa-envelope-o" }),
+                _vm._v(" "),
+                _c("span", [
+                  _c("a", { attrs: { href: "mailto:tbtglobal@yahoo.com " } }, [
+                    _vm._v("tbtglobal@yahoo.com")
                   ])
                 ])
               ]),
@@ -29682,7 +29770,9 @@ var staticRenderFns = [
               _c("li", [
                 _c("i", { staticClass: "fa fa-map-marker" }),
                 _vm._v(" "),
-                _c("address", [_vm._v("Warri, Delta State Nigeria")])
+                _c("address", [
+                  _vm._v("Plot 106, Airport Road, Warri, Delta State, Nigeria")
+                ])
               ])
             ])
           ])

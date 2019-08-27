@@ -7,17 +7,25 @@
             <ul class="tg-topcontactinfo">
               <li>
                 <i class="fa fa-phone"></i>
-                <span>+234 803 441 1661</span>
+                <span>
+                  <a href="tel:+234 805 986 1188">+234 805 986 1188</a>
+                </span>
               </li>
               <li>
                 <i class="fa fa-envelope-o"></i>
                 <span>
-                  <a href="mailto:hello@domain.com ">hello@tbt-gbc.com</a>
+                  <a href="mailto:info@tbtnigeria.com ">info@tbtnigeria.com</a>
+                </span>
+              </li>
+              <li>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                  <a href="mailto:tbtglobal@yahoo.com ">tbtglobal@yahoo.com</a>
                 </span>
               </li>
               <li>
                 <i class="fa fa-map-marker"></i>
-                <address>Warri, Delta State Nigeria</address>
+                <address>Plot 106, Airport Road, Warri, Delta State, Nigeria</address>
               </li>
             </ul>
             <!-- <nav class="tg-addnav tg-themecolor">

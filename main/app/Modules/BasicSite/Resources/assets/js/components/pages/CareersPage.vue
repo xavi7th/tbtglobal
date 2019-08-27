@@ -15,7 +15,9 @@
                   <div class="tg-description">
                     <p>
                       Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris send @
-                      <a href="#">career@yourdomain.com</a> and Bcc
+                      <a
+                        href="#"
+                      >career@yourdomain.com</a> and Bcc
                       <a href="#">Jobs@yourdomain.com.</a>
                     </p>
                   </div>
@@ -33,7 +35,10 @@
                         <ul>
                           <li>Interview Timing: 09:00 am to 11:00 am</li>
                           <li>
-                            <address>123 Eccles Old Road,Salford Road, East London, Uk, M6 7AF</address>
+                            <address>
+                              Head Office: Plot 106 Airport Road, Warri, Delta State.
+                              <br />Branch Office: No 50 Country Road, off Sapele Road, Benin City, Edo State.
+                            </address>
                           </li>
                           <li>
                             <a href="#">career@yourdomain.com</a>

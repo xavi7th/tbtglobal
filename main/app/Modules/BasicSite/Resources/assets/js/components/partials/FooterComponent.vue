@@ -8,28 +8,53 @@
               <div class="tg-widget tg-widgetinfo">
                 <div id="tg-footerlocation-map" class="tg-footerlocation-map">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.196040245999!2d5.7441429152009365!3d5.537918535369969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad5ec810070d%3A0xb060401e1d0c99e2!2sAirport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566652457002!5m2!1sen!2sng"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.170341675013!2d5.764113715200978!3d5.541741335332661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad7bc9b5f72b%3A0x2cff4bbb9faab27a!2s106%20Airport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566875115241!5m2!1sen!2sng"
                     frameborder="0"
                     style="border:0; height:auto; width:100%;"
                     allowfullscreen
                   ></iframe>
                 </div>
                 <div class="footer-address">
-                  <h4>Head office</h4>
+                  <h4>Office Address</h4>
                   <ul class="tg-contactinfo">
                     <li>
                       <i class="fa fa-home"></i>
-                      <address>123 Eccles Old Road, Salford Road, East London, Uk, M6 7AF</address>
+                      <address>
+                        <b>Head Office:</b> Plot 106 Airport Road, Warri, Delta State.
+                        <br />
+                        <b>Branch Office:</b> 50 Country Road, off Sapele Road, Benin City, Edo State.
+                      </address>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-envelope-o"></i>
+                      <span>
+                        <a href="mailto:info@tbtnigeria.com">info@tbtnigeria.com</a>
+                      </span>
                     </li>
                     <li>
                       <i class="fa fa-envelope-o"></i>
                       <span>
-                        <a href="mailto:">hello@tftglobal.com</a>
+                        <a href="mailto:tbtglobal@yahoo.com">tbtglobal@yahoo.com</a>
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope-o"></i>
+                      <span>
+                        <a href="mailto:tbtglobal2@gmail.com">tbtglobal2@gmail.com</a>
                       </span>
                     </li>
                     <li>
                       <i class="fa fa-phone"></i>
-                      <span>+44 123 456 788 - 9</span>
+                      <span>
+                        <a href="tel:+234 805 986 1188">+234 805 986 1188</a>
+                      </span>
+                    </li>
+                    <li>
+                      <i class="fa fa-phone"></i>
+                      <span>
+                        <a href="tel:+234 703 356 5330">+234 703 356 5330</a>
+                      </span>
                     </li>
                   </ul>
                 </div>
