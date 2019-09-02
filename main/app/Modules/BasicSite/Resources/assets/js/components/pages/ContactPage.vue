@@ -101,6 +101,10 @@
   .tg-service {
     height: 300px;
     justify-content: flex-start;
+
+    @media (max-width: 800px) {
+      height: auto;
+    }
   }
 
   .tg-heading {
@@ -136,6 +140,12 @@
     background: rgba(0, 66, 129, 0.8);
     right: 5%;
     margin-top: 50px;
+
+    @media (max-width: 800px) {
+      position: static;
+      width: 100%;
+      margin-top: 0;
+    }
 
     .tg-sectiontitle {
       padding-bottom: 0;
