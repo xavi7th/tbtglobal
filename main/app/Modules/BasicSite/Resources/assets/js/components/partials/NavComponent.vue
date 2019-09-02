@@ -43,7 +43,14 @@
     data() {
       return {};
     },
-    methods: {}
+    methods: {},
+    mounted() {
+      $("li").click(() => {
+        console.log("clicked");
+        $(".tg-btnnav").addClass("collapsed");
+        $("#tg-navigation").removeClass("in");
+      });
+    }
   };
 </script>
 
