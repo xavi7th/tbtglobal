@@ -17,60 +17,21 @@
                   </div>
                   <div class="tg-description">
                     <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore iqua Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ea dignissimos rerum architecto soluta odio voluptatum at exercitationem ut quos modi repellat iste adipisci velit aspernatur, minus commodi quas nemo!</p>
+                  </div>
+                  <div class="tg-description">
+                    <p>Consectetur adippisicing elit sed do eiusmod tempor incididunt ut labore et dolore iqua Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima non cupiditate magnam, aspernatur nulla facere earum ab consequatur error ipsam, itaque quae doloribus expedita officia omnis tempora distinctio adipisci molestiae.</p>
+                  </div>
+                  <div class="tg-description">
+                    <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore iqua Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                   </div>
                 </div>
-                <ul>
-                  <li>
-                    <span class="tg-whatwedoicon">
-                      <i class="fa fa-bell-o"></i>
-                    </span>
-                    <div class="tg-whatwedocontent">
-                      <h4>
-                        <a href="#">tempor incididunt</a>
-                      </h4>
-                      <div class="tg-description">
-                        <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="tg-whatwedoicon">
-                      <i class="fa fa-comments-o"></i>
-                    </span>
-                    <div class="tg-whatwedocontent">
-                      <h4>
-                        <a href="#">Consectetur adipisicing</a>
-                      </h4>
-                      <div class="tg-description">
-                        <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="tg-whatwedoicon">
-                      <i class="fa fa-flag-o"></i>
-                    </span>
-                    <div class="tg-whatwedocontent">
-                      <h4>
-                        <a href="#">Consectetur adipisicing</a>
-                      </h4>
-                      <div class="tg-description">
-                        <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
               </div>
               <div class="col-sm-6">
                 <div class="tg-whatwedoimages">
                   <figure>
-                    <img src="/img/whatwedo/img-01.jpg" alt="image description" />
-                  </figure>
-                  <figure>
-                    <img src="/img/whatwedo/img-02.jpg" alt="image description" />
-                  </figure>
-                  <figure>
-                    <img src="/img/whatwedo/img-03.jpg" alt="image description" />
+                    <img src="/img/whatwedo/img-04.jpg" alt="image description" />
                   </figure>
                 </div>
               </div>
@@ -572,8 +533,11 @@
 </script>
 
 <style lang="scss" scoped>
-  .tg-whatwedoimages figure img {
-    width: 100%;
-    min-height: 210px;
+  .tg-whatwedoimages figure {
+    margin-top: 40px;
+    img {
+      width: 100%;
+      min-height: 210px;
+    }
   }
 </style>

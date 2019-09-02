@@ -26461,7 +26461,7 @@ var staticRenderFns = [
       _vm._v(
         "\n            Contact us for information or any queries related to the\n            "
       ),
-      _c("strong", [_vm._v("OIL & GAS Industry")])
+      _c("strong", [_vm._v("Industry")])
     ])
   }
 ]

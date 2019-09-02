@@ -1507,45 +1507,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -5240,7 +5201,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.tg-whatwedoimages figure img[data-v-39b520f8] {\n  width: 100%;\n  min-height: 210px;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/AboutPage.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;EACZ,kBAAkB;CAAE","file":"AboutPage.vue","sourcesContent":[".tg-whatwedoimages figure img {\n  width: 100%;\n  min-height: 210px; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-whatwedoimages figure[data-v-39b520f8] {\n  margin-top: 40px;\n}\n.tg-whatwedoimages figure img[data-v-39b520f8] {\n    width: 100%;\n    min-height: 210px;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/AboutPage.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;CAAE;AACnB;IACE,YAAY;IACZ,kBAAkB;CAAE","file":"AboutPage.vue","sourcesContent":[".tg-whatwedoimages figure {\n  margin-top: 40px; }\n  .tg-whatwedoimages figure img {\n    width: 100%;\n    min-height: 210px; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -7132,74 +7093,34 @@ var staticRenderFns = [
                     _vm._v(
                       "Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore iqua Ut enim ad minim veniam, quis nostrud exercitation ullamco."
                     )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("ul", [
-                _c("li", [
-                  _c("span", { staticClass: "tg-whatwedoicon" }, [
-                    _c("i", { staticClass: "fa fa-bell-o" })
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "tg-whatwedocontent" }, [
-                    _c("h4", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("tempor incididunt")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "tg-description" }, [
-                      _c("p", [
-                        _vm._v(
-                          "Eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco."
-                        )
-                      ])
-                    ])
+                  _c("p", [
+                    _vm._v(
+                      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ea dignissimos rerum architecto soluta odio voluptatum at exercitationem ut quos modi repellat iste adipisci velit aspernatur, minus commodi quas nemo!"
+                    )
                   ])
                 ]),
                 _vm._v(" "),
-                _c("li", [
-                  _c("span", { staticClass: "tg-whatwedoicon" }, [
-                    _c("i", { staticClass: "fa fa-comments-o" })
+                _c("div", { staticClass: "tg-description" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Consectetur adippisicing elit sed do eiusmod tempor incididunt ut labore et dolore iqua Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+                    )
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "tg-whatwedocontent" }, [
-                    _c("h4", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("Consectetur adipisicing")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "tg-description" }, [
-                      _c("p", [
-                        _vm._v(
-                          "Eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco."
-                        )
-                      ])
-                    ])
+                  _c("p", [
+                    _vm._v(
+                      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima non cupiditate magnam, aspernatur nulla facere earum ab consequatur error ipsam, itaque quae doloribus expedita officia omnis tempora distinctio adipisci molestiae."
+                    )
                   ])
                 ]),
                 _vm._v(" "),
-                _c("li", [
-                  _c("span", { staticClass: "tg-whatwedoicon" }, [
-                    _c("i", { staticClass: "fa fa-flag-o" })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "tg-whatwedocontent" }, [
-                    _c("h4", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("Consectetur adipisicing")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "tg-description" }, [
-                      _c("p", [
-                        _vm._v(
-                          "Eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco."
-                        )
-                      ])
-                    ])
+                _c("div", { staticClass: "tg-description" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore iqua Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+                    )
                   ])
                 ])
               ])
@@ -7210,25 +7131,7 @@ var staticRenderFns = [
                 _c("figure", [
                   _c("img", {
                     attrs: {
-                      src: "/img/whatwedo/img-01.jpg",
-                      alt: "image description"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("figure", [
-                  _c("img", {
-                    attrs: {
-                      src: "/img/whatwedo/img-02.jpg",
-                      alt: "image description"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("figure", [
-                  _c("img", {
-                    attrs: {
-                      src: "/img/whatwedo/img-03.jpg",
+                      src: "/img/whatwedo/img-04.jpg",
                       alt: "image description"
                     }
                   })
