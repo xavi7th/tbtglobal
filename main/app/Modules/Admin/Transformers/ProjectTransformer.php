@@ -20,6 +20,7 @@ class ProjectTransformer
 			'id' => $project->id,
 			'name' => $project->name,
 			'desc' => $project->desc,
+			'location' => $project->location,
 			'img' => $project->img,
 		];
 	}

@@ -32,6 +32,8 @@
 
           <v-text-field label="Short Description" v-model="details.desc"></v-text-field>
 
+          <v-text-field label="Project location" v-model="details.location"></v-text-field>
+
           <v-flex xs12 class="text-xs-center text-sm-center text-md-center text-lg-center">
             <img :src="details.imageUrl" height="150" v-if="details.imageUrl" />
             <v-text-field
@@ -56,7 +58,7 @@
             flat
             color="primary"
             @click="createProject"
-            :disabled="!details.name || !details.desc || !details.imageName"
+            :disabled="!details.name || !details.desc || !details.imageName || !details.location"
           >Submit</v-btn>
         </v-card-actions>
       </v-card>

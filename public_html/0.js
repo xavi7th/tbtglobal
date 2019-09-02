@@ -1954,288 +1954,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ProjectsPage",
   mixins: [__WEBPACK_IMPORTED_MODULE_0__assets_js_config_pageload_mixin__["a" /* default */]],
-  components: { PageHeader: __WEBPACK_IMPORTED_MODULE_1__components_partials_PageHeader___default.a }
+  components: { PageHeader: __WEBPACK_IMPORTED_MODULE_1__components_partials_PageHeader___default.a },
+  data: function data() {
+    return {
+      projects: {}
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    axios.get("/api/projects").then(function (rsp) {
+      _this.projects = rsp.data.projects.rows;
+    });
+  }
 });
 
 /***/ }),
@@ -8713,7 +8450,72 @@ var render = function() {
     [
       _c("page-header", { attrs: { title: "Our Projects" } }),
       _vm._v(" "),
-      _vm._m(0)
+      _c(
+        "main",
+        { staticClass: "tg-main tg-haslayout", attrs: { id: "tg-main" } },
+        [
+          _c("div", { staticClass: "tg-pagecontent" }, [
+            _c("div", { staticClass: "container" }, [
+              _c("div", { staticClass: "row" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "tg-newsposts" },
+                  _vm._l(_vm.projects, function(project) {
+                    return _c(
+                      "div",
+                      {
+                        key: project.id,
+                        staticClass: "col-md-4 col-sm-6 col-xs-6"
+                      },
+                      [
+                        _c("div", { staticClass: "tg-news" }, [
+                          _c("figure", [
+                            _c("img", {
+                              attrs: {
+                                src: project.img,
+                                alt: "image description"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "tg-newscontent tg-borderstyle" },
+                            [
+                              _c("ul", { staticClass: "tg-newsmetadata" }, [
+                                _c("li", [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _vm._v(_vm._s(project.location))
+                                  ])
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "tg-newstitle" }, [
+                                _c("h2", [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _vm._v(_vm._s(project.name))
+                                  ])
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "tg-description" }, [
+                                _c("p", [_vm._v(_vm._s(project.desc))])
+                              ])
+                            ]
+                          )
+                        ])
+                      ]
+                    )
+                  }),
+                  0
+                )
+              ])
+            ])
+          ])
+        ]
+      )
     ],
     1
   )
@@ -8724,650 +8526,24 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "main",
-      { staticClass: "tg-main tg-haslayout", attrs: { id: "tg-main" } },
+      "div",
+      {
+        staticClass:
+          "col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12"
+      },
       [
-        _c("div", { staticClass: "tg-pagecontent" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12"
-                },
-                [
-                  _c("div", { staticClass: "tg-sectionhead" }, [
-                    _c("div", { staticClass: "tg-sectiontitle" }, [
-                      _c("h2", [_vm._v("Some of our")]),
-                      _vm._v(" "),
-                      _c("h3", [_vm._v("latest projects")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "tg-description" }, [
-                      _c("p", [
-                        _vm._v(
-                          "Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                        )
-                      ])
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "tg-newsposts" }, [
-                _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-6" }, [
-                  _c("div", { staticClass: "tg-news" }, [
-                    _c("figure", [
-                      _c("img", {
-                        attrs: {
-                          src: "/img/news/img-01.jpg",
-                          alt: "image description"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("figcaption", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "tg-btnplusicon",
-                            attrs: { href: "#" }
-                          },
-                          [_c("i", { staticClass: "fa fa-link" })]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "tg-newscontent tg-borderstyle" },
-                      [
-                        _c("ul", { staticClass: "tg-newsmetadata" }, [
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("June 27, 2016")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("09:00 am")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Manchester, UK")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-newstitle" }, [
-                          _c("h2", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor"
-                              )
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-description" }, [
-                          _c("p", [
-                            _vm._v(
-                              "Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua."
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-6" }, [
-                  _c("div", { staticClass: "tg-news" }, [
-                    _c("figure", [
-                      _c("img", {
-                        attrs: {
-                          src: "/img/news/img-02.jpg",
-                          alt: "image description"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("figcaption", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "tg-btnplusicon",
-                            attrs: { href: "#" }
-                          },
-                          [_c("i", { staticClass: "fa fa-link" })]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "tg-newscontent tg-borderstyle" },
-                      [
-                        _c("ul", { staticClass: "tg-newsmetadata" }, [
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("June 27, 2016")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("09:00 am")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Manchester, UK")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-newstitle" }, [
-                          _c("h2", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor"
-                              )
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-description" }, [
-                          _c("p", [
-                            _vm._v(
-                              "Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua."
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-6" }, [
-                  _c("div", { staticClass: "tg-news" }, [
-                    _c("figure", [
-                      _c("img", {
-                        attrs: {
-                          src: "/img/news/img-03.jpg",
-                          alt: "image description"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("figcaption", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "tg-btnplusicon",
-                            attrs: { href: "#" }
-                          },
-                          [_c("i", { staticClass: "fa fa-link" })]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "tg-newscontent tg-borderstyle" },
-                      [
-                        _c("ul", { staticClass: "tg-newsmetadata" }, [
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("June 27, 2016")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("09:00 am")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Manchester, UK")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-newstitle" }, [
-                          _c("h2", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor"
-                              )
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-description" }, [
-                          _c("p", [
-                            _vm._v(
-                              "Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua."
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-6" }, [
-                  _c("div", { staticClass: "tg-news" }, [
-                    _c("figure", [
-                      _c("img", {
-                        attrs: {
-                          src: "/img/news/img-04.jpg",
-                          alt: "image description"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("figcaption", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "tg-btnplusicon",
-                            attrs: { href: "#" }
-                          },
-                          [_c("i", { staticClass: "fa fa-link" })]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "tg-newscontent tg-borderstyle" },
-                      [
-                        _c("ul", { staticClass: "tg-newsmetadata" }, [
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("June 27, 2016")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("09:00 am")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Manchester, UK")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-newstitle" }, [
-                          _c("h2", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor"
-                              )
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-description" }, [
-                          _c("p", [
-                            _vm._v(
-                              "Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua."
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-6" }, [
-                  _c("div", { staticClass: "tg-news" }, [
-                    _c("figure", [
-                      _c("img", {
-                        attrs: {
-                          src: "/img/news/img-05.jpg",
-                          alt: "image description"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("figcaption", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "tg-btnplusicon",
-                            attrs: { href: "#" }
-                          },
-                          [_c("i", { staticClass: "fa fa-link" })]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "tg-newscontent tg-borderstyle" },
-                      [
-                        _c("ul", { staticClass: "tg-newsmetadata" }, [
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("June 27, 2016")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("09:00 am")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Manchester, UK")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-newstitle" }, [
-                          _c("h2", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor"
-                              )
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-description" }, [
-                          _c("p", [
-                            _vm._v(
-                              "Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua."
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-6" }, [
-                  _c("div", { staticClass: "tg-news" }, [
-                    _c("figure", [
-                      _c("img", {
-                        attrs: {
-                          src: "/img/news/img-06.jpg",
-                          alt: "image description"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("figcaption", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "tg-btnplusicon",
-                            attrs: { href: "#" }
-                          },
-                          [_c("i", { staticClass: "fa fa-link" })]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "tg-newscontent tg-borderstyle" },
-                      [
-                        _c("ul", { staticClass: "tg-newsmetadata" }, [
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("June 27, 2016")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("09:00 am")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Manchester, UK")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-newstitle" }, [
-                          _c("h2", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor"
-                              )
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-description" }, [
-                          _c("p", [
-                            _vm._v(
-                              "Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua."
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-6" }, [
-                  _c("div", { staticClass: "tg-news" }, [
-                    _c("figure", [
-                      _c("img", {
-                        attrs: {
-                          src: "/img/news/img-07.jpg",
-                          alt: "image description"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("figcaption", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "tg-btnplusicon",
-                            attrs: { href: "#" }
-                          },
-                          [_c("i", { staticClass: "fa fa-link" })]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "tg-newscontent tg-borderstyle" },
-                      [
-                        _c("ul", { staticClass: "tg-newsmetadata" }, [
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("June 27, 2016")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("09:00 am")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Manchester, UK")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-newstitle" }, [
-                          _c("h2", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor"
-                              )
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-description" }, [
-                          _c("p", [
-                            _vm._v(
-                              "Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua."
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-6" }, [
-                  _c("div", { staticClass: "tg-news" }, [
-                    _c("figure", [
-                      _c("img", {
-                        attrs: {
-                          src: "/img/news/img-08.jpg",
-                          alt: "image description"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("figcaption", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "tg-btnplusicon",
-                            attrs: { href: "#" }
-                          },
-                          [_c("i", { staticClass: "fa fa-link" })]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "tg-newscontent tg-borderstyle" },
-                      [
-                        _c("ul", { staticClass: "tg-newsmetadata" }, [
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("June 27, 2016")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("09:00 am")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Manchester, UK")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-newstitle" }, [
-                          _c("h2", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor"
-                              )
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-description" }, [
-                          _c("p", [
-                            _vm._v(
-                              "Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua."
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 col-sm-6 col-xs-6" }, [
-                  _c("div", { staticClass: "tg-news" }, [
-                    _c("figure", [
-                      _c("img", {
-                        attrs: {
-                          src: "/img/news/img-09.jpg",
-                          alt: "image description"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("figcaption", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "tg-btnplusicon",
-                            attrs: { href: "#" }
-                          },
-                          [_c("i", { staticClass: "fa fa-link" })]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "tg-newscontent tg-borderstyle" },
-                      [
-                        _c("ul", { staticClass: "tg-newsmetadata" }, [
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("June 27, 2016")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("09:00 am")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Manchester, UK")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-newstitle" }, [
-                          _c("h2", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(
-                                "adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor"
-                              )
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "tg-description" }, [
-                          _c("p", [
-                            _vm._v(
-                              "Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua."
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ])
-              ])
+        _c("div", { staticClass: "tg-sectionhead" }, [
+          _c("div", { staticClass: "tg-sectiontitle" }, [
+            _c("h2", [_vm._v("Some of our")]),
+            _vm._v(" "),
+            _c("h3", [_vm._v("latest projects")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "tg-description" }, [
+            _c("p", [
+              _vm._v(
+                "Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              )
             ])
           ])
         ])

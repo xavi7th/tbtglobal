@@ -19,299 +19,24 @@
               </div>
             </div>
             <div class="tg-newsposts">
-              <div class="col-md-4 col-sm-6 col-xs-6">
+              <div class="col-md-4 col-sm-6 col-xs-6" v-for="project in projects" :key="project.id">
                 <div class="tg-news">
                   <figure>
-                    <img src="/img/news/img-01.jpg" alt="image description" />
-                    <figcaption>
-                      <a class="tg-btnplusicon" href="#">
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </figcaption>
+                    <img :src="project.img" alt="image description" />
                   </figure>
                   <div class="tg-newscontent tg-borderstyle">
                     <ul class="tg-newsmetadata">
                       <li>
-                        <a href="#">June 27, 2016</a>
-                      </li>
-                      <li>
-                        <a href="#">09:00 am</a>
-                      </li>
-                      <li>
-                        <a href="#">Manchester, UK</a>
+                        <a href="#">{{ project.location }}</a>
                       </li>
                     </ul>
                     <div class="tg-newstitle">
                       <h2>
-                        <a href="#">adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor</a>
+                        <a href="#">{{ project.name }}</a>
                       </h2>
                     </div>
                     <div class="tg-description">
-                      <p>Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="tg-news">
-                  <figure>
-                    <img src="/img/news/img-02.jpg" alt="image description" />
-                    <figcaption>
-                      <a class="tg-btnplusicon" href="#">
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </figcaption>
-                  </figure>
-                  <div class="tg-newscontent tg-borderstyle">
-                    <ul class="tg-newsmetadata">
-                      <li>
-                        <a href="#">June 27, 2016</a>
-                      </li>
-                      <li>
-                        <a href="#">09:00 am</a>
-                      </li>
-                      <li>
-                        <a href="#">Manchester, UK</a>
-                      </li>
-                    </ul>
-                    <div class="tg-newstitle">
-                      <h2>
-                        <a href="#">adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor</a>
-                      </h2>
-                    </div>
-                    <div class="tg-description">
-                      <p>Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="tg-news">
-                  <figure>
-                    <img src="/img/news/img-03.jpg" alt="image description" />
-                    <figcaption>
-                      <a class="tg-btnplusicon" href="#">
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </figcaption>
-                  </figure>
-                  <div class="tg-newscontent tg-borderstyle">
-                    <ul class="tg-newsmetadata">
-                      <li>
-                        <a href="#">June 27, 2016</a>
-                      </li>
-                      <li>
-                        <a href="#">09:00 am</a>
-                      </li>
-                      <li>
-                        <a href="#">Manchester, UK</a>
-                      </li>
-                    </ul>
-                    <div class="tg-newstitle">
-                      <h2>
-                        <a href="#">adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor</a>
-                      </h2>
-                    </div>
-                    <div class="tg-description">
-                      <p>Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="tg-news">
-                  <figure>
-                    <img src="/img/news/img-04.jpg" alt="image description" />
-                    <figcaption>
-                      <a class="tg-btnplusicon" href="#">
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </figcaption>
-                  </figure>
-                  <div class="tg-newscontent tg-borderstyle">
-                    <ul class="tg-newsmetadata">
-                      <li>
-                        <a href="#">June 27, 2016</a>
-                      </li>
-                      <li>
-                        <a href="#">09:00 am</a>
-                      </li>
-                      <li>
-                        <a href="#">Manchester, UK</a>
-                      </li>
-                    </ul>
-                    <div class="tg-newstitle">
-                      <h2>
-                        <a href="#">adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor</a>
-                      </h2>
-                    </div>
-                    <div class="tg-description">
-                      <p>Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="tg-news">
-                  <figure>
-                    <img src="/img/news/img-05.jpg" alt="image description" />
-                    <figcaption>
-                      <a class="tg-btnplusicon" href="#">
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </figcaption>
-                  </figure>
-                  <div class="tg-newscontent tg-borderstyle">
-                    <ul class="tg-newsmetadata">
-                      <li>
-                        <a href="#">June 27, 2016</a>
-                      </li>
-                      <li>
-                        <a href="#">09:00 am</a>
-                      </li>
-                      <li>
-                        <a href="#">Manchester, UK</a>
-                      </li>
-                    </ul>
-                    <div class="tg-newstitle">
-                      <h2>
-                        <a href="#">adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor</a>
-                      </h2>
-                    </div>
-                    <div class="tg-description">
-                      <p>Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="tg-news">
-                  <figure>
-                    <img src="/img/news/img-06.jpg" alt="image description" />
-                    <figcaption>
-                      <a class="tg-btnplusicon" href="#">
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </figcaption>
-                  </figure>
-                  <div class="tg-newscontent tg-borderstyle">
-                    <ul class="tg-newsmetadata">
-                      <li>
-                        <a href="#">June 27, 2016</a>
-                      </li>
-                      <li>
-                        <a href="#">09:00 am</a>
-                      </li>
-                      <li>
-                        <a href="#">Manchester, UK</a>
-                      </li>
-                    </ul>
-                    <div class="tg-newstitle">
-                      <h2>
-                        <a href="#">adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor</a>
-                      </h2>
-                    </div>
-                    <div class="tg-description">
-                      <p>Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="tg-news">
-                  <figure>
-                    <img src="/img/news/img-07.jpg" alt="image description" />
-                    <figcaption>
-                      <a class="tg-btnplusicon" href="#">
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </figcaption>
-                  </figure>
-                  <div class="tg-newscontent tg-borderstyle">
-                    <ul class="tg-newsmetadata">
-                      <li>
-                        <a href="#">June 27, 2016</a>
-                      </li>
-                      <li>
-                        <a href="#">09:00 am</a>
-                      </li>
-                      <li>
-                        <a href="#">Manchester, UK</a>
-                      </li>
-                    </ul>
-                    <div class="tg-newstitle">
-                      <h2>
-                        <a href="#">adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor</a>
-                      </h2>
-                    </div>
-                    <div class="tg-description">
-                      <p>Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="tg-news">
-                  <figure>
-                    <img src="/img/news/img-08.jpg" alt="image description" />
-                    <figcaption>
-                      <a class="tg-btnplusicon" href="#">
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </figcaption>
-                  </figure>
-                  <div class="tg-newscontent tg-borderstyle">
-                    <ul class="tg-newsmetadata">
-                      <li>
-                        <a href="#">June 27, 2016</a>
-                      </li>
-                      <li>
-                        <a href="#">09:00 am</a>
-                      </li>
-                      <li>
-                        <a href="#">Manchester, UK</a>
-                      </li>
-                    </ul>
-                    <div class="tg-newstitle">
-                      <h2>
-                        <a href="#">adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor</a>
-                      </h2>
-                    </div>
-                    <div class="tg-description">
-                      <p>Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="tg-news">
-                  <figure>
-                    <img src="/img/news/img-09.jpg" alt="image description" />
-                    <figcaption>
-                      <a class="tg-btnplusicon" href="#">
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </figcaption>
-                  </figure>
-                  <div class="tg-newscontent tg-borderstyle">
-                    <ul class="tg-newsmetadata">
-                      <li>
-                        <a href="#">June 27, 2016</a>
-                      </li>
-                      <li>
-                        <a href="#">09:00 am</a>
-                      </li>
-                      <li>
-                        <a href="#">Manchester, UK</a>
-                      </li>
-                    </ul>
-                    <div class="tg-newstitle">
-                      <h2>
-                        <a href="#">adipisicing elit eiusmod tempor adipisicing elit eiusmod tempor</a>
-                      </h2>
-                    </div>
-                    <div class="tg-description">
-                      <p>Consectetur adipisicing elit sedo eiusmod tempor dunt ut labore et dolore magna aliqua.</p>
+                      <p>{{ project.desc }}</p>
                     </div>
                   </div>
                 </div>
@@ -365,7 +90,15 @@
   export default {
     name: "ProjectsPage",
     mixins: [pageLoad],
-    components: { PageHeader }
+    components: { PageHeader },
+    data: () => ({
+      projects: {}
+    }),
+    created() {
+      axios.get("/api/projects").then(rsp => {
+        this.projects = rsp.data.projects.rows;
+      });
+    }
   };
 </script>
 

@@ -19,6 +19,7 @@ class CreateProjectValidator extends FormRequest
 			'desc' => 'required',
 			'name' => 'required|unique:projects,name',
 			'imageUrl' => 'required',
+			'location' => 'required',
 			'imageName' => 'required',
 		];
 	}

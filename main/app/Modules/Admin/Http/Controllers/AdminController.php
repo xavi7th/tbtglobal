@@ -68,6 +68,7 @@ class AdminController extends Controller
 						$project = Project::create([
 							'name' => request('name'),
 							'desc' => request('desc'),
+							'location' => request('location'),
 							'img' => ajax_upload_image(request('imageUrl'), 'projects'),
 						]);
 						return response()->json(['project' => $project], 201);

@@ -6,10 +6,13 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use App\Modules\Admin\Models\Slider;
+use App\Modules\Admin\Models\Project;
 use Illuminate\Support\Facades\Route;
 use App\Modules\AppUser\Models\AppUser;
 use Illuminate\Support\Facades\Artisan;
 use App\Modules\Admin\Transformers\SlideTransformer;
+use App\Modules\Admin\Transformers\ProjectTransformer;
+
 
 class BasicSiteController extends Controller
 {
@@ -23,6 +26,10 @@ class BasicSiteController extends Controller
 
 			Route::get('/sliders', function () {
 				return response()->json(['slides' => (new SlideTransformer)->transformForAdminViewAllSlides(Slider::all())], 200);
+			})->prefix('api');
+
+			Route::get('/projects', function () {
+				return response()->json(['projects' => (new ProjectTransformer)->transformForAdminViewAllProjects(Project::all())], 200);
 			})->prefix('api');
 
 

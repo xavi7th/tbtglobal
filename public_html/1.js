@@ -735,6 +735,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1797,6 +1799,17 @@ var render = function() {
                     }
                   }),
                   _vm._v(" "),
+                  _c("v-text-field", {
+                    attrs: { label: "Project location" },
+                    model: {
+                      value: _vm.details.location,
+                      callback: function($$v) {
+                        _vm.$set(_vm.details, "location", $$v)
+                      },
+                      expression: "details.location"
+                    }
+                  }),
+                  _vm._v(" "),
                   _c(
                     "v-flex",
                     {
@@ -1866,7 +1879,8 @@ var render = function() {
                         disabled:
                           !_vm.details.name ||
                           !_vm.details.desc ||
-                          !_vm.details.imageName
+                          !_vm.details.imageName ||
+                          !_vm.details.location
                       },
                       on: { click: _vm.createProject }
                     },
