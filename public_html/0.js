@@ -1879,6 +1879,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -5201,7 +5210,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"ContactPage.vue","sourceRoot":""}]);
+exports.push([module.i, "\n.tg-main[data-v-323c2117] {\n  padding-bottom: 0;\n}\n.tg-service[data-v-323c2117] {\n  height: 300px;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n}\n.tg-heading[data-v-323c2117] {\n  padding-bottom: 50px;\n}\n.tg-heading[data-v-323c2117]:before {\n    content: none;\n}\n.tg-heading[data-v-323c2117]:after {\n    top: 60px;\n    left: 50%;\n    width: 30px;\n    height: 2px;\n    content: \"\";\n    background: #ddd;\n    position: absolute;\n    margin: 0 0 0 -15px;\n}\n.tg-heading h4[data-v-323c2117] {\n    font-weight: bold;\n}\n.tg-locationmap[data-v-323c2117] {\n  margin-top: 50px;\n}\n.tg-main-section[data-v-323c2117] {\n  position: absolute;\n  width: 36%;\n  padding: 4% 5%;\n  background: rgba(0, 66, 129, 0.8);\n  right: 5%;\n  margin-top: 50px;\n}\n.tg-main-section .tg-sectiontitle[data-v-323c2117] {\n    padding-bottom: 0;\n}\n.tg-main-section .tg-sectiontitle h2[data-v-323c2117],\n    .tg-main-section .tg-sectiontitle h3[data-v-323c2117] {\n      color: #fff !important;\n}\n.tg-main-section .tg-themeform[data-v-323c2117] {\n    font-weight: bold;\n}\n.tg-main-section .tg-themeform textarea[data-v-323c2117] {\n      height: 135px;\n}\n.tg-main-section .tg-themeform .tg-btn[data-v-323c2117] {\n      border-color: #fff;\n}\n.tg-main-section .tg-themeform .tg-btn span[data-v-323c2117] {\n        color: #fff !important;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ContactPage.vue"],"names":[],"mappings":";AAAA;EACE,kBAAkB;CAAE;AAEtB;EACE,cAAc;EACd,wBAA4B;MAA5B,qBAA4B;UAA5B,4BAA4B;CAAE;AAEhC;EACE,qBAAqB;CAAE;AACvB;IACE,cAAc;CAAE;AAClB;IACE,UAAU;IACV,UAAU;IACV,YAAY;IACZ,YAAY;IACZ,YAAY;IACZ,iBAAiB;IACjB,mBAAmB;IACnB,oBAAoB;CAAE;AACxB;IACE,kBAAkB;CAAE;AAExB;EACE,iBAAiB;CAAE;AAErB;EACE,mBAAmB;EACnB,WAAW;EACX,eAAe;EACf,kCAAkC;EAClC,UAAU;EACV,iBAAiB;CAAE;AACnB;IACE,kBAAkB;CAAE;AACpB;;MAEE,uBAAuB;CAAE;AAC7B;IACE,kBAAkB;CAAE;AACpB;MACE,cAAc;CAAE;AAClB;MACE,mBAAmB;CAAE;AACrB;QACE,uBAAuB;CAAE","file":"ContactPage.vue","sourcesContent":[".tg-main {\n  padding-bottom: 0; }\n\n.tg-service {\n  height: 300px;\n  justify-content: flex-start; }\n\n.tg-heading {\n  padding-bottom: 50px; }\n  .tg-heading:before {\n    content: none; }\n  .tg-heading:after {\n    top: 60px;\n    left: 50%;\n    width: 30px;\n    height: 2px;\n    content: \"\";\n    background: #ddd;\n    position: absolute;\n    margin: 0 0 0 -15px; }\n  .tg-heading h4 {\n    font-weight: bold; }\n\n.tg-locationmap {\n  margin-top: 50px; }\n\n.tg-main-section {\n  position: absolute;\n  width: 36%;\n  padding: 4% 5%;\n  background: rgba(0, 66, 129, 0.8);\n  right: 5%;\n  margin-top: 50px; }\n  .tg-main-section .tg-sectiontitle {\n    padding-bottom: 0; }\n    .tg-main-section .tg-sectiontitle h2,\n    .tg-main-section .tg-sectiontitle h3 {\n      color: #fff !important; }\n  .tg-main-section .tg-themeform {\n    font-weight: bold; }\n    .tg-main-section .tg-themeform textarea {\n      height: 135px; }\n    .tg-main-section .tg-themeform .tg-btn {\n      border-color: #fff; }\n      .tg-main-section .tg-themeform .tg-btn span {\n        color: #fff !important; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -6459,6 +6468,44 @@ var staticRenderFns = [
       "main",
       { staticClass: "tg-main tg-haslayout", attrs: { id: "tg-main" } },
       [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-4 col-md-offset-2" }, [
+              _c("div", { staticClass: "item tg-service" }, [
+                _c("div", { staticClass: "tg-heading" }, [
+                  _c("h4", [
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("Head Office")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tg-description" }, [
+                  _c("p", [
+                    _vm._v("Plot 106 Airport Road, Warri, Delta State.")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "item tg-service" }, [
+                _c("div", { staticClass: "tg-heading" }, [
+                  _c("h4", [
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("Branch Office")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tg-description" }, [
+                  _c("p", [
+                    _vm._v(
+                      "50 Country Road, off Sapele Road, Benin City, Edo State."
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
         _c(
           "div",
           { staticClass: "tg-locationmap", attrs: { id: "tg-locationmap" } },
@@ -6476,82 +6523,57 @@ var staticRenderFns = [
         ),
         _vm._v(" "),
         _c("section", { staticClass: "tg-main-section tg-haslayout" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12"
-                },
-                [
-                  _c("div", { staticClass: "tg-sectionhead" }, [
-                    _c("div", { staticClass: "tg-sectiontitle" }, [
-                      _c("h2", [_vm._v("let’s talk")]),
-                      _vm._v(" "),
-                      _c("h3", [_vm._v("Get in Touch")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "tg-description" })
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c("form", { staticClass: "tg-themeform" }, [
-                _c("fieldset", [
-                  _c("div", { staticClass: "col-sm-4" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          name: "name",
-                          placeholder: "Name"
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-4" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          name: "number",
-                          placeholder: "Number"
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-4" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "email",
-                          name: "email",
-                          placeholder: "Email"
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("textarea", { attrs: { placeholder: "Message" } })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
-                    _c(
-                      "button",
-                      { staticClass: "tg-btn", attrs: { type: "button" } },
-                      [_c("span", [_vm._v("i’m waiting")])]
-                    )
-                  ])
+          _c("div", { staticClass: "col-sm-12" }, [
+            _c("div", { staticClass: "tg-sectionhead" }, [
+              _c("div", { staticClass: "tg-sectiontitle" }, [
+                _c("h2", [_vm._v("let’s talk")]),
+                _vm._v(" "),
+                _c("h3", [_vm._v("Get in Touch")])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("form", { staticClass: "tg-themeform" }, [
+            _c("fieldset", [
+              _c("div", { staticClass: "col-sm-12" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "name",
+                      placeholder: "Name",
+                      autofocus: ""
+                    }
+                  })
                 ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm-12" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "email",
+                      name: "email",
+                      placeholder: "Email"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("textarea", { attrs: { placeholder: "Message" } })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
+                _c(
+                  "button",
+                  { staticClass: "tg-btn", attrs: { type: "button" } },
+                  [_c("span", [_vm._v("i’m waiting")])]
+                )
               ])
             ])
           ])

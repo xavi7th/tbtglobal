@@ -2,6 +2,34 @@
   <div>
     <page-header title="Contact Us"></page-header>
     <main id="tg-main" class="tg-main tg-haslayout">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2">
+            <div class="item tg-service">
+              <div class="tg-heading">
+                <h4>
+                  <a href="#">Head Office</a>
+                </h4>
+              </div>
+              <div class="tg-description">
+                <p>Plot 106 Airport Road, Warri, Delta State.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item tg-service">
+              <div class="tg-heading">
+                <h4>
+                  <a href="#">Branch Office</a>
+                </h4>
+              </div>
+              <div class="tg-description">
+                <p>50 Country Road, off Sapele Road, Benin City, Edo State.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--************************************
 					Location Map Start
       *************************************-->
@@ -17,60 +45,41 @@
 					Location Map End
       *************************************-->
 
-      <!--************************************
-					Get In Touch Start
-      *************************************-->
       <section class="tg-main-section tg-haslayout">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12"
-            >
-              <div class="tg-sectionhead">
-                <div class="tg-sectiontitle">
-                  <h2>let’s talk</h2>
-                  <h3>Get in Touch</h3>
-                </div>
-                <div class="tg-description">
-                  <!-- <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
-                </div>
-              </div>
+        <div class="col-sm-12">
+          <div class="tg-sectionhead">
+            <div class="tg-sectiontitle">
+              <h2>let’s talk</h2>
+              <h3>Get in Touch</h3>
             </div>
-            <form class="tg-themeform">
-              <fieldset>
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="Name" />
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="number" placeholder="Number" />
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="Email" />
-                  </div>
-                </div>
-                <div class="col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <textarea placeholder="Message"></textarea>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-xs-12">
-                  <button type="button" class="tg-btn">
-                    <span>i’m waiting</span>
-                  </button>
-                </div>
-              </fieldset>
-            </form>
           </div>
         </div>
+
+        <form class="tg-themeform">
+          <fieldset>
+            <div class="col-sm-12">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Name" autofocus />
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email" />
+              </div>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+              <div class="form-group">
+                <textarea placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+              <button type="button" class="tg-btn">
+                <span>i’m waiting</span>
+              </button>
+            </div>
+          </fieldset>
+        </form>
       </section>
-      <!--************************************
-					Get In Touch End
-      *************************************-->
     </main>
   </div>
 </template>
@@ -86,4 +95,68 @@
 </script>
 
 <style lang="scss" scoped>
+  .tg-main {
+    padding-bottom: 0;
+  }
+  .tg-service {
+    height: 300px;
+    justify-content: flex-start;
+  }
+
+  .tg-heading {
+    padding-bottom: 50px;
+
+    &:before {
+      content: none;
+    }
+
+    &:after {
+      top: 60px;
+      left: 50%;
+      width: 30px;
+      height: 2px;
+      content: "";
+      background: #ddd;
+      position: absolute;
+      margin: 0 0 0 -15px;
+    }
+
+    h4 {
+      font-weight: bold;
+    }
+  }
+
+  .tg-locationmap {
+    margin-top: 50px;
+  }
+  .tg-main-section {
+    position: absolute;
+    width: 36%;
+    padding: 4% 5%;
+    background: rgba(0, 66, 129, 0.8);
+    right: 5%;
+    margin-top: 50px;
+
+    .tg-sectiontitle {
+      padding-bottom: 0;
+      h2,
+      h3 {
+        color: #fff !important;
+      }
+    }
+
+    .tg-themeform {
+      font-weight: bold;
+      textarea {
+        height: 135px;
+      }
+
+      .tg-btn {
+        border-color: #fff;
+        span {
+          color: #fff !important;
+        }
+      }
+    }
+  }
 </style>
