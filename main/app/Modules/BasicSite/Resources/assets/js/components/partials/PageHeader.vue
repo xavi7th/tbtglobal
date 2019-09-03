@@ -45,5 +45,7 @@
 <style lang="scss" scoped>
   .tg-parallaximg {
     background-image: url("/img/parallax/bgparallax-03.jpg");
+    background-size: cover;
+    background-position: center;
   }
 </style>
