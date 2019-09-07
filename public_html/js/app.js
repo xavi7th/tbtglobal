@@ -3576,63 +3576,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      clients: {}
+    };
+  },
+  beforeCreate: function beforeCreate() {
+    var _this = this;
+
+    axios.get("/api/clients").then(function (rsp) {
+      _this.clients = rsp.data.clients.rows;
+      setTimeout(function () {
+        vueEventBus.$emit("clients-loaded");
+      }, 0);
+    });
+  }
+});
 
 /***/ }),
 
@@ -37185,184 +37146,61 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("section", { staticClass: "tg-main-section tg-haslayout" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "tg-brandsslider tg-brands",
+            attrs: { id: "tg-brandsslider" }
+          },
+          _vm._l(_vm.clients, function(client) {
+            return _c("figure", { staticClass: "item tg-brand" }, [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  attrs: { src: client.img, alt: "image description" }
+                })
+              ])
+            ])
+          }),
+          0
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "tg-main-section tg-haslayout" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12"
-            },
-            [
-              _c("div", { staticClass: "tg-sectionhead" }, [
-                _c("div", { staticClass: "tg-sectiontitle" }, [
-                  _c("h2", [_vm._v("we are")]),
-                  _vm._v(" "),
-                  _c("h3", [_vm._v("trusted by many")])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              We have built a reputaion in the industry for minimal overhead costs, timely delivery,\n              safety conscious workforce and excellent relationship with business partners. Furthering\n              client business objetives sits at the forefront of all enganements with our esteemed clients\n            "
-                    )
-                  ])
-                ])
-              ])
-            ]
-          ),
+    return _c(
+      "div",
+      {
+        staticClass:
+          "col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12"
+      },
+      [
+        _c("div", { staticClass: "tg-sectionhead" }, [
+          _c("div", { staticClass: "tg-sectiontitle" }, [
+            _c("h2", [_vm._v("we are")]),
+            _vm._v(" "),
+            _c("h3", [_vm._v("trusted by many")])
+          ]),
           _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "tg-brandsslider tg-brands",
-              attrs: { id: "tg-brandsslider" }
-            },
-            [
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-01.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-02.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-03.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-04.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-01.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-02.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-03.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-04.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-01.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-02.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-03.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("figure", { staticClass: "item tg-brand" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "img/brands/img-04.png",
-                      alt: "image description"
-                    }
-                  })
-                ])
-              ])
-            ]
-          )
+          _c("div", { staticClass: "tg-description" }, [
+            _c("p", [
+              _vm._v(
+                "\n              We have built a reputaion in the industry for minimal overhead costs, timely delivery,\n              safety conscious workforce and excellent relationship with business partners. Furthering\n              client business objetives sits at the forefront of all enganements with our esteemed clients\n            "
+              )
+            ])
+          ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true

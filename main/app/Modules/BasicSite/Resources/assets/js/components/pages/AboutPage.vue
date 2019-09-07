@@ -16,15 +16,12 @@
                     <h3>what we do</h3>
                   </div>
                   <div class="tg-description">
-                    <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore iqua Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ea dignissimos rerum architecto soluta odio voluptatum at exercitationem ut quos modi repellat iste adipisci velit aspernatur, minus commodi quas nemo!</p>
+                    <p>TBT Global Business Concept Limited formerly known as TBT Global Resources Services was incorporated in March 09, 2006 with the Corporate Affairs Commission {CAC} of Federal Republic of Nigeria. The Company has a registration number RC 1036206.</p>
+                    <p>Since its incorporation as an indigenous organization, it has been and is still enjoying patronage from a number of reputable clients like Shell Petroleum Development Company (SPDC), Warri Refining and Petrochemicals Company (WRPC), Nigerian Gas Company Limited and Bollore Transport and Logistics Nig Ltd .There is no doubt that TBT Global Business Concept Limited has already carved a niche for itself in the oil and gas industry.</p>
                   </div>
                   <div class="tg-description">
-                    <p>Consectetur adippisicing elit sed do eiusmod tempor incididunt ut labore et dolore iqua Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima non cupiditate magnam, aspernatur nulla facere earum ab consequatur error ipsam, itaque quae doloribus expedita officia omnis tempora distinctio adipisci molestiae.</p>
-                  </div>
-                  <div class="tg-description">
-                    <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore iqua Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <p>We have qualified, reputed, capable and seasoned professional onboard to ensure successful execution of projects irrespective of its magnitude and financial cost.</p>
+                    <p>Over the years, we have executed various jobs for Shell Petroleum Development Company (SPDC), Warri Refining & Petrochemicals Company Limited (WRPC), Nigerian Gas Company Limited and Bollore Transport and Logistics (Nig) Ltd. The cardinal objective of the Company is to provide high quality jobs incident free to clients.</p>
                   </div>
                 </div>
               </div>
@@ -538,6 +535,11 @@
     img {
       width: 100%;
       min-height: 210px;
+    }
+  }
+  .tg-description {
+    p {
+      text-align: justify;
     }
   }
 </style>

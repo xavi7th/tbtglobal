@@ -5,12 +5,14 @@ namespace App\Modules\BasicSite\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use App\Modules\Admin\Models\Client;
 use App\Modules\Admin\Models\Slider;
 use App\Modules\Admin\Models\Project;
 use Illuminate\Support\Facades\Route;
 use App\Modules\AppUser\Models\AppUser;
 use Illuminate\Support\Facades\Artisan;
 use App\Modules\Admin\Transformers\SlideTransformer;
+use App\Modules\Admin\Transformers\ClientTransformer;
 use App\Modules\Admin\Transformers\ProjectTransformer;
 
 
@@ -30,6 +32,10 @@ class BasicSiteController extends Controller
 
 			Route::get('/projects', function () {
 				return response()->json(['projects' => (new ProjectTransformer)->transformForAdminViewAllProjects(Project::all())], 200);
+			})->prefix('api');
+
+			Route::get('/clients', function () {
+				return response()->json(['clients' => (new ClientTransformer)->transformForAdminViewAllClients(Client::all())], 200);
 			})->prefix('api');
 
 

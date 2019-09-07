@@ -20,64 +20,9 @@
           </div>
         </div>
         <div id="tg-brandsslider" class="tg-brandsslider tg-brands">
-          <figure class="item tg-brand">
+          <figure class="item tg-brand" v-for="client in clients">
             <a href="#">
-              <img src="img/brands/img-01.png" alt="image description" />
-            </a>
-          </figure>
-          <figure class="item tg-brand">
-            <a href="#">
-              <img src="img/brands/img-02.png" alt="image description" />
-            </a>
-          </figure>
-          <figure class="item tg-brand">
-            <a href="#">
-              <img src="img/brands/img-03.png" alt="image description" />
-            </a>
-          </figure>
-          <figure class="item tg-brand">
-            <a href="#">
-              <img src="img/brands/img-04.png" alt="image description" />
-            </a>
-          </figure>
-          <figure class="item tg-brand">
-            <a href="#">
-              <img src="img/brands/img-01.png" alt="image description" />
-            </a>
-          </figure>
-          <figure class="item tg-brand">
-            <a href="#">
-              <img src="img/brands/img-02.png" alt="image description" />
-            </a>
-          </figure>
-          <figure class="item tg-brand">
-            <a href="#">
-              <img src="img/brands/img-03.png" alt="image description" />
-            </a>
-          </figure>
-          <figure class="item tg-brand">
-            <a href="#">
-              <img src="img/brands/img-04.png" alt="image description" />
-            </a>
-          </figure>
-          <figure class="item tg-brand">
-            <a href="#">
-              <img src="img/brands/img-01.png" alt="image description" />
-            </a>
-          </figure>
-          <figure class="item tg-brand">
-            <a href="#">
-              <img src="img/brands/img-02.png" alt="image description" />
-            </a>
-          </figure>
-          <figure class="item tg-brand">
-            <a href="#">
-              <img src="img/brands/img-03.png" alt="image description" />
-            </a>
-          </figure>
-          <figure class="item tg-brand">
-            <a href="#">
-              <img src="img/brands/img-04.png" alt="image description" />
+              <img :src="client.img" alt="image description" />
             </a>
           </figure>
         </div>
@@ -87,7 +32,19 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    data: () => ({
+      clients: {}
+    }),
+    beforeCreate() {
+      axios.get("/api/clients").then(rsp => {
+        this.clients = rsp.data.clients.rows;
+        setTimeout(() => {
+          vueEventBus.$emit("clients-loaded");
+        }, 0);
+      });
+    }
+  };
 </script>
 
 <style lang="scss" scoped>

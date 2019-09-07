@@ -254,13 +254,16 @@
         /* -------------------------------------
         		BRANDS SLIDER
         -------------------------------------- */
-        var owl = $( "#tg-brandsslider" );
-        owl.owlCarousel( {
-            pagination: true,
-            //autoPlay: 3000,
-            items: 4,
-            itemsDesktop: [ 1199, 4 ],
-            itemsDesktopSmall: [ 991, 3 ]
+
+        window.vueEventBus.$on( 'clients-loaded', function () {
+            console.log( 'clients-loaded' );
+            var owl = $( "#tg-brandsslider" );
+            owl.owlCarousel( {
+                pagination: true,
+                items: 4,
+                itemsDesktop: [ 1199, 4 ],
+                itemsDesktopSmall: [ 991, 3 ]
+            } );
         } );
         /* -------------------------------------
         		SERVICE HOURS SLIDER
