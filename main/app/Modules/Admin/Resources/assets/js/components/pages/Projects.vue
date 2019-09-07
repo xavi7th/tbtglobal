@@ -58,7 +58,7 @@
             flat
             color="primary"
             @click="createProject"
-            :disabled="!details.name || !details.desc || !details.imageName || !details.location"
+            :disabled="!details.name || !details.imageName || !details.location"
           >Submit</v-btn>
         </v-card-actions>
       </v-card>

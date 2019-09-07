@@ -1954,6 +1954,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -8462,54 +8465,64 @@ var render = function() {
                 _c(
                   "div",
                   { staticClass: "tg-newsposts" },
-                  _vm._l(_vm.projects, function(project) {
-                    return _c(
-                      "div",
-                      {
-                        key: project.id,
-                        staticClass: "col-md-4 col-sm-6 col-xs-6"
-                      },
-                      [
-                        _c("div", { staticClass: "tg-news" }, [
-                          _c("figure", [
-                            _c("img", {
-                              attrs: {
-                                src: project.img,
-                                alt: "image description"
-                              }
-                            })
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "tg-newscontent tg-borderstyle" },
-                            [
-                              _c("ul", { staticClass: "tg-newsmetadata" }, [
-                                _c("li", [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v(_vm._s(project.location))
-                                  ])
-                                ])
+                  [
+                    _vm._l(_vm.projects, function(project, idx) {
+                      return [
+                        _c(
+                          "div",
+                          {
+                            key: idx,
+                            staticClass: "col-md-4 col-sm-6 col-xs-6"
+                          },
+                          [
+                            _c("div", { staticClass: "tg-news" }, [
+                              _c("figure", [
+                                _c("img", {
+                                  attrs: {
+                                    src: project.img,
+                                    alt: "image description"
+                                  }
+                                })
                               ]),
                               _vm._v(" "),
-                              _c("div", { staticClass: "tg-newstitle" }, [
-                                _c("h2", [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _vm._v(_vm._s(project.name))
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "tg-newscontent tg-borderstyle"
+                                },
+                                [
+                                  _c("ul", { staticClass: "tg-newsmetadata" }, [
+                                    _c("li", [
+                                      _c("a", { attrs: { href: "#" } }, [
+                                        _vm._v(_vm._s(project.location))
+                                      ])
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "tg-newstitle" }, [
+                                    _c("h2", [
+                                      _c("a", { attrs: { href: "#" } }, [
+                                        _vm._v(_vm._s(project.name))
+                                      ])
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "tg-description" }, [
+                                    _c("p", [_vm._v(_vm._s(project.desc))])
                                   ])
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "tg-description" }, [
-                                _c("p", [_vm._v(_vm._s(project.desc))])
-                              ])
-                            ]
-                          )
-                        ])
+                                ]
+                              )
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        (idx + 1) % 3 == 0 && idx != 0
+                          ? _c("div", { staticClass: "clearfix" })
+                          : _vm._e()
                       ]
-                    )
-                  }),
-                  0
+                    })
+                  ],
+                  2
                 )
               ])
             ])

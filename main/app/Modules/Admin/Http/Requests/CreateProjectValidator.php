@@ -16,7 +16,7 @@ class CreateProjectValidator extends FormRequest
 	public function rules()
 	{
 		return [
-			'desc' => 'required',
+			// 'desc' => 'required',
 			'name' => 'required|unique:projects,name',
 			'imageUrl' => 'required',
 			'location' => 'required',

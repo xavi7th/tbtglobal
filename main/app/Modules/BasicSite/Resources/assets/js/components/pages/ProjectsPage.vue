@@ -19,28 +19,31 @@
               </div>
             </div>
             <div class="tg-newsposts">
-              <div class="col-md-4 col-sm-6 col-xs-6" v-for="project in projects" :key="project.id">
-                <div class="tg-news">
-                  <figure>
-                    <img :src="project.img" alt="image description" />
-                  </figure>
-                  <div class="tg-newscontent tg-borderstyle">
-                    <ul class="tg-newsmetadata">
-                      <li>
-                        <a href="#">{{ project.location }}</a>
-                      </li>
-                    </ul>
-                    <div class="tg-newstitle">
-                      <h2>
-                        <a href="#">{{ project.name }}</a>
-                      </h2>
-                    </div>
-                    <div class="tg-description">
-                      <p>{{ project.desc }}</p>
+              <template v-for="(project, idx) in projects">
+                <div class="col-md-4 col-sm-6 col-xs-6" :key="idx">
+                  <div class="tg-news">
+                    <figure>
+                      <img :src="project.img" alt="image description" />
+                    </figure>
+                    <div class="tg-newscontent tg-borderstyle">
+                      <ul class="tg-newsmetadata">
+                        <li>
+                          <a href="#">{{ project.location }}</a>
+                        </li>
+                      </ul>
+                      <div class="tg-newstitle">
+                        <h2>
+                          <a href="#">{{ project.name }}</a>
+                        </h2>
+                      </div>
+                      <div class="tg-description">
+                        <p>{{ project.desc }}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="clearfix" v-if="(idx + 1) %3 == 0 && idx != 0"></div>
+              </template>
             </div>
             <!-- <div class="col-sm-12 col-xs-12">
               <nav class="tg-pagination">

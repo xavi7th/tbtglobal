@@ -1878,7 +1878,6 @@ var render = function() {
                         color: "primary",
                         disabled:
                           !_vm.details.name ||
-                          !_vm.details.desc ||
                           !_vm.details.imageName ||
                           !_vm.details.location
                       },
