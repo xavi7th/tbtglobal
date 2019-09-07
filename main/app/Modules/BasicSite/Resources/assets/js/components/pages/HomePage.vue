@@ -46,6 +46,7 @@
 <style scoped lang="scss">
   .tg-main {
     margin-top: 110px;
+    padding: 0;
 
     @media (max-width: 576px) {
       margin-top: 70px;

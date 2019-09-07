@@ -71,17 +71,49 @@
 </script>
 
 <style lang="scss">
+  .tg-navigationarea {
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 576px) {
+      .container {
+        width: 100%;
+      }
+    }
+  }
+
   .tg-logo {
-    margin: 30px 0 0;
+    margin: 0;
     width: 14%;
 
     @media (max-width: 576px) {
-      margin-top: 15px;
-      width: 22%;
+      width: 30%;
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+
+  .tg-nav {
+    padding: 0 !important;
+
+    li {
+      padding: 0 !important;
     }
   }
 
   body.tg-fixednav .tg-logo {
     margin: 0;
+  }
+
+  .tg-bglight {
+    background-color: #003160;
+    color: #fff;
+
+    * {
+      color: #fff !important;
+    }
   }
 </style>
