@@ -1,13 +1,17 @@
 export default {
     mounted() {
-        this.$emit( "page-loaded" );
+        this.$nextTick( () => {
+            this.$emit( "page-loaded" );
+        } )
     },
 
     beforeDestroy() {
         this.$unloadScript( "/js/main.js" );
     },
     activated() {
-        this.$emit( "page-loaded" );
+        this.$nextTick( () => {
+            this.$emit( "page-loaded" );
+        } )
     },
 
     deactivated() {
