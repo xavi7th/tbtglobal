@@ -35,7 +35,7 @@ class ContactAdmin extends Mailable
 	public function build()
 	{
 		// dd($this->message);
-		return $this->from($this->email)
+		return $this->from('info@tbtnigeria.com')
 			->view('basicsite::emails.new-contact');
 	}
 }
