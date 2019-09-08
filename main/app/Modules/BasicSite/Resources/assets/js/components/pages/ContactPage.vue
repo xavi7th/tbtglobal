@@ -55,25 +55,38 @@
           </div>
         </div>
 
-        <form class="tg-themeform">
+        <form class="tg-themeform" @submit.prevent="sendEmail">
           <fieldset>
             <div class="col-sm-12">
               <div class="form-group">
-                <input type="text" class="form-control" name="name" placeholder="Name" autofocus />
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  v-model="details.name"
+                  placeholder="Name"
+                  autofocus
+                />
               </div>
             </div>
             <div class="col-sm-12">
               <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="Email" />
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  v-model="details.email"
+                  placeholder="Email"
+                />
               </div>
             </div>
             <div class="col-sm-12 col-xs-12">
               <div class="form-group">
-                <textarea placeholder="Message"></textarea>
+                <textarea v-model="details.message" placeholder="Message"></textarea>
               </div>
             </div>
             <div class="col-sm-12 col-xs-12">
-              <button type="button" class="tg-btn">
+              <button type="submit" class="tg-btn pull-right">
                 <span>i’m waiting</span>
               </button>
             </div>
@@ -90,7 +103,43 @@
   export default {
     name: "ContactsPage",
     mixins: [pageLoad],
-    components: { PageHeader }
+    components: { PageHeader },
+    data: () => ({
+      details: {}
+    }),
+    methods: {
+      sendEmail() {
+        BlockToast.fire({
+          type: "info",
+          title: "Sending..."
+        });
+        axios
+          .post("/api/contact-us", { ...this.details })
+          .then(rsp => {
+            Toast.fire({
+              title: "Mesage sent!",
+              text:
+                "Thanks for contacting us. We will get back to you as soon as we can. Have a great day",
+              position: "center",
+              showConfirmButton: true,
+              timer: 10000,
+              type: "success"
+            });
+          })
+          .catch(err => {
+            console.log(err.response);
+            if (err.response.status == 500) {
+              Toast.fire({
+                title: "An error occured. Message not sent",
+                position: "center",
+                showConfirmButton: true,
+                timer: 10000,
+                type: "error"
+              });
+            }
+          });
+      }
+    }
   };
 </script>
 

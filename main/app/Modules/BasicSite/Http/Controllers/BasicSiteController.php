@@ -5,16 +5,19 @@ namespace App\Modules\BasicSite\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Log;
 use App\Modules\Admin\Models\Client;
 use App\Modules\Admin\Models\Slider;
+use Illuminate\Support\Facades\Mail;
 use App\Modules\Admin\Models\Project;
 use Illuminate\Support\Facades\Route;
 use App\Modules\AppUser\Models\AppUser;
 use Illuminate\Support\Facades\Artisan;
+use App\Modules\BasicSite\Emails\ContactAdmin;
 use App\Modules\Admin\Transformers\SlideTransformer;
 use App\Modules\Admin\Transformers\ClientTransformer;
 use App\Modules\Admin\Transformers\ProjectTransformer;
-
+use App\Modules\BasicSite\Http\Requests\ContactAdminValidator;
 
 class BasicSiteController extends Controller
 {
@@ -36,6 +39,18 @@ class BasicSiteController extends Controller
 
 			Route::get('/clients', function () {
 				return response()->json(['clients' => (new ClientTransformer)->transformForAdminViewAllClients(Client::all())], 200);
+			})->prefix('api');
+
+			Route::post('/contact-us', function (ContactAdminValidator $request) {
+				// return $request->message;
+				// return new ContactAdmin($request);
+				try {
+					Mail::to('info@tbtnigeria.com')->send(new ContactAdmin($request));
+					return response()->json(['status' => true], 201);
+				} catch (\Throwable $e) {
+					Log::critical($e);
+					return response()->json(['status' => false], 500);
+				}
 			})->prefix('api');
 
 

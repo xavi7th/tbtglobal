@@ -1760,6 +1760,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_js_config_pageload_mixin__ = __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/config/pageload.mixin.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_partials_PageHeader__ = __webpack_require__("./main/app/Modules/BasicSite/Resources/assets/js/components/partials/PageHeader.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_partials_PageHeader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_partials_PageHeader__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1852,7 +1867,41 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ContactsPage",
   mixins: [__WEBPACK_IMPORTED_MODULE_0__assets_js_config_pageload_mixin__["a" /* default */]],
-  components: { PageHeader: __WEBPACK_IMPORTED_MODULE_1__components_partials_PageHeader___default.a }
+  components: { PageHeader: __WEBPACK_IMPORTED_MODULE_1__components_partials_PageHeader___default.a },
+  data: function data() {
+    return {
+      details: {}
+    };
+  },
+  methods: {
+    sendEmail: function sendEmail() {
+      BlockToast.fire({
+        type: "info",
+        title: "Sending..."
+      });
+      axios.post("/api/contact-us", _extends({}, this.details)).then(function (rsp) {
+        Toast.fire({
+          title: "Mesage sent!",
+          text: "Thanks for contacting us. We will get back to you as soon as we can. Have a great day",
+          position: "center",
+          showConfirmButton: true,
+          timer: 10000,
+          type: "success"
+        });
+      }).catch(function (err) {
+        console.log(err.response);
+        if (err.response.status == 500) {
+          Toast.fire({
+            title: "An error occured. Message not sent",
+            position: "center",
+            showConfirmButton: true,
+            timer: 10000,
+            type: "error"
+          });
+        }
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -4796,7 +4845,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   methods: {
     strToSlug: function strToSlug(str) {
-      console.log(str);
+      // console.log(str);
 
       return str.replace(/[^\w ]+/g, "").replace(/ +/g, "-");
     }
@@ -6152,7 +6201,127 @@ var render = function() {
     [
       _c("page-header", { attrs: { title: "Contact Us" } }),
       _vm._v(" "),
-      _vm._m(0)
+      _c(
+        "main",
+        { staticClass: "tg-main tg-haslayout", attrs: { id: "tg-main" } },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("section", { staticClass: "tg-main-section tg-haslayout" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c(
+              "form",
+              {
+                staticClass: "tg-themeform",
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.sendEmail($event)
+                  }
+                }
+              },
+              [
+                _c("fieldset", [
+                  _c("div", { staticClass: "col-sm-12" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details.name,
+                            expression: "details.name"
+                          }
+                        ],
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          name: "name",
+                          placeholder: "Name",
+                          autofocus: ""
+                        },
+                        domProps: { value: _vm.details.name },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(_vm.details, "name", $event.target.value)
+                          }
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-12" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details.email,
+                            expression: "details.email"
+                          }
+                        ],
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "email",
+                          name: "email",
+                          placeholder: "Email"
+                        },
+                        domProps: { value: _vm.details.email },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(_vm.details, "email", $event.target.value)
+                          }
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("textarea", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details.message,
+                            expression: "details.message"
+                          }
+                        ],
+                        attrs: { placeholder: "Message" },
+                        domProps: { value: _vm.details.message },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details,
+                              "message",
+                              $event.target.value
+                            )
+                          }
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(3)
+                ])
+              ]
+            )
+          ])
+        ]
+      )
     ],
     1
   )
@@ -6162,122 +6331,87 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "main",
-      { staticClass: "tg-main tg-haslayout", attrs: { id: "tg-main" } },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-4 col-md-offset-2" }, [
-              _c("div", { staticClass: "item tg-service" }, [
-                _c("div", { staticClass: "tg-heading" }, [
-                  _c("h4", [
-                    _c("a", { attrs: { href: "#" } }, [_vm._v("Head Office")])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v("Plot 106 Airport Road, Warri, Delta State.")
-                  ])
-                ])
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-4 col-md-offset-2" }, [
+          _c("div", { staticClass: "item tg-service" }, [
+            _c("div", { staticClass: "tg-heading" }, [
+              _c("h4", [
+                _c("a", { attrs: { href: "#" } }, [_vm._v("Head Office")])
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "item tg-service" }, [
-                _c("div", { staticClass: "tg-heading" }, [
-                  _c("h4", [
-                    _c("a", { attrs: { href: "#" } }, [_vm._v("Branch Office")])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "50 Country Road, off Sapele Road, Benin City, Edo State."
-                    )
-                  ])
-                ])
-              ])
+            _c("div", { staticClass: "tg-description" }, [
+              _c("p", [_vm._v("Plot 106 Airport Road, Warri, Delta State.")])
             ])
           ])
         ]),
         _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "tg-locationmap", attrs: { id: "tg-locationmap" } },
-          [
-            _c("iframe", {
-              staticStyle: { border: "0", height: "100%", width: "100%" },
-              attrs: {
-                src:
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.170341675013!2d5.764113715200978!3d5.541741335332661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad7bc9b5f72b%3A0x2cff4bbb9faab27a!2s106%20Airport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566875115241!5m2!1sen!2sng",
-                frameborder: "0",
-                allowfullscreen: ""
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c("section", { staticClass: "tg-main-section tg-haslayout" }, [
-          _c("div", { staticClass: "col-sm-12" }, [
-            _c("div", { staticClass: "tg-sectionhead" }, [
-              _c("div", { staticClass: "tg-sectiontitle" }, [
-                _c("h2", [_vm._v("let’s talk")]),
-                _vm._v(" "),
-                _c("h3", [_vm._v("Get in Touch")])
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "item tg-service" }, [
+            _c("div", { staticClass: "tg-heading" }, [
+              _c("h4", [
+                _c("a", { attrs: { href: "#" } }, [_vm._v("Branch Office")])
               ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("form", { staticClass: "tg-themeform" }, [
-            _c("fieldset", [
-              _c("div", { staticClass: "col-sm-12" }, [
-                _c("div", { staticClass: "form-group" }, [
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: {
-                      type: "text",
-                      name: "name",
-                      placeholder: "Name",
-                      autofocus: ""
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm-12" }, [
-                _c("div", { staticClass: "form-group" }, [
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: {
-                      type: "email",
-                      name: "email",
-                      placeholder: "Email"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
-                _c("div", { staticClass: "form-group" }, [
-                  _c("textarea", { attrs: { placeholder: "Message" } })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
-                _c(
-                  "button",
-                  { staticClass: "tg-btn", attrs: { type: "button" } },
-                  [_c("span", [_vm._v("i’m waiting")])]
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tg-description" }, [
+              _c("p", [
+                _vm._v(
+                  "50 Country Road, off Sapele Road, Benin City, Edo State."
                 )
               ])
             ])
           ])
         ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "tg-locationmap", attrs: { id: "tg-locationmap" } },
+      [
+        _c("iframe", {
+          staticStyle: { border: "0", height: "100%", width: "100%" },
+          attrs: {
+            src:
+              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.170341675013!2d5.764113715200978!3d5.541741335332661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad7bc9b5f72b%3A0x2cff4bbb9faab27a!2s106%20Airport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566875115241!5m2!1sen!2sng",
+            frameborder: "0",
+            allowfullscreen: ""
+          }
+        })
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-12" }, [
+      _c("div", { staticClass: "tg-sectionhead" }, [
+        _c("div", { staticClass: "tg-sectiontitle" }, [
+          _c("h2", [_vm._v("let’s talk")]),
+          _vm._v(" "),
+          _c("h3", [_vm._v("Get in Touch")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-12 col-xs-12" }, [
+      _c(
+        "button",
+        { staticClass: "tg-btn pull-right", attrs: { type: "submit" } },
+        [_c("span", [_vm._v("i’m waiting")])]
+      )
+    ])
   }
 ]
 render._withStripped = true

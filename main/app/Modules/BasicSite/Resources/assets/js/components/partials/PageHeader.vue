@@ -29,7 +29,7 @@
 
     methods: {
       strToSlug(str) {
-        console.log(str);
+        // console.log(str);
 
         return str.replace(/[^\w ]+/g, "").replace(/ +/g, "-");
       }

@@ -12,7 +12,9 @@ window.Toast = swal.mixin( {
 
 window.BlockToast = swal.mixin( {
     showConfirmButton: false,
-    showCloseButton: false
+    showCloseButton: false,
+    allowOutsideClick: false,
+    allowEscapeKey: false
 } );
 
 window.swalWithBootstrapButtons = swal.mixin( {
