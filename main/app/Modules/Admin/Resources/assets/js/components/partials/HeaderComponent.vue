@@ -14,7 +14,7 @@
     </v-btn>-->
     <v-btn icon large>
       <v-avatar size="32px" tile>
-        <img src="https://cdn.vuetifyjs.com/images/logos/logo.svg" alt="user" />
+        <img src="/img/logo.png" alt="user" @click="$emit('logout-user')" />
       </v-avatar>
     </v-btn>
   </v-toolbar>

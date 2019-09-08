@@ -2622,7 +2622,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\nheader {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/Admin/Resources/assets/js/components/partials/main/app/Modules/Admin/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AAwCA;EACA,iBAAA;CACA","file":"HeaderComponent.vue","sourcesContent":["<template>\n  <v-toolbar :clipped-left=\"$vuetify.breakpoint.lgAndUp\" color=\"primary\" dark app fixed>\n    <v-toolbar-title style=\"width: 300px\" class=\"ml-0 pl-3\">\n      <v-toolbar-side-icon @click.stop=\"$emit('update:drawer', !drawer)\"></v-toolbar-side-icon>\n      <span class=\"hidden-sm-and-down\">TBT Global</span>\n    </v-toolbar-title>\n\n    <v-spacer></v-spacer>\n    <!-- <v-btn icon>\n      <v-icon>apps</v-icon>\n    </v-btn>\n    <v-btn icon>\n      <v-icon>notifications</v-icon>\n    </v-btn>-->\n    <v-btn icon large>\n      <v-avatar size=\"32px\" tile>\n        <img src=\"https://cdn.vuetifyjs.com/images/logos/logo.svg\" alt=\"user\" />\n      </v-avatar>\n    </v-btn>\n  </v-toolbar>\n</template>\n\n<script>\n  export default {\n    name: \"AdminHeader\",\n    props: {\n      drawer: {\n        type: Boolean,\n        required: true\n      }\n    },\n    data() {\n      return {\n        // drawer: null\n      };\n    }\n  };\n</script>\n\n<style lang=\"css\">\n  header {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\nheader {\n  color: aliceblue;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/Admin/Resources/assets/js/components/partials/main/app/Modules/Admin/Resources/assets/js/components/partials/HeaderComponent.vue"],"names":[],"mappings":";AAwCA;EACA,iBAAA;CACA","file":"HeaderComponent.vue","sourcesContent":["<template>\n  <v-toolbar :clipped-left=\"$vuetify.breakpoint.lgAndUp\" color=\"primary\" dark app fixed>\n    <v-toolbar-title style=\"width: 300px\" class=\"ml-0 pl-3\">\n      <v-toolbar-side-icon @click.stop=\"$emit('update:drawer', !drawer)\"></v-toolbar-side-icon>\n      <span class=\"hidden-sm-and-down\">TBT Global</span>\n    </v-toolbar-title>\n\n    <v-spacer></v-spacer>\n    <!-- <v-btn icon>\n      <v-icon>apps</v-icon>\n    </v-btn>\n    <v-btn icon>\n      <v-icon>notifications</v-icon>\n    </v-btn>-->\n    <v-btn icon large>\n      <v-avatar size=\"32px\" tile>\n        <img src=\"/img/logo.png\" alt=\"user\" @click=\"$emit('logout-user')\" />\n      </v-avatar>\n    </v-btn>\n  </v-toolbar>\n</template>\n\n<script>\n  export default {\n    name: \"AdminHeader\",\n    props: {\n      drawer: {\n        type: Boolean,\n        required: true\n      }\n    },\n    data() {\n      return {\n        // drawer: null\n      };\n    }\n  };\n</script>\n\n<style lang=\"css\">\n  header {\n    color: aliceblue;\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -24094,9 +24094,11 @@ var render = function() {
         [
           _c("v-avatar", { attrs: { size: "32px", tile: "" } }, [
             _c("img", {
-              attrs: {
-                src: "https://cdn.vuetifyjs.com/images/logos/logo.svg",
-                alt: "user"
+              attrs: { src: "/img/logo.png", alt: "user" },
+              on: {
+                click: function($event) {
+                  return _vm.$emit("logout-user")
+                }
               }
             })
           ])
