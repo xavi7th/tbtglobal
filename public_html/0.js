@@ -1880,14 +1880,16 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         title: "Sending..."
       });
       axios.post("/api/contact-us", _extends({}, this.details)).then(function (rsp) {
-        Toast.fire({
-          title: "Mesage sent!",
-          text: "Thanks for contacting us. We will get back to you as soon as we can. Have a great day",
-          position: "center",
-          showConfirmButton: true,
-          timer: 10000,
-          type: "success"
-        });
+        if (rsp && rsp.status == 201) {
+          Toast.fire({
+            title: "Mesage sent!",
+            text: "Thanks for contacting us. We will get back to you as soon as we can. Have a great day",
+            position: "center",
+            showConfirmButton: true,
+            timer: 10000,
+            type: "success"
+          });
+        }
       }).catch(function (err) {
         console.log(err.response);
         if (err.response.status == 500) {

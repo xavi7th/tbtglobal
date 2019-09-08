@@ -116,15 +116,17 @@
         axios
           .post("/api/contact-us", { ...this.details })
           .then(rsp => {
-            Toast.fire({
-              title: "Mesage sent!",
-              text:
-                "Thanks for contacting us. We will get back to you as soon as we can. Have a great day",
-              position: "center",
-              showConfirmButton: true,
-              timer: 10000,
-              type: "success"
-            });
+            if (rsp && rsp.status == 201) {
+              Toast.fire({
+                title: "Mesage sent!",
+                text:
+                  "Thanks for contacting us. We will get back to you as soon as we can. Have a great day",
+                position: "center",
+                showConfirmButton: true,
+                timer: 10000,
+                type: "success"
+              });
+            }
           })
           .catch(err => {
             console.log(err.response);
