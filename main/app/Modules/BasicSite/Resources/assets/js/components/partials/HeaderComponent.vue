@@ -48,7 +48,7 @@
     <div class="tg-navigationarea">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-12 d-flex">
             <strong class="tg-logo">
               <a href="index.html">
                 <img src="img/logo.png" alt="image description" />
@@ -92,7 +92,7 @@
     }
 
     img {
-      max-height: 40px;
+      max-height: 60px;
     }
   }
 
@@ -114,6 +114,31 @@
 
     * {
       color: #fff !important;
+    }
+  }
+  .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tg-svginject {
+    height: auto !important;
+  }
+
+  @media (max-width: 991px) {
+    .tg-homeslider figure figcaption .tg-svginject {
+      width: 120px;
+      left: 60%;
+      top: -40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tg-homeslider figure figcaption .tg-svginject {
+      right: 150px;
+      width: 120px;
+      top: 36px;
     }
   }
 </style>
