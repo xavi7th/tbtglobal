@@ -1215,10 +1215,12 @@ var logout = function logout() {
     },
     beforeDestroy: function beforeDestroy() {
         this.$unloadScript("/js/main.js");
-        // vueEventBus.$off( "clients-loaded" );
-        // vueEventBus.$off( "projects-loaded" );
-        // vueEventBus.$off( "mainjs-loaded" );
-        // vueEventBus.$off( "slide-loaded" );
+        console.log('destroying');
+
+        vueEventBus.$off("clients-loaded");
+        vueEventBus.$off("projects-loaded");
+        vueEventBus.$off("mainjs-loaded");
+        vueEventBus.$off("slide-loaded");
     },
     activated: function activated() {
         var _this2 = this;
@@ -1229,6 +1231,7 @@ var logout = function logout() {
     },
     deactivated: function deactivated() {
         this.$unloadScript("/js/main.js");
+        console.log('deactivating');
     }
 });
 
@@ -3594,9 +3597,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     axios.get("/api/clients").then(function (rsp) {
       _this.clients = rsp.data.clients.rows;
-      setTimeout(function () {
-        vueEventBus.$emit("clients-loaded");
-      }, 0);
+      var cc = setInterval(function () {
+        if (typeof MAINJSLOADED == "boolean") {
+          clearInterval(cc);
+          vueEventBus.$emit("clients-loaded");
+        }
+      }, 1000);
+
+      // let clientsLoaded = () => {
+      //   console.log(typeof MAINJSLOADED);
+      //   if (typeof MAINJSLOADED !== "undefined") {
+      //     vueEventBus.$emit("clients-loaded");
+      //   } else {
+      //     console.log("defer clients load");
+      //     setTimeout(() => {
+      //       clientsLoaded();
+      //     }, 1000);
+      //   }
+      // };
+      // clientsLoaded();
     });
   }
 });
@@ -3694,7 +3713,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     axios.get("/api/projects").then(function (rsp) {
       _this.projects = rsp.data.projects.rows;
       setTimeout(function () {
-        vueEventBus.$emit("projects-loaded");
+        _this.$nextTick(function () {
+          vueEventBus.$emit("projects-loaded");
+        });
       }, 0);
     });
   }

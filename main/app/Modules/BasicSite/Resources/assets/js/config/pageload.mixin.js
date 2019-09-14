@@ -7,10 +7,12 @@ export default {
 
     beforeDestroy() {
         this.$unloadScript( "/js/main.js" );
-        // vueEventBus.$off( "clients-loaded" );
-        // vueEventBus.$off( "projects-loaded" );
-        // vueEventBus.$off( "mainjs-loaded" );
-        // vueEventBus.$off( "slide-loaded" );
+        console.log( 'destroying' );
+
+        vueEventBus.$off( "clients-loaded" );
+        vueEventBus.$off( "projects-loaded" );
+        vueEventBus.$off( "mainjs-loaded" );
+        vueEventBus.$off( "slide-loaded" );
 
     },
     activated() {
@@ -21,5 +23,6 @@ export default {
 
     deactivated() {
         this.$unloadScript( "/js/main.js" );
+        console.log( 'deactivating' );
     },
 }

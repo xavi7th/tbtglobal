@@ -39,9 +39,25 @@
     beforeCreate() {
       axios.get("/api/clients").then(rsp => {
         this.clients = rsp.data.clients.rows;
-        setTimeout(() => {
-          vueEventBus.$emit("clients-loaded");
-        }, 0);
+        let cc = setInterval(() => {
+          if (typeof MAINJSLOADED == "boolean") {
+            clearInterval(cc);
+            vueEventBus.$emit("clients-loaded");
+          }
+        }, 1000);
+
+        // let clientsLoaded = () => {
+        //   console.log(typeof MAINJSLOADED);
+        //   if (typeof MAINJSLOADED !== "undefined") {
+        //     vueEventBus.$emit("clients-loaded");
+        //   } else {
+        //     console.log("defer clients load");
+        //     setTimeout(() => {
+        //       clientsLoaded();
+        //     }, 1000);
+        //   }
+        // };
+        // clientsLoaded();
       });
     }
   };

@@ -165,10 +165,11 @@
         		PROJECTS SLIDERS
         -------------------------------------- */
 
-        window.vueEventBus.$on( 'projects-loaded', function () {
+        window.vueEventBus.$once( 'projects-loaded', function () {
             console.log( 'projects-loaded' );
             // react on the event somehow
             var owl = $( "#tg-projectsliderall" );
+
             owl.owlCarousel( {
                 pagination: true,
                 //autoPlay: 3000,
@@ -181,6 +182,7 @@
                 ],
             } );
         } );
+
         var owl = $( "#tg-projectsliderinvestment" );
         owl.owlCarousel( {
             pagination: true,
@@ -503,3 +505,4 @@
 } )( jQuery );
 
 window.vueEventBus.$emit( 'mainjs-loaded' );
+window.MAINJSLOADED = true;
