@@ -109,8 +109,8 @@
             pagination: true,
             autoPlay: 3000,
             itemsCustom: [
-                [ 1200, 3 ],
-                [ 992, 2 ],
+                [ 1200, 4 ],
+                [ 992, 3 ],
                 [ 768, 1 ],
                 [ 481, 2 ],
                 [ 0, 1 ],
@@ -163,16 +163,14 @@
         } catch ( err ) {}
         /* -------------------------------------
         		PROJECTS SLIDERS
-        -------------------------------------- */
+				-------------------------------------- */
 
-        window.vueEventBus.$once( 'projects-loaded', function () {
-            console.log( 'projects-loaded' );
-            // react on the event somehow
+        let initialiseProjectsSlider = () => {
             var owl = $( "#tg-projectsliderall" );
 
             owl.owlCarousel( {
                 pagination: true,
-                //autoPlay: 3000,
+                autoPlay: 3000,
                 itemsCustom: [
                     [ 992, 5 ],
                     [ 768, 4 ],
@@ -181,7 +179,15 @@
                     [ 0, 1 ],
                 ],
             } );
+        }
+
+        window.vueEventBus.$once( 'projects-loaded', function () {
+            console.log( 'projects-loaded' );
+            // react on the event somehow
+            initialiseProjectsSlider();
         } );
+
+        initialiseProjectsSlider();
 
         var owl = $( "#tg-projectsliderinvestment" );
         owl.owlCarousel( {
