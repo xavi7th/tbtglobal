@@ -13,7 +13,7 @@
                 <p>{{ slide.desc }}</p>
               </div>
               <div class="tg-btnsbox">
-                <router-link class="tg-btn" :to="{name: 'site.root'}">
+                <router-link class="tg-btn" :to="{name: 'site.services'}">
                   <span>View services</span>
                 </router-link>
               </div>
