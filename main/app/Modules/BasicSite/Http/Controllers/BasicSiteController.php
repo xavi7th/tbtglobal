@@ -71,6 +71,10 @@ class BasicSiteController extends Controller
 
 
 			Route::get('/{subcat?}', function () {
+				// dd(opcache_get_configuration());
+				// dd(opcache_get_status());
+				// dd(config());
+
 				return view('basicsite::index');
 			})->where('subcat', '^((?!(admin|api|_debugbar)).)*'); //Matches all routes except routes that start with the list provided.
 		});

@@ -1215,6 +1215,10 @@ var logout = function logout() {
     },
     beforeDestroy: function beforeDestroy() {
         this.$unloadScript("/js/main.js");
+        // vueEventBus.$off( "clients-loaded" );
+        // vueEventBus.$off( "projects-loaded" );
+        // vueEventBus.$off( "mainjs-loaded" );
+        // vueEventBus.$off( "slide-loaded" );
     },
     activated: function activated() {
         var _this2 = this;

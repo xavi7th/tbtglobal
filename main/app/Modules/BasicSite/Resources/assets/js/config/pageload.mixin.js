@@ -7,6 +7,11 @@ export default {
 
     beforeDestroy() {
         this.$unloadScript( "/js/main.js" );
+        // vueEventBus.$off( "clients-loaded" );
+        // vueEventBus.$off( "projects-loaded" );
+        // vueEventBus.$off( "mainjs-loaded" );
+        // vueEventBus.$off( "slide-loaded" );
+
     },
     activated() {
         this.$nextTick( () => {

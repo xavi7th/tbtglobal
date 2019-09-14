@@ -66,7 +66,7 @@ class Handler extends ExceptionHandler
 					'type' => 'danger',
 				]);
 		} else if ($exception instanceof QueryException) {
-			Alert::toast('Database error in handler.php', 'error', 'top');
+			// Alert::toast('Database error in handler.php', 'error', 'top');
 			// _dd(str_before(str_after($exception->getMessage(), 1062), 'for key'));
 			Log::channel('database')->error('Query Exception Occurred', ['$e_obj' => $exception]);
 
@@ -85,6 +85,7 @@ class Handler extends ExceptionHandler
 					]);
 			} else {
 				if ($request->ajax()) {
+					return response()->json(['Error' => $exception->getMessage()], 500);
 					return response()->json(['Error' => 'Query Exception'], 500);
 				}
 				return redirect()

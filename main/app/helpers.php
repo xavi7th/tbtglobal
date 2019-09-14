@@ -4,7 +4,7 @@ use Illuminate\Contracts\Filesystem\FileNotFoundException as FileGetException;
 use League\Flysystem\FileNotFoundException as FileDownloadException;
 use Carbon\Carbon;
 
-// if (env('APP_DEBUG')) ini_set('opcache.revalidate_freq', '0');
+// if (config('app.debug')) ini_set('opcache.revalidate_freq', '0');
 
 /**
  * Custom asset helper to append public/ to all asset generated urls

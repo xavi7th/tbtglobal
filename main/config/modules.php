@@ -2,7 +2,7 @@
 
 return [
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Module Namespace
     |--------------------------------------------------------------------------
@@ -11,9 +11,9 @@ return [
     |
     */
 
-    'namespace' => 'App\Modules',
+	'namespace' => 'App\Modules',
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Module Stubs
     |--------------------------------------------------------------------------
@@ -22,42 +22,42 @@ return [
     |
     */
 
-    'stubs' => [
-        'enabled' => false,
-        'path' => base_path() . '/vendor/nwidart/laravel-modules/src/Commands/stubs',
-        'files' => [
-            'start' => 'start.php',
-            'routes' => 'Http/routes.php',
-            'views/index' => 'Resources/views/index.blade.php',
-            'views/master' => 'Resources/views/layouts/master.blade.php',
-            'scaffold/config' => 'Config/config.php',
-            'composer' => 'composer.json',
-            'assets/js/app' => 'Resources/assets/js/app.js',
-            'assets/sass/app' => 'Resources/assets/sass/app.scss',
-            'webpack' => 'webpack.mix.js',
-            'package' => 'package.json',
-        ],
-        'replacements' => [
-            'start' => ['LOWER_NAME', 'ROUTES_LOCATION'],
-            'routes' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
-            'webpack' => ['LOWER_NAME'],
-            'json' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
-            'views/index' => ['LOWER_NAME'],
-            'views/master' => ['LOWER_NAME', 'STUDLY_NAME'],
-            'scaffold/config' => ['STUDLY_NAME'],
-            'composer' => [
-                'LOWER_NAME',
-                'STUDLY_NAME',
-                'VENDOR',
-                'AUTHOR_NAME',
-                'AUTHOR_EMAIL',
-                'MODULE_NAMESPACE',
-            ],
-        ],
-        'gitkeep' => true,
-    ],
-    'paths' => [
-        /*
+	'stubs' => [
+		'enabled' => false,
+		'path' => base_path() . '/vendor/nwidart/laravel-modules/src/Commands/stubs',
+		'files' => [
+			'start' => 'start.php',
+			'routes' => 'Http/routes.php',
+			'views/index' => 'Resources/views/index.blade.php',
+			'views/master' => 'Resources/views/layouts/master.blade.php',
+			'scaffold/config' => 'Config/config.php',
+			'composer' => 'composer.json',
+			'assets/js/app' => 'Resources/assets/js/app.js',
+			'assets/sass/app' => 'Resources/assets/sass/app.scss',
+			'webpack' => 'webpack.mix.js',
+			'package' => 'package.json',
+		],
+		'replacements' => [
+			'start' => ['LOWER_NAME', 'ROUTES_LOCATION'],
+			'routes' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
+			'webpack' => ['LOWER_NAME'],
+			'json' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
+			'views/index' => ['LOWER_NAME'],
+			'views/master' => ['LOWER_NAME', 'STUDLY_NAME'],
+			'scaffold/config' => ['STUDLY_NAME'],
+			'composer' => [
+				'LOWER_NAME',
+				'STUDLY_NAME',
+				'VENDOR',
+				'AUTHOR_NAME',
+				'AUTHOR_EMAIL',
+				'MODULE_NAMESPACE',
+			],
+		],
+		'gitkeep' => true,
+	],
+	'paths' => [
+		/*
         |--------------------------------------------------------------------------
         | Modules path
         |--------------------------------------------------------------------------
@@ -67,8 +67,8 @@ return [
         |
         */
 
-        'modules' => base_path('app/Modules'),
-        /*
+		'modules' => base_path('app/Modules'),
+		/*
         |--------------------------------------------------------------------------
         | Modules assets path
         |--------------------------------------------------------------------------
@@ -77,8 +77,8 @@ return [
         |
         */
 
-        'assets' => public_path('modules'),
-        /*
+		'assets' => public_path('modules'),
+		/*
         |--------------------------------------------------------------------------
         | The migrations path
         |--------------------------------------------------------------------------
@@ -88,41 +88,41 @@ return [
         |
         */
 
-        'migration' => base_path('database/migrations'),
-        /*
+		'migration' => base_path('database/migrations'),
+		/*
         |--------------------------------------------------------------------------
         | Generator path
         |--------------------------------------------------------------------------
         | Customise the paths where the folders will be generated.
         | Set the generate key to false to not generate that folder
         */
-        'generator' => [
-            'config' => ['path' => 'Config', 'generate' => true],
-            'command' => ['path' => 'Console', 'generate' => false],
-            'migration' => ['path' => 'Database/Migrations', 'generate' => true],
-            'seeder' => ['path' => 'Database/Seeders', 'generate' => true],
-            'factory' => ['path' => 'Database/factories', 'generate' => true],
-            'model' => ['path' => 'Models', 'generate' => true],
-            'controller' => ['path' => 'Http/Controllers', 'generate' => true],
-            'filter' => ['path' => 'Http/Middleware', 'generate' => true],
-            'request' => ['path' => 'Http/Requests', 'generate' => true],
-            'provider' => ['path' => 'Providers', 'generate' => true],
-            'assets' => ['path' => 'Resources/assets', 'generate' => true],
-            'lang' => ['path' => 'Resources/lang', 'generate' => true],
-            'views' => ['path' => 'Resources/views', 'generate' => true],
-            'test' => ['path' => 'Tests', 'generate' => false],
-            'repository' => ['path' => 'Repositories', 'generate' => false],
-            'event' => ['path' => 'Events', 'generate' => false],
-            'listener' => ['path' => 'Listeners', 'generate' => false],
-            'policies' => ['path' => 'Policies', 'generate' => false],
-            'rules' => ['path' => 'Rules', 'generate' => false],
-            'jobs' => ['path' => 'Jobs', 'generate' => false],
-            'emails' => ['path' => 'Emails', 'generate' => true],
-            'notifications' => ['path' => 'Notifications', 'generate' => true],
-            'resource' => ['path' => 'Transformers', 'generate' => true],
-        ],
-    ],
-    /*
+		'generator' => [
+			'config' => ['path' => 'Config', 'generate' => true],
+			'command' => ['path' => 'Console', 'generate' => false],
+			'migration' => ['path' => 'Database/Migrations', 'generate' => true],
+			'seeder' => ['path' => 'Database/Seeders', 'generate' => true],
+			'factory' => ['path' => 'Database/factories', 'generate' => true],
+			'model' => ['path' => 'Models', 'generate' => true],
+			'controller' => ['path' => 'Http/Controllers', 'generate' => true],
+			'filter' => ['path' => 'Http/Middleware', 'generate' => true],
+			'request' => ['path' => 'Http/Requests', 'generate' => true],
+			'provider' => ['path' => 'Providers', 'generate' => true],
+			'assets' => ['path' => 'Resources/assets', 'generate' => true],
+			'lang' => ['path' => 'Resources/lang', 'generate' => false],
+			'views' => ['path' => 'Resources/views', 'generate' => true],
+			'test' => ['path' => 'Tests', 'generate' => false],
+			'repository' => ['path' => 'Repositories', 'generate' => false],
+			'event' => ['path' => 'Events', 'generate' => false],
+			'listener' => ['path' => 'Listeners', 'generate' => false],
+			'policies' => ['path' => 'Policies', 'generate' => false],
+			'rules' => ['path' => 'Rules', 'generate' => false],
+			'jobs' => ['path' => 'Jobs', 'generate' => false],
+			'emails' => ['path' => 'Emails', 'generate' => true],
+			'notifications' => ['path' => 'Notifications', 'generate' => true],
+			'resource' => ['path' => 'Transformers', 'generate' => true],
+		],
+	],
+	/*
     |--------------------------------------------------------------------------
     | Scan Path
     |--------------------------------------------------------------------------
@@ -132,13 +132,13 @@ return [
     |
     */
 
-    'scan' => [
-        'enabled' => false,
-        'paths' => [
-            base_path('vendor/*/*'),
-        ],
-    ],
-    /*
+	'scan' => [
+		'enabled' => false,
+		'paths' => [
+			base_path('vendor/*/*'),
+		],
+	],
+	/*
     |--------------------------------------------------------------------------
     | Composer File Template
     |--------------------------------------------------------------------------
@@ -147,14 +147,14 @@ return [
     |
     */
 
-    'composer' => [
-        'vendor' => 'minds&machines',
-        'author' => [
-            'name' => 'Leinad Ose',
-            'email' => 'xavi7th@gmail.com',
-        ],
-    ],
-    /*
+	'composer' => [
+		'vendor' => 'minds&machines',
+		'author' => [
+			'name' => 'Leinad Ose',
+			'email' => 'xavi7th@gmail.com',
+		],
+	],
+	/*
     |--------------------------------------------------------------------------
     | Caching
     |--------------------------------------------------------------------------
@@ -162,27 +162,27 @@ return [
     | Here is the config for setting up caching feature.
     |
     */
-    'cache' => [
-        'enabled' => false,
-        'key' => 'laravel-modules',
-        'lifetime' => 60,
-    ],
-    /*
+	'cache' => [
+		'enabled' => false,
+		'key' => 'laravel-modules',
+		'lifetime' => 60,
+	],
+	/*
     |--------------------------------------------------------------------------
     | Choose what laravel-modules will register as custom namespaces.
     | Setting one to false will require you to register that part
     | in your own Service Provider class.
     |--------------------------------------------------------------------------
     */
-    'register' => [
-        'translations' => true,
-        /**
-         * load files on boot or register method
-         *
-         * Note: boot not compatible with asgardcms
-         *
-         * @example boot|register
-         */
-        'files' => 'register',
-    ],
+	'register' => [
+		'translations' => false,
+		/**
+		 * load files on boot or register method
+		 *
+		 * Note: boot not compatible with asgardcms
+		 *
+		 * @example boot|register
+		 */
+		'files' => 'register',
+	],
 ];

@@ -20,6 +20,7 @@
         "nwidart/laravel-modules": "^5.0",
         "pusher/pusher-php-server": "^3.4",
         "realrashid/sweet-alert": "^1.1",
+        "renatomarinho/laravel-page-speed": "^1.8",
         "spatie/laravel-blade-javascript": "^2.2",
         "watson/rememberable": "^2.0",
         "wildbit/swiftmailer-postmark": "^3.0"
@@ -30,6 +31,7 @@
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
+        "orangehill/iseed": "^2.6",
         "phpunit/phpunit": "^7.5"
     },
     "autoload": {
@@ -64,6 +66,14 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover"
+        ],
+        "prepare-deploy": [
+            "@php artisan config:cache",
+            "@composer dumpautoload -o"
+        ],
+        "undo-deploy": [
+            "@php artisan config:clear",
+            "@php artisan view:clear"
         ]
     },
     "config": {
