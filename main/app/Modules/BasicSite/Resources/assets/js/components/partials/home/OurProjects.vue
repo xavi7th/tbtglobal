@@ -80,9 +80,7 @@
       axios.get("/api/projects").then(rsp => {
         this.projects = rsp.data.projects.rows;
         setTimeout(() => {
-          this.$nextTick(() => {
-            vueEventBus.$emit("projects-loaded");
-          });
+          vueEventBus.$emit("projects-loaded");
         }, 0);
       });
     }

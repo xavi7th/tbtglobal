@@ -3719,9 +3719,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     axios.get("/api/projects").then(function (rsp) {
       _this.projects = rsp.data.projects.rows;
       setTimeout(function () {
-        _this.$nextTick(function () {
-          vueEventBus.$emit("projects-loaded");
-        });
+        vueEventBus.$emit("projects-loaded");
       }, 0);
     });
   }

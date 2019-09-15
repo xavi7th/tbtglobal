@@ -165,12 +165,15 @@
         		PROJECTS SLIDERS
 				-------------------------------------- */
 
-        let initialiseProjectsSlider = () => {
+        window.vueEventBus.$once( 'projects-loaded', function () {
+            console.log( 'projects-loaded' );
+            // react on the event somehow
             var owl = $( "#tg-projectsliderall" );
 
             owl.owlCarousel( {
                 pagination: true,
-                autoPlay: 3000,
+                // autoPlay: 3000,
+                dots: false,
                 itemsCustom: [
                     [ 992, 5 ],
                     [ 768, 4 ],
@@ -179,15 +182,8 @@
                     [ 0, 1 ],
                 ],
             } );
-        }
-
-        window.vueEventBus.$once( 'projects-loaded', function () {
-            console.log( 'projects-loaded' );
-            // react on the event somehow
-            initialiseProjectsSlider();
         } );
 
-        initialiseProjectsSlider();
 
         var owl = $( "#tg-projectsliderinvestment" );
         owl.owlCarousel( {
