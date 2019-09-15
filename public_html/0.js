@@ -1879,6 +1879,13 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
       details: {}
     };
   },
+  mounted: function mounted() {
+    this.$emit("is-contact-page");
+  },
+  beforeDestroy: function beforeDestroy() {
+    this.$emit("leaving-contact-page");
+  },
+
   methods: {
     sendEmail: function sendEmail() {
       BlockToast.fire({

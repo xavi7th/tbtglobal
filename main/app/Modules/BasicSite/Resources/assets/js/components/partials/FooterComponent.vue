@@ -6,7 +6,7 @@
           <div class="tg-footerwidgets">
             <div class="col-md-6 col-sm-12 col-xs-12">
               <div class="tg-widget tg-widgetinfo">
-                <div id="tg-footerlocation-map" class="tg-footerlocation-map">
+                <div id="tg-footerlocation-map" class="tg-footerlocation-map" v-if="!isContactPage">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.170341675013!2d5.764113715200978!3d5.541741335332661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041ad7bc9b5f72b%3A0x2cff4bbb9faab27a!2s106%20Airport%20Road%2C%20Warri!5e0!3m2!1sen!2sng!4v1566875115241!5m2!1sen!2sng"
                     frameborder="0"
@@ -134,7 +134,8 @@
 
 <script>
   export default {
-    name: "Footer"
+    name: "Footer",
+    props: ["isContactPage"]
   };
 </script>
 

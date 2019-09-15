@@ -113,6 +113,12 @@
     data: () => ({
       details: {}
     }),
+    mounted() {
+      this.$emit("is-contact-page");
+    },
+    beforeDestroy() {
+      this.$emit("leaving-contact-page");
+    },
     methods: {
       sendEmail() {
         BlockToast.fire({

@@ -3,10 +3,14 @@
     <site-header v-on:logout-user="logoutUser()"></site-header>
 
     <transition name="slide-out-in" mode="out-in" :duration="{ enter: 1300, leave: 200 }">
-      <router-view @page-loaded="pageLoaded"></router-view>
+      <router-view
+        @page-loaded="pageLoaded"
+        @is-contact-page="isContactPage = true"
+        @leaving-contact-page="isContactPage =false"
+      ></router-view>
     </transition>
 
-    <site-footer></site-footer>
+    <site-footer :isContactPage="isContactPage"></site-footer>
   </div>
 </template>
 
@@ -24,7 +28,9 @@
     },
     created() {},
     data() {
-      return {};
+      return {
+        isContactPage: false
+      };
     },
     methods: {
       logoutUser() {
