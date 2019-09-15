@@ -21,7 +21,7 @@
         </div>
         <div id="tg-brandsslider" class="tg-brandsslider tg-brands">
           <figure class="item tg-brand" v-for="client in clients">
-            <a href="#">
+            <a>
               <img :src="client.img" alt="image description" />
             </a>
           </figure>

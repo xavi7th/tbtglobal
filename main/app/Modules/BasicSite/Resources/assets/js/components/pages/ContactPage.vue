@@ -6,9 +6,12 @@
         <div class="row">
           <div class="col-md-4 col-md-offset-2">
             <div class="item tg-service">
+              <span class="tg-seviceicon">
+                <i class="fa fa-home"></i>
+              </span>
               <div class="tg-heading">
                 <h4>
-                  <a href="#">Head Office</a>
+                  <a>Head Office</a>
                 </h4>
               </div>
               <div class="tg-description">
@@ -18,9 +21,12 @@
           </div>
           <div class="col-md-4">
             <div class="item tg-service">
+              <span class="tg-seviceicon">
+                <i class="fa fa-location-arrow"></i>
+              </span>
               <div class="tg-heading">
                 <h4>
-                  <a href="#">Branch Office</a>
+                  <a>Branch Office</a>
                 </h4>
               </div>
               <div class="tg-description">
@@ -150,11 +156,19 @@
     padding-bottom: 0;
   }
   .tg-service {
-    height: 300px;
-    justify-content: flex-start;
+    height: 250px;
+    padding: 60px;
+    justify-content: center;
 
     @media (max-width: 800px) {
       height: auto;
+    }
+
+    .tg-seviceicon {
+      height: 60px;
+      width: 60px;
+      margin: 0;
+      line-height: 60px;
     }
   }
 

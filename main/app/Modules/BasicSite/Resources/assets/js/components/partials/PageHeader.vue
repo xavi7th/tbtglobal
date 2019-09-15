@@ -8,14 +8,14 @@
             <div class="tg-pagetitle">
               <h1>{{ title }}</h1>
             </div>
-            <ol class="tg-breadcrumb">
+            <!-- <ol class="tg-breadcrumb">
               <li>
                 <a href="#">
                   <i class="fa fa-home"></i>
                 </a>
               </li>
               <li class="tg-active">{{ titleSlug }}</li>
-            </ol>
+            </ol>-->
           </div>
         </div>
       </div>

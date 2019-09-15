@@ -50,9 +50,9 @@
         <div class="row">
           <div class="col-xs-12 d-flex">
             <strong class="tg-logo">
-              <a href="index.html">
-                <img src="img/logo.png" alt="image description" />
-              </a>
+              <router-link :to="{name: 'site.root'}">
+                <img src="img/logo.png" alt="site logo" />
+              </router-link>
             </strong>
             <site-nav></site-nav>
           </div>

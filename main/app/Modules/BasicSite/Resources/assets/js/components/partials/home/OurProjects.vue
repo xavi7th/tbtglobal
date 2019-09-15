@@ -57,7 +57,7 @@
                     <img :src="project.img" alt="image description" />
                     <figcaption>
                       <h4>
-                        <a href="#">{{ project.name }}</a>
+                        <a>{{ project.name }}</a>
                       </h4>
                     </figcaption>
                   </figure>

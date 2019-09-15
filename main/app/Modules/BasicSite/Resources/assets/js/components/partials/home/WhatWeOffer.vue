@@ -26,7 +26,7 @@
             </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Valve Maintenence</a>
+                <a>Valve Maintenence</a>
               </h4>
             </div>
           </div>
@@ -36,7 +36,7 @@
             </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">I&amp;E Services</a>
+                <a>I&amp;E Services</a>
               </h4>
             </div>
           </div>
@@ -46,7 +46,7 @@
             </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Insulation of hot surfaces</a>
+                <a>Insulation of hot surfaces</a>
               </h4>
             </div>
           </div>
@@ -56,7 +56,7 @@
             </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Repairs and Installations of pumps</a>
+                <a>Repairs and Installations of pumps</a>
               </h4>
             </div>
           </div>
@@ -66,7 +66,7 @@
             </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Sand Blasting & Painting</a>
+                <a>Sand Blasting & Painting</a>
               </h4>
             </div>
           </div>
@@ -76,7 +76,7 @@
             </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Sand Vessel Cleaning</a>
+                <a>Sand Vessel Cleaning</a>
               </h4>
             </div>
           </div>
@@ -86,7 +86,7 @@
             </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Procurement and Supplies</a>
+                <a>Procurement and Supplies</a>
               </h4>
             </div>
           </div>
@@ -96,7 +96,7 @@
             </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">MHE Services</a>
+                <a>MHE Services</a>
               </h4>
             </div>
           </div>
@@ -106,7 +106,7 @@
             </span>
             <div class="tg-heading">
               <h4>
-                <a href="#">Manpower Supply and Services</a>
+                <a>Manpower Supply and Services</a>
               </h4>
             </div>
           </div>

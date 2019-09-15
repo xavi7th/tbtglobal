@@ -14,7 +14,7 @@
                   <h3>latest projects</h3>
                 </div>
                 <div class="tg-description">
-                  <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>At TBT Global Services Limited we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards.</p>
                 </div>
               </div>
             </div>
@@ -28,12 +28,12 @@
                     <div class="tg-newscontent tg-borderstyle">
                       <ul class="tg-newsmetadata">
                         <li>
-                          <a href="#">{{ project.location }}</a>
+                          <a>{{ project.location }}</a>
                         </li>
                       </ul>
                       <div class="tg-newstitle">
                         <h2>
-                          <a href="#">{{ project.name }}</a>
+                          <a>{{ project.name }}</a>
                         </h2>
                       </div>
                       <div class="tg-description">
@@ -49,31 +49,31 @@
               <nav class="tg-pagination">
                 <ul>
                   <li class="tg-prevpage">
-                    <a href="#">
+                    <a >
                       <i class="fa fa-angle-left"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">1</a>
+                    <a >1</a>
                   </li>
                   <li>
-                    <a href="#">2</a>
+                    <a >2</a>
                   </li>
                   <li>
-                    <a href="#">3</a>
+                    <a >3</a>
                   </li>
                   <li>
-                    <a href="#">4</a>
+                    <a >4</a>
                   </li>
                   <li>
-                    <a href="#">5</a>
+                    <a >5</a>
                   </li>
                   <li>...</li>
                   <li>
-                    <a href="#">10</a>
+                    <a >10</a>
                   </li>
                   <li class="tg-nextpage">
-                    <a href="#">
+                    <a >
                       <i class="fa fa-angle-right"></i>
                     </a>
                   </li>

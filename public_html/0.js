@@ -1861,6 +1861,12 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -4959,7 +4965,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.tg-main[data-v-323c2117] {\n  padding-bottom: 0;\n}\n.tg-service[data-v-323c2117] {\n  height: 300px;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n}\n@media (max-width: 800px) {\n.tg-service[data-v-323c2117] {\n      height: auto;\n}\n}\n.tg-heading[data-v-323c2117] {\n  padding-bottom: 50px;\n}\n.tg-heading[data-v-323c2117]:before {\n    content: none;\n}\n.tg-heading[data-v-323c2117]:after {\n    top: 60px;\n    left: 50%;\n    width: 30px;\n    height: 2px;\n    content: \"\";\n    background: #ddd;\n    position: absolute;\n    margin: 0 0 0 -15px;\n}\n.tg-heading h4[data-v-323c2117] {\n    font-weight: bold;\n}\n.tg-locationmap[data-v-323c2117] {\n  margin-top: 50px;\n}\n.tg-main-section[data-v-323c2117] {\n  position: absolute;\n  width: 36%;\n  padding: 4% 5%;\n  background: rgba(0, 66, 129, 0.8);\n  right: 5%;\n  margin-top: 50px;\n}\n@media (max-width: 800px) {\n.tg-main-section[data-v-323c2117] {\n      position: static;\n      width: 100%;\n      margin-top: 0;\n}\n}\n.tg-main-section .tg-sectiontitle[data-v-323c2117] {\n    padding-bottom: 0;\n}\n.tg-main-section .tg-sectiontitle h2[data-v-323c2117],\n    .tg-main-section .tg-sectiontitle h3[data-v-323c2117] {\n      color: #fff !important;\n}\n.tg-main-section .tg-themeform[data-v-323c2117] {\n    font-weight: bold;\n}\n.tg-main-section .tg-themeform textarea[data-v-323c2117] {\n      height: 135px;\n}\n.tg-main-section .tg-themeform .tg-btn[data-v-323c2117] {\n      border-color: #fff;\n}\n.tg-main-section .tg-themeform .tg-btn span[data-v-323c2117] {\n        color: #fff !important;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ContactPage.vue"],"names":[],"mappings":";AAAA;EACE,kBAAkB;CAAE;AAEtB;EACE,cAAc;EACd,wBAA4B;MAA5B,qBAA4B;UAA5B,4BAA4B;CAAE;AAC9B;AACE;MACE,aAAa;CAAE;CAAE;AAEvB;EACE,qBAAqB;CAAE;AACvB;IACE,cAAc;CAAE;AAClB;IACE,UAAU;IACV,UAAU;IACV,YAAY;IACZ,YAAY;IACZ,YAAY;IACZ,iBAAiB;IACjB,mBAAmB;IACnB,oBAAoB;CAAE;AACxB;IACE,kBAAkB;CAAE;AAExB;EACE,iBAAiB;CAAE;AAErB;EACE,mBAAmB;EACnB,WAAW;EACX,eAAe;EACf,kCAAkC;EAClC,UAAU;EACV,iBAAiB;CAAE;AACnB;AACE;MACE,iBAAiB;MACjB,YAAY;MACZ,cAAc;CAAE;CAAE;AACtB;IACE,kBAAkB;CAAE;AACpB;;MAEE,uBAAuB;CAAE;AAC7B;IACE,kBAAkB;CAAE;AACpB;MACE,cAAc;CAAE;AAClB;MACE,mBAAmB;CAAE;AACrB;QACE,uBAAuB;CAAE","file":"ContactPage.vue","sourcesContent":[".tg-main {\n  padding-bottom: 0; }\n\n.tg-service {\n  height: 300px;\n  justify-content: flex-start; }\n  @media (max-width: 800px) {\n    .tg-service {\n      height: auto; } }\n\n.tg-heading {\n  padding-bottom: 50px; }\n  .tg-heading:before {\n    content: none; }\n  .tg-heading:after {\n    top: 60px;\n    left: 50%;\n    width: 30px;\n    height: 2px;\n    content: \"\";\n    background: #ddd;\n    position: absolute;\n    margin: 0 0 0 -15px; }\n  .tg-heading h4 {\n    font-weight: bold; }\n\n.tg-locationmap {\n  margin-top: 50px; }\n\n.tg-main-section {\n  position: absolute;\n  width: 36%;\n  padding: 4% 5%;\n  background: rgba(0, 66, 129, 0.8);\n  right: 5%;\n  margin-top: 50px; }\n  @media (max-width: 800px) {\n    .tg-main-section {\n      position: static;\n      width: 100%;\n      margin-top: 0; } }\n  .tg-main-section .tg-sectiontitle {\n    padding-bottom: 0; }\n    .tg-main-section .tg-sectiontitle h2,\n    .tg-main-section .tg-sectiontitle h3 {\n      color: #fff !important; }\n  .tg-main-section .tg-themeform {\n    font-weight: bold; }\n    .tg-main-section .tg-themeform textarea {\n      height: 135px; }\n    .tg-main-section .tg-themeform .tg-btn {\n      border-color: #fff; }\n      .tg-main-section .tg-themeform .tg-btn span {\n        color: #fff !important; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-main[data-v-323c2117] {\n  padding-bottom: 0;\n}\n.tg-service[data-v-323c2117] {\n  height: 250px;\n  padding: 60px;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n@media (max-width: 800px) {\n.tg-service[data-v-323c2117] {\n      height: auto;\n}\n}\n.tg-service .tg-seviceicon[data-v-323c2117] {\n    height: 60px;\n    width: 60px;\n    margin: 0;\n    line-height: 60px;\n}\n.tg-heading[data-v-323c2117] {\n  padding-bottom: 50px;\n}\n.tg-heading[data-v-323c2117]:before {\n    content: none;\n}\n.tg-heading[data-v-323c2117]:after {\n    top: 60px;\n    left: 50%;\n    width: 30px;\n    height: 2px;\n    content: \"\";\n    background: #ddd;\n    position: absolute;\n    margin: 0 0 0 -15px;\n}\n.tg-heading h4[data-v-323c2117] {\n    font-weight: bold;\n}\n.tg-locationmap[data-v-323c2117] {\n  margin-top: 50px;\n}\n.tg-main-section[data-v-323c2117] {\n  position: absolute;\n  width: 36%;\n  padding: 4% 5%;\n  background: rgba(0, 66, 129, 0.8);\n  right: 5%;\n  margin-top: 50px;\n}\n@media (max-width: 800px) {\n.tg-main-section[data-v-323c2117] {\n      position: static;\n      width: 100%;\n      margin-top: 0;\n}\n}\n.tg-main-section .tg-sectiontitle[data-v-323c2117] {\n    padding-bottom: 0;\n}\n.tg-main-section .tg-sectiontitle h2[data-v-323c2117],\n    .tg-main-section .tg-sectiontitle h3[data-v-323c2117] {\n      color: #fff !important;\n}\n.tg-main-section .tg-themeform[data-v-323c2117] {\n    font-weight: bold;\n}\n.tg-main-section .tg-themeform textarea[data-v-323c2117] {\n      height: 135px;\n}\n.tg-main-section .tg-themeform .tg-btn[data-v-323c2117] {\n      border-color: #fff;\n}\n.tg-main-section .tg-themeform .tg-btn span[data-v-323c2117] {\n        color: #fff !important;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ContactPage.vue"],"names":[],"mappings":";AAAA;EACE,kBAAkB;CAAE;AAEtB;EACE,cAAc;EACd,cAAc;EACd,yBAAwB;MAAxB,sBAAwB;UAAxB,wBAAwB;CAAE;AAC1B;AACE;MACE,aAAa;CAAE;CAAE;AACrB;IACE,aAAa;IACb,YAAY;IACZ,UAAU;IACV,kBAAkB;CAAE;AAExB;EACE,qBAAqB;CAAE;AACvB;IACE,cAAc;CAAE;AAClB;IACE,UAAU;IACV,UAAU;IACV,YAAY;IACZ,YAAY;IACZ,YAAY;IACZ,iBAAiB;IACjB,mBAAmB;IACnB,oBAAoB;CAAE;AACxB;IACE,kBAAkB;CAAE;AAExB;EACE,iBAAiB;CAAE;AAErB;EACE,mBAAmB;EACnB,WAAW;EACX,eAAe;EACf,kCAAkC;EAClC,UAAU;EACV,iBAAiB;CAAE;AACnB;AACE;MACE,iBAAiB;MACjB,YAAY;MACZ,cAAc;CAAE;CAAE;AACtB;IACE,kBAAkB;CAAE;AACpB;;MAEE,uBAAuB;CAAE;AAC7B;IACE,kBAAkB;CAAE;AACpB;MACE,cAAc;CAAE;AAClB;MACE,mBAAmB;CAAE;AACrB;QACE,uBAAuB;CAAE","file":"ContactPage.vue","sourcesContent":[".tg-main {\n  padding-bottom: 0; }\n\n.tg-service {\n  height: 250px;\n  padding: 60px;\n  justify-content: center; }\n  @media (max-width: 800px) {\n    .tg-service {\n      height: auto; } }\n  .tg-service .tg-seviceicon {\n    height: 60px;\n    width: 60px;\n    margin: 0;\n    line-height: 60px; }\n\n.tg-heading {\n  padding-bottom: 50px; }\n  .tg-heading:before {\n    content: none; }\n  .tg-heading:after {\n    top: 60px;\n    left: 50%;\n    width: 30px;\n    height: 2px;\n    content: \"\";\n    background: #ddd;\n    position: absolute;\n    margin: 0 0 0 -15px; }\n  .tg-heading h4 {\n    font-weight: bold; }\n\n.tg-locationmap {\n  margin-top: 50px; }\n\n.tg-main-section {\n  position: absolute;\n  width: 36%;\n  padding: 4% 5%;\n  background: rgba(0, 66, 129, 0.8);\n  right: 5%;\n  margin-top: 50px; }\n  @media (max-width: 800px) {\n    .tg-main-section {\n      position: static;\n      width: 100%;\n      margin-top: 0; } }\n  .tg-main-section .tg-sectiontitle {\n    padding-bottom: 0; }\n    .tg-main-section .tg-sectiontitle h2,\n    .tg-main-section .tg-sectiontitle h3 {\n      color: #fff !important; }\n  .tg-main-section .tg-themeform {\n    font-weight: bold; }\n    .tg-main-section .tg-themeform textarea {\n      height: 135px; }\n    .tg-main-section .tg-themeform .tg-btn {\n      border-color: #fff; }\n      .tg-main-section .tg-themeform .tg-btn span {\n        color: #fff !important; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5223,7 +5229,7 @@ var render = function() {
                             [
                               _c("div", { staticClass: "tg-sectionhead" }, [
                                 _c("div", { staticClass: "tg-sectiontitle" }, [
-                                  _c("h2", [_vm._v("our services")]),
+                                  _c("h2", [_vm._v("what we do")]),
                                   _vm._v(" "),
                                   _c("h3", [_vm._v("What We Offer")])
                                 ]),
@@ -5231,7 +5237,7 @@ var render = function() {
                                 _c("div", { staticClass: "tg-description" }, [
                                   _c("p", [
                                     _vm._v(
-                                      "Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                      "Our ability to successfully handle projects in the following areas of specialization is simply based on our commitment to retaining the services of competent in-house professional engineers, inspectors and technicians, including expatriates who have acquired proficiency in their skills through professional and academic training, as well as extensive involvement in allied industries."
                                     )
                                   ])
                                 ])
@@ -5273,15 +5279,9 @@ var render = function() {
                                               { staticClass: "tg-heading" },
                                               [
                                                 _c("h4", [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [
-                                                      _vm._v(
-                                                        "Valve Maintenance"
-                                                      )
-                                                    ]
-                                                  )
+                                                  _c("a", [
+                                                    _vm._v("Valve Maintenance")
+                                                  ])
                                                 ])
                                               ]
                                             ),
@@ -5324,15 +5324,11 @@ var render = function() {
                                               { staticClass: "tg-heading" },
                                               [
                                                 _c("h4", [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [
-                                                      _vm._v(
-                                                        "Insulation of Hot Surfaces"
-                                                      )
-                                                    ]
-                                                  )
+                                                  _c("a", [
+                                                    _vm._v(
+                                                      "Insulation of Hot Surfaces"
+                                                    )
+                                                  ])
                                                 ])
                                               ]
                                             ),
@@ -5375,11 +5371,9 @@ var render = function() {
                                               { staticClass: "tg-heading" },
                                               [
                                                 _c("h4", [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [_vm._v("I & E Services")]
-                                                  )
+                                                  _c("a", [
+                                                    _vm._v("I & E Services")
+                                                  ])
                                                 ])
                                               ]
                                             ),
@@ -5422,11 +5416,9 @@ var render = function() {
                                               { staticClass: "tg-heading" },
                                               [
                                                 _c("h4", [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [_vm._v("MHE Services")]
-                                                  )
+                                                  _c("a", [
+                                                    _vm._v("MHE Services")
+                                                  ])
                                                 ])
                                               ]
                                             ),
@@ -5469,15 +5461,11 @@ var render = function() {
                                               { staticClass: "tg-heading" },
                                               [
                                                 _c("h4", [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [
-                                                      _vm._v(
-                                                        "Repair and Installation of Pumps"
-                                                      )
-                                                    ]
-                                                  )
+                                                  _c("a", [
+                                                    _vm._v(
+                                                      "Repair and Installation of Pumps"
+                                                    )
+                                                  ])
                                                 ])
                                               ]
                                             ),
@@ -5520,11 +5508,9 @@ var render = function() {
                                               { staticClass: "tg-heading" },
                                               [
                                                 _c("h4", [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [_vm._v("Sand Blasting")]
-                                                  )
+                                                  _c("a", [
+                                                    _vm._v("Sand Blasting")
+                                                  ])
                                                 ])
                                               ]
                                             ),
@@ -5567,15 +5553,11 @@ var render = function() {
                                               { staticClass: "tg-heading" },
                                               [
                                                 _c("h4", [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [
-                                                      _vm._v(
-                                                        "Sand Vessel Cleaning"
-                                                      )
-                                                    ]
-                                                  )
+                                                  _c("a", [
+                                                    _vm._v(
+                                                      "Sand Vessel Cleaning"
+                                                    )
+                                                  ])
                                                 ])
                                               ]
                                             ),
@@ -5618,15 +5600,11 @@ var render = function() {
                                               { staticClass: "tg-heading" },
                                               [
                                                 _c("h4", [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [
-                                                      _vm._v(
-                                                        "Procurement and Supply"
-                                                      )
-                                                    ]
-                                                  )
+                                                  _c("a", [
+                                                    _vm._v(
+                                                      "Procurement and Supply"
+                                                    )
+                                                  ])
                                                 ])
                                               ]
                                             ),
@@ -5669,15 +5647,11 @@ var render = function() {
                                               { staticClass: "tg-heading" },
                                               [
                                                 _c("h4", [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [
-                                                      _vm._v(
-                                                        "Manpower Supply Services"
-                                                      )
-                                                    ]
-                                                  )
+                                                  _c("a", [
+                                                    _vm._v(
+                                                      "Manpower Supply Services"
+                                                    )
+                                                  ])
                                                 ])
                                               ]
                                             ),
@@ -6337,10 +6311,12 @@ var staticRenderFns = [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-4 col-md-offset-2" }, [
           _c("div", { staticClass: "item tg-service" }, [
+            _c("span", { staticClass: "tg-seviceicon" }, [
+              _c("i", { staticClass: "fa fa-home" })
+            ]),
+            _vm._v(" "),
             _c("div", { staticClass: "tg-heading" }, [
-              _c("h4", [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Head Office")])
-              ])
+              _c("h4", [_c("a", [_vm._v("Head Office")])])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "tg-description" }, [
@@ -6351,10 +6327,12 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "col-md-4" }, [
           _c("div", { staticClass: "item tg-service" }, [
+            _c("span", { staticClass: "tg-seviceicon" }, [
+              _c("i", { staticClass: "fa fa-location-arrow" })
+            ]),
+            _vm._v(" "),
             _c("div", { staticClass: "tg-heading" }, [
-              _c("h4", [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Branch Office")])
-              ])
+              _c("h4", [_c("a", [_vm._v("Branch Office")])])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "tg-description" }, [
@@ -8527,14 +8505,6 @@ var render = function() {
             _c("div", { staticClass: "tg-innerbannercontent" }, [
               _c("div", { staticClass: "tg-pagetitle" }, [
                 _c("h1", [_vm._v(_vm._s(_vm.title))])
-              ]),
-              _vm._v(" "),
-              _c("ol", { staticClass: "tg-breadcrumb" }, [
-                _vm._m(0),
-                _vm._v(" "),
-                _c("li", { staticClass: "tg-active" }, [
-                  _vm._v(_vm._s(_vm.titleSlug))
-                ])
               ])
             ])
           ])
@@ -8543,18 +8513,7 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#" } }, [
-        _c("i", { staticClass: "fa fa-home" })
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -8618,7 +8577,7 @@ var render = function() {
                                 [
                                   _c("ul", { staticClass: "tg-newsmetadata" }, [
                                     _c("li", [
-                                      _c("a", { attrs: { href: "#" } }, [
+                                      _c("a", [
                                         _vm._v(_vm._s(project.location))
                                       ])
                                     ])
@@ -8626,9 +8585,7 @@ var render = function() {
                                   _vm._v(" "),
                                   _c("div", { staticClass: "tg-newstitle" }, [
                                     _c("h2", [
-                                      _c("a", { attrs: { href: "#" } }, [
-                                        _vm._v(_vm._s(project.name))
-                                      ])
+                                      _c("a", [_vm._v(_vm._s(project.name))])
                                     ])
                                   ]),
                                   _vm._v(" "),
@@ -8680,7 +8637,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "tg-description" }, [
             _c("p", [
               _vm._v(
-                "Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                "At TBT Global Services Limited we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards."
               )
             ])
           ])

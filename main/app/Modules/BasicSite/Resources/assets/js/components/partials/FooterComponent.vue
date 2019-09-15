@@ -109,7 +109,7 @@
                   <i class="fa fa-facebook-f"></i>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#">
                   <i class="fa fa-pinterest-p"></i>
                 </a>
@@ -118,10 +118,10 @@
                 <a href="#">
                   <i class="fa fa-google-plus"></i>
                 </a>
-              </li>
+              </li>-->
             </ul>
             <strong class="tg-logo">
-              <a href="#">
+              <a>
                 <!-- <img src="img/logo.png" alt="image description" /> -->
               </a>
             </strong>
