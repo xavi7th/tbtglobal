@@ -2226,32 +2226,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -4935,7 +4909,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.tg-heading h4 a[data-v-25e24ef5] {\n  line-height: 1.2;\n}\n.tg-service[data-v-25e24ef5] {\n  height: 200px;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ServicesPage.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;CAAE;AAErB;EACE,cAAc;CAAE","file":"ServicesPage.vue","sourcesContent":[".tg-heading h4 a {\n  line-height: 1.2; }\n\n.tg-service {\n  height: 200px; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-service[data-v-25e24ef5] {\n  height: 200px;\n  position: relative;\n  background-position: center;\n  background-size: cover;\n}\n.tg-service.ie[data-v-25e24ef5] {\n    background-image: url(\"/img/services/ie.jpg\");\n}\n.tg-service.mhe[data-v-25e24ef5] {\n    background-image: url(\"/img/services/mhe.jpg\");\n}\n.tg-service.procurement[data-v-25e24ef5] {\n    background-image: url(\"/img/services/procurement.jpg\");\n    background-image: url(\"/img/services/procurement.jpg\");\n}\n.tg-service.insulation[data-v-25e24ef5] {\n    background-image: url(\"/img/services/insulation.jpg\");\n}\n.tg-service.repairs[data-v-25e24ef5] {\n    background-image: url(\"/img/services/repairs.jpg\");\n}\n.tg-service.sandblasting[data-v-25e24ef5] {\n    background-image: url(\"/img/services/sandblasting.jpg\");\n}\n.tg-service.valve[data-v-25e24ef5] {\n    background-image: url(\"/img/services/valve.jpg\");\n}\n.tg-service.manpower[data-v-25e24ef5] {\n    background-image: url(\"/img/services/manpower.jpg\");\n}\n.tg-service.vessel[data-v-25e24ef5] {\n    background-image: url(\"/img/services/vessel.jpg\");\n}\n.tg-servicestyletwo .tg-heading[data-v-25e24ef5] {\n  padding-top: 0;\n  position: absolute;\n  width: 100%;\n  bottom: 0;\n  padding-bottom: 10px;\n  height: 50px;\n  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, black), color-stop(90%, transparent));\n  background-image: linear-gradient(to top, black 20%, transparent 90%);\n  color: #fff;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: end;\n      -ms-flex-align: end;\n          align-items: flex-end;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-transition: all 300ms ease-out;\n  transition: all 300ms ease-out;\n}\n.tg-servicestyletwo .tg-heading a[data-v-25e24ef5] {\n    line-height: 1.2;\n    color: #fff;\n}\n.tg-servicestyletwo .tg-box .tg-seviceicon[data-v-25e24ef5] {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)\";\n  opacity: 0.6;\n  -webkit-transition: opacity ease-in-out 300ms;\n  transition: opacity ease-in-out 300ms;\n}\n.tg-servicestyletwo .tg-box:hover .tg-seviceicon[data-v-25e24ef5] {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)\";\n  opacity: 1;\n}\n.tg-servicestyletwo .tg-box:hover .tg-heading[data-v-25e24ef5] {\n  height: 80px;\n  padding-bottom: 15px;\n  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(40%, black), color-stop(95%, transparent));\n  background-image: linear-gradient(to top, black 40%, transparent 95%);\n}\n.tg-servicestyletwo .tg-box:hover .tg-heading a[data-v-25e24ef5] {\n    color: #fff;\n}\n.tg-servicestyletwo > div:nth-child(odd) .tg-box[data-v-25e24ef5] {\n  padding: 0;\n}\n.tg-servicestyletwo > div:nth-child(even) .tg-seviceicon[data-v-25e24ef5] {\n  z-index: 1;\n}\n.tg-servicestyletwo > div:nth-child(even) .tg-box[data-v-25e24ef5] {\n  padding: 0;\n}\n.tg-servicestyletwo > div:nth-child(even) .tg-box .procurement .tg-heading[data-v-25e24ef5],\n  .tg-servicestyletwo > div:nth-child(even) .tg-box .insulation .tg-heading[data-v-25e24ef5] {\n    -webkit-box-pack: end;\n        -ms-flex-pack: end;\n            justify-content: flex-end;\n    padding-right: 15px;\n}\n@media (max-width: 767px) {\n.tg-main-section[data-v-25e24ef5] {\n    padding-bottom: 0;\n}\n.tg-services.tg-servicestyletwo[data-v-25e24ef5] {\n    padding-bottom: 60px;\n}\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ServicesPage.vue"],"names":[],"mappings":";AAAA;EACE,cAAc;EACd,mBAAmB;EACnB,4BAA4B;EAC5B,uBAAuB;CAAE;AACzB;IACE,8CAA8C;CAAE;AAClD;IACE,+CAA+C;CAAE;AACnD;IACE,uDAAuD;IAAvD,uDAAuD;CAAE;AAC3D;IACE,sDAAsD;CAAE;AAC1D;IACE,mDAAmD;CAAE;AACvD;IACE,wDAAwD;CAAE;AAC5D;IACE,iDAAiD;CAAE;AACrD;IACE,oDAAoD;CAAE;AACxD;IACE,kDAAkD;CAAE;AAExD;EACE,eAAe;EACf,mBAAmB;EACnB,YAAY;EACZ,UAAU;EACV,qBAAqB;EACrB,aAAa;EACb,wHAAsE;EAAtE,sEAAsE;EACtE,YAAY;EACZ,qBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,uBAAsB;MAAtB,oBAAsB;UAAtB,sBAAsB;EACtB,yBAAwB;MAAxB,sBAAwB;UAAxB,wBAAwB;EACxB,uCAA+B;EAA/B,+BAA+B;CAAE;AACjC;IACE,iBAAiB;IACjB,YAAY;CAAE;AAElB;EACE,kEAAa;EAAb,aAAa;EACb,8CAAsC;EAAtC,sCAAsC;CAAE;AAE1C;EACE,mEAAW;EAAX,WAAW;CAAE;AAEf;EACE,aAAa;EACb,qBAAqB;EACrB,wHAAsE;EAAtE,sEAAsE;CAAE;AACxE;IACE,YAAY;CAAE;AAElB;EACE,WAAW;CAAE;AAEf;EACE,WAAW;CAAE;AAEf;EACE,WAAW;CAAE;AACb;;IAEE,sBAA0B;QAA1B,mBAA0B;YAA1B,0BAA0B;IAC1B,oBAAoB;CAAE;AAE1B;AACE;IACE,kBAAkB;CAAE;AACtB;IACE,qBAAqB;CAAE;CAAE","file":"ServicesPage.vue","sourcesContent":[".tg-service {\n  height: 200px;\n  position: relative;\n  background-position: center;\n  background-size: cover; }\n  .tg-service.ie {\n    background-image: url(\"/img/services/ie.jpg\"); }\n  .tg-service.mhe {\n    background-image: url(\"/img/services/mhe.jpg\"); }\n  .tg-service.procurement {\n    background-image: url(\"/img/services/procurement.jpg\"); }\n  .tg-service.insulation {\n    background-image: url(\"/img/services/insulation.jpg\"); }\n  .tg-service.repairs {\n    background-image: url(\"/img/services/repairs.jpg\"); }\n  .tg-service.sandblasting {\n    background-image: url(\"/img/services/sandblasting.jpg\"); }\n  .tg-service.valve {\n    background-image: url(\"/img/services/valve.jpg\"); }\n  .tg-service.manpower {\n    background-image: url(\"/img/services/manpower.jpg\"); }\n  .tg-service.vessel {\n    background-image: url(\"/img/services/vessel.jpg\"); }\n\n.tg-servicestyletwo .tg-heading {\n  padding-top: 0;\n  position: absolute;\n  width: 100%;\n  bottom: 0;\n  padding-bottom: 10px;\n  height: 50px;\n  background-image: linear-gradient(to top, black 20%, transparent 90%);\n  color: #fff;\n  display: flex;\n  align-items: flex-end;\n  justify-content: center;\n  transition: all 300ms ease-out; }\n  .tg-servicestyletwo .tg-heading a {\n    line-height: 1.2;\n    color: #fff; }\n\n.tg-servicestyletwo .tg-box .tg-seviceicon {\n  opacity: 0.6;\n  transition: opacity ease-in-out 300ms; }\n\n.tg-servicestyletwo .tg-box:hover .tg-seviceicon {\n  opacity: 1; }\n\n.tg-servicestyletwo .tg-box:hover .tg-heading {\n  height: 80px;\n  padding-bottom: 15px;\n  background-image: linear-gradient(to top, black 40%, transparent 95%); }\n  .tg-servicestyletwo .tg-box:hover .tg-heading a {\n    color: #fff; }\n\n.tg-servicestyletwo > div:nth-child(odd) .tg-box {\n  padding: 0; }\n\n.tg-servicestyletwo > div:nth-child(even) .tg-seviceicon {\n  z-index: 1; }\n\n.tg-servicestyletwo > div:nth-child(even) .tg-box {\n  padding: 0; }\n  .tg-servicestyletwo > div:nth-child(even) .tg-box .procurement .tg-heading,\n  .tg-servicestyletwo > div:nth-child(even) .tg-box .insulation .tg-heading {\n    justify-content: flex-end;\n    padding-right: 15px; }\n\n@media (max-width: 767px) {\n  .tg-main-section {\n    padding-bottom: 0; }\n  .tg-services.tg-servicestyletwo {\n    padding-bottom: 60px; } }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5261,7 +5235,7 @@ var render = function() {
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
-                                          { staticClass: "tg-service" },
+                                          { staticClass: "tg-service valve" },
                                           [
                                             _c(
                                               "span",
@@ -5284,16 +5258,37 @@ var render = function() {
                                                   ])
                                                 ])
                                               ]
+                                            )
+                                          ]
+                                        )
+                                      ])
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "col-sm-4" }, [
+                                      _c("div", { staticClass: "tg-box" }, [
+                                        _c(
+                                          "div",
+                                          { staticClass: "tg-service ie" },
+                                          [
+                                            _c(
+                                              "span",
+                                              { staticClass: "tg-seviceicon" },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "flaticon flaticon-drilling"
+                                                })
+                                              ]
                                             ),
                                             _vm._v(" "),
                                             _c(
                                               "div",
-                                              { staticClass: "tg-description" },
+                                              { staticClass: "tg-heading" },
                                               [
-                                                _c("p", [
-                                                  _vm._v(
-                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
-                                                  )
+                                                _c("h4", [
+                                                  _c("a", [
+                                                    _vm._v("I & E Services")
+                                                  ])
                                                 ])
                                               ]
                                             )
@@ -5306,7 +5301,9 @@ var render = function() {
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
-                                          { staticClass: "tg-service" },
+                                          {
+                                            staticClass: "tg-service insulation"
+                                          },
                                           [
                                             _c(
                                               "span",
@@ -5331,18 +5328,6 @@ var render = function() {
                                                   ])
                                                 ])
                                               ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "tg-description" },
-                                              [
-                                                _c("p", [
-                                                  _vm._v(
-                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
-                                                  )
-                                                ])
-                                              ]
                                             )
                                           ]
                                         )
@@ -5353,52 +5338,7 @@ var render = function() {
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
-                                          { staticClass: "tg-service" },
-                                          [
-                                            _c(
-                                              "span",
-                                              { staticClass: "tg-seviceicon" },
-                                              [
-                                                _c("i", {
-                                                  staticClass:
-                                                    "flaticon flaticon-drilling"
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "tg-heading" },
-                                              [
-                                                _c("h4", [
-                                                  _c("a", [
-                                                    _vm._v("I & E Services")
-                                                  ])
-                                                ])
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "tg-description" },
-                                              [
-                                                _c("p", [
-                                                  _vm._v(
-                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
-                                                  )
-                                                ])
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-4" }, [
-                                      _c("div", { staticClass: "tg-box" }, [
-                                        _c(
-                                          "div",
-                                          { staticClass: "tg-service" },
+                                          { staticClass: "tg-service mhe" },
                                           [
                                             _c(
                                               "span",
@@ -5421,18 +5361,6 @@ var render = function() {
                                                   ])
                                                 ])
                                               ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "tg-description" },
-                                              [
-                                                _c("p", [
-                                                  _vm._v(
-                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
-                                                  )
-                                                ])
-                                              ]
                                             )
                                           ]
                                         )
@@ -5443,7 +5371,7 @@ var render = function() {
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
-                                          { staticClass: "tg-service" },
+                                          { staticClass: "tg-service repairs" },
                                           [
                                             _c(
                                               "span",
@@ -5468,18 +5396,6 @@ var render = function() {
                                                   ])
                                                 ])
                                               ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "tg-description" },
-                                              [
-                                                _c("p", [
-                                                  _vm._v(
-                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
-                                                  )
-                                                ])
-                                              ]
                                             )
                                           ]
                                         )
@@ -5490,7 +5406,10 @@ var render = function() {
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
-                                          { staticClass: "tg-service" },
+                                          {
+                                            staticClass:
+                                              "tg-service sandblasting"
+                                          },
                                           [
                                             _c(
                                               "span",
@@ -5513,18 +5432,6 @@ var render = function() {
                                                   ])
                                                 ])
                                               ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "tg-description" },
-                                              [
-                                                _c("p", [
-                                                  _vm._v(
-                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
-                                                  )
-                                                ])
-                                              ]
                                             )
                                           ]
                                         )
@@ -5535,7 +5442,7 @@ var render = function() {
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
-                                          { staticClass: "tg-service" },
+                                          { staticClass: "tg-service vessel" },
                                           [
                                             _c(
                                               "span",
@@ -5560,18 +5467,6 @@ var render = function() {
                                                   ])
                                                 ])
                                               ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "tg-description" },
-                                              [
-                                                _c("p", [
-                                                  _vm._v(
-                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
-                                                  )
-                                                ])
-                                              ]
                                             )
                                           ]
                                         )
@@ -5582,7 +5477,10 @@ var render = function() {
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
-                                          { staticClass: "tg-service" },
+                                          {
+                                            staticClass:
+                                              "tg-service procurement"
+                                          },
                                           [
                                             _c(
                                               "span",
@@ -5607,18 +5505,6 @@ var render = function() {
                                                   ])
                                                 ])
                                               ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "tg-description" },
-                                              [
-                                                _c("p", [
-                                                  _vm._v(
-                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
-                                                  )
-                                                ])
-                                              ]
                                             )
                                           ]
                                         )
@@ -5629,7 +5515,9 @@ var render = function() {
                                       _c("div", { staticClass: "tg-box" }, [
                                         _c(
                                           "div",
-                                          { staticClass: "tg-service" },
+                                          {
+                                            staticClass: "tg-service manpower"
+                                          },
                                           [
                                             _c(
                                               "span",
@@ -5652,18 +5540,6 @@ var render = function() {
                                                       "Manpower Supply Services"
                                                     )
                                                   ])
-                                                ])
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "tg-description" },
-                                              [
-                                                _c("p", [
-                                                  _vm._v(
-                                                    "Consectetur adipisicing elit sed doid apor incididunt labore"
-                                                  )
                                                 ])
                                               ]
                                             )

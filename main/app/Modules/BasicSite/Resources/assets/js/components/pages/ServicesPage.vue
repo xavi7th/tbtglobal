@@ -27,7 +27,7 @@
                   <div class="tg-services tg-servicestyletwo">
                     <div class="col-sm-4">
                       <div class="tg-box">
-                        <div class="tg-service">
+                        <div class="tg-service valve">
                           <span class="tg-seviceicon">
                             <i class="flaticon flaticon-robot-arm"></i>
                           </span>
@@ -36,32 +36,13 @@
                               <a>Valve Maintenance</a>
                             </h4>
                           </div>
-                          <div class="tg-description">
-                            <p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
-                          </div>
                         </div>
                       </div>
                     </div>
+
                     <div class="col-sm-4">
                       <div class="tg-box">
-                        <div class="tg-service">
-                          <span class="tg-seviceicon">
-                            <i class="flaticon flaticon-container"></i>
-                          </span>
-                          <div class="tg-heading">
-                            <h4>
-                              <a>Insulation of Hot Surfaces</a>
-                            </h4>
-                          </div>
-                          <div class="tg-description">
-                            <p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="tg-box">
-                        <div class="tg-service">
+                        <div class="tg-service ie">
                           <span class="tg-seviceicon">
                             <i class="flaticon flaticon-drilling"></i>
                           </span>
@@ -70,15 +51,26 @@
                               <a>I &amp; E Services</a>
                             </h4>
                           </div>
-                          <div class="tg-description">
-                            <p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="tg-box">
+                        <div class="tg-service insulation">
+                          <span class="tg-seviceicon">
+                            <i class="flaticon flaticon-container"></i>
+                          </span>
+                          <div class="tg-heading">
+                            <h4>
+                              <a>Insulation of Hot Surfaces</a>
+                            </h4>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-4">
                       <div class="tg-box">
-                        <div class="tg-service">
+                        <div class="tg-service mhe">
                           <span class="tg-seviceicon">
                             <i class="flaticon flaticon-oil"></i>
                           </span>
@@ -87,15 +79,12 @@
                               <a>MHE Services</a>
                             </h4>
                           </div>
-                          <div class="tg-description">
-                            <p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
-                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-4">
                       <div class="tg-box">
-                        <div class="tg-service">
+                        <div class="tg-service repairs">
                           <span class="tg-seviceicon">
                             <i class="flaticon flaticon-conveyor"></i>
                           </span>
@@ -104,15 +93,12 @@
                               <a>Repair and Installation of Pumps</a>
                             </h4>
                           </div>
-                          <div class="tg-description">
-                            <p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
-                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-4">
                       <div class="tg-box">
-                        <div class="tg-service">
+                        <div class="tg-service sandblasting">
                           <span class="tg-seviceicon">
                             <i class="flaticon flaticon-nature"></i>
                           </span>
@@ -121,15 +107,12 @@
                               <a>Sand Blasting</a>
                             </h4>
                           </div>
-                          <div class="tg-description">
-                            <p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
-                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-4">
                       <div class="tg-box">
-                        <div class="tg-service">
+                        <div class="tg-service vessel">
                           <span class="tg-seviceicon">
                             <i class="flaticon flaticon-container"></i>
                           </span>
@@ -138,15 +121,12 @@
                               <a>Sand Vessel Cleaning</a>
                             </h4>
                           </div>
-                          <div class="tg-description">
-                            <p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
-                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-4">
                       <div class="tg-box">
-                        <div class="tg-service">
+                        <div class="tg-service procurement">
                           <span class="tg-seviceicon">
                             <i class="flaticon flaticon-stock"></i>
                           </span>
@@ -155,15 +135,12 @@
                               <a>Procurement and Supply</a>
                             </h4>
                           </div>
-                          <div class="tg-description">
-                            <p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
-                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-4">
                       <div class="tg-box">
-                        <div class="tg-service">
+                        <div class="tg-service manpower">
                           <span class="tg-seviceicon">
                             <i class="flaticon flaticon-worker-1"></i>
                           </span>
@@ -171,9 +148,6 @@
                             <h4>
                               <a>Manpower Supply Services</a>
                             </h4>
-                          </div>
-                          <div class="tg-description">
-                            <p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
                           </div>
                         </div>
                       </div>
@@ -222,10 +196,119 @@
 </script>
 
 <style lang="scss" scoped>
-  .tg-heading h4 a {
-    line-height: 1.2;
-  }
   .tg-service {
     height: 200px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+
+    &.ie {
+      background-image: url("/img/services/ie.jpg");
+    }
+
+    &.mhe {
+      background-image: url("/img/services/mhe.jpg");
+    }
+
+    &.procurement {
+      background-image: url("/img/services/procurement.jpg");
+    }
+
+    &.insulation {
+      background-image: url("/img/services/insulation.jpg");
+    }
+
+    &.repairs {
+      background-image: url("/img/services/repairs.jpg");
+    }
+
+    &.sandblasting {
+      background-image: url("/img/services/sandblasting.jpg");
+    }
+
+    &.valve {
+      background-image: url("/img/services/valve.jpg");
+    }
+
+    &.manpower {
+      background-image: url("/img/services/manpower.jpg");
+    }
+
+    &.vessel {
+      background-image: url("/img/services/vessel.jpg");
+    }
+  }
+  .tg-servicestyletwo {
+    .tg-heading {
+      padding-top: 0;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding-bottom: 10px;
+      height: 50px;
+      background-image: linear-gradient(to top, black 20%, transparent 90%);
+      color: #fff;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      transition: all 300ms ease-out;
+
+      a {
+        line-height: 1.2;
+        color: #fff;
+      }
+    }
+
+    .tg-box {
+      .tg-seviceicon {
+        opacity: 0.6;
+        transition: opacity ease-in-out 300ms;
+      }
+      &:hover {
+        .tg-seviceicon {
+          opacity: 1;
+        }
+        .tg-heading {
+          height: 80px;
+          padding-bottom: 15px;
+          background-image: linear-gradient(to top, black 40%, transparent 95%);
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    > div:nth-child(odd) {
+      .tg-box {
+        padding: 0;
+      }
+    }
+    > div:nth-child(even) {
+      .tg-seviceicon {
+        z-index: 1;
+      }
+      .tg-box {
+        padding: 0;
+
+        .procurement,
+        .insulation {
+          .tg-heading {
+            justify-content: flex-end;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .tg-main-section {
+      padding-bottom: 0;
+    }
+    .tg-services.tg-servicestyletwo {
+      padding-bottom: 60px;
+    }
   }
 </style>
