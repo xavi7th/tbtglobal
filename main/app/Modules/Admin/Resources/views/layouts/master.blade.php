@@ -8,7 +8,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ config('app.name') }}</title>
         <link id="stylesheet" href="{{ mix('css/admin-app.css') }}">
-        <link rel="icon" href="/favicon.png" type="image/png">
+        <link rel="icon" href="/img/favicon.png" type="image/png">
 
         <noscript>
             <link rel="stylesheet" href="{{ mix('css/admin-app.css') }}">

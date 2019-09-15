@@ -85,10 +85,10 @@
 
   .tg-logo {
     margin: 0;
-    width: 14%;
+    width: 20%;
 
     @media (max-width: 576px) {
-      width: 30%;
+      width: 65%;
     }
 
     img {
@@ -120,6 +120,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 70px;
+    @media (max-width: 767px) {
+      background: #fff;
+    }
   }
 
   .tg-svginject {
