@@ -159,9 +159,16 @@
     height: 250px;
     padding: 60px;
     justify-content: center;
+    background: #003b73;
+    color: #fff;
 
     @media (max-width: 800px) {
       height: auto;
+    }
+
+    &:hover {
+      background: #fff;
+      color: #515151;
     }
 
     .tg-seviceicon {
@@ -192,6 +199,9 @@
 
     h4 {
       font-weight: bold;
+      a {
+        color: #fff;
+      }
     }
   }
 
