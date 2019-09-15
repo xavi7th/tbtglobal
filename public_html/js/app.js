@@ -748,7 +748,7 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/ContactUs.vue")
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/ContactUs.vue")
 }
 var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
 /* script */
@@ -4540,46 +4540,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -4677,7 +4637,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.tg-heading h4[data-v-0136c48a] {\n  line-height: 1.5;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/WhatWeOffer.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;CAAE","file":"WhatWeOffer.vue","sourcesContent":[".tg-heading h4 {\n  line-height: 1.5; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-service[data-v-0136c48a] {\n  padding: 20px;\n  height: 280px;\n}\n.tg-seviceicon[data-v-0136c48a] {\n  width: 80px;\n  height: 80px;\n  line-height: 78px;\n}\n.tg-seviceicon i[data-v-0136c48a] {\n    font-size: 24px;\n    color: #000;\n}\n.tg-heading[data-v-0136c48a]:before {\n  left: 43%;\n  width: 60px;\n}\n.tg-heading h4[data-v-0136c48a] {\n  line-height: 1.5;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/WhatWeOffer.vue"],"names":[],"mappings":";AAAA;EACE,cAAc;EACd,cAAc;CAAE;AAElB;EACE,YAAY;EACZ,aAAa;EACb,kBAAkB;CAAE;AACpB;IACE,gBAAgB;IAChB,YAAY;CAAE;AAElB;EACE,UAAU;EACV,YAAY;CAAE;AAEhB;EACE,iBAAiB;CAAE","file":"WhatWeOffer.vue","sourcesContent":[".tg-service {\n  padding: 20px;\n  height: 280px; }\n\n.tg-seviceicon {\n  width: 80px;\n  height: 80px;\n  line-height: 78px; }\n  .tg-seviceicon i {\n    font-size: 24px;\n    color: #000; }\n\n.tg-heading:before {\n  left: 43%;\n  width: 60px; }\n\n.tg-heading h4 {\n  line-height: 1.5; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -4699,7 +4659,7 @@ exports.push([module.i, "\n.tg-main[data-v-05380a76] {\n  margin-top: 110px;\n  
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/ContactUs.vue":
+/***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/ContactUs.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(true);
@@ -4707,7 +4667,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"ContactUs.vue","sourceRoot":""}]);
+exports.push([module.i, "\n.tg-contentbox[data-v-0888769e] {\n  padding-top: 0;\n}\n", "", {"version":3,"sources":["/Applications/XAMPP/xamppfiles/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/ContactUs.vue"],"names":[],"mappings":";AA6EA;EACA,eAAA;CACA","file":"ContactUs.vue","sourcesContent":["<template>\n  <section class=\"tg-haslayout tg-bglight tg-bgimage\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"tg-requestcallback\">\n          <div class=\"col-sm-2 hidden-xs\">\n            <!-- <figure>\n              <img src=\"img/img-02.png\" alt=\"image description\" />\n            </figure>-->\n          </div>\n          <div class=\"col-sm-12 col-xs-12\">\n            <div class=\"tg-contentbox\">\n              <div class=\"tg-sectionhead\">\n                <div class=\"tg-sectiontitle\">\n                  <h2>we are always ready</h2>\n                  <h3>request a call back</h3>\n                </div>\n                <div class=\"tg-description\">\n                  <p>\n                    <!-- Consectetur adipisicing elit sed do eiusmod tempor incididunt ut\n                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud\n                    exercitation ullamco laboris nisi ut aliquip ex ea commodo\n                    consequat.-->\n                  </p>\n                </div>\n              </div>\n              <form id=\"tg-formtheme\" class=\"tg-formtheme\" action=\"#\" enctype=\"text/plain\">\n                <fieldset>\n                  <div class=\"row\">\n                    <div class=\"col-sm-4\">\n                      <div class=\"form-group\">\n                        <input type=\"text\" class=\"form-control\" name placeholder=\"Your Name\" />\n                      </div>\n                    </div>\n                    <div class=\"col-sm-4\">\n                      <div class=\"form-group\">\n                        <input type=\"text\" class=\"form-control\" name placeholder=\"Your Number\" />\n                      </div>\n                    </div>\n                    <div class=\"col-sm-4\">\n                      <div class=\"form-group\">\n                        <input type=\"text\" class=\"form-control\" name placeholder=\"Your Email\" />\n                      </div>\n                    </div>\n                    <div class=\"col-lg-10 col-md-9 col-sm-9\">\n                      <div class=\"form-group\">\n                        <input\n                          type=\"text\"\n                          class=\"form-control\"\n                          name\n                          placeholder=\"I would like to discuss\"\n                        />\n                      </div>\n                    </div>\n                    <div class=\"col-lg-2 col-md-3 col-sm-3\">\n                      <div class=\"form-group\">\n                        <button type=\"button\" class=\"tg-btn tg-btn-lg\">\n                          <span>send</span>\n                        </button>\n                      </div>\n                    </div>\n                  </div>\n                </fieldset>\n              </form>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </section>\n</template>\n\n<script>\n  export default {};\n</script>\n\n<style lang=\"css\" scoped>\n  .tg-contentbox {\n    padding-top: 0;\n  }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -36204,177 +36164,123 @@ var staticRenderFns = [
             },
             [
               _c("div", { staticClass: "item tg-service" }, [
-                _c("div", { staticClass: "tg-heading" }, [
-                  _c("h4", [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Wealth management")
-                    ])
-                  ])
+                _c("span", { staticClass: "tg-seviceicon" }, [
+                  _c("i", { staticClass: "flaticon flaticon-robot-arm" })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore\n              magna aliqua.\n            "
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "item tg-service" }, [
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
                       _vm._v("Valve Maintenence")
                     ])
                   ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore\n              magna aliqua.\n            "
-                    )
-                  ])
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
+                _c("span", { staticClass: "tg-seviceicon" }, [
+                  _c("i", { staticClass: "flaticon flaticon-drilling" })
+                ]),
+                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [_vm._v("I&E Services")])
                   ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore\n              magna aliqua.\n            "
-                    )
-                  ])
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
+                _c("span", { staticClass: "tg-seviceicon" }, [
+                  _c("i", { staticClass: "flaticon flaticon-container" })
+                ]),
+                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
                       _vm._v("Insulation of hot surfaces")
                     ])
                   ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore\n              magna aliqua.\n            "
-                    )
-                  ])
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
+                _c("span", { staticClass: "tg-seviceicon" }, [
+                  _c("i", { staticClass: "flaticon flaticon-conveyor" })
+                ]),
+                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
                       _vm._v("Repairs and Installations of pumps")
                     ])
                   ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore\n              magna aliqua.\n            "
-                    )
-                  ])
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
+                _c("span", { staticClass: "tg-seviceicon" }, [
+                  _c("i", { staticClass: "flaticon flaticon-nature" })
+                ]),
+                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
                       _vm._v("Sand Blasting & Painting")
                     ])
                   ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore\n              magna aliqua.\n            "
-                    )
-                  ])
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
+                _c("span", { staticClass: "tg-seviceicon" }, [
+                  _c("i", { staticClass: "flaticon flaticon-container" })
+                ]),
+                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
                       _vm._v("Sand Vessel Cleaning")
                     ])
                   ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore\n              magna aliqua.\n            "
-                    )
-                  ])
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
+                _c("span", { staticClass: "tg-seviceicon" }, [
+                  _c("i", { staticClass: "flaticon flaticon-stock" })
+                ]),
+                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
                       _vm._v("Procurement and Supplies")
                     ])
                   ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore\n              magna aliqua.\n            "
-                    )
-                  ])
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
+                _c("span", { staticClass: "tg-seviceicon" }, [
+                  _c("i", { staticClass: "flaticon flaticon-oil" })
+                ]),
+                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [_vm._v("MHE Services")])
                   ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore\n              magna aliqua.\n            "
-                    )
-                  ])
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "item tg-service" }, [
+                _c("span", { staticClass: "tg-seviceicon" }, [
+                  _c("i", { staticClass: "flaticon flaticon-worker-1" })
+                ]),
+                _vm._v(" "),
                 _c("div", { staticClass: "tg-heading" }, [
                   _c("h4", [
                     _c("a", { attrs: { href: "#" } }, [
                       _vm._v("Manpower Supply and Services")
                     ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tg-description" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore\n              magna aliqua.\n            "
-                    )
                   ])
                 ])
               ])
@@ -41422,23 +41328,23 @@ if(false) {
 
 /***/ }),
 
-/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/ContactUs.vue":
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/ContactUs.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/ContactUs.vue");
+var content = __webpack_require__("./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./main/app/Modules/BasicSite/Resources/assets/js/components/partials/home/ContactUs.vue");
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("d580020e", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("3f326210", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ContactUs.vue", function() {
-     var newContent = require("!!../../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ContactUs.vue");
+   module.hot.accept("!!../../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ContactUs.vue", function() {
+     var newContent = require("!!../../../../../../../../../../node_modules/css-loader/index.js?sourceMap!../../../../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0888769e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ContactUs.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });

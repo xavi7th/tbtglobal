@@ -74,5 +74,8 @@
   export default {};
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
+  .tg-contentbox {
+    padding-top: 0;
+  }
 </style>

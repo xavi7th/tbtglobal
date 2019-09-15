@@ -21,133 +21,93 @@
         </div>
         <div id="tg-servicesslider" class="tg-servicesslider tg-services">
           <div class="item tg-service">
-            <div class="tg-heading">
-              <h4>
-                <a href="#">Wealth management</a>
-              </h4>
-            </div>
-            <div class="tg-description">
-              <p>
-                Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div class="item tg-service">
+            <span class="tg-seviceicon">
+              <i class="flaticon flaticon-robot-arm"></i>
+            </span>
             <div class="tg-heading">
               <h4>
                 <a href="#">Valve Maintenence</a>
               </h4>
             </div>
-            <div class="tg-description">
-              <p>
-                Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </div>
           </div>
           <div class="item tg-service">
+            <span class="tg-seviceicon">
+              <i class="flaticon flaticon-drilling"></i>
+            </span>
             <div class="tg-heading">
               <h4>
                 <a href="#">I&amp;E Services</a>
               </h4>
             </div>
-            <div class="tg-description">
-              <p>
-                Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </div>
           </div>
           <div class="item tg-service">
+            <span class="tg-seviceicon">
+              <i class="flaticon flaticon-container"></i>
+            </span>
             <div class="tg-heading">
               <h4>
                 <a href="#">Insulation of hot surfaces</a>
               </h4>
             </div>
-            <div class="tg-description">
-              <p>
-                Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </div>
           </div>
           <div class="item tg-service">
+            <span class="tg-seviceicon">
+              <i class="flaticon flaticon-conveyor"></i>
+            </span>
             <div class="tg-heading">
               <h4>
                 <a href="#">Repairs and Installations of pumps</a>
               </h4>
             </div>
-            <div class="tg-description">
-              <p>
-                Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </div>
           </div>
           <div class="item tg-service">
+            <span class="tg-seviceicon">
+              <i class="flaticon flaticon-nature"></i>
+            </span>
             <div class="tg-heading">
               <h4>
                 <a href="#">Sand Blasting & Painting</a>
               </h4>
             </div>
-            <div class="tg-description">
-              <p>
-                Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </div>
           </div>
           <div class="item tg-service">
+            <span class="tg-seviceicon">
+              <i class="flaticon flaticon-container"></i>
+            </span>
             <div class="tg-heading">
               <h4>
                 <a href="#">Sand Vessel Cleaning</a>
               </h4>
             </div>
-            <div class="tg-description">
-              <p>
-                Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </div>
           </div>
           <div class="item tg-service">
+            <span class="tg-seviceicon">
+              <i class="flaticon flaticon-stock"></i>
+            </span>
             <div class="tg-heading">
               <h4>
                 <a href="#">Procurement and Supplies</a>
               </h4>
             </div>
-            <div class="tg-description">
-              <p>
-                Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </div>
           </div>
           <div class="item tg-service">
+            <span class="tg-seviceicon">
+              <i class="flaticon flaticon-oil"></i>
+            </span>
             <div class="tg-heading">
               <h4>
                 <a href="#">MHE Services</a>
               </h4>
             </div>
-            <div class="tg-description">
-              <p>
-                Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-            </div>
           </div>
           <div class="item tg-service">
+            <span class="tg-seviceicon">
+              <i class="flaticon flaticon-worker-1"></i>
+            </span>
             <div class="tg-heading">
               <h4>
                 <a href="#">Manpower Supply and Services</a>
               </h4>
-            </div>
-            <div class="tg-description">
-              <p>
-                Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
             </div>
           </div>
         </div>
@@ -161,7 +121,27 @@
 </script>
 
 <style lang="scss" scoped>
-  .tg-heading h4 {
-    line-height: 1.5;
+  .tg-service {
+    padding: 20px;
+    height: 280px;
+  }
+  .tg-seviceicon {
+    width: 80px;
+    height: 80px;
+    line-height: 78px;
+    i {
+      font-size: 24px;
+      color: #000;
+    }
+  }
+  .tg-heading {
+    &:before {
+      left: 43%;
+      width: 60px;
+    }
+
+    h4 {
+      line-height: 1.5;
+    }
   }
 </style>
