@@ -12,7 +12,7 @@
             </div>
             <div class="tg-description">
               <p>
-                We have built a reputaion in the industry for minimal overhead costs, timely delivery,
+                We have built a reputation in the industry for minimal overhead costs, timely delivery,
                 safety conscious workforce and excellent relationship with business partners. Furthering
                 client business objetives sits at the forefront of all enganements with our esteemed clients
               </p>
@@ -20,7 +20,7 @@
           </div>
         </div>
         <div id="tg-brandsslider" class="tg-brandsslider tg-brands">
-          <figure class="item tg-brand" v-for="client in clients">
+          <figure class="item tg-brand" v-for="(client,idx) in clients" :key="idx">
             <a>
               <img :src="client.img" alt="image description" />
             </a>
