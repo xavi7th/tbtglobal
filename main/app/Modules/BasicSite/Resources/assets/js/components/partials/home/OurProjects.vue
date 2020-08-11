@@ -74,16 +74,16 @@
 <script>
   export default {
     data: () => ({
-      projects: {}
+      projects: {},
     }),
     beforeCreate() {
-      axios.get("/api/projects").then(rsp => {
+      axios.get("/api/projects").then((rsp) => {
         this.projects = rsp.data.projects.rows;
         setTimeout(() => {
           vueEventBus.$emit("projects-loaded");
         }, 0);
       });
-    }
+    },
   };
 </script>
 

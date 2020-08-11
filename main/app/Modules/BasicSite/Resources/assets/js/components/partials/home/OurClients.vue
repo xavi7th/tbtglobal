@@ -12,7 +12,7 @@
             </div>
             <div class="tg-description">
               <p>
-                We have built a reputaion in the industry for minimal overhead costs, timely delivery,
+                We have built a reputation in the industry for minimal overhead costs, timely delivery,
                 safety conscious workforce and excellent relationship with business partners. Furthering
                 client business objetives sits at the forefront of all enganements with our esteemed clients
               </p>
@@ -34,10 +34,10 @@
 <script>
   export default {
     data: () => ({
-      clients: {}
+      clients: {},
     }),
     beforeCreate() {
-      axios.get("/api/clients").then(rsp => {
+      axios.get("/api/clients").then((rsp) => {
         this.clients = rsp.data.clients.rows;
         let cc = setInterval(() => {
           if (typeof MAINJSLOADED == "boolean") {
@@ -59,7 +59,7 @@
         // };
         // clientsLoaded();
       });
-    }
+    },
   };
 </script>
 

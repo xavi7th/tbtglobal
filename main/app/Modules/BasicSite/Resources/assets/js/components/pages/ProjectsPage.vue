@@ -14,7 +14,7 @@
                   <h3>latest projects</h3>
                 </div>
                 <div class="tg-description">
-                  <p>At TBT Global Services Limited we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards.</p>
+                  <p>At TBT we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards.</p>
                 </div>
               </div>
             </div>
@@ -42,7 +42,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="clearfix" v-if="(idx + 1) %3 == 0 && idx != 0" :key="` ${project.name}-${idx}`"></div>
+                <div
+                  class="clearfix"
+                  v-if="(idx + 1) %3 == 0 && idx != 0"
+                  :key="` ${project.name}-${idx}`"
+                ></div>
               </template>
             </div>
             <!-- <div class="col-sm-12 col-xs-12">
@@ -95,13 +99,13 @@
     mixins: [pageLoad],
     components: { PageHeader },
     data: () => ({
-      projects: {}
+      projects: {},
     }),
     created() {
-      axios.get("/api/projects").then(rsp => {
+      axios.get("/api/projects").then((rsp) => {
         this.projects = rsp.data.projects.rows;
       });
-    }
+    },
   };
 </script>
 
