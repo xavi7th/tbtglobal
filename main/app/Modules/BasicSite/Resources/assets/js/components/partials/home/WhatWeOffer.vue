@@ -7,7 +7,7 @@
         >
           <div class="tg-sectionhead">
             <div class="tg-sectiontitle">
-              <h2>our services</h2>
+              <!-- <h2>our services</h2> -->
               <h3>What We Offer</h3>
             </div>
             <div class="tg-description">

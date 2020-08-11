@@ -10,7 +10,7 @@
             >
               <div class="tg-sectionhead">
                 <div class="tg-sectiontitle">
-                  <h2>Some of our</h2>
+                  <!-- <h2>Some of our</h2> -->
                   <h3>latest projects</h3>
                 </div>
                 <div class="tg-description">
@@ -42,7 +42,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="clearfix" v-if="(idx + 1) %3 == 0 && idx != 0"></div>
+                <div class="clearfix" v-if="(idx + 1) %3 == 0 && idx != 0" :key="` ${project.name}-${idx}`"></div>
               </template>
             </div>
             <!-- <div class="col-sm-12 col-xs-12">

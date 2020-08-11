@@ -55,7 +55,7 @@
         <div class="col-sm-12">
           <div class="tg-sectionhead">
             <div class="tg-sectiontitle">
-              <h2>let’s talk</h2>
+              <!-- <h2>let’s talk</h2> -->
               <h3>Get in Touch</h3>
             </div>
           </div>
@@ -165,7 +165,7 @@
     height: 250px;
     padding: 60px;
     justify-content: center;
-    background: #003b73;
+    background: #04520b;
     color: #fff;
 
     @media (max-width: 800px) {
@@ -218,7 +218,7 @@
     position: absolute;
     width: 36%;
     padding: 4% 5%;
-    background: rgba(0, 66, 129, 0.8);
+    background: rgba(4, 82, 11, 0.8);
     right: 5%;
     margin-top: 50px;
 

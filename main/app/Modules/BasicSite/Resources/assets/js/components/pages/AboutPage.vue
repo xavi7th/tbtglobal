@@ -12,7 +12,7 @@
               <div class="col-sm-6">
                 <div class="tg-sectionhead">
                   <div class="tg-sectiontitle">
-                    <h2>who we are</h2>
+                    <!-- <h2>who we are</h2> -->
                     <h3>what we do</h3>
                   </div>
                   <div class="tg-description">

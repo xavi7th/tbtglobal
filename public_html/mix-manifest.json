@@ -1,10 +1,10 @@
 {
-    "/js/app.js": "/js/app.js?id=f850027aaac25cc82a46",
-    "/js/app.js.map": "/js/app.js.map?id=6b8a94934d9c13d722f8",
-    "/js/admin-app.js": "/js/admin-app.js?id=75d80e97f7035df526fa",
-    "/css/admin-app.css": "/css/admin-app.css?id=35c9f5e46a233a9bc641",
-    "/css/app.css": "/css/app.css?id=0bdb146ddc0ce4052d1e",
-    "/js/admin-app.js.map": "/js/admin-app.js.map?id=5822204265f6b3e80139",
-    "/css/admin-app.css.map": "/css/admin-app.css.map?id=4b6b0ca4ee4206ef6eee",
-    "/css/app.css.map": "/css/app.css.map?id=591e090f894037eccbc0"
+  "/js/app.js": "/js/app.js",
+  "/js/app.map.js": "/js/app.js.map",
+  "/js/admin-app.js": "/js/admin-app.js",
+  "/css/admin-app.css": "/css/admin-app.css",
+  "/css/app.css": "/css/app.css",
+  "/js/admin-app.map.js": "/js/admin-app.js.map",
+  "/css/admin-app.css.map": "/css/admin-app.css.map",
+  "/css/app.css.map": "/css/app.css.map"
 }

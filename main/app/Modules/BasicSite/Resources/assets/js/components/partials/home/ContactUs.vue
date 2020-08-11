@@ -54,7 +54,7 @@
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
                       <div class="form-group">
-                        <button type="button" class="tg-btn tg-btn-lg">
+                        <button type="button" class="tg-btn tg-btn-lg" id="tg-contact-button">
                           <span>send</span>
                         </button>
                       </div>

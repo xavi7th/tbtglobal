@@ -7,7 +7,7 @@
         >
           <div class="tg-sectionhead">
             <div class="tg-sectiontitle">
-              <h2>we are</h2>
+              <!-- <h2>we are</h2> -->
               <h3>trusted by many</h3>
             </div>
             <div class="tg-description">
@@ -20,7 +20,7 @@
           </div>
         </div>
         <div id="tg-brandsslider" class="tg-brandsslider tg-brands">
-          <figure class="item tg-brand" v-for="client in clients">
+          <figure class="item tg-brand" v-for="(client, idx) in clients" :key="idx">
             <a>
               <img :src="client.img" alt="image description" />
             </a>

@@ -109,7 +109,7 @@
   }
 
   .tg-bglight {
-    background-color: #003160;
+    background-color: #055b0c;
     color: #fff;
 
     * {

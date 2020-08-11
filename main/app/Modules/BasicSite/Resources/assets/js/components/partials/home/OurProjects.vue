@@ -7,7 +7,7 @@
         >
           <div class="tg-sectionhead">
             <div class="tg-sectiontitle">
-              <h2>some of our</h2>
+              <!-- <h2>some of our</h2> -->
               <h3>Featured Projects</h3>
             </div>
             <div class="tg-description">
@@ -89,7 +89,7 @@
 
 <style lang="scss" scoped>
   .tg-main-section {
-    background-color: #003160;
+    background-color: #055b0c;
     color: #fff;
     background-image: url(/img/wave.png);
     background-repeat: no-repeat;

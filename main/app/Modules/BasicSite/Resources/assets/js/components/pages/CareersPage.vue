@@ -9,7 +9,7 @@
               <div class="col-lg-9 col-sm-8 col-xs-12 pull-right">
                 <div class="tg-sectionhead">
                   <div class="tg-sectiontitle">
-                    <h2>Yes! We are</h2>
+                    <!-- <h2>Yes! We are</h2> -->
                     <h3>hiring now</h3>
                   </div>
                   <div class="tg-description">

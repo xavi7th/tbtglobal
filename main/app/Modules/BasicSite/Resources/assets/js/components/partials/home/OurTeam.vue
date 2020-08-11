@@ -7,7 +7,7 @@
         >
           <div class="tg-sectionhead">
             <div class="tg-sectiontitle">
-              <h2>Meet our</h2>
+              <!-- <h2>Meet our</h2> -->
               <h3>Professional Team</h3>
             </div>
             <div class="tg-description">

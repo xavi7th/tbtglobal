@@ -23,7 +23,7 @@
       <div class="tg-whychooseus">
         <div class="tg-sectionhead">
           <div class="tg-sectiontitle">
-            <h2>best in the industry</h2>
+            <!-- <h2>best in the industry</h2> -->
             <h3>why choose us?</h3>
           </div>
           <div class="tg-description">
