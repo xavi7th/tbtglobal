@@ -7,7 +7,6 @@
         >
           <div class="tg-sectionhead">
             <div class="tg-sectiontitle">
-              <!-- <h2>some of our</h2> -->
               <h3>Completed Projects</h3>
             </div>
             <div class="tg-description">
