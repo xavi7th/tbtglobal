@@ -11,10 +11,10 @@
               <div class="tg-sectionhead">
                 <div class="tg-sectiontitle">
                   <!-- <h2>Some of our</h2> -->
-                  <h3>latest projects</h3>
+                  <h3>Projects</h3>
                 </div>
                 <div class="tg-description">
-                  <p>At TBT we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards.</p>
+                  <p>At TBT Global we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards.</p>
                 </div>
               </div>
             </div>
