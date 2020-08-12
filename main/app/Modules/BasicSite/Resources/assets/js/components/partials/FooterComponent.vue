@@ -22,7 +22,7 @@
                       <address>
                         <b>Head Office:</b> Plot 106 Airport Road, Warri, Delta State.
                         <br />
-                        <b>Branch Office:</b> 50 Country Road, off Sapele Road, Benin City, Edo State.
+                        <b>Branch Office:</b> No 8 Atuwatse close, ubeji, Warri. Delta State.
                       </address>
                     </li>
 
