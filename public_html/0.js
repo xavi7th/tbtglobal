@@ -2278,7 +2278,7 @@ var staticRenderFns = [
                                     ),
                                     _c("br"),
                                     _vm._v(
-                                      "Branch Office: No 8 Atuwatse close, Ubeji, Warri. Delta State.\n                          "
+                                      "Branch Office: No 8 Atuwatse close, Ubeji Warri. Delta State.\n                          "
                                     )
                                   ])
                                 ]),
@@ -3348,13 +3348,13 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "tg-sectionhead" }, [
           _c("div", { staticClass: "tg-sectiontitle" }, [
-            _c("h3", [_vm._v("latest projects")])
+            _c("h3", [_vm._v("Projects")])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "tg-description" }, [
             _c("p", [
               _vm._v(
-                "At TBT we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards."
+                "At TBT Global we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards."
               )
             ])
           ])
