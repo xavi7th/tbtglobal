@@ -30,7 +30,7 @@
                 </h4>
               </div>
               <div class="tg-description">
-                <p>50 Country Road, off Sapele Road, Benin City, Edo State.</p>
+                <p>No 8 Atuwatse close, Ubeji-Warri. Delta State.</p>
               </div>
             </div>
           </div>
