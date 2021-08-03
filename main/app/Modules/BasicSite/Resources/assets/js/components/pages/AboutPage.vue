@@ -16,8 +16,8 @@
                     <h3>what we do</h3>
                   </div>
                   <div class="tg-description">
-                    <p>TBT Global Business Concept Limited formerly known as TBT Global Resources Services was incorporated in March 09, 2006 with the Corporate Affairs Commission {CAC} of Federal Republic of Nigeria. The Company has a registration number RC 1036206.</p>
-                    <p>Since its incorporation as an indigenous organization, it has been and is still enjoying patronage from a number of reputable clients like Shell Petroleum Development Company (SPDC), Warri Refining and Petrochemicals Company (WRPC), Nigerian Gas Company Limited and Bollore Transport and Logistics Nig Ltd .There is no doubt that TBT Global Business Concept Limited has already carved a niche for itself in the oil and gas industry.</p>
+                    <p>{{ app.name }} Business Concept Limited formerly known as {{ app.name }} Resources Services was incorporated in March 09, 2006 with the Corporate Affairs Commission (CAC) of the Federal Republic of Nigeria. The Company has a registration number RC 1036206.</p>
+                    <p>Since its incorporation as an indigenous organization, it has been and is still enjoying patronage from a number of reputable clients like Shell Petroleum Development Company (SPDC), Warri Refining and Petrochemicals Company (WRPC), Nigerian Gas Company Limited and Bollore Transport and Logistics Nig Ltd .There is no doubt that {{ app.name }} Business Concept Limited has already carved a niche for itself in the oil and gas industry.</p>
                   </div>
                   <div class="tg-description">
                     <p>We have qualified, reputed, capable and seasoned professional onboard to ensure successful execution of projects irrespective of its magnitude and financial cost.</p>

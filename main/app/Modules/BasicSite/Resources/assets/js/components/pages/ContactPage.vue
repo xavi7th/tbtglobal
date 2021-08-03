@@ -15,7 +15,7 @@
                 </h4>
               </div>
               <div class="tg-description">
-                <p>Plot 106 Airport Road, Warri, Delta State.</p>
+                <p>{{ app.address1 }}</p>
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@
                 </h4>
               </div>
               <div class="tg-description">
-                <p>No 8 Atuwatse close, Ubeji-Warri. Delta State.</p>
+                <p>{{ app.address2 }}</p>
               </div>
             </div>
           </div>

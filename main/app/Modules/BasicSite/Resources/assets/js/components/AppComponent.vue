@@ -1,6 +1,6 @@
 <template>
   <div id="tg-wrapper" class="tg-wrapper tg-haslayout">
-    <site-header v-on:logout-user="logoutUser()"></site-header>
+    <site-header v-on:logout-user="logoutUser()" :app="app"></site-header>
 
     <transition name="slide-out-in" mode="out-in" :duration="{ enter: 1300, leave: 200 }">
       <router-view
@@ -10,7 +10,7 @@
       ></router-view>
     </transition>
 
-    <site-footer :isContactPage="isContactPage"></site-footer>
+    <site-footer :isContactPage="isContactPage" :app="app"></site-footer>
   </div>
 </template>
 
@@ -38,6 +38,11 @@
       },
       pageLoaded() {
         this.$loadScript("/js/main.js");
+      }
+    },
+    computed : {
+      app(){
+        return window.app
       }
     }
   };

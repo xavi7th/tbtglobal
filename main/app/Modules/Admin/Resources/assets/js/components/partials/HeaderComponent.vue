@@ -2,7 +2,7 @@
   <v-toolbar :clipped-left="$vuetify.breakpoint.lgAndUp" color="primary" dark app fixed>
     <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
       <v-toolbar-side-icon @click.stop="$emit('update:drawer', !drawer)"></v-toolbar-side-icon>
-      <span class="hidden-sm-and-down">TBT Global</span>
+      <span class="hidden-sm-and-down">{{ app.name }}</span>
     </v-toolbar-title>
 
     <v-spacer></v-spacer>
@@ -26,6 +26,10 @@
     props: {
       drawer: {
         type: Boolean,
+        required: true
+      },
+      app: {
+        type: Object,
         required: true
       }
     },

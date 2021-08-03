@@ -20,7 +20,7 @@ function view( name ) {
     };
 }
 
-const title = title => title + ' | TBT Global'
+const title = title => title + ' | ' + window.app.name
 
 
 

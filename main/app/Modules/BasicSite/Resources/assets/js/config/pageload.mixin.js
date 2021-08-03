@@ -1,4 +1,7 @@
 export default {
+    computed:{
+      app : () => window.app
+    },
     mounted() {
         this.$nextTick( () => {
             this.$emit( "page-loaded" );

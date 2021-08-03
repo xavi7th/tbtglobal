@@ -20,16 +20,16 @@
                     <li>
                       <i class="fa fa-home"></i>
                       <address>
-                        <b>Head Office:</b> Plot 106 Airport Road, Warri, Delta State.
+                        <b>Head Office:</b> {{ app.address1 }}
                         <br />
-                        <b>Branch Office:</b> No 8 Atuwatse close, ubeji, Warri. Delta State.
+                        <b>Branch Office:</b> {{ app.address2 }}
                       </address>
                     </li>
 
                     <li>
                       <i class="fa fa-envelope-o"></i>
                       <span>
-                        <a href="mailto:info@tbtnigeria.com">info@tbtnigeria.com</a>
+                        <a :href="`mailto:${ app.email }`">{{ app.email }}</a>
                       </span>
                     </li>
                     <li>
@@ -135,7 +135,7 @@
 <script>
   export default {
     name: "Footer",
-    props: ["isContactPage"]
+    props: ["isContactPage", "app"]
   };
 </script>
 

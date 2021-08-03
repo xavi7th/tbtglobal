@@ -14,7 +14,7 @@
                   <h3>Projects</h3>
                 </div>
                 <div class="tg-description">
-                  <p>At TBT Global we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards.</p>
+                  <p>At {{ app.name }} we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards.</p>
                 </div>
               </div>
             </div>

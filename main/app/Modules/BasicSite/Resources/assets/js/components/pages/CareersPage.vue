@@ -36,8 +36,8 @@
                           <li>Interview Timing: 09:00 am to 11:00 am</li>
                           <li>
                             <address>
-                              Head Office: Plot 106 Airport Road, Warri, Delta State.
-                              <br />Branch Office: No 8 Atuwatse close, Ubeji Warri. Delta State.
+                              Head Office: {{ app.address1 }}.
+                              <br />Branch Office: {{ app.address2 }}.
                             </address>
                           </li>
                           <li>

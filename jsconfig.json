@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "es2017",
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": "./",
+		"paths": {
+			"@pages/*": ["main/app/Modules/BasicSite/Resources/js/Pages/*"],
+			"@components/*": ["main/app/Modules/BasicSite/Resources/assets/js/components/*"],
+			"@assets/*": ["main/app/Modules/BasicSite/Resources/assets/*"],
+			"@adminComponents/*": ["main/app/Modules/Admin/Resources/assets/js/components/*"],
+			"@adminAssets/*": ["main/app/Modules/Admin/Resources/assets/*"],
+		}
+	},
+	"include": ["main/app", "main/config/", "main/database/", "main/resources/", "main/routes/"]
+}

@@ -14,7 +14,7 @@
               <li>
                 <i class="fa fa-envelope-o"></i>
                 <span>
-                  <a href="mailto:info@tbtnigeria.com ">info@tbtnigeria.com</a>
+                  <a :href="`mailto:${app.email}`">{{ app.email }}</a>
                 </span>
               </li>
               <li>
@@ -25,7 +25,7 @@
               </li>
               <li>
                 <i class="fa fa-map-marker"></i>
-                <address>Plot 106, Airport Road, Warri, Delta State, Nigeria</address>
+                <address>{{ app.address1 }}</address>
               </li>
             </ul>
             <!-- <nav class="tg-addnav tg-themecolor">
@@ -66,6 +66,7 @@
   import SiteNav from "@components/partials/NavComponent";
   export default {
     name: "Header",
+    props:['app'],
     components: { SiteNav }
   };
 </script>

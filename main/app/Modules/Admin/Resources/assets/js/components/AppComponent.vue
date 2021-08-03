@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <site-nav v-on:logout-user="logoutUser()" v-if="isNotLogin" :drawer.sync="drawer"></site-nav>
 
-    <site-header v-on:logout-user="logoutUser()" v-if="isNotLogin" :drawer.sync="drawer"></site-header>
+    <site-header v-on:logout-user="logoutUser()" v-if="isNotLogin" :drawer.sync="drawer" :app="app"></site-header>
 
     <v-content>
       <transition name="slide-out-in" mode="out-in" :duration="{ enter: 1300, leave: 200 }">
@@ -10,7 +10,7 @@
       </transition>
     </v-content>
 
-    <site-footer></site-footer>
+    <site-footer :app="app"></site-footer>
   </v-app>
 </template>
 
@@ -44,6 +44,9 @@
     computed: {
       isNotLogin() {
         return this.$route.name !== "admin.login";
+      },
+      app(){
+        return window.app
       }
     }
   };
