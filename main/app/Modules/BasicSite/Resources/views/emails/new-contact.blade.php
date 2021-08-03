@@ -732,12 +732,12 @@
 
                                                                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
-                                                                            <em>Copyright © 2019 TBT Global Nigeria
+                                                                            <em>Copyright © 2019 {{ config('app.name') }} Nigeria
                                                                                 &reg;, All rights reserved.</em><br>
                                                                             <br>
                                                                             <strong>Our mailing address
                                                                                 is:</strong><br>
-                                                                            info@tbtnigeria.com<br>
+                                                                            {{ config('app.email') }}<br>
 
                                                                         </td>
                                                                     </tr>

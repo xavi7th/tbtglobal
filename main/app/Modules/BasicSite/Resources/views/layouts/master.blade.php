@@ -29,6 +29,11 @@
         <script src="{{ asset('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+
+        <script>
+          window.app = JSON.parse('@php echo collect( [ "name" => config("app.name"), "whatsapp" => config("app.whatsapp"), "address1" => config("app.address1"), "address2" => config("app.address2"), "phone" => config("app.phone"), "email" => config("app.email") ] )->toJson(); @endphp')
+        </script>
+
         @yield('customCSS')
     </head>
 

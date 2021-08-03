@@ -11,7 +11,6 @@ use App\Modules\Admin\Models\Slider;
 use Illuminate\Support\Facades\Mail;
 use App\Modules\Admin\Models\Project;
 use Illuminate\Support\Facades\Route;
-use App\Modules\AppUser\Models\AppUser;
 use Illuminate\Support\Facades\Artisan;
 use App\Modules\BasicSite\Emails\ContactAdmin;
 use App\Modules\Admin\Transformers\SlideTransformer;
@@ -45,7 +44,7 @@ class BasicSiteController extends Controller
 				// return $request->message;
 				// return new ContactAdmin($request);
 				try {
-					Mail::to('info@tbtnigeria.com')->send(new ContactAdmin($request));
+					Mail::to(config('app.email'))->send(new ContactAdmin($request));
 					return response()->json(['status' => true], 201);
 				} catch (\Throwable $e) {
 					Log::critical($e);

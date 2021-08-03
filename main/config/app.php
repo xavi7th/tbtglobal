@@ -13,7 +13,11 @@ return [
     |
     */
 
-	'name' => env('APP_NAME', 'Laravel'),
+	'name' => env('APP_NAME', null),
+	'email' => env('APP_EMAIL', null),
+	'address1' => env('APP_ADDRESS1', null),
+	'address2' => env('APP_ADDRESS2', null),
+	'phone' => env('APP_PHONE', null),
 
 	/*
     |--------------------------------------------------------------------------
