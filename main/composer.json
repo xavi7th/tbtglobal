@@ -18,7 +18,6 @@
         "laravel/slack-notification-channel": "^2.0",
         "laravel/tinker": "^1.0",
         "nwidart/laravel-modules": "^5.0",
-        "pusher/pusher-php-server": "^3.4",
         "realrashid/sweet-alert": "^1.1",
         "renatomarinho/laravel-page-speed": "^1.8",
         "spatie/laravel-blade-javascript": "^2.2",
@@ -57,6 +56,47 @@
         }
     },
     "scripts": {
+      "compile": [
+        "@php artisan migrate:fresh --force",
+        "@php artisan config:clear",
+        "@php artisan route:clear",
+        "@php artisan cache:clear",
+        "@php artisan view:clear",
+        "@php artisan event:clear",
+        "@php artisan key:generate --ansi",
+        "@php artisan storage:link",
+        "@php artisan module:seed",
+        "@php artisan auth:clear-resets",
+        "@php artisan route:cache",
+        "@php artisan event:cache",
+        "@php artisan config:cache",
+        "@php artisan optimize",
+        "composer dumpautoload"
+      ],
+      "recompile": [
+        "@php artisan config:clear",
+        "@php artisan route:clear",
+        "@php artisan cache:clear",
+        "@php artisan view:clear",
+        "@php artisan event:clear",
+        "@php artisan storage:link",
+        "@php artisan route:cache",
+        "@php artisan event:cache",
+        "@php artisan config:cache",
+        "@php artisan optimize",
+        "composer dumpautoload"
+      ],
+      "reseed": [
+        "@php artisan migrate:fresh",
+        "@php artisan config:clear",
+        "@php artisan route:clear",
+        "@php artisan cache:clear",
+        "@php artisan view:clear",
+        "@php artisan event:clear",
+        "@php artisan storage:link",
+        "@php artisan module:seed",
+        "composer dumpautoload"
+      ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
