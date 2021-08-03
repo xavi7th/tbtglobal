@@ -287,7 +287,7 @@
         }
 
         .footerContainer {
-            background-color: #055b0c;
+            background-color: #003160;
             background-image: none;
             background-repeat: no-repeat;
             background-position: center;

@@ -88,7 +88,7 @@
 
 <style lang="scss" scoped>
   .tg-main-section {
-    background-color: #055b0c;
+    background-color: #003160;
     color: #fff;
     background-image: url(/img/wave.png);
     background-repeat: no-repeat;
