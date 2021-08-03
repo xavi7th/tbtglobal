@@ -2,10 +2,6 @@
 .phpunit.result.cache
 /node_modules
 node_modules
-/public_html/**
-!/public_html/.htaccess
-!/public_html/index.php
-!/public_html/basicsite/**
 /public_html/hot
 /public_html/storage
 /main/storage/*.key
@@ -16,9 +12,6 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-/main/storage/framework/**
-!/main/storage/framework/cache
-!/main/storage/framework/sessions
 /main/storage/debugbar
 /main/storage/logs
 .DS_Store
@@ -30,7 +23,7 @@ yarn-error.log
 Classified.docx
 template
 .env
-Archive*
+*.tgz
 TODO.cson
 ide_helper.php
 _ide_helper_models.php
