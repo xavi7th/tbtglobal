@@ -2278,7 +2278,7 @@ var staticRenderFns = [
                                     ),
                                     _c("br"),
                                     _vm._v(
-                                      "Branch Office: No 50 Country Road, off Sapele Road, Benin City, Edo State.\n                          "
+                                      "Branch Office: No 8 Atuwatse close, Ubeji, Warri. Delta State.\n                          "
                                     )
                                   ])
                                 ]),
@@ -3215,6 +3215,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -3350,7 +3354,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "tg-description" }, [
             _c("p", [
               _vm._v(
-                "At TBT Global Services Limited we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards."
+                "At TBT we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards."
               )
             ])
           ])
