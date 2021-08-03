@@ -934,7 +934,7 @@ var content = __webpack_require__(211);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("b35570ca", content, false, {});
+var update = __webpack_require__(2)("61ff06a2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -1023,7 +1023,7 @@ var content = __webpack_require__(214);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("229b81e2", content, false, {});
+var update = __webpack_require__(2)("31f28da3", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -1047,7 +1047,7 @@ exports = module.exports = __webpack_require__(0)(true);
 
 
 // module
-exports.push([module.i, "\n.tg-parallaximg[data-v-6b646c2c]{background-image:url(\"/img/parallax/bgparallax-03.jpg\");background-size:cover;background-position:center\n}\n", "", {"version":3,"sources":["/Users/leinad/work/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/PageHeader.vue"],"names":[],"mappings":";AAAA,iCAAgB,wDAAwD,sBAAsB,0BAA0B;CAAC","file":"PageHeader.vue","sourcesContent":[".tg-parallaximg{background-image:url(\"/img/parallax/bgparallax-03.jpg\");background-size:cover;background-position:center}\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-parallaximg[data-v-6b646c2c]{background-image:url(\"/img/parallax/bgparallax-03.jpg\");background-size:cover;background-position:center\n}\n", "", {"version":3,"sources":["C:/xampp/htdocs/tbtglobal/main/app/Modules/BasicSite/Resources/assets/js/components/partials/PageHeader.vue"],"names":[],"mappings":";AAAA,iCAAgB,wDAAwD,sBAAsB,0BAA0B;CAAC","file":"PageHeader.vue","sourcesContent":[".tg-parallaximg{background-image:url(\"/img/parallax/bgparallax-03.jpg\");background-size:cover;background-position:center}\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -1243,7 +1243,7 @@ var content = __webpack_require__(219);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("fe60b186", content, false, {});
+var update = __webpack_require__(2)("0df47ef8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -1267,7 +1267,7 @@ exports = module.exports = __webpack_require__(0)(true);
 
 
 // module
-exports.push([module.i, "\n.tg-whatwedoimages figure[data-v-39b520f8]{margin-top:40px\n}\n.tg-whatwedoimages figure img[data-v-39b520f8]{width:100%;min-height:210px\n}\n.tg-description p[data-v-39b520f8]{text-align:justify\n}\n", "", {"version":3,"sources":["/Users/leinad/work/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/AboutPage.vue"],"names":[],"mappings":";AAAA,2CAA0B,eAAe;CAAC;AAAA,+CAA8B,WAAW,gBAAgB;CAAC;AAAA,mCAAkB,kBAAkB;CAAC","file":"AboutPage.vue","sourcesContent":[".tg-whatwedoimages figure{margin-top:40px}.tg-whatwedoimages figure img{width:100%;min-height:210px}.tg-description p{text-align:justify}\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-whatwedoimages figure[data-v-39b520f8]{margin-top:40px\n}\n.tg-whatwedoimages figure img[data-v-39b520f8]{width:100%;min-height:210px\n}\n.tg-description p[data-v-39b520f8]{text-align:justify\n}\n", "", {"version":3,"sources":["C:/xampp/htdocs/tbtglobal/main/app/Modules/BasicSite/Resources/assets/js/components/pages/AboutPage.vue"],"names":[],"mappings":";AAAA,2CAA0B,eAAe;CAAC;AAAA,+CAA8B,WAAW,gBAAgB;CAAC;AAAA,mCAAkB,kBAAkB;CAAC","file":"AboutPage.vue","sourcesContent":[".tg-whatwedoimages figure{margin-top:40px}.tg-whatwedoimages figure img{width:100%;min-height:210px}.tg-description p{text-align:justify}\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -1921,7 +1921,7 @@ var content = __webpack_require__(223);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("a2d1fe86", content, false, {});
+var update = __webpack_require__(2)("1ca83778", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -2278,7 +2278,7 @@ var staticRenderFns = [
                                     ),
                                     _c("br"),
                                     _vm._v(
-                                      "Branch Office: No 8 Atuwatse close, Ubeji, Warri. Delta State.\n                          "
+                                      "Branch Office: No 8 Atuwatse close, Ubeji Warri. Delta State.\n                          "
                                     )
                                   ])
                                 ]),
@@ -2643,7 +2643,7 @@ var content = __webpack_require__(227);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("4d850038", content, false, {});
+var update = __webpack_require__(2)("decc3882", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -2667,7 +2667,7 @@ exports = module.exports = __webpack_require__(0)(true);
 
 
 // module
-exports.push([module.i, "\n.tg-main[data-v-323c2117]{padding-bottom:0\n}\n.tg-service[data-v-323c2117]{height:250px;padding:60px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background:#04520b;color:#fff\n}\n@media (max-width: 800px){\n.tg-service[data-v-323c2117]{height:auto\n}\n}\n.tg-service[data-v-323c2117]:hover{background:#fff;color:#515151\n}\n.tg-service .tg-seviceicon[data-v-323c2117]{height:60px;width:60px;margin:0;line-height:60px\n}\n.tg-heading[data-v-323c2117]{padding-bottom:50px\n}\n.tg-heading[data-v-323c2117]:before{content:none\n}\n.tg-heading[data-v-323c2117]:after{top:60px;left:50%;width:30px;height:2px;content:\"\";background:#ddd;position:absolute;margin:0 0 0 -15px\n}\n.tg-heading h4[data-v-323c2117]{font-weight:bold\n}\n.tg-heading h4 a[data-v-323c2117]{color:#fff\n}\n.tg-locationmap[data-v-323c2117]{margin-top:50px\n}\n.tg-main-section[data-v-323c2117]{position:absolute;width:36%;padding:4% 5%;background:rgba(4,82,11,0.8);right:5%;margin-top:50px\n}\n@media (max-width: 800px){\n.tg-main-section[data-v-323c2117]{position:static;width:100%;margin-top:0\n}\n}\n.tg-main-section .tg-sectiontitle[data-v-323c2117]{padding-bottom:0\n}\n.tg-main-section .tg-sectiontitle h2[data-v-323c2117],.tg-main-section .tg-sectiontitle h3[data-v-323c2117]{color:#fff !important\n}\n.tg-main-section .tg-themeform[data-v-323c2117]{font-weight:bold\n}\n.tg-main-section .tg-themeform textarea[data-v-323c2117]{height:135px\n}\n.tg-main-section .tg-themeform .tg-btn[data-v-323c2117]{border-color:#fff\n}\n.tg-main-section .tg-themeform .tg-btn span[data-v-323c2117]{color:#fff !important\n}\n", "", {"version":3,"sources":["/Users/leinad/work/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ContactPage.vue"],"names":[],"mappings":";AAAA,0BAAS,gBAAgB;CAAC;AAAA,6BAAY,aAAa,aAAa,wBAAA,qBAAA,uBAAuB,mBAAmB,UAAU;CAAC;AAAA;AAA0B,6BAAY,WAAW;CAAC;CAAC;AAAA,mCAAkB,gBAAgB,aAAa;CAAC;AAAA,4CAA2B,YAAY,WAAW,SAAS,gBAAgB;CAAC;AAAA,6BAAY,mBAAmB;CAAC;AAAA,oCAAmB,YAAY;CAAC;AAAA,mCAAkB,SAAS,SAAS,WAAW,WAAW,WAAW,gBAAgB,kBAAkB,kBAAkB;CAAC;AAAA,gCAAe,gBAAgB;CAAC;AAAA,kCAAiB,UAAU;CAAC;AAAA,iCAAgB,eAAe;CAAC;AAAA,kCAAiB,kBAAkB,UAAU,cAAc,6BAA6B,SAAS,eAAe;CAAC;AAAA;AAA0B,kCAAiB,gBAAgB,WAAW,YAAY;CAAC;CAAC;AAAA,mDAAkC,gBAAgB;CAAC;AAAA,4GAA0E,qBAAqB;CAAC;AAAA,gDAA+B,gBAAgB;CAAC;AAAA,yDAAwC,YAAY;CAAC;AAAA,wDAAuC,iBAAiB;CAAC;AAAA,6DAA4C,qBAAqB;CAAC","file":"ContactPage.vue","sourcesContent":[".tg-main{padding-bottom:0}.tg-service{height:250px;padding:60px;justify-content:center;background:#04520b;color:#fff}@media (max-width: 800px){.tg-service{height:auto}}.tg-service:hover{background:#fff;color:#515151}.tg-service .tg-seviceicon{height:60px;width:60px;margin:0;line-height:60px}.tg-heading{padding-bottom:50px}.tg-heading:before{content:none}.tg-heading:after{top:60px;left:50%;width:30px;height:2px;content:\"\";background:#ddd;position:absolute;margin:0 0 0 -15px}.tg-heading h4{font-weight:bold}.tg-heading h4 a{color:#fff}.tg-locationmap{margin-top:50px}.tg-main-section{position:absolute;width:36%;padding:4% 5%;background:rgba(4,82,11,0.8);right:5%;margin-top:50px}@media (max-width: 800px){.tg-main-section{position:static;width:100%;margin-top:0}}.tg-main-section .tg-sectiontitle{padding-bottom:0}.tg-main-section .tg-sectiontitle h2,.tg-main-section .tg-sectiontitle h3{color:#fff !important}.tg-main-section .tg-themeform{font-weight:bold}.tg-main-section .tg-themeform textarea{height:135px}.tg-main-section .tg-themeform .tg-btn{border-color:#fff}.tg-main-section .tg-themeform .tg-btn span{color:#fff !important}\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-main[data-v-323c2117]{padding-bottom:0\n}\n.tg-service[data-v-323c2117]{height:250px;padding:60px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background:#04520b;color:#fff\n}\n@media (max-width: 800px){\n.tg-service[data-v-323c2117]{height:auto\n}\n}\n.tg-service[data-v-323c2117]:hover{background:#fff;color:#515151\n}\n.tg-service .tg-seviceicon[data-v-323c2117]{height:60px;width:60px;margin:0;line-height:60px\n}\n.tg-heading[data-v-323c2117]{padding-bottom:50px\n}\n.tg-heading[data-v-323c2117]:before{content:none\n}\n.tg-heading[data-v-323c2117]:after{top:60px;left:50%;width:30px;height:2px;content:\"\";background:#ddd;position:absolute;margin:0 0 0 -15px\n}\n.tg-heading h4[data-v-323c2117]{font-weight:bold\n}\n.tg-heading h4 a[data-v-323c2117]{color:#fff\n}\n.tg-locationmap[data-v-323c2117]{margin-top:50px\n}\n.tg-main-section[data-v-323c2117]{position:absolute;width:36%;padding:4% 5%;background:rgba(4,82,11,0.8);right:5%;margin-top:50px\n}\n@media (max-width: 800px){\n.tg-main-section[data-v-323c2117]{position:static;width:100%;margin-top:0\n}\n}\n.tg-main-section .tg-sectiontitle[data-v-323c2117]{padding-bottom:0\n}\n.tg-main-section .tg-sectiontitle h2[data-v-323c2117],.tg-main-section .tg-sectiontitle h3[data-v-323c2117]{color:#fff !important\n}\n.tg-main-section .tg-themeform[data-v-323c2117]{font-weight:bold\n}\n.tg-main-section .tg-themeform textarea[data-v-323c2117]{height:135px\n}\n.tg-main-section .tg-themeform .tg-btn[data-v-323c2117]{border-color:#fff\n}\n.tg-main-section .tg-themeform .tg-btn span[data-v-323c2117]{color:#fff !important\n}\n", "", {"version":3,"sources":["C:/xampp/htdocs/tbtglobal/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ContactPage.vue"],"names":[],"mappings":";AAAA,0BAAS,gBAAgB;CAAC;AAAA,6BAAY,aAAa,aAAa,wBAAA,qBAAA,uBAAuB,mBAAmB,UAAU;CAAC;AAAA;AAA0B,6BAAY,WAAW;CAAC;CAAC;AAAA,mCAAkB,gBAAgB,aAAa;CAAC;AAAA,4CAA2B,YAAY,WAAW,SAAS,gBAAgB;CAAC;AAAA,6BAAY,mBAAmB;CAAC;AAAA,oCAAmB,YAAY;CAAC;AAAA,mCAAkB,SAAS,SAAS,WAAW,WAAW,WAAW,gBAAgB,kBAAkB,kBAAkB;CAAC;AAAA,gCAAe,gBAAgB;CAAC;AAAA,kCAAiB,UAAU;CAAC;AAAA,iCAAgB,eAAe;CAAC;AAAA,kCAAiB,kBAAkB,UAAU,cAAc,6BAA6B,SAAS,eAAe;CAAC;AAAA;AAA0B,kCAAiB,gBAAgB,WAAW,YAAY;CAAC;CAAC;AAAA,mDAAkC,gBAAgB;CAAC;AAAA,4GAA0E,qBAAqB;CAAC;AAAA,gDAA+B,gBAAgB;CAAC;AAAA,yDAAwC,YAAY;CAAC;AAAA,wDAAuC,iBAAiB;CAAC;AAAA,6DAA4C,qBAAqB;CAAC","file":"ContactPage.vue","sourcesContent":[".tg-main{padding-bottom:0}.tg-service{height:250px;padding:60px;justify-content:center;background:#04520b;color:#fff}@media (max-width: 800px){.tg-service{height:auto}}.tg-service:hover{background:#fff;color:#515151}.tg-service .tg-seviceicon{height:60px;width:60px;margin:0;line-height:60px}.tg-heading{padding-bottom:50px}.tg-heading:before{content:none}.tg-heading:after{top:60px;left:50%;width:30px;height:2px;content:\"\";background:#ddd;position:absolute;margin:0 0 0 -15px}.tg-heading h4{font-weight:bold}.tg-heading h4 a{color:#fff}.tg-locationmap{margin-top:50px}.tg-main-section{position:absolute;width:36%;padding:4% 5%;background:rgba(4,82,11,0.8);right:5%;margin-top:50px}@media (max-width: 800px){.tg-main-section{position:static;width:100%;margin-top:0}}.tg-main-section .tg-sectiontitle{padding-bottom:0}.tg-main-section .tg-sectiontitle h2,.tg-main-section .tg-sectiontitle h3{color:#fff !important}.tg-main-section .tg-themeform{font-weight:bold}.tg-main-section .tg-themeform textarea{height:135px}.tg-main-section .tg-themeform .tg-btn{border-color:#fff}.tg-main-section .tg-themeform .tg-btn span{color:#fff !important}\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -3088,7 +3088,7 @@ var content = __webpack_require__(231);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("473f126a", content, false, {});
+var update = __webpack_require__(2)("082ff7b8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -3112,7 +3112,7 @@ exports = module.exports = __webpack_require__(0)(true);
 
 
 // module
-exports.push([module.i, "\n.tg-newsimg img[data-v-6f1a7b11],.tg-news figure img[data-v-6f1a7b11]{height:270px\n}\n", "", {"version":3,"sources":["/Users/leinad/work/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ProjectsPage.vue"],"names":[],"mappings":";AAAA,sEAAoC,YAAY;CAAC","file":"ProjectsPage.vue","sourcesContent":[".tg-newsimg img,.tg-news figure img{height:270px}\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-newsimg img[data-v-6f1a7b11],.tg-news figure img[data-v-6f1a7b11]{height:270px\n}\n", "", {"version":3,"sources":["C:/xampp/htdocs/tbtglobal/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ProjectsPage.vue"],"names":[],"mappings":";AAAA,sEAAoC,YAAY;CAAC","file":"ProjectsPage.vue","sourcesContent":[".tg-newsimg img,.tg-news figure img{height:270px}\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -3348,13 +3348,13 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "tg-sectionhead" }, [
           _c("div", { staticClass: "tg-sectiontitle" }, [
-            _c("h3", [_vm._v("latest projects")])
+            _c("h3", [_vm._v("Projects")])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "tg-description" }, [
             _c("p", [
               _vm._v(
-                "At TBT we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards."
+                "At TBT Global we place a high premium on the needs of our clients and this has been a driving force in ensuring that service delivery is of the highest standards."
               )
             ])
           ])
@@ -3383,7 +3383,7 @@ var content = __webpack_require__(235);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("2edcedb4", content, false, {});
+var update = __webpack_require__(2)("0819167f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -3407,7 +3407,7 @@ exports = module.exports = __webpack_require__(0)(true);
 
 
 // module
-exports.push([module.i, "\n.tg-service[data-v-25e24ef5]{height:200px;position:relative;background-position:center;background-size:cover\n}\n.tg-service.ie[data-v-25e24ef5]{background-image:url(\"/img/services/ie.jpg\")\n}\n.tg-service.mhe[data-v-25e24ef5]{background-image:url(\"/img/services/mhe.jpg\")\n}\n.tg-service.procurement[data-v-25e24ef5]{background-image:url(\"/img/services/procurement.jpg\");background-image:url(\"/img/services/procurement.jpg\")\n}\n.tg-service.insulation[data-v-25e24ef5]{background-image:url(\"/img/services/insulation.jpg\")\n}\n.tg-service.repairs[data-v-25e24ef5]{background-image:url(\"/img/services/repairs.jpg\")\n}\n.tg-service.sandblasting[data-v-25e24ef5]{background-image:url(\"/img/services/sandblasting.jpg\")\n}\n.tg-service.valve[data-v-25e24ef5]{background-image:url(\"/img/services/valve.jpg\")\n}\n.tg-service.manpower[data-v-25e24ef5]{background-image:url(\"/img/services/manpower.jpg\")\n}\n.tg-service.vessel[data-v-25e24ef5]{background-image:url(\"/img/services/vessel.jpg\")\n}\n.tg-servicestyletwo .tg-heading[data-v-25e24ef5]{padding-top:0;position:absolute;width:100%;bottom:0;padding-bottom:10px;height:50px;background-image:-webkit-gradient(linear, left bottom, left top, color-stop(20%, black), color-stop(90%, transparent));background-image:linear-gradient(to top, black 20%, transparent 90%);color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:all 300ms ease-out;transition:all 300ms ease-out\n}\n.tg-servicestyletwo .tg-heading a[data-v-25e24ef5]{line-height:1.2;color:#fff\n}\n.tg-servicestyletwo .tg-box .tg-seviceicon[data-v-25e24ef5]{-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)\";opacity:0.6;-webkit-transition:opacity ease-in-out 300ms;transition:opacity ease-in-out 300ms\n}\n.tg-servicestyletwo .tg-box:hover .tg-seviceicon[data-v-25e24ef5]{-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)\";opacity:1\n}\n.tg-servicestyletwo .tg-box:hover .tg-heading[data-v-25e24ef5]{height:80px;padding-bottom:15px;background-image:-webkit-gradient(linear, left bottom, left top, color-stop(40%, black), color-stop(95%, transparent));background-image:linear-gradient(to top, black 40%, transparent 95%)\n}\n.tg-servicestyletwo .tg-box:hover .tg-heading a[data-v-25e24ef5]{color:#fff\n}\n.tg-servicestyletwo>div:nth-child(odd) .tg-box[data-v-25e24ef5]{padding:0\n}\n.tg-servicestyletwo>div:nth-child(even) .tg-seviceicon[data-v-25e24ef5]{z-index:1\n}\n.tg-servicestyletwo>div:nth-child(even) .tg-box[data-v-25e24ef5]{padding:0\n}\n.tg-servicestyletwo>div:nth-child(even) .tg-box .procurement .tg-heading[data-v-25e24ef5],.tg-servicestyletwo>div:nth-child(even) .tg-box .insulation .tg-heading[data-v-25e24ef5]{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding-right:15px\n}\n@media (max-width: 767px){\n.tg-main-section[data-v-25e24ef5]{padding-bottom:0\n}\n.tg-services.tg-servicestyletwo[data-v-25e24ef5]{padding-bottom:60px\n}\n}\n", "", {"version":3,"sources":["/Users/leinad/work/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ServicesPage.vue"],"names":[],"mappings":";AAAA,6BAAY,aAAa,kBAAkB,2BAA2B,qBAAqB;CAAC;AAAA,gCAAe,4CAA4C;CAAC;AAAA,iCAAgB,6CAA6C;CAAC;AAAA,yCAAwB,sDAAA,qDAAqD;CAAC;AAAA,wCAAuB,oDAAoD;CAAC;AAAA,qCAAoB,iDAAiD;CAAC;AAAA,0CAAyB,sDAAsD;CAAC;AAAA,mCAAkB,+CAA+C;CAAC;AAAA,sCAAqB,kDAAkD;CAAC;AAAA,oCAAmB,gDAAgD;CAAC;AAAA,iDAAgC,cAAc,kBAAkB,WAAW,SAAS,oBAAoB,YAAY,uHAAA,qEAAqE,WAAW,oBAAA,oBAAA,aAAa,sBAAA,mBAAA,qBAAqB,wBAAA,qBAAA,uBAAuB,sCAAA,6BAA6B;CAAC;AAAA,mDAAkC,gBAAgB,UAAU;CAAC;AAAA,4DAA2C,iEAAA,YAAY,6CAAA,oCAAoC;CAAC;AAAA,kEAAiD,kEAAA,SAAS;CAAC;AAAA,+DAA8C,YAAY,oBAAoB,uHAAA,oEAAoE;CAAC;AAAA,iEAAgD,UAAU;CAAC;AAAA,gEAA+C,SAAS;CAAC;AAAA,wEAAuD,SAAS;CAAC;AAAA,iEAAgD,SAAS;CAAC;AAAA,mLAAiJ,qBAAA,kBAAA,yBAAyB,kBAAkB;CAAC;AAAA;AAA0B,kCAAiB,gBAAgB;CAAC;AAAA,iDAAgC,mBAAmB;CAAC;CAAC","file":"ServicesPage.vue","sourcesContent":[".tg-service{height:200px;position:relative;background-position:center;background-size:cover}.tg-service.ie{background-image:url(\"/img/services/ie.jpg\")}.tg-service.mhe{background-image:url(\"/img/services/mhe.jpg\")}.tg-service.procurement{background-image:url(\"/img/services/procurement.jpg\")}.tg-service.insulation{background-image:url(\"/img/services/insulation.jpg\")}.tg-service.repairs{background-image:url(\"/img/services/repairs.jpg\")}.tg-service.sandblasting{background-image:url(\"/img/services/sandblasting.jpg\")}.tg-service.valve{background-image:url(\"/img/services/valve.jpg\")}.tg-service.manpower{background-image:url(\"/img/services/manpower.jpg\")}.tg-service.vessel{background-image:url(\"/img/services/vessel.jpg\")}.tg-servicestyletwo .tg-heading{padding-top:0;position:absolute;width:100%;bottom:0;padding-bottom:10px;height:50px;background-image:linear-gradient(to top, black 20%, transparent 90%);color:#fff;display:flex;align-items:flex-end;justify-content:center;transition:all 300ms ease-out}.tg-servicestyletwo .tg-heading a{line-height:1.2;color:#fff}.tg-servicestyletwo .tg-box .tg-seviceicon{opacity:0.6;transition:opacity ease-in-out 300ms}.tg-servicestyletwo .tg-box:hover .tg-seviceicon{opacity:1}.tg-servicestyletwo .tg-box:hover .tg-heading{height:80px;padding-bottom:15px;background-image:linear-gradient(to top, black 40%, transparent 95%)}.tg-servicestyletwo .tg-box:hover .tg-heading a{color:#fff}.tg-servicestyletwo>div:nth-child(odd) .tg-box{padding:0}.tg-servicestyletwo>div:nth-child(even) .tg-seviceicon{z-index:1}.tg-servicestyletwo>div:nth-child(even) .tg-box{padding:0}.tg-servicestyletwo>div:nth-child(even) .tg-box .procurement .tg-heading,.tg-servicestyletwo>div:nth-child(even) .tg-box .insulation .tg-heading{justify-content:flex-end;padding-right:15px}@media (max-width: 767px){.tg-main-section{padding-bottom:0}.tg-services.tg-servicestyletwo{padding-bottom:60px}}\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-service[data-v-25e24ef5]{height:200px;position:relative;background-position:center;background-size:cover\n}\n.tg-service.ie[data-v-25e24ef5]{background-image:url(\"/img/services/ie.jpg\")\n}\n.tg-service.mhe[data-v-25e24ef5]{background-image:url(\"/img/services/mhe.jpg\")\n}\n.tg-service.procurement[data-v-25e24ef5]{background-image:url(\"/img/services/procurement.jpg\");background-image:url(\"/img/services/procurement.jpg\")\n}\n.tg-service.insulation[data-v-25e24ef5]{background-image:url(\"/img/services/insulation.jpg\")\n}\n.tg-service.repairs[data-v-25e24ef5]{background-image:url(\"/img/services/repairs.jpg\")\n}\n.tg-service.sandblasting[data-v-25e24ef5]{background-image:url(\"/img/services/sandblasting.jpg\")\n}\n.tg-service.valve[data-v-25e24ef5]{background-image:url(\"/img/services/valve.jpg\")\n}\n.tg-service.manpower[data-v-25e24ef5]{background-image:url(\"/img/services/manpower.jpg\")\n}\n.tg-service.vessel[data-v-25e24ef5]{background-image:url(\"/img/services/vessel.jpg\")\n}\n.tg-servicestyletwo .tg-heading[data-v-25e24ef5]{padding-top:0;position:absolute;width:100%;bottom:0;padding-bottom:10px;height:50px;background-image:-webkit-gradient(linear, left bottom, left top, color-stop(20%, black), color-stop(90%, transparent));background-image:linear-gradient(to top, black 20%, transparent 90%);color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:all 300ms ease-out;transition:all 300ms ease-out\n}\n.tg-servicestyletwo .tg-heading a[data-v-25e24ef5]{line-height:1.2;color:#fff\n}\n.tg-servicestyletwo .tg-box .tg-seviceicon[data-v-25e24ef5]{-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)\";opacity:0.6;-webkit-transition:opacity ease-in-out 300ms;transition:opacity ease-in-out 300ms\n}\n.tg-servicestyletwo .tg-box:hover .tg-seviceicon[data-v-25e24ef5]{-ms-filter:\"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)\";opacity:1\n}\n.tg-servicestyletwo .tg-box:hover .tg-heading[data-v-25e24ef5]{height:80px;padding-bottom:15px;background-image:-webkit-gradient(linear, left bottom, left top, color-stop(40%, black), color-stop(95%, transparent));background-image:linear-gradient(to top, black 40%, transparent 95%)\n}\n.tg-servicestyletwo .tg-box:hover .tg-heading a[data-v-25e24ef5]{color:#fff\n}\n.tg-servicestyletwo>div:nth-child(odd) .tg-box[data-v-25e24ef5]{padding:0\n}\n.tg-servicestyletwo>div:nth-child(even) .tg-seviceicon[data-v-25e24ef5]{z-index:1\n}\n.tg-servicestyletwo>div:nth-child(even) .tg-box[data-v-25e24ef5]{padding:0\n}\n.tg-servicestyletwo>div:nth-child(even) .tg-box .procurement .tg-heading[data-v-25e24ef5],.tg-servicestyletwo>div:nth-child(even) .tg-box .insulation .tg-heading[data-v-25e24ef5]{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding-right:15px\n}\n@media (max-width: 767px){\n.tg-main-section[data-v-25e24ef5]{padding-bottom:0\n}\n.tg-services.tg-servicestyletwo[data-v-25e24ef5]{padding-bottom:60px\n}\n}\n", "", {"version":3,"sources":["C:/xampp/htdocs/tbtglobal/main/app/Modules/BasicSite/Resources/assets/js/components/pages/ServicesPage.vue"],"names":[],"mappings":";AAAA,6BAAY,aAAa,kBAAkB,2BAA2B,qBAAqB;CAAC;AAAA,gCAAe,4CAA4C;CAAC;AAAA,iCAAgB,6CAA6C;CAAC;AAAA,yCAAwB,sDAAA,qDAAqD;CAAC;AAAA,wCAAuB,oDAAoD;CAAC;AAAA,qCAAoB,iDAAiD;CAAC;AAAA,0CAAyB,sDAAsD;CAAC;AAAA,mCAAkB,+CAA+C;CAAC;AAAA,sCAAqB,kDAAkD;CAAC;AAAA,oCAAmB,gDAAgD;CAAC;AAAA,iDAAgC,cAAc,kBAAkB,WAAW,SAAS,oBAAoB,YAAY,uHAAA,qEAAqE,WAAW,oBAAA,oBAAA,aAAa,sBAAA,mBAAA,qBAAqB,wBAAA,qBAAA,uBAAuB,sCAAA,6BAA6B;CAAC;AAAA,mDAAkC,gBAAgB,UAAU;CAAC;AAAA,4DAA2C,iEAAA,YAAY,6CAAA,oCAAoC;CAAC;AAAA,kEAAiD,kEAAA,SAAS;CAAC;AAAA,+DAA8C,YAAY,oBAAoB,uHAAA,oEAAoE;CAAC;AAAA,iEAAgD,UAAU;CAAC;AAAA,gEAA+C,SAAS;CAAC;AAAA,wEAAuD,SAAS;CAAC;AAAA,iEAAgD,SAAS;CAAC;AAAA,mLAAiJ,qBAAA,kBAAA,yBAAyB,kBAAkB;CAAC;AAAA;AAA0B,kCAAiB,gBAAgB;CAAC;AAAA,iDAAgC,mBAAmB;CAAC;CAAC","file":"ServicesPage.vue","sourcesContent":[".tg-service{height:200px;position:relative;background-position:center;background-size:cover}.tg-service.ie{background-image:url(\"/img/services/ie.jpg\")}.tg-service.mhe{background-image:url(\"/img/services/mhe.jpg\")}.tg-service.procurement{background-image:url(\"/img/services/procurement.jpg\")}.tg-service.insulation{background-image:url(\"/img/services/insulation.jpg\")}.tg-service.repairs{background-image:url(\"/img/services/repairs.jpg\")}.tg-service.sandblasting{background-image:url(\"/img/services/sandblasting.jpg\")}.tg-service.valve{background-image:url(\"/img/services/valve.jpg\")}.tg-service.manpower{background-image:url(\"/img/services/manpower.jpg\")}.tg-service.vessel{background-image:url(\"/img/services/vessel.jpg\")}.tg-servicestyletwo .tg-heading{padding-top:0;position:absolute;width:100%;bottom:0;padding-bottom:10px;height:50px;background-image:linear-gradient(to top, black 20%, transparent 90%);color:#fff;display:flex;align-items:flex-end;justify-content:center;transition:all 300ms ease-out}.tg-servicestyletwo .tg-heading a{line-height:1.2;color:#fff}.tg-servicestyletwo .tg-box .tg-seviceicon{opacity:0.6;transition:opacity ease-in-out 300ms}.tg-servicestyletwo .tg-box:hover .tg-seviceicon{opacity:1}.tg-servicestyletwo .tg-box:hover .tg-heading{height:80px;padding-bottom:15px;background-image:linear-gradient(to top, black 40%, transparent 95%)}.tg-servicestyletwo .tg-box:hover .tg-heading a{color:#fff}.tg-servicestyletwo>div:nth-child(odd) .tg-box{padding:0}.tg-servicestyletwo>div:nth-child(even) .tg-seviceicon{z-index:1}.tg-servicestyletwo>div:nth-child(even) .tg-box{padding:0}.tg-servicestyletwo>div:nth-child(even) .tg-box .procurement .tg-heading,.tg-servicestyletwo>div:nth-child(even) .tg-box .insulation .tg-heading{justify-content:flex-end;padding-right:15px}@media (max-width: 767px){.tg-main-section{padding-bottom:0}.tg-services.tg-servicestyletwo{padding-bottom:60px}}\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -4063,7 +4063,7 @@ var content = __webpack_require__(239);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("bd4415e2", content, false, {});
+var update = __webpack_require__(2)("2629adfa", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -4385,7 +4385,7 @@ var content = __webpack_require__(242);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("50743e5e", content, false, {});
+var update = __webpack_require__(2)("e009505c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -4409,7 +4409,7 @@ exports = module.exports = __webpack_require__(0)(true);
 
 
 // module
-exports.push([module.i, "\n.tg-widgetcontent i[data-v-d67703f8] {\n  padding: 0 10px 0 0;\n}\n", "", {"version":3,"sources":["/Users/leinad/work/htdocs/tbtglobal/site/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/ServicesSideMenu.vue"],"names":[],"mappings":";AAuDA;EACA,oBAAA;CACA","file":"ServicesSideMenu.vue","sourcesContent":["<template>\n  <aside id=\"tg-siderbar\" class=\"tg-siderbar\">\n    <div class=\"tg-widget tg-widgetprojectdescription\">\n      <div class=\"tg-widgettitle\">\n        <h3>Services Menu</h3>\n      </div>\n      <div class=\"tg-widgetcontent\">\n        <ul>\n          <li>\n            <i class=\"fa fa-gear\"></i>\n            <router-link :to=\"{name: 'site.services.valve'}\">Valve Maintenance</router-link>\n          </li>\n          <li>\n            <i class=\"fa fa-gear\"></i>\n            <router-link :to=\"{name: 'site.services.ie'}\">Instrumentation and Electricals</router-link>\n          </li>\n          <li>\n            <i class=\"fa fa-gear\"></i>\n            <router-link :to=\"{name: 'site.services.insulation'}\">Hot Surface Insulation</router-link>\n          </li>\n          <li>\n            <i class=\"fa fa-gear\"></i>\n            <router-link :to=\"{name: 'site.services.pumps'}\">Servicing of pumps</router-link>\n          </li>\n          <li>\n            <i class=\"fa fa-gear\"></i>\n            <router-link :to=\"{name: 'site.services.sand'}\">Sand Blasting</router-link>\n          </li>\n          <li>\n            <i class=\"fa fa-gear\"></i>\n            <router-link :to=\"{name: 'site.services.vessel'}\">Vessel Cleaning Services</router-link>\n          </li>\n          <li>\n            <i class=\"fa fa-gear\"></i>\n            <router-link :to=\"{name: 'site.services.supplies'}\">Procurement and Supply</router-link>\n          </li>\n          <li>\n            <i class=\"fa fa-gear\"></i>\n            <router-link :to=\"{name: 'site.services.mhe'}\">MHE</router-link>\n          </li>\n          <li>\n            <i class=\"fa fa-gear\"></i>\n            <router-link :to=\"{name: 'site.services.manpower'}\">Manpower Supply</router-link>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </aside>\n</template>\n\n<script>\n  export default {};\n</script>\n\n<style lang=\"css\" scoped>\n  .tg-widgetcontent i {\n    padding: 0 10px 0 0;\n  }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.tg-widgetcontent i[data-v-d67703f8] {\n  padding: 0 10px 0 0;\n}\n", "", {"version":3,"sources":["C:/xampp/htdocs/tbtglobal/main/app/Modules/BasicSite/Resources/assets/js/components/partials/main/app/Modules/BasicSite/Resources/assets/js/components/partials/ServicesSideMenu.vue"],"names":[],"mappings":";AAuDA;EACA,oBAAA;CACA","file":"ServicesSideMenu.vue","sourcesContent":["<template>\r\n  <aside id=\"tg-siderbar\" class=\"tg-siderbar\">\r\n    <div class=\"tg-widget tg-widgetprojectdescription\">\r\n      <div class=\"tg-widgettitle\">\r\n        <h3>Services Menu</h3>\r\n      </div>\r\n      <div class=\"tg-widgetcontent\">\r\n        <ul>\r\n          <li>\r\n            <i class=\"fa fa-gear\"></i>\r\n            <router-link :to=\"{name: 'site.services.valve'}\">Valve Maintenance</router-link>\r\n          </li>\r\n          <li>\r\n            <i class=\"fa fa-gear\"></i>\r\n            <router-link :to=\"{name: 'site.services.ie'}\">Instrumentation and Electricals</router-link>\r\n          </li>\r\n          <li>\r\n            <i class=\"fa fa-gear\"></i>\r\n            <router-link :to=\"{name: 'site.services.insulation'}\">Hot Surface Insulation</router-link>\r\n          </li>\r\n          <li>\r\n            <i class=\"fa fa-gear\"></i>\r\n            <router-link :to=\"{name: 'site.services.pumps'}\">Servicing of pumps</router-link>\r\n          </li>\r\n          <li>\r\n            <i class=\"fa fa-gear\"></i>\r\n            <router-link :to=\"{name: 'site.services.sand'}\">Sand Blasting</router-link>\r\n          </li>\r\n          <li>\r\n            <i class=\"fa fa-gear\"></i>\r\n            <router-link :to=\"{name: 'site.services.vessel'}\">Vessel Cleaning Services</router-link>\r\n          </li>\r\n          <li>\r\n            <i class=\"fa fa-gear\"></i>\r\n            <router-link :to=\"{name: 'site.services.supplies'}\">Procurement and Supply</router-link>\r\n          </li>\r\n          <li>\r\n            <i class=\"fa fa-gear\"></i>\r\n            <router-link :to=\"{name: 'site.services.mhe'}\">MHE</router-link>\r\n          </li>\r\n          <li>\r\n            <i class=\"fa fa-gear\"></i>\r\n            <router-link :to=\"{name: 'site.services.manpower'}\">Manpower Supply</router-link>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </aside>\r\n</template>\r\n\r\n<script>\r\n  export default {};\r\n</script>\r\n\r\n<style lang=\"css\" scoped>\r\n  .tg-widgetcontent i {\r\n    padding: 0 10px 0 0;\r\n  }\r\n</style>\r\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -5145,7 +5145,7 @@ var content = __webpack_require__(247);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("1de19f5a", content, false, {});
+var update = __webpack_require__(2)("7fc59f4e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -5961,7 +5961,7 @@ var content = __webpack_require__(251);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("2e864ee2", content, false, {});
+var update = __webpack_require__(2)("549f996e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -6777,7 +6777,7 @@ var content = __webpack_require__(255);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("5382e396", content, false, {});
+var update = __webpack_require__(2)("22bdc98a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -7593,7 +7593,7 @@ var content = __webpack_require__(259);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("3b5ae19f", content, false, {});
+var update = __webpack_require__(2)("15f6e02b", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -8409,7 +8409,7 @@ var content = __webpack_require__(263);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("dc16325a", content, false, {});
+var update = __webpack_require__(2)("d2348342", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -9225,7 +9225,7 @@ var content = __webpack_require__(267);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("934cf9e0", content, false, {});
+var update = __webpack_require__(2)("2f3d5604", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -10041,7 +10041,7 @@ var content = __webpack_require__(271);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("62a8d539", content, false, {});
+var update = __webpack_require__(2)("6799acc5", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -10857,7 +10857,7 @@ var content = __webpack_require__(275);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("5713844b", content, false, {});
+var update = __webpack_require__(2)("264e6a3f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
